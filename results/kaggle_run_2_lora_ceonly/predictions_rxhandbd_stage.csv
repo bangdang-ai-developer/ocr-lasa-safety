@@ -1,0 +1,2231 @@
+dataset,stage,image,true_label,pred,error_category
+rxhandbd,zeroshot,P0001.jpg,Nexcital,vexcitive,hallucination_far_off
+rxhandbd,zeroshot,P0002.jpg,Inderen,inderers .,hallucination_far_off
+rxhandbd,zeroshot,P0003.jpg,Indever,In devent,hallucination_far_off
+rxhandbd,zeroshot,P0004.jpg,Losita,1 Losita .,hallucination_far_off
+rxhandbd,zeroshot,P0005.jpg,Rivotril,2 Rivotrail .,hallucination_far_off
+rxhandbd,zeroshot,P0006.jpg,Asynta,A Synta,minor_ocr_noise
+rxhandbd,zeroshot,P0007.jpg,Napa,napa,correct
+rxhandbd,zeroshot,P0008.jpg,Econate,economic,hallucination_far_off
+rxhandbd,zeroshot,P0009.jpg,Exeptim,exemptions .,hallucination_far_off
+rxhandbd,zeroshot,P0010.jpg,Napa,napa,correct
+rxhandbd,zeroshot,P0011.jpg,Kacin,Kacin .,correct
+rxhandbd,zeroshot,P0012.jpg,Lubilay,umbilage .,hallucination_far_off
+rxhandbd,zeroshot,P0013.jpg,T-Cef,T.Cef .,correct
+rxhandbd,zeroshot,P0014.jpg,Algin,Afgin .,hallucination_far_off
+rxhandbd,zeroshot,P0015.jpg,Dexter,desperate,hallucination_far_off
+rxhandbd,zeroshot,P0016.jpg,Escilex,E skileys,hallucination_far_off
+rxhandbd,zeroshot,P0017.jpg,Traxy,"Tracy 1,1500s",hallucination_far_off
+rxhandbd,zeroshot,P0018.jpg,Setra,setzu .,hallucination_far_off
+rxhandbd,zeroshot,P0019.jpg,HPR DS,TI PRDS .,hallucination_far_off
+rxhandbd,zeroshot,P0020.jpg,palpitation,palpitation,correct
+rxhandbd,zeroshot,P0021.jpg,Napa,Galactominea,hallucination_far_off
+rxhandbd,zeroshot,P0022.jpg,Kacin,prolactin .,hallucination_far_off
+rxhandbd,zeroshot,P0023.jpg,Zimax,Xian-B.,hallucination_far_off
+rxhandbd,zeroshot,P0024.jpg,Dexter,zimax .,other_wrong_real_word
+rxhandbd,zeroshot,P0025.jpg,Panied,flamex .,other_wrong_real_word
+rxhandbd,zeroshot,P0026.jpg,Nimens,0 2 Premier .,hallucination_far_off
+rxhandbd,zeroshot,P0027.jpg,Elija,noomens .,hallucination_far_off
+rxhandbd,zeroshot,P0028.jpg,Comet,Eliga,hallucination_far_off
+rxhandbd,zeroshot,P0029.jpg,bengel,2 Comet .,hallucination_far_off
+rxhandbd,zeroshot,P0030.jpg,Relvis,bengel .,other_wrong_real_word
+rxhandbd,zeroshot,P0031.jpg,Medroxy,REIvis .,hallucination_far_off
+rxhandbd,zeroshot,P0032.jpg,myosit,mediatory .,hallucination_far_off
+rxhandbd,zeroshot,P0033.jpg,Furocef,myosit,other_wrong_real_word
+rxhandbd,zeroshot,P0034.jpg,Torat,furacef .,hallucination_far_off
+rxhandbd,zeroshot,P0035.jpg,Dextal,1 Tonant .,hallucination_far_off
+rxhandbd,zeroshot,P0036.jpg,Thyrox,dexiac,hallucination_far_off
+rxhandbd,zeroshot,P0037.jpg,Voligel,reumeus,hallucination_far_off
+rxhandbd,zeroshot,P0038.jpg,Sandin,rem l,hallucination_far_off
+rxhandbd,zeroshot,P0039.jpg,Paloxi,sardin .,hallucination_far_off
+rxhandbd,zeroshot,P0040.jpg,Domin,1 2 Paloxi .,hallucination_far_off
+rxhandbd,zeroshot,P0041.jpg,Sergel,domin .,other_wrong_real_word
+rxhandbd,zeroshot,P0042.jpg,HPR DS,Beryl,hallucination_far_off
+rxhandbd,zeroshot,P0043.jpg,Nitrofur,collican .,hallucination_far_off
+rxhandbd,zeroshot,P0044.jpg,Doxycap,airr.fur,hallucination_far_off
+rxhandbd,zeroshot,P0045.jpg,???,doxycap,other_wrong_real_word
+rxhandbd,zeroshot,P0046.jpg,Omep,0xpa,hallucination_far_off
+rxhandbd,zeroshot,P0047.jpg,Doxycap,somep,hallucination_far_off
+rxhandbd,zeroshot,P0048.jpg,Robac,dosuycap,hallucination_far_off
+rxhandbd,zeroshot,P0049.jpg,Omep,Rotac,hallucination_far_off
+rxhandbd,zeroshot,P0050.jpg,CORTAN,somep,hallucination_far_off
+rxhandbd,zeroshot,P0051.jpg,VASCO,corran .,hallucination_far_off
+rxhandbd,zeroshot,P0052.jpg,Losectil,vasco,other_wrong_real_word
+rxhandbd,zeroshot,P0053.jpg,Paloxi,LOC.,hallucination_far_off
+rxhandbd,zeroshot,P0054.jpg,Precabil,monacular .,hallucination_far_off
+rxhandbd,zeroshot,P0055.jpg,Fougest,preceded,hallucination_far_off
+rxhandbd,zeroshot,P0056.jpg,Omep,if pregnant .,hallucination_far_off
+rxhandbd,zeroshot,P0057.jpg,RUPIN,substitution .,hallucination_far_off
+rxhandbd,zeroshot,P0058.jpg,FEXO,rupin .,other_wrong_real_word
+rxhandbd,zeroshot,P0059.jpg,Omep,4 Fewed .,hallucination_far_off
+rxhandbd,zeroshot,P0060.jpg,Maxpro,VISCO Harbor,hallucination_far_off
+rxhandbd,zeroshot,P0061.jpg,Sergel,mauro,hallucination_far_off
+rxhandbd,zeroshot,P0062.jpg,Disopan,Sentixons .,hallucination_far_off
+rxhandbd,zeroshot,P0063.jpg,Indever,desopars .,hallucination_far_off
+rxhandbd,zeroshot,P0064.jpg,N-MAX SO,indexer 10,hallucination_far_off
+rxhandbd,zeroshot,P0065.jpg,Sergel,n-n-market .,hallucination_far_off
+rxhandbd,zeroshot,P0066.jpg,Domin,sexless,hallucination_far_off
+rxhandbd,zeroshot,P0067.jpg,Profenid Gel,Biculated,hallucination_far_off
+rxhandbd,zeroshot,P0068.jpg,Rudi,profend set,hallucination_far_off
+rxhandbd,zeroshot,P0069.jpg,Sergel,""" Rhodes120",hallucination_far_off
+rxhandbd,zeroshot,P0070.jpg,Indever,cesses,hallucination_far_off
+rxhandbd,zeroshot,P0071.jpg,Etorix,indexers ( 10 ?,hallucination_far_off
+rxhandbd,zeroshot,P0072.jpg,Traxyl,Nexcital 159,hallucination_far_off
+rxhandbd,zeroshot,P0073.jpg,Apeelo,Tracy !,hallucination_far_off
+rxhandbd,zeroshot,P0074.jpg,myolax,Cinema plus,hallucination_far_off
+rxhandbd,zeroshot,P0075.jpg,Tenocab,"menanil "" 16 .",hallucination_far_off
+rxhandbd,zeroshot,P0076.jpg,Mixit,tenocab .,other_wrong_real_word
+rxhandbd,zeroshot,P0077.jpg,Radifil,Bicycle supply,hallucination_far_off
+rxhandbd,zeroshot,P0078.jpg,Nervion,ideeal ID .,hallucination_far_off
+rxhandbd,zeroshot,P0079.jpg,Povital,remmo 20,hallucination_far_off
+rxhandbd,zeroshot,P0080.jpg,Napa,alapidas,hallucination_far_off
+rxhandbd,zeroshot,P0081.jpg,Voligel,volise ),hallucination_far_off
+rxhandbd,zeroshot,P0082.jpg,Apeelo,1 Angelo,hallucination_far_off
+rxhandbd,zeroshot,P0083.jpg,Radifil,raditil .,confusable_wrong_drug
+rxhandbd,zeroshot,P0084.jpg,Vonocab,Vonoeab .,hallucination_far_off
+rxhandbd,zeroshot,P0085.jpg,Thyrox,Thyrox,correct
+rxhandbd,zeroshot,P0086.jpg,Voligel,voligel .,correct
+rxhandbd,zeroshot,P0087.jpg,Etorix,etonix .,hallucination_far_off
+rxhandbd,zeroshot,P0088.jpg,Apeelo,A peelo,minor_ocr_noise
+rxhandbd,zeroshot,P0089.jpg,myolax,myolax,correct
+rxhandbd,zeroshot,P0090.jpg,Nervion,nervion .,correct
+rxhandbd,zeroshot,P0091.jpg,Esahil,eschil .,hallucination_far_off
+rxhandbd,zeroshot,P0092.jpg,Kinate,4 Kincote .,hallucination_far_off
+rxhandbd,zeroshot,P0093.jpg,Frulae,Friulae,minor_ocr_noise
+rxhandbd,zeroshot,P0094.jpg,Mixit,might,hallucination_far_off
+rxhandbd,zeroshot,P0095.jpg,Radifil,raditil,confusable_wrong_drug
+rxhandbd,zeroshot,P0096.jpg,Nervion,nersion .,hallucination_far_off
+rxhandbd,zeroshot,P0097.jpg,Povital,povital,correct
+rxhandbd,zeroshot,P0098.jpg,Fylox,Fylox .,correct
+rxhandbd,zeroshot,P0099.jpg,Vonocab,Vonocab,correct
+rxhandbd,zeroshot,P0100.jpg,Etorix,euromix .,hallucination_far_off
+rxhandbd,zeroshot,P0101.jpg,Telmacal,Telmaeal .,minor_ocr_noise
+rxhandbd,zeroshot,P0102.jpg,Rosu,Rosie,hallucination_far_off
+rxhandbd,zeroshot,P0103.jpg,Apeelo,Apeelo,correct
+rxhandbd,zeroshot,P0104.jpg,Myolax,myclass,hallucination_far_off
+rxhandbd,zeroshot,P0105.jpg,Cora DX,Cora DX.,correct
+rxhandbd,zeroshot,P0106.jpg,Vonocab,dEX manager of,hallucination_far_off
+rxhandbd,zeroshot,P0107.jpg,Duloxen,duloxen .,correct
+rxhandbd,zeroshot,P0108.jpg,Fixocard,Fixtures and,hallucination_far_off
+rxhandbd,zeroshot,P0109.jpg,Pregan,pregan .,correct
+rxhandbd,zeroshot,P0110.jpg,Emep,Emeps .,hallucination_far_off
+rxhandbd,zeroshot,P0111.jpg,myotax,my otax .,hallucination_far_off
+rxhandbd,zeroshot,P0112.jpg,Napronex,"nepsoners . """,hallucination_far_off
+rxhandbd,zeroshot,P0113.jpg,Avloclav,Auloslav,minor_ocr_noise
+rxhandbd,zeroshot,P0114.jpg,Klobid,klabid,confusable_wrong_drug
+rxhandbd,zeroshot,P0115.jpg,Montelon,mantelon .,minor_ocr_noise
+rxhandbd,zeroshot,P0116.jpg,Vonocab,Vonoeats .,hallucination_far_off
+rxhandbd,zeroshot,P0117.jpg,Napa,napa,correct
+rxhandbd,zeroshot,P0118.jpg,Esohil,esohl .,hallucination_far_off
+rxhandbd,zeroshot,P0119.jpg,Vonocab,vonocab .,correct
+rxhandbd,zeroshot,P0120.jpg,Kinate,4 Kinate .,hallucination_far_off
+rxhandbd,zeroshot,P0121.jpg,Ulfix,ulfix .,correct
+rxhandbd,zeroshot,P0122.jpg,Montelon,montejon .,minor_ocr_noise
+rxhandbd,zeroshot,P0123.jpg,Ezylife,ezy life .,minor_ocr_noise
+rxhandbd,zeroshot,P0124.jpg,TRD Couture,Anustat ofnkrant,hallucination_far_off
+rxhandbd,zeroshot,P0125.jpg,Turboclav,tuxboelar .,hallucination_far_off
+rxhandbd,zeroshot,P0126.jpg,Esotid,esorted .,hallucination_far_off
+rxhandbd,zeroshot,P0127.jpg,Nortum,norium .,confusable_wrong_drug
+rxhandbd,zeroshot,P0128.jpg,Rupa,rupa .,correct
+rxhandbd,zeroshot,P0129.jpg,Montelon,momble .,hallucination_far_off
+rxhandbd,zeroshot,P0130.jpg,Napa one,Napa one,correct
+rxhandbd,zeroshot,P0131.jpg,Apeelo,A peolo,minor_ocr_noise
+rxhandbd,zeroshot,P0132.jpg,Prestal,Prestel,confusable_wrong_drug
+rxhandbd,zeroshot,P0133.jpg,Cidex,ciden .,hallucination_far_off
+rxhandbd,zeroshot,P0134.jpg,Etorix,Etorin .,hallucination_far_off
+rxhandbd,zeroshot,P0135.jpg,Esohil,eschil,minor_ocr_noise
+rxhandbd,zeroshot,P0136.jpg,Napa one,Reservyx -sr.,hallucination_far_off
+rxhandbd,zeroshot,P0137.jpg,Nexe,nex-n.nex,hallucination_far_off
+rxhandbd,zeroshot,P0138.jpg,Montelon,"Baumax long . """,hallucination_far_off
+rxhandbd,zeroshot,P0139.jpg,Scluprud,slumped,hallucination_far_off
+rxhandbd,zeroshot,P0140.jpg,Synogen,strongers .,hallucination_far_off
+rxhandbd,zeroshot,P0141.jpg,Indever,index on,hallucination_far_off
+rxhandbd,zeroshot,P0142.jpg,Xyflo,xyflo,correct
+rxhandbd,zeroshot,P0143.jpg,Bilaxe,bilaxe .,correct
+rxhandbd,zeroshot,P0144.jpg,Dexnaaf,Pexnaaf,minor_ocr_noise
+rxhandbd,zeroshot,P0145.jpg,Xiva,xiva,correct
+rxhandbd,zeroshot,P0146.jpg,Tuspel,Tuspel,correct
+rxhandbd,zeroshot,P0147.jpg,Clavutil,clavutil,correct
+rxhandbd,zeroshot,P0148.jpg,TRD Couture,TRD Coutine .,confusable_wrong_drug
+rxhandbd,zeroshot,P0149.jpg,Merthomol,meteorol,hallucination_far_off
+rxhandbd,zeroshot,P0150.jpg,Synogen,coonical,hallucination_far_off
+rxhandbd,zeroshot,P0151.jpg,Neurou,neuron,minor_ocr_noise
+rxhandbd,zeroshot,P0152.jpg,Trypt,tryptin .,confusable_wrong_drug
+rxhandbd,zeroshot,P0153.jpg,Tuspel,zo- sweeps,hallucination_far_off
+rxhandbd,zeroshot,P0154.jpg,Methox,metax,hallucination_far_off
+rxhandbd,zeroshot,P0155.jpg,Follison,follison .,correct
+rxhandbd,zeroshot,P0156.jpg,Bilaxe,puffiloo,hallucination_far_off
+rxhandbd,zeroshot,P0157.jpg,Trilock,Trillock 10 .,hallucination_far_off
+rxhandbd,zeroshot,P0158.jpg,Rifagut,Bexitol F. Bexicap .,hallucination_far_off
+rxhandbd,zeroshot,P0159.jpg,Costan,costan,correct
+rxhandbd,zeroshot,P0160.jpg,Levox,tevox .,confusable_wrong_drug
+rxhandbd,zeroshot,P0161.jpg,Cortan,nexeumps .,hallucination_far_off
+rxhandbd,zeroshot,P0162.jpg,Limbix,limbix .,correct
+rxhandbd,zeroshot,P0163.jpg,Indever,indexed,minor_ocr_noise
+rxhandbd,zeroshot,P0164.jpg,Xyflo,zo-mups,other_wrong_real_word
+rxhandbd,zeroshot,P0165.jpg,Bilaxe,merdau .,hallucination_far_off
+rxhandbd,zeroshot,P0166.jpg,Beklo,3 3,hallucination_far_off
+rxhandbd,zeroshot,P0167.jpg,Coragen-D,coralgem-D,minor_ocr_noise
+rxhandbd,zeroshot,P0168.jpg,TRD Coutine,TRD Coutine .,correct
+rxhandbd,zeroshot,P0169.jpg,prelics CR,poelics or,minor_ocr_noise
+rxhandbd,zeroshot,P0170.jpg,Cortan,certain,minor_ocr_noise
+rxhandbd,zeroshot,P0171.jpg,Trilock,trilock 10,minor_ocr_noise
+rxhandbd,zeroshot,P0172.jpg,Brezofil,boezofil,minor_ocr_noise
+rxhandbd,zeroshot,P0173.jpg,Dinovo,were my to,hallucination_far_off
+rxhandbd,zeroshot,P0174.jpg,Nexemig,suppu voltaliy,hallucination_far_off
+rxhandbd,zeroshot,P0175.jpg,Elodep,Elockop 5,hallucination_far_off
+rxhandbd,zeroshot,P0176.jpg,Rifagut,ritagur .,hallucination_far_off
+rxhandbd,zeroshot,P0177.jpg,Itoklav,Fto Line 30,hallucination_far_off
+rxhandbd,zeroshot,P0178.jpg,Coragen-D,ursodil 1.30,hallucination_far_off
+rxhandbd,zeroshot,P0179.jpg,Clavutil,nexe oncepto,hallucination_far_off
+rxhandbd,zeroshot,P0180.jpg,ALOS,acos,minor_ocr_noise
+rxhandbd,zeroshot,P0181.jpg,Cortan,costory .,hallucination_far_off
+rxhandbd,zeroshot,P0182.jpg,Bilax,3 May,hallucination_far_off
+rxhandbd,zeroshot,P0183.jpg,Trilock,trilogue .,hallucination_far_off
+rxhandbd,zeroshot,P0184.jpg,Nexum Mups,Nexe snups 20,hallucination_far_off
+rxhandbd,zeroshot,P0185.jpg,ocof,ocof .,correct
+rxhandbd,zeroshot,P0186.jpg,Dinovo,dinovo,correct
+rxhandbd,zeroshot,P0187.jpg,Nexemig,neursing,hallucination_far_off
+rxhandbd,zeroshot,P0188.jpg,Coragen-D,coralized . D,hallucination_far_off
+rxhandbd,zeroshot,P0189.jpg,Neuroxen,neuroxy,minor_ocr_noise
+rxhandbd,zeroshot,P0190.jpg,Rosuva,zoomingo 20,hallucination_far_off
+rxhandbd,zeroshot,P0191.jpg,Termitan,"I'mstrokeout 2.500,",hallucination_far_off
+rxhandbd,zeroshot,P0192.jpg,Limtab,Duollock 5140,hallucination_far_off
+rxhandbd,zeroshot,P0193.jpg,Nexum Mups,cildip 5,hallucination_far_off
+rxhandbd,zeroshot,P0194.jpg,Limbix,limbix .,correct
+rxhandbd,zeroshot,P0195.jpg,Indever,indexed to,hallucination_far_off
+rxhandbd,zeroshot,P0196.jpg,Zo.mups,zo--oneps 20,hallucination_far_off
+rxhandbd,zeroshot,P0197.jpg,Mervax,merdan .,hallucination_far_off
+rxhandbd,zeroshot,P0198.jpg,Beklo,3 . Mexico,hallucination_far_off
+rxhandbd,zeroshot,P0199.jpg,Coragen-D,coralgem- D.,hallucination_far_off
+rxhandbd,zeroshot,P0200.jpg,Clavutil,claretial,hallucination_far_off
+rxhandbd,zeroshot,P0201.jpg,Trilock,Trilock 10,minor_ocr_noise
+rxhandbd,zeroshot,P0202.jpg,Brezofil,Boezofil 200,hallucination_far_off
+rxhandbd,zeroshot,P0203.jpg,Beklo,bekio,minor_ocr_noise
+rxhandbd,zeroshot,P0204.jpg,Rifagut,rifagut .,correct
+rxhandbd,zeroshot,P0205.jpg,Zo.mups,zooseeports .,hallucination_far_off
+rxhandbd,zeroshot,P0206.jpg,Ecosprin Plus,Ecospoir plus,minor_ocr_noise
+rxhandbd,zeroshot,P0207.jpg,Rosuva,rosuvia 5,hallucination_far_off
+rxhandbd,zeroshot,P0208.jpg,Termitan,Telmitsu,hallucination_far_off
+rxhandbd,zeroshot,P0209.jpg,Limtab,Limitato,hallucination_far_off
+rxhandbd,zeroshot,P0210.jpg,Nexum Mups,arexeomy to,hallucination_far_off
+rxhandbd,zeroshot,P0211.jpg,Clavutil,clavutil,correct
+rxhandbd,zeroshot,P0212.jpg,Zolfin,zoific,hallucination_far_off
+rxhandbd,zeroshot,P0213.jpg,Beklo,bekio,minor_ocr_noise
+rxhandbd,zeroshot,P0214.jpg,Zo.mups,zo-mups,correct
+rxhandbd,zeroshot,P0215.jpg,Neuroxen,avensoxey .,hallucination_far_off
+rxhandbd,zeroshot,P0216.jpg,TRD Coutine,TRD Coutine .,correct
+rxhandbd,zeroshot,P0217.jpg,Methomol,metaomol,confusable_wrong_drug
+rxhandbd,zeroshot,P0218.jpg,Neuroxen,nensoxy,hallucination_far_off
+rxhandbd,zeroshot,P0219.jpg,Cor algen-D,cotningen-D,hallucination_far_off
+rxhandbd,zeroshot,P0220.jpg,DDR,DDR 30,hallucination_far_off
+rxhandbd,zeroshot,P0221.jpg,Elodep,Elode p 5,hallucination_far_off
+rxhandbd,zeroshot,P0222.jpg,Itokine,itokine,correct
+rxhandbd,zeroshot,P0223.jpg,Neuming,overcoming,hallucination_far_off
+rxhandbd,zeroshot,P0224.jpg,Rivotril,rivotil,minor_ocr_noise
+rxhandbd,zeroshot,P0225.jpg,Duoblock,duobbock .,minor_ocr_noise
+rxhandbd,zeroshot,P0226.jpg,Nexum Mups,nexe mupto,hallucination_far_off
+rxhandbd,zeroshot,P0227.jpg,Clavutil,clavutil,correct
+rxhandbd,zeroshot,P0228.jpg,Itokine,itolotine .,hallucination_far_off
+rxhandbd,zeroshot,P0229.jpg,Cinaron,cinaroy,minor_ocr_noise
+rxhandbd,zeroshot,P0230.jpg,Zo.mups,zo-smyr.20,hallucination_far_off
+rxhandbd,zeroshot,P0231.jpg,Atoz,Atoz poisoning,hallucination_far_off
+rxhandbd,zeroshot,P0232.jpg,Sup. Apelz,sup. apetriz,minor_ocr_noise
+rxhandbd,zeroshot,P0233.jpg,TRD Coutine,TRD Coutine .,correct
+rxhandbd,zeroshot,P0234.jpg,Beklo,bekio,minor_ocr_noise
+rxhandbd,zeroshot,P0235.jpg,Coralgue D,cotalgren-D,hallucination_far_off
+rxhandbd,zeroshot,P0236.jpg,Zo.mups,20--meaprozo,hallucination_far_off
+rxhandbd,zeroshot,P0237.jpg,Ancor,Ancox 5,hallucination_far_off
+rxhandbd,zeroshot,P0238.jpg,Itolcive,Itolcine 90,hallucination_far_off
+rxhandbd,zeroshot,P0239.jpg,Zolfin,zol fiu .,hallucination_far_off
+rxhandbd,zeroshot,P0240.jpg,Coralgue D,coral gem-D,hallucination_far_off
+rxhandbd,zeroshot,P0241.jpg,Trilock,trilock 10,minor_ocr_noise
+rxhandbd,zeroshot,P0242.jpg,Zo.mups,20-nuyto20,hallucination_far_off
+rxhandbd,zeroshot,P0243.jpg,Levox,Levox .,correct
+rxhandbd,zeroshot,P0244.jpg,Bilan,Bilau,confusable_wrong_drug
+rxhandbd,zeroshot,P0245.jpg,Trilock,trillock .,minor_ocr_noise
+rxhandbd,zeroshot,P0246.jpg,Ambrox,ambrox,correct
+rxhandbd,zeroshot,P0247.jpg,Nexum Mups,nexe surepholo,hallucination_far_off
+rxhandbd,zeroshot,P0248.jpg,Texit,next it,hallucination_far_off
+rxhandbd,zeroshot,P0249.jpg,Esomand,economy,hallucination_far_off
+rxhandbd,zeroshot,P0250.jpg,Rolac,robece,hallucination_far_off
+rxhandbd,zeroshot,P0251.jpg,Max dol,plexo doP,hallucination_far_off
+rxhandbd,zeroshot,P0252.jpg,Bromen,Bloommen .,hallucination_far_off
+rxhandbd,zeroshot,P0253.jpg,Nexum Mups,Nexemaps .,hallucination_far_off
+rxhandbd,zeroshot,P0254.jpg,Macrobac,macrobe,minor_ocr_noise
+rxhandbd,zeroshot,P0255.jpg,Periodontitis,perievedants .,hallucination_far_off
+rxhandbd,zeroshot,P0256.jpg,clavutil,clavintil,minor_ocr_noise
+rxhandbd,zeroshot,P0257.jpg,Esover,ex answer .,hallucination_far_off
+rxhandbd,zeroshot,P0258.jpg,Rolac,meitz I,hallucination_far_off
+rxhandbd,zeroshot,P0259.jpg,Lestarin,lestarin .,correct
+rxhandbd,zeroshot,P0260.jpg,clavutil,ceavintil,hallucination_far_off
+rxhandbd,zeroshot,P0261.jpg,Esmax,essential,hallucination_far_off
+rxhandbd,zeroshot,P0262.jpg,Renova,Removes,hallucination_far_off
+rxhandbd,zeroshot,P0263.jpg,Maxsulin,Toysight ( 200ong ),hallucination_far_off
+rxhandbd,zeroshot,P0264.jpg,Brezofil,Boersonfield,hallucination_far_off
+rxhandbd,zeroshot,P0265.jpg,Adovas,Adoras,minor_ocr_noise
+rxhandbd,zeroshot,P0266.jpg,Monfast,many first,hallucination_far_off
+rxhandbd,zeroshot,P0267.jpg,Texit,next,hallucination_far_off
+rxhandbd,zeroshot,P0268.jpg,Esover,esoven .,hallucination_far_off
+rxhandbd,zeroshot,P0269.jpg,Fixcef Plus,Fixx of pins .,hallucination_far_off
+rxhandbd,zeroshot,P0270.jpg,Nexum Mups,Nexessumps,hallucination_far_off
+rxhandbd,zeroshot,P0271.jpg,Texit,Taxi it,hallucination_far_off
+rxhandbd,zeroshot,P0272.jpg,Alfix,alafio,hallucination_far_off
+rxhandbd,zeroshot,P0273.jpg,Monfast,MON FAST,minor_ocr_noise
+rxhandbd,zeroshot,P0274.jpg,Neopenem,neopeners,minor_ocr_noise
+rxhandbd,zeroshot,P0275.jpg,Dexter,pental,hallucination_far_off
+rxhandbd,zeroshot,P0276.jpg,Emprelina,Empartial,hallucination_far_off
+rxhandbd,zeroshot,P0277.jpg,Maxsulin,mexulin .,hallucination_far_off
+rxhandbd,zeroshot,P0278.jpg,Rolip,2019,hallucination_far_off
+rxhandbd,zeroshot,P0279.jpg,Clonapex,clonups .,hallucination_far_off
+rxhandbd,zeroshot,P0280.jpg,Denvar,denvar,correct
+rxhandbd,zeroshot,P0281.jpg,Nexe,Nene,minor_ocr_noise
+rxhandbd,zeroshot,P0282.jpg,Flux,Flux,correct
+rxhandbd,zeroshot,P0283.jpg,Filmet,filmet .,correct
+rxhandbd,zeroshot,P0284.jpg,??r??,To rac .,hallucination_far_off
+rxhandbd,zeroshot,P0285.jpg,??r??,Torax,other_wrong_real_word
+rxhandbd,zeroshot,P0286.jpg,Fixgut,Firegent .,hallucination_far_off
+rxhandbd,zeroshot,P0287.jpg,Clonapex,clonapex,correct
+rxhandbd,zeroshot,P0288.jpg,Ceevit,Cee vitt,minor_ocr_noise
+rxhandbd,zeroshot,P0289.jpg,Rafino Forte,Ratisol Fonte .,hallucination_far_off
+rxhandbd,zeroshot,P0290.jpg,Voltalin,vocifulist,hallucination_far_off
+rxhandbd,zeroshot,P0291.jpg,BONID,DONID,minor_ocr_noise
+rxhandbd,zeroshot,P0292.jpg,Avolac,Fentise,hallucination_far_off
+rxhandbd,zeroshot,P0293.jpg,Xinc B,xcineB,hallucination_far_off
+rxhandbd,zeroshot,P0294.jpg,Nexum Mups,unnespace plays,hallucination_far_off
+rxhandbd,zeroshot,P0295.jpg,Texit,texit .,correct
+rxhandbd,zeroshot,P0296.jpg,Fixgut,Cecis oso .,hallucination_far_off
+rxhandbd,zeroshot,P0297.jpg,Nexe,nexe,correct
+rxhandbd,zeroshot,P0298.jpg,Alc,al c,minor_ocr_noise
+rxhandbd,zeroshot,P0299.jpg,Indo,In do,minor_ocr_noise
+rxhandbd,zeroshot,P0300.jpg,Nexe,n exc.,hallucination_far_off
+rxhandbd,zeroshot,P0301.jpg,Seko,5cko,hallucination_far_off
+rxhandbd,zeroshot,P0302.jpg,Nexe,noxo,hallucination_far_off
+rxhandbd,zeroshot,P0303.jpg,Zolivox,zalivox,minor_ocr_noise
+rxhandbd,zeroshot,P0304.jpg,Renova,remona,hallucination_far_off
+rxhandbd,zeroshot,P0305.jpg,Fixgut,Fix out,minor_ocr_noise
+rxhandbd,zeroshot,P0306.jpg,Alcet,AICet .,hallucination_far_off
+rxhandbd,zeroshot,P0307.jpg,Spilac,spilae,minor_ocr_noise
+rxhandbd,zeroshot,P0308.jpg,Avolac,Avolac,correct
+rxhandbd,zeroshot,P0309.jpg,Abicon,abican,minor_ocr_noise
+rxhandbd,zeroshot,P0310.jpg,Xyflo,xyflo,correct
+rxhandbd,zeroshot,P0311.jpg,Kindial-D,kindful-D,minor_ocr_noise
+rxhandbd,zeroshot,P0312.jpg,Hemofir FZ,Hemsfir FZ,minor_ocr_noise
+rxhandbd,zeroshot,P0313.jpg,Brodin,Brodie,minor_ocr_noise
+rxhandbd,zeroshot,P0314.jpg,Gestrenol,chestremol .,hallucination_far_off
+rxhandbd,zeroshot,P0315.jpg,Feup,Femp,minor_ocr_noise
+rxhandbd,zeroshot,P0316.jpg,Ossica,ossica,correct
+rxhandbd,zeroshot,P0317.jpg,Esohil,e sohl .,hallucination_far_off
+rxhandbd,zeroshot,P0318.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0319.jpg,mixit,mixit .,correct
+rxhandbd,zeroshot,P0320.jpg,Vonocab,Vonocah .,hallucination_far_off
+rxhandbd,zeroshot,P0321.jpg,Itogut,I to quit,hallucination_far_off
+rxhandbd,zeroshot,P0322.jpg,Syrup,syrup,correct
+rxhandbd,zeroshot,P0323.jpg,Etorix,e forix .,hallucination_far_off
+rxhandbd,zeroshot,P0324.jpg,Ezytake,ezytake,correct
+rxhandbd,zeroshot,P0325.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0326.jpg,Palonron,paloron .,hallucination_far_off
+rxhandbd,zeroshot,P0327.jpg,Vonocab,vonocab .,correct
+rxhandbd,zeroshot,P0328.jpg,kinate,kinate,correct
+rxhandbd,zeroshot,P0329.jpg,Gintabac,crentabae,hallucination_far_off
+rxhandbd,zeroshot,P0330.jpg,Tuspel,Tuisel,hallucination_far_off
+rxhandbd,zeroshot,P0331.jpg,Telmocal,Telmacal,confusable_wrong_drug
+rxhandbd,zeroshot,P0332.jpg,mixit,mixit .,correct
+rxhandbd,zeroshot,P0333.jpg,Rodiflex,radafter .,hallucination_far_off
+rxhandbd,zeroshot,P0334.jpg,Napxon,Nupxon .,hallucination_far_off
+rxhandbd,zeroshot,P0335.jpg,Dexnaaf,dexnaaf,correct
+rxhandbd,zeroshot,P0336.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0337.jpg,Esohil,esohl .,hallucination_far_off
+rxhandbd,zeroshot,P0338.jpg,Vonocab,Vono cab,minor_ocr_noise
+rxhandbd,zeroshot,P0339.jpg,Ruchigold,Ruehigold,minor_ocr_noise
+rxhandbd,zeroshot,P0340.jpg,Ciponaal,cipronarf .,hallucination_far_off
+rxhandbd,zeroshot,P0341.jpg,Azibact,A 2ibact,minor_ocr_noise
+rxhandbd,zeroshot,P0342.jpg,Vonocab,vonocab .,correct
+rxhandbd,zeroshot,P0343.jpg,Eylox,5 Eylox .,hallucination_far_off
+rxhandbd,zeroshot,P0344.jpg,Montelon,montelon .,correct
+rxhandbd,zeroshot,P0345.jpg,Napa,nopa,minor_ocr_noise
+rxhandbd,zeroshot,P0346.jpg,Neopem,Neopen .,hallucination_far_off
+rxhandbd,zeroshot,P0347.jpg,Napxon,nopxon .,confusable_wrong_drug
+rxhandbd,zeroshot,P0348.jpg,Xiva,Xiva,correct
+rxhandbd,zeroshot,P0349.jpg,xyflo,xyflo .,correct
+rxhandbd,zeroshot,P0350.jpg,Esohil,e sohil .,hallucination_far_off
+rxhandbd,zeroshot,P0351.jpg,Kinate,kinate,correct
+rxhandbd,zeroshot,P0352.jpg,Alben,alben .,correct
+rxhandbd,zeroshot,P0353.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0354.jpg,Vonocab,Vomo cab .,hallucination_far_off
+rxhandbd,zeroshot,P0355.jpg,Sponocid,spinorid .,hallucination_far_off
+rxhandbd,zeroshot,P0356.jpg,Texit,Text,minor_ocr_noise
+rxhandbd,zeroshot,P0357.jpg,Katomor,ketoman .,hallucination_far_off
+rxhandbd,zeroshot,P0358.jpg,Purtisol,political,hallucination_far_off
+rxhandbd,zeroshot,P0359.jpg,Monas,MONS,minor_ocr_noise
+rxhandbd,zeroshot,P0360.jpg,Normant,notemannal,hallucination_far_off
+rxhandbd,zeroshot,P0361.jpg,Loxodol,boxed out,hallucination_far_off
+rxhandbd,zeroshot,P0362.jpg,Nexe,vexee .,hallucination_far_off
+rxhandbd,zeroshot,P0363.jpg,Vonocab,ernaxional,hallucination_far_off
+rxhandbd,zeroshot,P0364.jpg,Avolac,Avolac .,correct
+rxhandbd,zeroshot,P0365.jpg,Apeclo,problem solitary,hallucination_far_off
+rxhandbd,zeroshot,P0366.jpg,Prestel,Prestel,correct
+rxhandbd,zeroshot,P0367.jpg,Cinamycin,C inamycin .,minor_ocr_noise
+rxhandbd,zeroshot,P0368.jpg,Flamex,flames .,hallucination_far_off
+rxhandbd,zeroshot,P0369.jpg,Nexpro,Nexpro,correct
+rxhandbd,zeroshot,P0370.jpg,Ezytake,ezytake,correct
+rxhandbd,zeroshot,P0371.jpg,Anustat,August at,hallucination_far_off
+rxhandbd,zeroshot,P0372.jpg,Telmacal,telmacal,correct
+rxhandbd,zeroshot,P0373.jpg,Coralcal,coralcal,correct
+rxhandbd,zeroshot,P0374.jpg,Apeclo,Apeolo,minor_ocr_noise
+rxhandbd,zeroshot,P0375.jpg,Myolax,myolax,correct
+rxhandbd,zeroshot,P0376.jpg,Dexnaaf,dexnaaf,correct
+rxhandbd,zeroshot,P0377.jpg,Raditil,radicti I,hallucination_far_off
+rxhandbd,zeroshot,P0378.jpg,Apeclo,A pecko,minor_ocr_noise
+rxhandbd,zeroshot,P0379.jpg,Myolax,myolax,correct
+rxhandbd,zeroshot,P0380.jpg,Decoral,decoral,correct
+rxhandbd,zeroshot,P0381.jpg,Vonocab,vonocab .,correct
+rxhandbd,zeroshot,P0382.jpg,Fylox,5 Fly lax .,hallucination_far_off
+rxhandbd,zeroshot,P0383.jpg,Montelon,montelon .,correct
+rxhandbd,zeroshot,P0384.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0385.jpg,Dexila,dexila,correct
+rxhandbd,zeroshot,P0386.jpg,Dexnaaf,dexnaf,minor_ocr_noise
+rxhandbd,zeroshot,P0387.jpg,Napxon,napxon .,correct
+rxhandbd,zeroshot,P0388.jpg,Apeclo,A pecko,minor_ocr_noise
+rxhandbd,zeroshot,P0389.jpg,Nexpro,nexpro,correct
+rxhandbd,zeroshot,P0390.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0391.jpg,Rostil,rostil,correct
+rxhandbd,zeroshot,P0392.jpg,Bionic,Bionie .,hallucination_far_off
+rxhandbd,zeroshot,P0393.jpg,Napa,nopa,minor_ocr_noise
+rxhandbd,zeroshot,P0394.jpg,Prestel,Prestel,correct
+rxhandbd,zeroshot,P0395.jpg,Tajenta,Tajenta,correct
+rxhandbd,zeroshot,P0396.jpg,Ecosprin,ecosprin,correct
+rxhandbd,zeroshot,P0397.jpg,Mixit,mixit .,correct
+rxhandbd,zeroshot,P0398.jpg,Medragust,medraguist .,minor_ocr_noise
+rxhandbd,zeroshot,P0399.jpg,Dexnaat,dexnaaf,confusable_wrong_drug
+rxhandbd,zeroshot,P0400.jpg,Tojenta,Tajenta,confusable_wrong_drug
+rxhandbd,zeroshot,P0401.jpg,Diaryl,Diary I,minor_ocr_noise
+rxhandbd,zeroshot,P0402.jpg,Tarlica,Tarlica,correct
+rxhandbd,zeroshot,P0403.jpg,Raditil,raditil .,correct
+rxhandbd,zeroshot,P0404.jpg,Fylox,eylon,hallucination_far_off
+rxhandbd,zeroshot,P0405.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0406.jpg,Dexnaaf,desses of,hallucination_far_off
+rxhandbd,zeroshot,P0407.jpg,myolax,myo lax,minor_ocr_noise
+rxhandbd,zeroshot,P0408.jpg,Raditil,raditil,correct
+rxhandbd,zeroshot,P0409.jpg,Montelon,montelon .,correct
+rxhandbd,zeroshot,P0410.jpg,Dexnaaf,dEX non of,hallucination_far_off
+rxhandbd,zeroshot,P0411.jpg,Apeclo,A peelo,minor_ocr_noise
+rxhandbd,zeroshot,P0412.jpg,Nebanol,nebanol,correct
+rxhandbd,zeroshot,P0413.jpg,Prestel,prustel,minor_ocr_noise
+rxhandbd,zeroshot,P0414.jpg,Gestirenol,chestremol,hallucination_far_off
+rxhandbd,zeroshot,P0415.jpg,Coraleal,coraload,minor_ocr_noise
+rxhandbd,zeroshot,P0416.jpg,Orofer,orofer .,correct
+rxhandbd,zeroshot,P0417.jpg,Dexnaaf,dexna of,minor_ocr_noise
+rxhandbd,zeroshot,P0418.jpg,Xyflo,xyflo .,correct
+rxhandbd,zeroshot,P0419.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0420.jpg,Utifos,units,hallucination_far_off
+rxhandbd,zeroshot,P0421.jpg,Elodep,ex lead up,hallucination_far_off
+rxhandbd,zeroshot,P0422.jpg,Tryptin,trophy .,hallucination_far_off
+rxhandbd,zeroshot,P0423.jpg,Itokine,Stoking,minor_ocr_noise
+rxhandbd,zeroshot,P0424.jpg,Atoz,atop-,hallucination_far_off
+rxhandbd,zeroshot,P0425.jpg,Nexum Mups,nexe snups,hallucination_far_off
+rxhandbd,zeroshot,P0426.jpg,Clavutil,clavutil,correct
+rxhandbd,zeroshot,P0427.jpg,Bilau,Bilau,correct
+rxhandbd,zeroshot,P0428.jpg,Trilock,To block .,hallucination_far_off
+rxhandbd,zeroshot,P0429.jpg,ocof,o cof .,hallucination_far_off
+rxhandbd,zeroshot,P0430.jpg,Cortan,coston .,hallucination_far_off
+rxhandbd,zeroshot,P0431.jpg,Ecosprin,economic,hallucination_far_off
+rxhandbd,zeroshot,P0432.jpg,Rosuva,rosova,minor_ocr_noise
+rxhandbd,zeroshot,P0433.jpg,Telmidip,termidip,minor_ocr_noise
+rxhandbd,zeroshot,P0434.jpg,Zo.mups,20-mm caps,hallucination_far_off
+rxhandbd,zeroshot,P0435.jpg,Levox,levox .,correct
+rxhandbd,zeroshot,P0436.jpg,Bilau,Bilau,correct
+rxhandbd,zeroshot,P0437.jpg,Trilock,triload,minor_ocr_noise
+rxhandbd,zeroshot,P0438.jpg,Brezofil,Boezofil,minor_ocr_noise
+rxhandbd,zeroshot,P0439.jpg,Ambrox,arnbox,hallucination_far_off
+rxhandbd,zeroshot,P0440.jpg,Telmidip,relmidip,minor_ocr_noise
+rxhandbd,zeroshot,P0441.jpg,Nexe,nex-,minor_ocr_noise
+rxhandbd,zeroshot,P0442.jpg,Bilau,themfix,hallucination_far_off
+rxhandbd,zeroshot,P0443.jpg,Itokine,itolcine,minor_ocr_noise
+rxhandbd,zeroshot,P0444.jpg,Nexum Mups,nexe maps,minor_ocr_noise
+rxhandbd,zeroshot,P0445.jpg,Brodil, . Breodil,hallucination_far_off
+rxhandbd,zeroshot,P0446.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0447.jpg,pantonix,paratorsix,hallucination_far_off
+rxhandbd,zeroshot,P0448.jpg,Bilaxe,cigars-D,hallucination_far_off
+rxhandbd,zeroshot,P0449.jpg,Tigover,Tigover .,correct
+rxhandbd,zeroshot,P0450.jpg,Raditril,raditril .,correct
+rxhandbd,zeroshot,P0451.jpg,melpred,melpeded,minor_ocr_noise
+rxhandbd,zeroshot,P0452.jpg,Esohil,esobil,minor_ocr_noise
+rxhandbd,zeroshot,P0453.jpg,Apeelo,A peelo,minor_ocr_noise
+rxhandbd,zeroshot,P0454.jpg,Telmiaip,telmidip,confusable_wrong_drug
+rxhandbd,zeroshot,P0455.jpg,Rivo,Audance,hallucination_far_off
+rxhandbd,zeroshot,P0456.jpg,Bilaxe,Biluxe,minor_ocr_noise
+rxhandbd,zeroshot,P0457.jpg,Napa,napa,correct
+rxhandbd,zeroshot,P0458.jpg,xyflo,ex flip .,hallucination_far_off
+rxhandbd,zeroshot,P0459.jpg,Tuspel,Tuspel,correct
+rxhandbd,zeroshot,P0460.jpg,Esohil,E so'll,hallucination_far_off
+rxhandbd,zeroshot,P0461.jpg,Rivo,ri no,hallucination_far_off
+rxhandbd,zeroshot,P0462.jpg,Adora,pickora,hallucination_far_off
+rxhandbd,zeroshot,P0463.jpg,Nexe,nex-,minor_ocr_noise
+rxhandbd,zeroshot,P0464.jpg,Ligazid,Ligazod,minor_ocr_noise
+rxhandbd,zeroshot,P0465.jpg,Telmiva,Tellmiva,minor_ocr_noise
+rxhandbd,zeroshot,P0466.jpg,Furotil,firstship,hallucination_far_off
+rxhandbd,zeroshot,P0467.jpg,Alatol,Alatsol,minor_ocr_noise
+rxhandbd,zeroshot,P0468.jpg,Coralcal,considered,hallucination_far_off
+rxhandbd,zeroshot,P0469.jpg,Nexe,nexnex,hallucination_far_off
+rxhandbd,zeroshot,P0470.jpg,Itokine,itolcine,minor_ocr_noise
+rxhandbd,zeroshot,P0471.jpg,Tryptin,tryptify .,hallucination_far_off
+rxhandbd,zeroshot,P0472.jpg,Nexe mups,nexe snups .,hallucination_far_off
+rxhandbd,zeroshot,P0473.jpg,Duoblock,duobblock,minor_ocr_noise
+rxhandbd,zeroshot,P0474.jpg,Inderal,indexals,minor_ocr_noise
+rxhandbd,zeroshot,P0475.jpg,Coralcal,coxalcal,minor_ocr_noise
+rxhandbd,zeroshot,P0476.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0477.jpg,Vonocab,Vonocals,minor_ocr_noise
+rxhandbd,zeroshot,P0478.jpg,Gavinaaf,carinaaf,minor_ocr_noise
+rxhandbd,zeroshot,P0479.jpg,Rhinomist,rhinomist .,correct
+rxhandbd,zeroshot,P0480.jpg,Nopxon,Nopxon-,correct
+rxhandbd,zeroshot,P0481.jpg,Carticare,charticare,minor_ocr_noise
+rxhandbd,zeroshot,P0482.jpg,Vonocab,vonoeab .,hallucination_far_off
+rxhandbd,zeroshot,P0483.jpg,Bilaxe,bilaxe .,correct
+rxhandbd,zeroshot,P0484.jpg,Raditil,raditil,correct
+rxhandbd,zeroshot,P0485.jpg,Ralee,Rulee,minor_ocr_noise
+rxhandbd,zeroshot,P0486.jpg,Prestel,prestel .,correct
+rxhandbd,zeroshot,P0487.jpg,Rofixim,rofixim .,correct
+rxhandbd,zeroshot,P0488.jpg,Nexpro,nexpro,correct
+rxhandbd,zeroshot,P0489.jpg,Vonorab,vocorab .,hallucination_far_off
+rxhandbd,zeroshot,P0490.jpg,kinate,kinate,correct
+rxhandbd,zeroshot,P0491.jpg,Algin,Algin .,correct
+rxhandbd,zeroshot,P0492.jpg,ucrafate,U crofate .,hallucination_far_off
+rxhandbd,zeroshot,P0493.jpg,Gavinaaf,Gavinaaf,correct
+rxhandbd,zeroshot,P0494.jpg,Duracef,durance .,hallucination_far_off
+rxhandbd,zeroshot,P0495.jpg,Nexe,nex-,minor_ocr_noise
+rxhandbd,zeroshot,P0496.jpg,Fixgul,fixful,minor_ocr_noise
+rxhandbd,zeroshot,P0497.jpg,Rolac,rolace,minor_ocr_noise
+rxhandbd,zeroshot,P0498.jpg,Napa,napa,correct
+rxhandbd,zeroshot,P0499.jpg,Alcet,alcet .,correct
+rxhandbd,zeroshot,P0500.jpg,Arlin,arzlin .,hallucination_far_off
+rxhandbd,zeroshot,P0501.jpg,Spilac,spilac,correct
+rxhandbd,zeroshot,P0502.jpg,Lactu,laatu,minor_ocr_noise
+rxhandbd,zeroshot,P0503.jpg,Nexe mups,nexemaps,minor_ocr_noise
+rxhandbd,zeroshot,P0504.jpg,Algin,Algin .,correct
+rxhandbd,zeroshot,P0505.jpg,Nexpro,Nempro,minor_ocr_noise
+rxhandbd,zeroshot,P0506.jpg,Kinate,kinate,correct
+rxhandbd,zeroshot,P0507.jpg,Amilin,amilin .,correct
+rxhandbd,zeroshot,P0508.jpg,Utromeg,strong,hallucination_far_off
+rxhandbd,zeroshot,P0509.jpg,Apeelo,Apeelo,correct
+rxhandbd,zeroshot,P0510.jpg,Prestel,Prestel,correct
+rxhandbd,zeroshot,P0511.jpg,Fylox,Fylox,correct
+rxhandbd,zeroshot,P0512.jpg,Avloclav,Arlo elav,hallucination_far_off
+rxhandbd,zeroshot,P0513.jpg,Klabid,klabid,correct
+rxhandbd,zeroshot,P0514.jpg,Dexila,1 1,hallucination_far_off
+rxhandbd,zeroshot,P0515.jpg,Atozen,Atozen .,correct
+rxhandbd,zeroshot,P0516.jpg,Napa,Napa,correct
+rxhandbd,zeroshot,P0517.jpg,Mixit,mixit .,correct
+rxhandbd,zeroshot,P0518.jpg,Normens,normens .,correct
+rxhandbd,zeroshot,P0519.jpg,Raditil,raditil,correct
+rxhandbd,zeroshot,P0520.jpg,Vonocab,Vonocab,correct
+rxhandbd,zeroshot,P0521.jpg,Furotil Plus,Furcottlyptus,hallucination_far_off
+rxhandbd,zeroshot,P0522.jpg,Algin,angi' 12,hallucination_far_off
+rxhandbd,zeroshot,P0523.jpg,hemofix,hemofiz,minor_ocr_noise
+rxhandbd,zeroshot,P0524.jpg,kindical D,kindical ID,minor_ocr_noise
+rxhandbd,zeroshot,P0525.jpg,Gestrenol,chestremol,minor_ocr_noise
+rxhandbd,zeroshot,P0526.jpg,Feup,femp,minor_ocr_noise
+rxhandbd,zeroshot,P0527.jpg,Cidex,cidere .,hallucination_far_off
+rxhandbd,zeroshot,P0528.jpg,Nexpro,nexpro,correct
+rxhandbd,zeroshot,P0529.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0530.jpg,Airmont,airment,minor_ocr_noise
+rxhandbd,zeroshot,P0531.jpg,Sardopa,sardopa,correct
+rxhandbd,zeroshot,P0532.jpg,Adovas,A dovas .,hallucination_far_off
+rxhandbd,zeroshot,P0533.jpg,Normens,norming,minor_ocr_noise
+rxhandbd,zeroshot,P0534.jpg,Loxodol,Loxado !,hallucination_far_off
+rxhandbd,zeroshot,P0535.jpg,Nexe,nixon .,hallucination_far_off
+rxhandbd,zeroshot,P0536.jpg,Seko,se ko,minor_ocr_noise
+rxhandbd,zeroshot,P0537.jpg,Nexe,nex-,minor_ocr_noise
+rxhandbd,zeroshot,P0538.jpg,Indo,I ndo,minor_ocr_noise
+rxhandbd,zeroshot,P0539.jpg,Seko,seck 6,hallucination_far_off
+rxhandbd,zeroshot,P0540.jpg,Nexe,nex-,minor_ocr_noise
+rxhandbd,zeroshot,P0541.jpg,Texit,text,minor_ocr_noise
+rxhandbd,zeroshot,P0542.jpg,Finix,Foni x,hallucination_far_off
+rxhandbd,zeroshot,P0543.jpg,Nexe,Nex-,minor_ocr_noise
+rxhandbd,zeroshot,P0544.jpg,Seko,se ko,minor_ocr_noise
+rxhandbd,zeroshot,P0545.jpg,Seko,S C Ko,hallucination_far_off
+rxhandbd,zeroshot,P0546.jpg,Esonix,fromix .,hallucination_far_off
+rxhandbd,zeroshot,P0547.jpg,K-flex,K. Flam .,other_wrong_real_word
+rxhandbd,zeroshot,P0548.jpg,herpex,"than""plex .",hallucination_far_off
+rxhandbd,zeroshot,P0549.jpg,Indo,In do,minor_ocr_noise
+rxhandbd,zeroshot,P0550.jpg,Nexe,inex e,hallucination_far_off
+rxhandbd,zeroshot,P0551.jpg,Seko,se ko,minor_ocr_noise
+rxhandbd,zeroshot,P0552.jpg,Seko,3 2 Ko,hallucination_far_off
+rxhandbd,zeroshot,P0553.jpg,Nexe,Nexre,minor_ocr_noise
+rxhandbd,zeroshot,P0554.jpg,Nexe,nex-n.,hallucination_far_off
+rxhandbd,zeroshot,P0555.jpg,Seko,5 eko,hallucination_far_off
+rxhandbd,zeroshot,P0556.jpg,Indo,In do,minor_ocr_noise
+rxhandbd,zeroshot,P0557.jpg,Nexe,n ex-n.,hallucination_far_off
+rxhandbd,zeroshot,P0558.jpg,Arlin,Arlin .,correct
+rxhandbd,zeroshot,P0559.jpg,Ceevit,coerit,hallucination_far_off
+rxhandbd,zeroshot,P0560.jpg,Dexnaaf,dexnaaf,correct
+rxhandbd,zeroshot,P0561.jpg,Bilaxe,bilaxe .,correct
+rxhandbd,zeroshot,P0562.jpg,Ezytake,ery take,minor_ocr_noise
+rxhandbd,zeroshot,P0563.jpg,viodin,viol in,minor_ocr_noise
+rxhandbd,zeroshot,P0564.jpg,Anustat,Anustat,correct
+rxhandbd,zeroshot,P0565.jpg,Tryptin,Tripptin .,hallucination_far_off
+rxhandbd,zeroshot,P0566.jpg,Montelon,month,hallucination_far_off
+rxhandbd,zeroshot,P0567.jpg,Lyric,Lyril,minor_ocr_noise
+rxhandbd,zeroshot,P0568.jpg,Dextac,dextac,correct
+rxhandbd,zeroshot,P0569.jpg,Flexi,flexi,correct
+rxhandbd,zeroshot,P0570.jpg,Beklo,bek to,hallucination_far_off
+rxhandbd,zeroshot,P0571.jpg,Xiva,Xiva,correct
+rxhandbd,zeroshot,P0572.jpg,Xyflo,exyfto,hallucination_far_off
+rxhandbd,zeroshot,P0573.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,zeroshot,P0574.jpg,Dexnaaf,desses of,hallucination_far_off
+rxhandbd,zeroshot,P0575.jpg,Frenxit,Frenxit,correct
+rxhandbd,zeroshot,P0576.jpg,Bexitrol,Bescitrol,minor_ocr_noise
+rxhandbd,zeroshot,P0577.jpg,Methicap,methicap,correct
+rxhandbd,zeroshot,P0578.jpg,Cefotil,cefotil,correct
+rxhandbd,zeroshot,P0579.jpg,Nexe,nexe,correct
+rxhandbd,zeroshot,P0580.jpg,HPR DS,H.P.R-DS,hallucination_far_off
+rxhandbd,zeroshot,P0581.jpg,Fixocard,fixocated .,hallucination_far_off
+rxhandbd,zeroshot,P0582.jpg,Telmacal,telmacal,correct
+rxhandbd,zeroshot,P0583.jpg,Tajenta,Tajenta,correct
+rxhandbd,zeroshot,P0584.jpg,Diaryl,diary !,minor_ocr_noise
+rxhandbd,zeroshot,P0585.jpg,mixit,mixit .,correct
+rxhandbd,zeroshot,P0586.jpg,Dexnaaf,dexnaaf,correct
+rxhandbd,zeroshot,P0587.jpg,Povital,povital,correct
+rxhandbd,zeroshot,P0588.jpg,Flamyd,flumyd,minor_ocr_noise
+rxhandbd,zeroshot,P0589.jpg,Delanix,delanix,correct
+rxhandbd,zeroshot,P0590.jpg,Torax,Torax,correct
+rxhandbd,zeroshot,P0591.jpg,Fixgut,fix gift .,hallucination_far_off
+rxhandbd,zeroshot,P0592.jpg,Ratinol,routin of,hallucination_far_off
+rxhandbd,zeroshot,P0593.jpg,Lactomore,lactsmure .,hallucination_far_off
+rxhandbd,zeroshot,P0594.jpg,Novotril,novotnil .,minor_ocr_noise
+rxhandbd,zeroshot,P0595.jpg,Voltalin,voltalism,minor_ocr_noise
+rxhandbd,zeroshot,P0596.jpg,Telmivas,Telmidivors .,hallucination_far_off
+rxhandbd,zeroshot,P0597.jpg,Pantonix,pantomix .,minor_ocr_noise
+rxhandbd,zeroshot,P0598.jpg,fusid,fusid,correct
+rxhandbd,zeroshot,P0599.jpg,Anfree,ainfree,minor_ocr_noise
+rxhandbd,zeroshot,P0600.jpg,Disopan,disopan,correct
+rxhandbd,zeroshot,P0601.jpg,Amlocal,2 Ambrocal,hallucination_far_off
+rxhandbd,zeroshot,P0602.jpg,escilex,ESUILup 5,hallucination_far_off
+rxhandbd,zeroshot,P0603.jpg,Estes,Estes 300,hallucination_far_off
+rxhandbd,zeroshot,P0604.jpg,escilex,whilox .,hallucination_far_off
+rxhandbd,zeroshot,P0605.jpg,Analac,4 Andal,hallucination_far_off
+rxhandbd,zeroshot,P0606.jpg,Zimax,similar,hallucination_far_off
+rxhandbd,zeroshot,P0607.jpg,Dexter,serprise .,hallucination_far_off
+rxhandbd,zeroshot,P0608.jpg,Xinc,xtape .,hallucination_far_off
+rxhandbd,zeroshot,P0609.jpg,Ben A,Donna .,hallucination_far_off
+rxhandbd,zeroshot,P0610.jpg,Dexter,day-Day-,hallucination_far_off
+rxhandbd,zeroshot,P0611.jpg,Vorinox,vorinox .,correct
+rxhandbd,zeroshot,P0612.jpg,Xyril,xysil .,hallucination_far_off
+rxhandbd,zeroshot,P0613.jpg,Fenadin,1 Female .,hallucination_far_off
+rxhandbd,zeroshot,P0614.jpg,Bilan,Brian,hallucination_far_off
+rxhandbd,zeroshot,P0615.jpg,Dexter,denstre,hallucination_far_off
+rxhandbd,zeroshot,P0616.jpg,Deflacort,Deflects,hallucination_far_off
+rxhandbd,zeroshot,P0617.jpg,Estes,Constitut .,hallucination_far_off
+rxhandbd,zeroshot,P0618.jpg,clavusef,clavulf,minor_ocr_noise
+rxhandbd,zeroshot,P0619.jpg,DON A,denavia .,hallucination_far_off
+rxhandbd,zeroshot,P0620.jpg,Panaseng,Pana long,hallucination_far_off
+rxhandbd,zeroshot,P0621.jpg,xinc B,Yinc 13,hallucination_far_off
+rxhandbd,zeroshot,P0622.jpg,M-Kast,rn-luton .,hallucination_far_off
+rxhandbd,zeroshot,P0623.jpg,Bexter,Berxton .,hallucination_far_off
+rxhandbd,zeroshot,P0624.jpg,cildip,cildip .,correct
+rxhandbd,zeroshot,P0625.jpg,Dexter,dexts .,hallucination_far_off
+rxhandbd,zeroshot,P0626.jpg,vorinox,vorinox .,correct
+rxhandbd,zeroshot,P0627.jpg,Xyril,1st round,hallucination_far_off
+rxhandbd,zeroshot,P0628.jpg,Fenadin,- Canadian .,hallucination_far_off
+rxhandbd,zeroshot,P0629.jpg,Bilan,Oosilani,hallucination_far_off
+rxhandbd,zeroshot,P0630.jpg,Dexter,denstre,hallucination_far_off
+rxhandbd,zeroshot,P0631.jpg,Phenocid,phenocid .,correct
+rxhandbd,zeroshot,P0632.jpg,viglimet,deflaws .,hallucination_far_off
+rxhandbd,zeroshot,P0633.jpg,Glymed,viglim f,hallucination_far_off
+rxhandbd,zeroshot,P0634.jpg,Dexter,Glymle .,hallucination_far_off
+rxhandbd,zeroshot,P0635.jpg,ropitor,desortic,hallucination_far_off
+rxhandbd,zeroshot,P0636.jpg,Neuroxen,suppiter .,hallucination_far_off
+rxhandbd,zeroshot,P0637.jpg,methomol,neanoxed,hallucination_far_off
+rxhandbd,zeroshot,P0638.jpg,Relaxo,melho not,hallucination_far_off
+rxhandbd,zeroshot,P0639.jpg,Dexter,nelaxo,hallucination_far_off
+rxhandbd,zeroshot,P0640.jpg,Dexter,2 Dexter .,hallucination_far_off
+rxhandbd,zeroshot,P0641.jpg,Emlidus,6 Embiders .,hallucination_far_off
+rxhandbd,zeroshot,P0642.jpg,lanolin,xremlin .,hallucination_far_off
+rxhandbd,zeroshot,P0643.jpg,m-lucas,m-lulas 10,hallucination_far_off
+rxhandbd,zeroshot,P0644.jpg,DON A,DONA.,hallucination_far_off
+rxhandbd,zeroshot,P0645.jpg,Xinc,xsne .,hallucination_far_off
+rxhandbd,zeroshot,P0646.jpg,norium,Novius,hallucination_far_off
+rxhandbd,zeroshot,P0647.jpg,Nameton,nameton .,correct
+rxhandbd,zeroshot,P0648.jpg,voligel,voliget .,hallucination_far_off
+rxhandbd,zeroshot,P0649.jpg,Gel,gef,hallucination_far_off
+rxhandbd,zeroshot,P0650.jpg,Combicid,censolid,hallucination_far_off
+rxhandbd,zeroshot,P0651.jpg,cildip,crawl .,hallucination_far_off
+rxhandbd,zeroshot,P0652.jpg,Naproxen,neppoxers .,hallucination_far_off
+rxhandbd,zeroshot,P0653.jpg,Salost,saloaf .,hallucination_far_off
+rxhandbd,zeroshot,P0654.jpg,Dexter,depote .,hallucination_far_off
+rxhandbd,zeroshot,P0655.jpg,m-lucas,m-lucenzo,hallucination_far_off
+rxhandbd,zeroshot,P0656.jpg,propenta,forr framing .,hallucination_far_off
+rxhandbd,zeroshot,P0657.jpg,Ecosprin,e cough .,hallucination_far_off
+rxhandbd,zeroshot,P0658.jpg,Dexter,6 Deptic,hallucination_far_off
+rxhandbd,zeroshot,P0659.jpg,Dexter,Denix 7,hallucination_far_off
+rxhandbd,zeroshot,P0660.jpg,Gefapix,6 Crefapix .,hallucination_far_off
+rxhandbd,zeroshot,P0661.jpg,Monas,monasio,minor_ocr_noise
+rxhandbd,zeroshot,P0662.jpg,fexo,5 Ferro,hallucination_far_off
+rxhandbd,zeroshot,P0663.jpg,Dexter,dextacks .,hallucination_far_off
+rxhandbd,zeroshot,P0664.jpg,Neuroxen,waburn f,hallucination_far_off
+rxhandbd,zeroshot,P0665.jpg,m-lucas,ann,hallucination_far_off
+rxhandbd,zeroshot,P0666.jpg,Naproxen,neemoxers .,hallucination_far_off
+rxhandbd,zeroshot,P0667.jpg,radiflex,nailship .,hallucination_far_off
+rxhandbd,zeroshot,P0668.jpg,DON A,hallonlox .,hallucination_far_off
+rxhandbd,zeroshot,P0669.jpg,Dexter,Deptsc 60,hallucination_far_off
+rxhandbd,zeroshot,P0670.jpg,Denixil,denixil,correct
+rxhandbd,zeroshot,P0671.jpg,moxilin,maxilin .,hallucination_far_off
+rxhandbd,zeroshot,P0672.jpg,Montene,monte-,minor_ocr_noise
+rxhandbd,zeroshot,P0673.jpg,Fenadin,fenalin .,hallucination_far_off
+rxhandbd,zeroshot,P0674.jpg,Napa,nepa,minor_ocr_noise
+rxhandbd,zeroshot,P0675.jpg,Dexter,deputee,hallucination_far_off
+rxhandbd,zeroshot,P0676.jpg,probio,trobio,minor_ocr_noise
+rxhandbd,zeroshot,P0677.jpg,DON A,provocate .,hallucination_far_off
+rxhandbd,zeroshot,P0678.jpg,denixil,denixil,correct
+rxhandbd,zeroshot,P0679.jpg,Neuroxen,newspaper .,hallucination_far_off
+rxhandbd,zeroshot,P0680.jpg,Asynta,A Syrsta,hallucination_far_off
+rxhandbd,zeroshot,P0681.jpg,Dexter,2 Deputy .,hallucination_far_off
+rxhandbd,zeroshot,P0682.jpg,Bislol,complete .,hallucination_far_off
+rxhandbd,zeroshot,P0683.jpg,rosu,bed,hallucination_far_off
+rxhandbd,zeroshot,P0684.jpg,Dexter,ness .,hallucination_far_off
+rxhandbd,zeroshot,P0685.jpg,Alfane,B. so farfe .,hallucination_far_off
+rxhandbd,zeroshot,P0686.jpg,DON A,Donna .,hallucination_far_off
+rxhandbd,zeroshot,P0687.jpg,Dexter,greats .,hallucination_far_off
+rxhandbd,zeroshot,P0688.jpg,Avolac,public,hallucination_far_off
+rxhandbd,zeroshot,P0689.jpg,Toramax,Toramex,confusable_wrong_drug
+rxhandbd,zeroshot,P0690.jpg,Relentus,helmbouts .,hallucination_far_off
+rxhandbd,zeroshot,P0691.jpg,arth,earth .,hallucination_far_off
+rxhandbd,zeroshot,P0692.jpg,Neuroxen,nempexes .,hallucination_far_off
+rxhandbd,zeroshot,P0693.jpg,Calbon,cobbons .,hallucination_far_off
+rxhandbd,zeroshot,P0694.jpg,Dexter,2 Depts,hallucination_far_off
+rxhandbd,zeroshot,P0695.jpg,Flamfix,1 Flembox .,hallucination_far_off
+rxhandbd,zeroshot,P0696.jpg,arth,parts in,hallucination_far_off
+rxhandbd,zeroshot,P0697.jpg,Neuroxen,nunaxed,hallucination_far_off
+rxhandbd,zeroshot,P0698.jpg,m-lucas,m-tulas 10,hallucination_far_off
+rxhandbd,zeroshot,P0699.jpg,m-lucas,small sides .,hallucination_far_off
+rxhandbd,zeroshot,P0700.jpg,Fenadin,fenarm .,hallucination_far_off
+rxhandbd,zeroshot,P0701.jpg,Terbikill,1 . Terbihill,hallucination_far_off
+rxhandbd,zeroshot,P0702.jpg,Xyril,1 XXVIII,hallucination_far_off
+rxhandbd,zeroshot,P0703.jpg,Biscor,1st leg,hallucination_far_off
+rxhandbd,zeroshot,P0704.jpg,Dexter,desorts .,hallucination_far_off
+rxhandbd,zeroshot,P0705.jpg,Combicid,carsilid,hallucination_far_off
+rxhandbd,zeroshot,P0706.jpg,Gintex,- Gunthrop .,hallucination_far_off
+rxhandbd,zeroshot,P0707.jpg,Estes,6 Estes,minor_ocr_noise
+rxhandbd,zeroshot,P0708.jpg,Setra,setre .,hallucination_far_off
+rxhandbd,zeroshot,P0709.jpg,Escilex,6 Eslikex,hallucination_far_off
+rxhandbd,zeroshot,P0710.jpg,vigorex,vigorax,minor_ocr_noise
+rxhandbd,zeroshot,P0711.jpg,Dexter,dexter .,correct
+rxhandbd,zeroshot,P0712.jpg,E-vit,e-e-nit .,hallucination_far_off
+rxhandbd,zeroshot,P0713.jpg,m-lucas,man-lucosio,hallucination_far_off
+rxhandbd,zeroshot,P0714.jpg,Ecosprin Plus,elosfrin plus,minor_ocr_noise
+rxhandbd,zeroshot,P0715.jpg,Rivarox,nizoux .,hallucination_far_off
+rxhandbd,zeroshot,P0716.jpg,Bislol,Paislot .,hallucination_far_off
+rxhandbd,zeroshot,P0717.jpg,rosu,noise .,hallucination_far_off
+rxhandbd,zeroshot,P0718.jpg,Dexter,3 Derafee .,hallucination_far_off
+rxhandbd,zeroshot,P0719.jpg,Alfane,offame .,hallucination_far_off
+rxhandbd,zeroshot,P0720.jpg,Neuroxen,nunoxed,hallucination_far_off
+rxhandbd,zeroshot,P0721.jpg,m-lucas,m-luses 10,hallucination_far_off
+rxhandbd,zeroshot,P0722.jpg,Dexter,despite,hallucination_far_off
+rxhandbd,zeroshot,P0723.jpg,Calboral dx,calboned x,hallucination_far_off
+rxhandbd,zeroshot,P0724.jpg,deviry,deixit .,hallucination_far_off
+rxhandbd,zeroshot,P0725.jpg,Bislol,# steam .,hallucination_far_off
+rxhandbd,zeroshot,P0726.jpg,rosu,carve .,hallucination_far_off
+rxhandbd,zeroshot,P0727.jpg,vbi care,upilore .,hallucination_far_off
+rxhandbd,zeroshot,P0728.jpg,ENQ,2 Enq .,hallucination_far_off
+rxhandbd,zeroshot,P0729.jpg,Setra,4 Seta .,hallucination_far_off
+rxhandbd,zeroshot,P0730.jpg,Gintex,6-Gintup .,hallucination_far_off
+rxhandbd,zeroshot,P0731.jpg,vigorex,nigorex,minor_ocr_noise
+rxhandbd,zeroshot,P0732.jpg,Dexter,sex to,hallucination_far_off
+rxhandbd,zeroshot,P0733.jpg,clacef,clauf .,hallucination_far_off
+rxhandbd,zeroshot,P0734.jpg,m-lucas,minton .,hallucination_far_off
+rxhandbd,zeroshot,P0735.jpg,acliz plus,# Derphylline .,hallucination_far_off
+rxhandbd,zeroshot,P0736.jpg,Dexter,deshes .,hallucination_far_off
+rxhandbd,zeroshot,P0737.jpg,Amlip,2 Dexter .,hallucination_far_off
+rxhandbd,zeroshot,P0738.jpg,Cildip,2 Cildip .,hallucination_far_off
+rxhandbd,zeroshot,P0739.jpg,denixil,6 1 Semixil .,hallucination_far_off
+rxhandbd,zeroshot,P0740.jpg,folzin,psIR in,hallucination_far_off
+rxhandbd,zeroshot,P0741.jpg,Calboral,cabbosed,hallucination_far_off
+rxhandbd,zeroshot,P0742.jpg,esprazo,8Bspsago,hallucination_far_off
+rxhandbd,zeroshot,P0743.jpg,Neuro,nienzo,hallucination_far_off
+rxhandbd,zeroshot,P0744.jpg,acliz plus,settigious,hallucination_far_off
+rxhandbd,zeroshot,P0745.jpg,geolan,4exps,hallucination_far_off
+rxhandbd,zeroshot,P0746.jpg,naprox,. Neuprox,hallucination_far_off
+rxhandbd,zeroshot,P0747.jpg,esprazo,6spsazo,minor_ocr_noise
+rxhandbd,zeroshot,P0748.jpg,Napa,nup a,hallucination_far_off
+rxhandbd,zeroshot,P0749.jpg,Zimax,quinex,hallucination_far_off
+rxhandbd,zeroshot,P0750.jpg,montene,moonfall .,hallucination_far_off
+rxhandbd,zeroshot,P0751.jpg,Neuro B,Nenzo's,hallucination_far_off
+rxhandbd,zeroshot,P0752.jpg,Calboral,cellibore .,hallucination_far_off
+rxhandbd,zeroshot,P0753.jpg,Amlip,soni hip,hallucination_far_off
+rxhandbd,zeroshot,P0754.jpg,Calboral,cabboxal,minor_ocr_noise
+rxhandbd,zeroshot,P0755.jpg,folzin,toiletin .,hallucination_far_off
+rxhandbd,zeroshot,P0756.jpg,Esprazo,bes pscero,hallucination_far_off
+rxhandbd,zeroshot,P0757.jpg,viset,nis of,hallucination_far_off
+rxhandbd,zeroshot,P0758.jpg,Neuro-B,nauro's,hallucination_far_off
+rxhandbd,zeroshot,P0759.jpg,Napa,gismos,hallucination_far_off
+rxhandbd,zeroshot,P0760.jpg,Cap. Foldin,calf . Fotzin .,hallucination_far_off
+rxhandbd,zeroshot,P0761.jpg,Calboral,calboxal,minor_ocr_noise
+rxhandbd,zeroshot,P0762.jpg,Nexum,nesum .,hallucination_far_off
+rxhandbd,zeroshot,P0763.jpg,Neuro,nauro,minor_ocr_noise
+rxhandbd,zeroshot,P0764.jpg,Napa,nap a,minor_ocr_noise
+rxhandbd,zeroshot,P0765.jpg,lecor,montenelong .,hallucination_far_off
+rxhandbd,zeroshot,P0766.jpg,Revarol,revapsi .,hallucination_far_off
+rxhandbd,zeroshot,P0767.jpg,Gerhinal,cespens ),hallucination_far_off
+rxhandbd,zeroshot,P0768.jpg,folzin,fol 2 in,hallucination_far_off
+rxhandbd,zeroshot,P0769.jpg,Nexum,vexum .,hallucination_far_off
+rxhandbd,zeroshot,P0770.jpg,Neuro B,nemrors,hallucination_far_off
+rxhandbd,zeroshot,P0771.jpg,Napa,napa,correct
+rxhandbd,zeroshot,P0772.jpg,Calboral,"21"" Mexico",hallucination_far_off
+rxhandbd,zeroshot,P0773.jpg,Montene,montene .,correct
+rxhandbd,zeroshot,P0774.jpg,calboral,All your,hallucination_far_off
+rxhandbd,zeroshot,P0775.jpg,Folzin,naprosy n,hallucination_far_off
+rxhandbd,zeroshot,P0776.jpg,Plus,plus .,correct
+rxhandbd,zeroshot,P0777.jpg,Dekalin,""" DeKalin-",minor_ocr_noise
+rxhandbd,zeroshot,P0778.jpg,Zimax,be spraze .,hallucination_far_off
+rxhandbd,zeroshot,P0779.jpg,Neuro,nendo .,hallucination_far_off
+rxhandbd,zeroshot,P0780.jpg,Calboral,calbostil .,hallucination_far_off
+rxhandbd,zeroshot,P0781.jpg,Flugal,fingal,hallucination_far_off
+rxhandbd,zeroshot,P0782.jpg,lecor,lecox .,hallucination_far_off
+rxhandbd,zeroshot,P0783.jpg,A-fun,A fun .,correct
+rxhandbd,zeroshot,P0784.jpg,Neuro,& Pitsen,hallucination_far_off
+rxhandbd,zeroshot,P0785.jpg,Amlip,amiltp,hallucination_far_off
+rxhandbd,zeroshot,P0786.jpg,calboral,cabbodal,minor_ocr_noise
+rxhandbd,zeroshot,P0787.jpg,Folzin,fol 2vin .,hallucination_far_off
+rxhandbd,zeroshot,P0788.jpg,Nexum,desprato,hallucination_far_off
+rxhandbd,zeroshot,P0789.jpg,visel,visel .,correct
+rxhandbd,zeroshot,P0790.jpg,Neuro,venro,hallucination_far_off
+rxhandbd,zeroshot,P0791.jpg,Calboral,hesps .,hallucination_far_off
+rxhandbd,zeroshot,P0792.jpg,Folzin,folain .,hallucination_far_off
+rxhandbd,zeroshot,P0793.jpg,epitra,maximum maps,hallucination_far_off
+rxhandbd,zeroshot,P0794.jpg,Neuro,nenso,hallucination_far_off
+rxhandbd,zeroshot,P0795.jpg,Calboral,clioney .,hallucination_far_off
+rxhandbd,zeroshot,P0796.jpg,Montene,alongtone .,hallucination_far_off
+rxhandbd,zeroshot,P0797.jpg,Neuro,greens .,hallucination_far_off
+rxhandbd,zeroshot,P0798.jpg,Ambroy,ambrey,minor_ocr_noise
+rxhandbd,zeroshot,P0799.jpg,Desolon,desolon,correct
+rxhandbd,zeroshot,P0800.jpg,pel. Desolan,PEN. DESOLON,minor_ocr_noise
+rxhandbd,zeroshot,P0801.jpg,Barbit,naprods of,hallucination_far_off
+rxhandbd,zeroshot,P0802.jpg,Flugal,pringal,hallucination_far_off
+rxhandbd,zeroshot,P0803.jpg,Naprox,espauzo,hallucination_far_off
+rxhandbd,zeroshot,P0804.jpg,Neuro,venro,hallucination_far_off
+rxhandbd,zeroshot,P0805.jpg,calboral,callboard,hallucination_far_off
+rxhandbd,zeroshot,P0806.jpg,Arnitip,amifip,hallucination_far_off
+rxhandbd,zeroshot,P0807.jpg,epitra,6 petoma,hallucination_far_off
+rxhandbd,zeroshot,P0808.jpg,Folzin,fol 2in .,hallucination_far_off
+rxhandbd,zeroshot,P0809.jpg,Calboral,calbosal .,minor_ocr_noise
+rxhandbd,zeroshot,P0810.jpg,Nexum,nexus,minor_ocr_noise
+rxhandbd,zeroshot,P0811.jpg,Neuro,venso,hallucination_far_off
+rxhandbd,zeroshot,P0812.jpg,Linax,zi'mango,hallucination_far_off
+rxhandbd,zeroshot,P0813.jpg,Montene,ryontene .,hallucination_far_off
+rxhandbd,zeroshot,P0814.jpg,Microgest,Mickey en,hallucination_far_off
+rxhandbd,zeroshot,P0815.jpg,Revatol,revato !,minor_ocr_noise
+rxhandbd,zeroshot,P0816.jpg,Calboral,eal bosal .,hallucination_far_off
+rxhandbd,zeroshot,P0817.jpg,Folzin,folrain .,hallucination_far_off
+rxhandbd,zeroshot,P0818.jpg,Norium,nierum,hallucination_far_off
+rxhandbd,zeroshot,P0819.jpg,viset,vis ep,hallucination_far_off
+rxhandbd,zeroshot,P0820.jpg,Neuro,neuro,correct
+rxhandbd,zeroshot,P0821.jpg,Barbit,garbip,hallucination_far_off
+rxhandbd,zeroshot,P0822.jpg,geolan,genn,hallucination_far_off
+rxhandbd,zeroshot,P0823.jpg,Novelon lite,Novelon life .,minor_ocr_noise
+rxhandbd,zeroshot,P0824.jpg,Seclo,sells .,hallucination_far_off
+rxhandbd,zeroshot,P0825.jpg,Neuro,nauro,minor_ocr_noise
+rxhandbd,zeroshot,P0826.jpg,Calbo,call bo,minor_ocr_noise
+rxhandbd,zeroshot,P0827.jpg,Naprox,naprox,correct
+rxhandbd,zeroshot,P0828.jpg,Flugal,finger,hallucination_far_off
+rxhandbd,zeroshot,P0829.jpg,Lecor,lecox,minor_ocr_noise
+rxhandbd,zeroshot,P0830.jpg,Amitip,Aoni Hipi,hallucination_far_off
+rxhandbd,zeroshot,P0831.jpg,epitra,6th.,hallucination_far_off
+rxhandbd,zeroshot,P0832.jpg,Folzin,folain .,hallucination_far_off
+rxhandbd,zeroshot,P0833.jpg,Calboral,calboral,correct
+rxhandbd,zeroshot,P0834.jpg,Nexum,nexum .,correct
+rxhandbd,zeroshot,P0835.jpg,Neuro,neuro,correct
+rxhandbd,zeroshot,P0836.jpg,Acliz Plus,religious,hallucination_far_off
+rxhandbd,zeroshot,P0837.jpg,geolan,aestos,hallucination_far_off
+rxhandbd,zeroshot,P0838.jpg,Fenix-v,Fesix v.,hallucination_far_off
+rxhandbd,zeroshot,P0839.jpg,Calboral-DX,calboral-ox,minor_ocr_noise
+rxhandbd,zeroshot,P0840.jpg,Nexum,vexum .,hallucination_far_off
+rxhandbd,zeroshot,P0841.jpg,Neuro,vens,hallucination_far_off
+rxhandbd,zeroshot,P0842.jpg,Combicid,combicid,correct
+rxhandbd,zeroshot,P0843.jpg,Ointment,ointment .,correct
+rxhandbd,zeroshot,P0844.jpg,Rupa,Rupa,correct
+rxhandbd,zeroshot,P0845.jpg,Fungidal,fungidal,correct
+rxhandbd,zeroshot,P0846.jpg,demelon,Description,hallucination_far_off
+rxhandbd,zeroshot,P0847.jpg,Nexum,nexus .,hallucination_far_off
+rxhandbd,zeroshot,P0848.jpg,Flugal,fungal,hallucination_far_off
+rxhandbd,zeroshot,P0849.jpg,Dekalin,dekalin .,correct
+rxhandbd,zeroshot,P0850.jpg,Lecor,lelor,minor_ocr_noise
+rxhandbd,zeroshot,P0851.jpg,Amitip,amhip,hallucination_far_off
+rxhandbd,zeroshot,P0852.jpg,Neuro,Nen ro .,hallucination_far_off
+rxhandbd,zeroshot,P0853.jpg,calcor,callor .,hallucination_far_off
+rxhandbd,zeroshot,P0854.jpg,Calboral,cultural,hallucination_far_off
+rxhandbd,zeroshot,P0855.jpg,Folzin,Folzin,correct
+rxhandbd,zeroshot,P0856.jpg,Esprazo,espresso,hallucination_far_off
+rxhandbd,zeroshot,P0857.jpg,Algin,Alge's,hallucination_far_off
+rxhandbd,zeroshot,P0858.jpg,Neuro,nauro,minor_ocr_noise
+rxhandbd,zeroshot,P0859.jpg,Algin Plus,Aclic plus,minor_ocr_noise
+rxhandbd,zeroshot,P0860.jpg,Gestrenol,deserves ),hallucination_far_off
+rxhandbd,zeroshot,P0861.jpg,Calboral,callboard .,hallucination_far_off
+rxhandbd,zeroshot,P0862.jpg,Folzin,folgin .,hallucination_far_off
+rxhandbd,zeroshot,P0863.jpg,Nexum,nesium,hallucination_far_off
+rxhandbd,zeroshot,P0864.jpg,Algin,algus .,hallucination_far_off
+rxhandbd,zeroshot,P0865.jpg,zimax,ninex,hallucination_far_off
+rxhandbd,zeroshot,P0866.jpg,Montene,montene .,correct
+rxhandbd,zeroshot,P0867.jpg,Neuro,nauro,minor_ocr_noise
+rxhandbd,zeroshot,P0868.jpg,Gestrenol,aespenoi,hallucination_far_off
+rxhandbd,zeroshot,P0869.jpg,Flugal,flugal .,correct
+rxhandbd,zeroshot,P0870.jpg,Dekalin,dekalin .,correct
+rxhandbd,zeroshot,P0871.jpg,Naprox,naprox .,correct
+rxhandbd,zeroshot,P0872.jpg,Lecor,levor .,hallucination_far_off
+rxhandbd,zeroshot,P0873.jpg,Seclo,s cello,hallucination_far_off
+rxhandbd,zeroshot,P0874.jpg,Neuro,nauro,minor_ocr_noise
+rxhandbd,zeroshot,P0875.jpg,Calboral,calboral,correct
+rxhandbd,zeroshot,P0876.jpg,Amitip,Aonitiip .,hallucination_far_off
+rxhandbd,zeroshot,P0877.jpg,fenix-v,ferixar .,hallucination_far_off
+rxhandbd,zeroshot,P0878.jpg,Calboral-DX,cabboral-px,minor_ocr_noise
+rxhandbd,zeroshot,P0879.jpg,Nexum,nexum .,correct
+rxhandbd,zeroshot,P0880.jpg,Mups,mups .,correct
+rxhandbd,zeroshot,P0881.jpg,Neuro B,Nimor's,hallucination_far_off
+rxhandbd,zeroshot,P0882.jpg,zimax,zingo,hallucination_far_off
+rxhandbd,zeroshot,P0883.jpg,Montene,montreal,hallucination_far_off
+rxhandbd,zeroshot,P0884.jpg,Gestrenol,"gensens ,",hallucination_far_off
+rxhandbd,zeroshot,P0885.jpg,gascon,garson,hallucination_far_off
+rxhandbd,zeroshot,P0886.jpg,demelon,Description,hallucination_far_off
+rxhandbd,zeroshot,P0887.jpg,Naprox,naprox,correct
+rxhandbd,zeroshot,P0888.jpg,Esprazo,espruzo,minor_ocr_noise
+rxhandbd,zeroshot,P0889.jpg,Neuro,neno,hallucination_far_off
+rxhandbd,zeroshot,P0890.jpg,Calboral,cal Moral,minor_ocr_noise
+rxhandbd,zeroshot,P0891.jpg,Amitip,tonship .,hallucination_far_off
+rxhandbd,zeroshot,P0892.jpg,epitra,geptou .,hallucination_far_off
+rxhandbd,zeroshot,P0893.jpg,D Cap,Dr. Camp,hallucination_far_off
+rxhandbd,zeroshot,P0894.jpg,Calboral,cabboral,minor_ocr_noise
+rxhandbd,zeroshot,P0895.jpg,Folzin,folvin .,hallucination_far_off
+rxhandbd,zeroshot,P0896.jpg,Nexe mups,Nexumnumps,hallucination_far_off
+rxhandbd,zeroshot,P0897.jpg,Algin,Argin .,hallucination_far_off
+rxhandbd,zeroshot,P0898.jpg,Neuro B,nauro-o,hallucination_far_off
+rxhandbd,zeroshot,P0899.jpg,Barbit,barbit .,correct
+rxhandbd,zeroshot,P0900.jpg,gascon,garson,hallucination_far_off
+rxhandbd,zeroshot,P0901.jpg,Gestrenol,gestremo ) .,hallucination_far_off
+rxhandbd,zeroshot,P0902.jpg,Normen,normers .,hallucination_far_off
+rxhandbd,zeroshot,P0903.jpg,AC PR,after,hallucination_far_off
+rxhandbd,zeroshot,P0904.jpg,Seclo,5 Seconds,hallucination_far_off
+rxhandbd,zeroshot,P0905.jpg,Neuro B,neurovo,minor_ocr_noise
+rxhandbd,zeroshot,P0906.jpg,Calboral,cabbool,hallucination_far_off
+rxhandbd,zeroshot,P0907.jpg,Amitip,Amitip,correct
+rxhandbd,zeroshot,P0908.jpg,epitra,"6, E petoca",hallucination_far_off
+rxhandbd,zeroshot,P0909.jpg,Folzin,folain .,hallucination_far_off
+rxhandbd,zeroshot,P0910.jpg,Calboral,cal Moral,minor_ocr_noise
+rxhandbd,zeroshot,P0911.jpg,Esprazo,espsato,minor_ocr_noise
+rxhandbd,zeroshot,P0912.jpg,Algin,Alge's,hallucination_far_off
+rxhandbd,zeroshot,P0913.jpg,Neuro B,Neuro B.,correct
+rxhandbd,zeroshot,P0914.jpg,Gestrenol,geotremol,minor_ocr_noise
+rxhandbd,zeroshot,P0915.jpg,Desolon,Description,hallucination_far_off
+rxhandbd,zeroshot,P0916.jpg,Seclo,seels,hallucination_far_off
+rxhandbd,zeroshot,P0917.jpg,Naprox,vaprox,minor_ocr_noise
+rxhandbd,zeroshot,P0918.jpg,Neuro,veuss .,hallucination_far_off
+rxhandbd,zeroshot,P0919.jpg,Calboral,cambosal,minor_ocr_noise
+rxhandbd,zeroshot,P0920.jpg,Amitip,continitive,hallucination_far_off
+rxhandbd,zeroshot,P0921.jpg,Epitra,epitra,correct
+rxhandbd,zeroshot,P0922.jpg,Flugal,flingal .,hallucination_far_off
+rxhandbd,zeroshot,P0923.jpg,Lecor,year,hallucination_far_off
+rxhandbd,zeroshot,P0924.jpg,Folzin,folain .,hallucination_far_off
+rxhandbd,zeroshot,P0925.jpg,Calboral,calbovel,minor_ocr_noise
+rxhandbd,zeroshot,P0926.jpg,Nexum,nexum,correct
+rxhandbd,zeroshot,P0927.jpg,Algin,green .,hallucination_far_off
+rxhandbd,zeroshot,P0928.jpg,Neuro,neins .,hallucination_far_off
+rxhandbd,zeroshot,P0929.jpg,Gestrenol, ( Gespsenot .,hallucination_far_off
+rxhandbd,zeroshot,P0930.jpg,Fenix-v,Fenix-v.,correct
+rxhandbd,zeroshot,P0931.jpg,Calboral DX,calbosels,hallucination_far_off
+rxhandbd,zeroshot,P0932.jpg,Nexum,nexus .,hallucination_far_off
+rxhandbd,zeroshot,P0933.jpg,Neuro B,vensoms .,hallucination_far_off
+rxhandbd,zeroshot,P0934.jpg,Bukof,Bashott,hallucination_far_off
+rxhandbd,zeroshot,P0935.jpg,Microgest,Mi-iESOYEST,hallucination_far_off
+rxhandbd,zeroshot,P0936.jpg,Folzin,foilatis .,hallucination_far_off
+rxhandbd,zeroshot,P0937.jpg,calboral,calbosal,minor_ocr_noise
+rxhandbd,zeroshot,P0938.jpg,Nexum,vexum .,hallucination_far_off
+rxhandbd,zeroshot,P0939.jpg,Algin,Alge's,hallucination_far_off
+rxhandbd,zeroshot,P0940.jpg,Neuro,Never's,hallucination_far_off
+rxhandbd,zeroshot,P0941.jpg,Acliz Plus,aveloping,hallucination_far_off
+rxhandbd,zeroshot,P0942.jpg,geolan,weapon .,hallucination_far_off
+rxhandbd,zeroshot,P0943.jpg,demelon,Description,hallucination_far_off
+rxhandbd,zeroshot,P0944.jpg,Flugal,finger,hallucination_far_off
+rxhandbd,zeroshot,P0945.jpg,Nexum,nieum,hallucination_far_off
+rxhandbd,zeroshot,P0946.jpg,Naprox,naprox,correct
+rxhandbd,zeroshot,P0947.jpg,Neuro B,Neurova,minor_ocr_noise
+rxhandbd,zeroshot,P0948.jpg,calboral,cent bored,hallucination_far_off
+rxhandbd,zeroshot,P0949.jpg,Epitra,"6, Reprise .",hallucination_far_off
+rxhandbd,zeroshot,P0950.jpg,Amitip,. Amiltip,hallucination_far_off
+rxhandbd,zeroshot,P0951.jpg,Fenix,fenix .,correct
+rxhandbd,zeroshot,P0952.jpg,Calboral-DX,cabboral-box .,hallucination_far_off
+rxhandbd,zeroshot,P0953.jpg,Esprazo,espsuto,hallucination_far_off
+rxhandbd,zeroshot,P0954.jpg,Algin,sigein . ',hallucination_far_off
+rxhandbd,zeroshot,P0955.jpg,Neuro-B,venro B.,hallucination_far_off
+rxhandbd,zeroshot,P0956.jpg,?icrogent,micro-micro-,hallucination_far_off
+rxhandbd,zeroshot,P0957.jpg,Nystat,nystat .,correct
+rxhandbd,zeroshot,P0958.jpg,ESCilex,Seton .,hallucination_far_off
+rxhandbd,zeroshot,P0959.jpg,Escilex,ES Cilep,minor_ocr_noise
+rxhandbd,zeroshot,P0960.jpg,Tryptin,tryptic,minor_ocr_noise
+rxhandbd,zeroshot,P0961.jpg,Nexum,nexum .,correct
+rxhandbd,zeroshot,P0962.jpg,Xyril,0 yard .,hallucination_far_off
+rxhandbd,zeroshot,P0963.jpg,Cantilid,centoilid,minor_ocr_noise
+rxhandbd,zeroshot,P0964.jpg,calboral,bull-top lines .,hallucination_far_off
+rxhandbd,zeroshot,P0965.jpg,Farofew,farofen .,hallucination_far_off
+rxhandbd,zeroshot,P0966.jpg,Malucan,- mLmuch,hallucination_far_off
+rxhandbd,zeroshot,P0967.jpg,Esprazo,propaganda .,hallucination_far_off
+rxhandbd,zeroshot,P0968.jpg,reelife,need life .,hallucination_far_off
+rxhandbd,zeroshot,P0969.jpg,lufilox,subsily,hallucination_far_off
+rxhandbd,zeroshot,P0970.jpg,Avolac,Avolac,correct
+rxhandbd,zeroshot,P0971.jpg,Dexter,2 Dextac .,hallucination_far_off
+rxhandbd,zeroshot,P0972.jpg,Deuxil,denixil,confusable_wrong_drug
+rxhandbd,zeroshot,P0973.jpg,Nystat,nystart .,hallucination_far_off
+rxhandbd,zeroshot,P0974.jpg,Setra,4 Seton .,hallucination_far_off
+rxhandbd,zeroshot,P0975.jpg,Escilex,5 Escilia,hallucination_far_off
+rxhandbd,zeroshot,P0976.jpg,Tryptin,trypts .,hallucination_far_off
+rxhandbd,zeroshot,P0977.jpg,Nexum,weapon .,hallucination_far_off
+rxhandbd,zeroshot,P0978.jpg,Don A,economic,hallucination_far_off
+rxhandbd,zeroshot,P0979.jpg,Xinc,exime .,hallucination_far_off
+rxhandbd,zeroshot,P0980.jpg,Zovia,6 April,hallucination_far_off
+rxhandbd,zeroshot,P0981.jpg,Zymet Pro,zyme-free .,hallucination_far_off
+rxhandbd,zeroshot,P0982.jpg,algin,Alpin .,hallucination_far_off
+rxhandbd,zeroshot,P0983.jpg,Paloxi,peloxi,minor_ocr_noise
+rxhandbd,zeroshot,P0984.jpg,finix,fimix .,confusable_wrong_drug
+rxhandbd,zeroshot,P0985.jpg,cefotil,cefotil .,correct
+rxhandbd,zeroshot,P0986.jpg,FLAMEX,flamex .,correct
+rxhandbd,zeroshot,P0987.jpg,Bilon,Bilom .,hallucination_far_off
+rxhandbd,zeroshot,P0988.jpg,sergel,senegel i,hallucination_far_off
+rxhandbd,zeroshot,P0989.jpg,Bartrocin,Boetsouin .,hallucination_far_off
+rxhandbd,zeroshot,P0990.jpg,ointment,ointment .,correct
+rxhandbd,zeroshot,P0991.jpg,viodin,violion .,hallucination_far_off
+rxhandbd,zeroshot,P0992.jpg,mouthwash,monthwash .,minor_ocr_noise
+rxhandbd,zeroshot,P0993.jpg,Bislol,1 Bristol .,hallucination_far_off
+rxhandbd,zeroshot,P0994.jpg,Ecosprin,6 2 Exodus ),hallucination_far_off
+rxhandbd,zeroshot,P0995.jpg,zithrox,with my,hallucination_far_off
+rxhandbd,zeroshot,P0996.jpg,m-lucas,ment-unknown .,hallucination_far_off
+rxhandbd,zeroshot,P0997.jpg,Dophylin,prophylline,hallucination_far_off
+rxhandbd,zeroshot,P0998.jpg,Neuroxen,nempexmen .,hallucination_far_off
+rxhandbd,zeroshot,P0999.jpg,sergel,1 1 Pregrade .,hallucination_far_off
+rxhandbd,zeroshot,P1000.jpg,celebrex,calbonetix .,hallucination_far_off
+rxhandbd,zeroshot,P1001.jpg,Fusid,1 Fusid .,hallucination_far_off
+rxhandbd,zeroshot,P1002.jpg,Vildamet,wildstreet .,hallucination_far_off
+rxhandbd,zeroshot,P1003.jpg,Emazid,2 Ennais .,hallucination_far_off
+rxhandbd,zeroshot,P1004.jpg,Dexter,dexter .,correct
+rxhandbd,zeroshot,P1005.jpg,algin,3rd St.,hallucination_far_off
+rxhandbd,zeroshot,P1006.jpg,gaviflux,Gainbleley,hallucination_far_off
+rxhandbd,zeroshot,P1007.jpg,uliv,melix .,hallucination_far_off
+rxhandbd,zeroshot,P1008.jpg,prolix,trobio,hallucination_far_off
+rxhandbd,zeroshot,P1009.jpg,Zymet,zymef.,confusable_wrong_drug
+rxhandbd,zeroshot,P1010.jpg,Dexter,desse,hallucination_far_off
+rxhandbd,zeroshot,P1011.jpg,Denixil,desil,hallucination_far_off
+rxhandbd,zeroshot,P1012.jpg,gaviflux,qualifying .,hallucination_far_off
+rxhandbd,zeroshot,P1013.jpg,Bislol,Bristol,minor_ocr_noise
+rxhandbd,zeroshot,P1014.jpg,M-lucas,ment values,hallucination_far_off
+rxhandbd,zeroshot,P1015.jpg,ginoba,leinoba .,hallucination_far_off
+rxhandbd,zeroshot,P1016.jpg,moxilin,moxilin .,correct
+rxhandbd,zeroshot,P1017.jpg,vergon,vergon .,correct
+rxhandbd,zeroshot,P1018.jpg,Denixil,denixil,correct
+rxhandbd,zeroshot,P1019.jpg,m-lucas,Alodic,hallucination_far_off
+rxhandbd,zeroshot,P1020.jpg,viglimet,vigiliment .,hallucination_far_off
+rxhandbd,zeroshot,P1021.jpg,Emlidus,6 Empidus .,hallucination_far_off
+rxhandbd,zeroshot,P1022.jpg,nutrifil,ex wifeful,hallucination_far_off
+rxhandbd,zeroshot,P1023.jpg,Dexter,dexcke .,hallucination_far_off
+rxhandbd,zeroshot,P1024.jpg,Escolex,2 Esculeux .,hallucination_far_off
+rxhandbd,zeroshot,P1025.jpg,Revocit,Revocit .,correct
+rxhandbd,zeroshot,P1026.jpg,Coralcal,consalient,hallucination_far_off
+rxhandbd,zeroshot,P1027.jpg,maxpro,max #,hallucination_far_off
+rxhandbd,zeroshot,P1028.jpg,Neuroxen,newrogen,minor_ocr_noise
+rxhandbd,zeroshot,P1029.jpg,drise,. Dinske .,hallucination_far_off
+rxhandbd,zeroshot,P1030.jpg,m-lucas,men-lucan .,hallucination_far_off
+rxhandbd,zeroshot,P1031.jpg,doxoven,doxoxomen .,hallucination_far_off
+rxhandbd,zeroshot,P1032.jpg,don A,Donna .,hallucination_far_off
+rxhandbd,zeroshot,P1033.jpg,Xinc,exis. xinc.,hallucination_far_off
+rxhandbd,zeroshot,P1034.jpg,Xyril,0 yard,hallucination_far_off
+rxhandbd,zeroshot,P1035.jpg,Dexter,denotes .,hallucination_far_off
+rxhandbd,zeroshot,P1036.jpg,Revocit,revocit .,correct
+rxhandbd,zeroshot,P1037.jpg,ostocal,ostocol .,hallucination_far_off
+rxhandbd,zeroshot,P1038.jpg,maxpro,maxpro,correct
+rxhandbd,zeroshot,P1039.jpg,Algin,32 Griffin,hallucination_far_off
+rxhandbd,zeroshot,P1040.jpg,uliv,melix .,hallucination_far_off
+rxhandbd,zeroshot,P1041.jpg,prolix,tooth .,hallucination_far_off
+rxhandbd,zeroshot,P1042.jpg,Zymet,zymef,confusable_wrong_drug
+rxhandbd,zeroshot,P1043.jpg,Dexter,2 Dexter .,hallucination_far_off
+rxhandbd,zeroshot,P1044.jpg,Denixil,denxil,minor_ocr_noise
+rxhandbd,zeroshot,P1045.jpg,gaviflux,Gaulifters .,hallucination_far_off
+rxhandbd,zeroshot,P1046.jpg,nameton,nameton .,correct
+rxhandbd,zeroshot,P1047.jpg,don A,now . Nails .,hallucination_far_off
+rxhandbd,zeroshot,P1048.jpg,neuroxen,nemaxen .,hallucination_far_off
+rxhandbd,zeroshot,P1049.jpg,doxoven,walland,hallucination_far_off
+rxhandbd,zeroshot,P1050.jpg,Bislol,Por's lot .,hallucination_far_off
+rxhandbd,zeroshot,P1051.jpg,Dexter,2 Despite,hallucination_far_off
+rxhandbd,zeroshot,P1052.jpg,Escilex,2 Esciles .,hallucination_far_off
+rxhandbd,zeroshot,P1053.jpg,Denixil,denixil,correct
+rxhandbd,zeroshot,P1054.jpg,Folita,folita's,minor_ocr_noise
+rxhandbd,zeroshot,P1055.jpg,Barbit,narlist .,hallucination_far_off
+rxhandbd,zeroshot,P1056.jpg,Pregmos,propaganda,hallucination_far_off
+rxhandbd,zeroshot,P1057.jpg,progest,prosept,minor_ocr_noise
+rxhandbd,zeroshot,P1058.jpg,algin,4th,hallucination_far_off
+rxhandbd,zeroshot,P1059.jpg,nexum,mombers .,hallucination_far_off
+rxhandbd,zeroshot,P1060.jpg,algin,Algin .,correct
+rxhandbd,zeroshot,P1061.jpg,Asynta,adapts,hallucination_far_off
+rxhandbd,zeroshot,P1062.jpg,napro,exprofs .,hallucination_far_off
+rxhandbd,zeroshot,P1063.jpg,neuroxen,nemoxum .,hallucination_far_off
+rxhandbd,zeroshot,P1064.jpg,mig,snig,hallucination_far_off
+rxhandbd,zeroshot,P1065.jpg,arth,1 Asth .,hallucination_far_off
+rxhandbd,zeroshot,P1066.jpg,Denixil,senixil .,hallucination_far_off
+rxhandbd,zeroshot,P1067.jpg,zithrox,25throy .,hallucination_far_off
+rxhandbd,zeroshot,P1068.jpg,m-lucas,enduction .,hallucination_far_off
+rxhandbd,zeroshot,P1069.jpg,Cortan,coffaw .,hallucination_far_off
+rxhandbd,zeroshot,P1070.jpg,Fenadin,fenash .,hallucination_far_off
+rxhandbd,zeroshot,P1071.jpg,combicid,conti-,hallucination_far_off
+rxhandbd,zeroshot,P1072.jpg,nexum,xxxum .,hallucination_far_off
+rxhandbd,zeroshot,P1073.jpg,Fusid,1 Fusid .,hallucination_far_off
+rxhandbd,zeroshot,P1074.jpg,neuroxen,neumogen .,hallucination_far_off
+rxhandbd,zeroshot,P1075.jpg,Calboral,cacborne .,hallucination_far_off
+rxhandbd,zeroshot,P1076.jpg,mig,ming,minor_ocr_noise
+rxhandbd,zeroshot,P1077.jpg,methomol,methemost,hallucination_far_off
+rxhandbd,zeroshot,P1078.jpg,Neugalin,xenapolin .,hallucination_far_off
+rxhandbd,zeroshot,P1079.jpg,Dexter,2 Depotac .,hallucination_far_off
+rxhandbd,zeroshot,P1080.jpg,Flexi,afterlies .,hallucination_far_off
+rxhandbd,zeroshot,P1081.jpg,m-lucas,reluffs .,hallucination_far_off
+rxhandbd,zeroshot,P1082.jpg,arth,earth .,hallucination_far_off
+rxhandbd,zeroshot,P1083.jpg,neuroxen,remogen .,hallucination_far_off
+rxhandbd,zeroshot,P1084.jpg,nabumet,nabunct .,hallucination_far_off
+rxhandbd,zeroshot,P1085.jpg,Dexter,dexeter .,hallucination_far_off
+rxhandbd,zeroshot,P1086.jpg,Denixil,denxil,minor_ocr_noise
+rxhandbd,zeroshot,P1087.jpg,Dexter,9mute .,hallucination_far_off
+rxhandbd,zeroshot,P1088.jpg,folive,to live .,hallucination_far_off
+rxhandbd,zeroshot,P1089.jpg,nystat,nrystat .,hallucination_far_off
+rxhandbd,zeroshot,P1090.jpg,Zymef,tyrneffs .,hallucination_far_off
+rxhandbd,zeroshot,P1091.jpg,Dexter,depute,hallucination_far_off
+rxhandbd,zeroshot,P1092.jpg,Escilex,. Escrep,hallucination_far_off
+rxhandbd,zeroshot,P1093.jpg,Asynta,A syrata .,hallucination_far_off
+rxhandbd,zeroshot,P1094.jpg,Beklo,13 exec to,hallucination_far_off
+rxhandbd,zeroshot,P1095.jpg,neuroxen,nemoxers .,hallucination_far_off
+rxhandbd,zeroshot,P1096.jpg,Napa,hallomlox .,hallucination_far_off
+rxhandbd,zeroshot,P1097.jpg,Zimax,2 Relegates .,hallucination_far_off
+rxhandbd,zeroshot,P1098.jpg,Dexter,0 0 0,hallucination_far_off
+rxhandbd,zeroshot,P1099.jpg,Denixil,denix I,minor_ocr_noise
+rxhandbd,zeroshot,P1100.jpg,mig,ming,minor_ocr_noise
+rxhandbd,zeroshot,P1101.jpg,Folzin,calf. F018in.,hallucination_far_off
+rxhandbd,zeroshot,P1102.jpg,Calboral,calboral,correct
+rxhandbd,zeroshot,P1103.jpg,Nexe Mups,Nexuum Nups .,hallucination_far_off
+rxhandbd,zeroshot,P1104.jpg,Neuro B,Neuro's,minor_ocr_noise
+rxhandbd,zeroshot,P1105.jpg,Napa,nap a,minor_ocr_noise
+rxhandbd,zeroshot,P1106.jpg,Zimax,zingo,hallucination_far_off
+rxhandbd,zeroshot,P1107.jpg,Montelon,nonfenelong .,hallucination_far_off
+rxhandbd,zeroshot,P1108.jpg,Revital,revapsi,hallucination_far_off
+rxhandbd,zeroshot,P1109.jpg,gestrenol,geppens ;,hallucination_far_off
+rxhandbd,zeroshot,P1110.jpg,maxrin,maxrin 0.4 .,hallucination_far_off
+rxhandbd,zeroshot,P1111.jpg,Bislol,Poislot s,hallucination_far_off
+rxhandbd,zeroshot,P1112.jpg,neurolin,Neumokin so,hallucination_far_off
+rxhandbd,zeroshot,P1113.jpg,neuroxen,nemoxed .,hallucination_far_off
+rxhandbd,zeroshot,P1114.jpg,Denixil,DenixI 0.5,hallucination_far_off
+rxhandbd,zeroshot,P1115.jpg,Lubilax,"lubbily , 24",hallucination_far_off
+rxhandbd,lora_ceonly,P0001.jpg,Nexcital,Nexcitule,minor_ocr_noise
+rxhandbd,lora_ceonly,P0002.jpg,Inderen,Inderex,minor_ocr_noise
+rxhandbd,lora_ceonly,P0003.jpg,Indever,Indever,correct
+rxhandbd,lora_ceonly,P0004.jpg,Losita,Losita,correct
+rxhandbd,lora_ceonly,P0005.jpg,Rivotril,Rivotril,correct
+rxhandbd,lora_ceonly,P0006.jpg,Asynta,Asynta,correct
+rxhandbd,lora_ceonly,P0007.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0008.jpg,Econate,Econate,correct
+rxhandbd,lora_ceonly,P0009.jpg,Exeptim,Exepri-m,minor_ocr_noise
+rxhandbd,lora_ceonly,P0010.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0011.jpg,Kacin,Kacin,correct
+rxhandbd,lora_ceonly,P0012.jpg,Lubilay,Lubilax,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0013.jpg,T-Cef,T-cef,correct
+rxhandbd,lora_ceonly,P0014.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0015.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0016.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0017.jpg,Traxy,maxy-l500,hallucination_far_off
+rxhandbd,lora_ceonly,P0018.jpg,Setra,Setzu,hallucination_far_off
+rxhandbd,lora_ceonly,P0019.jpg,HPR DS,Tipr D,hallucination_far_off
+rxhandbd,lora_ceonly,P0020.jpg,palpitation,palpitation,correct
+rxhandbd,lora_ceonly,P0021.jpg,Napa,Caloton-thea,hallucination_far_off
+rxhandbd,lora_ceonly,P0022.jpg,Kacin,prolactin,hallucination_far_off
+rxhandbd,lora_ceonly,P0023.jpg,Zimax,Xian-B,hallucination_far_off
+rxhandbd,lora_ceonly,P0024.jpg,Dexter,Zimax,other_wrong_real_word
+rxhandbd,lora_ceonly,P0025.jpg,Panied,Flamex,other_wrong_real_word
+rxhandbd,lora_ceonly,P0026.jpg,Nimens,radicel,hallucination_far_off
+rxhandbd,lora_ceonly,P0027.jpg,Elija,Noomens,hallucination_far_off
+rxhandbd,lora_ceonly,P0028.jpg,Comet,Elija,other_wrong_real_word
+rxhandbd,lora_ceonly,P0029.jpg,bengel,Comet,other_wrong_real_word
+rxhandbd,lora_ceonly,P0030.jpg,Relvis,Bengel,other_wrong_real_word
+rxhandbd,lora_ceonly,P0031.jpg,Medroxy,Relvis,other_wrong_real_word
+rxhandbd,lora_ceonly,P0032.jpg,myosit,Medroxy,other_wrong_real_word
+rxhandbd,lora_ceonly,P0033.jpg,Furocef,Nyosit,hallucination_far_off
+rxhandbd,lora_ceonly,P0034.jpg,Torat,Furocef,other_wrong_real_word
+rxhandbd,lora_ceonly,P0035.jpg,Dextal,torat,other_wrong_real_word
+rxhandbd,lora_ceonly,P0036.jpg,Thyrox,Dexter,other_wrong_real_word
+rxhandbd,lora_ceonly,P0037.jpg,Voligel,Remens,hallucination_far_off
+rxhandbd,lora_ceonly,P0038.jpg,Sandin,RML,hallucination_far_off
+rxhandbd,lora_ceonly,P0039.jpg,Paloxi,Sandin,other_wrong_real_word
+rxhandbd,lora_ceonly,P0040.jpg,Domin,Paloxi,other_wrong_real_word
+rxhandbd,lora_ceonly,P0041.jpg,Sergel,Domin,other_wrong_real_word
+rxhandbd,lora_ceonly,P0042.jpg,HPR DS,Beryl,hallucination_far_off
+rxhandbd,lora_ceonly,P0043.jpg,Nitrofur,Colican,hallucination_far_off
+rxhandbd,lora_ceonly,P0044.jpg,Doxycap,Nitrofur,other_wrong_real_word
+rxhandbd,lora_ceonly,P0045.jpg,???,Doxycap,other_wrong_real_word
+rxhandbd,lora_ceonly,P0046.jpg,Omep,Xp.,hallucination_far_off
+rxhandbd,lora_ceonly,P0047.jpg,Doxycap,Omep,other_wrong_real_word
+rxhandbd,lora_ceonly,P0048.jpg,Robac,Rosucap,hallucination_far_off
+rxhandbd,lora_ceonly,P0049.jpg,Omep,Rotac,hallucination_far_off
+rxhandbd,lora_ceonly,P0050.jpg,CORTAN,Omep,other_wrong_real_word
+rxhandbd,lora_ceonly,P0051.jpg,VASCO,Cortan,other_wrong_real_word
+rxhandbd,lora_ceonly,P0052.jpg,Losectil,vasco,other_wrong_real_word
+rxhandbd,lora_ceonly,P0053.jpg,Paloxi,losectil,other_wrong_real_word
+rxhandbd,lora_ceonly,P0054.jpg,Precabil,Monavas,hallucination_far_off
+rxhandbd,lora_ceonly,P0055.jpg,Fougest,Precortil,hallucination_far_off
+rxhandbd,lora_ceonly,P0056.jpg,Omep,Fpuest,hallucination_far_off
+rxhandbd,lora_ceonly,P0057.jpg,RUPIN,Sulfalin,hallucination_far_off
+rxhandbd,lora_ceonly,P0058.jpg,FEXO,Rupin,other_wrong_real_word
+rxhandbd,lora_ceonly,P0059.jpg,Omep,Fexo,other_wrong_real_word
+rxhandbd,lora_ceonly,P0060.jpg,Maxpro,visco Harbor,hallucination_far_off
+rxhandbd,lora_ceonly,P0061.jpg,Sergel,Maxpro,other_wrong_real_word
+rxhandbd,lora_ceonly,P0062.jpg,Disopan,Sextax,hallucination_far_off
+rxhandbd,lora_ceonly,P0063.jpg,Indever,Desopars,hallucination_far_off
+rxhandbd,lora_ceonly,P0064.jpg,N-MAX SO,Indever,other_wrong_real_word
+rxhandbd,lora_ceonly,P0065.jpg,Sergel,Nmax,hallucination_far_off
+rxhandbd,lora_ceonly,P0066.jpg,Domin,Sexel,hallucination_far_off
+rxhandbd,lora_ceonly,P0067.jpg,Profenid Gel,Biculful,hallucination_far_off
+rxhandbd,lora_ceonly,P0068.jpg,Rudi,Profeud gel,hallucination_far_off
+rxhandbd,lora_ceonly,P0069.jpg,Sergel,Neuro-B,other_wrong_real_word
+rxhandbd,lora_ceonly,P0070.jpg,Indever,Cessew,hallucination_far_off
+rxhandbd,lora_ceonly,P0071.jpg,Etorix,Indoren,hallucination_far_off
+rxhandbd,lora_ceonly,P0072.jpg,Traxyl,Nexcitat,hallucination_far_off
+rxhandbd,lora_ceonly,P0073.jpg,Apeelo,maxy,hallucination_far_off
+rxhandbd,lora_ceonly,P0074.jpg,myolax,Cinem plus,hallucination_far_off
+rxhandbd,lora_ceonly,P0075.jpg,Tenocab,Menanil,hallucination_far_off
+rxhandbd,lora_ceonly,P0076.jpg,Mixit,Tenocab,other_wrong_real_word
+rxhandbd,lora_ceonly,P0077.jpg,Radifil,Bicorjzorplus,hallucination_far_off
+rxhandbd,lora_ceonly,P0078.jpg,Nervion,Idecal D,hallucination_far_off
+rxhandbd,lora_ceonly,P0079.jpg,Povital,Remmo,other_wrong_real_word
+rxhandbd,lora_ceonly,P0080.jpg,Napa,alapdas,hallucination_far_off
+rxhandbd,lora_ceonly,P0081.jpg,Voligel,Nolisef,hallucination_far_off
+rxhandbd,lora_ceonly,P0082.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0083.jpg,Radifil,raditil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0084.jpg,Vonocab,Vonorab,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0085.jpg,Thyrox,Thyrox,correct
+rxhandbd,lora_ceonly,P0086.jpg,Voligel,Voligel,correct
+rxhandbd,lora_ceonly,P0087.jpg,Etorix,Etorix,correct
+rxhandbd,lora_ceonly,P0088.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0089.jpg,myolax,myolax,correct
+rxhandbd,lora_ceonly,P0090.jpg,Nervion,Nervion,correct
+rxhandbd,lora_ceonly,P0091.jpg,Esahil,Esohil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0092.jpg,Kinate,Kinate,correct
+rxhandbd,lora_ceonly,P0093.jpg,Frulae,Frulac,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0094.jpg,Mixit,Mixit,correct
+rxhandbd,lora_ceonly,P0095.jpg,Radifil,raditil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0096.jpg,Nervion,Neprion,minor_ocr_noise
+rxhandbd,lora_ceonly,P0097.jpg,Povital,Povital,correct
+rxhandbd,lora_ceonly,P0098.jpg,Fylox,Fylox,correct
+rxhandbd,lora_ceonly,P0099.jpg,Vonocab,vonocab,correct
+rxhandbd,lora_ceonly,P0100.jpg,Etorix,Etorix,correct
+rxhandbd,lora_ceonly,P0101.jpg,Telmacal,Telmaevl,minor_ocr_noise
+rxhandbd,lora_ceonly,P0102.jpg,Rosu,Rosu,correct
+rxhandbd,lora_ceonly,P0103.jpg,Apeelo,Apeelo,correct
+rxhandbd,lora_ceonly,P0104.jpg,Myolax,myolax,correct
+rxhandbd,lora_ceonly,P0105.jpg,Cora DX,Cora Dx,correct
+rxhandbd,lora_ceonly,P0106.jpg,Vonocab,Dexnaf,hallucination_far_off
+rxhandbd,lora_ceonly,P0107.jpg,Duloxen,Duloxen,correct
+rxhandbd,lora_ceonly,P0108.jpg,Fixocard,fixocared,minor_ocr_noise
+rxhandbd,lora_ceonly,P0109.jpg,Pregan,pregan,correct
+rxhandbd,lora_ceonly,P0110.jpg,Emep,emep,correct
+rxhandbd,lora_ceonly,P0111.jpg,myotax,myotax,correct
+rxhandbd,lora_ceonly,P0112.jpg,Napronex,Napane,hallucination_far_off
+rxhandbd,lora_ceonly,P0113.jpg,Avloclav,Avloclav,correct
+rxhandbd,lora_ceonly,P0114.jpg,Klobid,klabid,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0115.jpg,Montelon,Montelon,correct
+rxhandbd,lora_ceonly,P0116.jpg,Vonocab,Vonocat,minor_ocr_noise
+rxhandbd,lora_ceonly,P0117.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0118.jpg,Esohil,Esohil,correct
+rxhandbd,lora_ceonly,P0119.jpg,Vonocab,vonocab,correct
+rxhandbd,lora_ceonly,P0120.jpg,Kinate,Kinate,correct
+rxhandbd,lora_ceonly,P0121.jpg,Ulfix,ulfix,correct
+rxhandbd,lora_ceonly,P0122.jpg,Montelon,Montelon,correct
+rxhandbd,lora_ceonly,P0123.jpg,Ezylife,Ezylife,correct
+rxhandbd,lora_ceonly,P0124.jpg,TRD Couture,Anustat ofntrent,hallucination_far_off
+rxhandbd,lora_ceonly,P0125.jpg,Turboclav,tuzbodav,hallucination_far_off
+rxhandbd,lora_ceonly,P0126.jpg,Esotid,Esotid,correct
+rxhandbd,lora_ceonly,P0127.jpg,Nortum,Norium,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0128.jpg,Rupa,Rupa,correct
+rxhandbd,lora_ceonly,P0129.jpg,Montelon,Montelum,minor_ocr_noise
+rxhandbd,lora_ceonly,P0130.jpg,Napa one,Napa one,correct
+rxhandbd,lora_ceonly,P0131.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0132.jpg,Prestal,Prustel,minor_ocr_noise
+rxhandbd,lora_ceonly,P0133.jpg,Cidex,Ciden,minor_ocr_noise
+rxhandbd,lora_ceonly,P0134.jpg,Etorix,Etorin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0135.jpg,Esohil,Eschil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0136.jpg,Napa one,Reservix,hallucination_far_off
+rxhandbd,lora_ceonly,P0137.jpg,Nexe,Nexo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0138.jpg,Montelon,Baumax,other_wrong_real_word
+rxhandbd,lora_ceonly,P0139.jpg,Scluprud,Salupred,minor_ocr_noise
+rxhandbd,lora_ceonly,P0140.jpg,Synogen,synogen,correct
+rxhandbd,lora_ceonly,P0141.jpg,Indever,Indevon,minor_ocr_noise
+rxhandbd,lora_ceonly,P0142.jpg,Xyflo,Xyflo,correct
+rxhandbd,lora_ceonly,P0143.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0144.jpg,Dexnaaf,Pexraaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0145.jpg,Xiva,Xiva,correct
+rxhandbd,lora_ceonly,P0146.jpg,Tuspel,Tuspel,correct
+rxhandbd,lora_ceonly,P0147.jpg,Clavutil,Clavutil,correct
+rxhandbd,lora_ceonly,P0148.jpg,TRD Couture,Trdcontine,hallucination_far_off
+rxhandbd,lora_ceonly,P0149.jpg,Merthomol,Metronol,hallucination_far_off
+rxhandbd,lora_ceonly,P0150.jpg,Synogen,Coralcal,other_wrong_real_word
+rxhandbd,lora_ceonly,P0151.jpg,Neurou,Neurov,minor_ocr_noise
+rxhandbd,lora_ceonly,P0152.jpg,Trypt,Tryptin,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0153.jpg,Tuspel,Zo. Mups,other_wrong_real_word
+rxhandbd,lora_ceonly,P0154.jpg,Methox,metrox,minor_ocr_noise
+rxhandbd,lora_ceonly,P0155.jpg,Follison,Follison,correct
+rxhandbd,lora_ceonly,P0156.jpg,Bilaxe,pulfilro,hallucination_far_off
+rxhandbd,lora_ceonly,P0157.jpg,Trilock,Trilock,correct
+rxhandbd,lora_ceonly,P0158.jpg,Rifagut,Bexitol F Bexicep,hallucination_far_off
+rxhandbd,lora_ceonly,P0159.jpg,Costan,Cortan,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0160.jpg,Levox,tevox,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0161.jpg,Cortan,Nexe mups,other_wrong_real_word
+rxhandbd,lora_ceonly,P0162.jpg,Limbix,limbix,correct
+rxhandbd,lora_ceonly,P0163.jpg,Indever,Indnevo,hallucination_far_off
+rxhandbd,lora_ceonly,P0164.jpg,Xyflo,Zo-mups,other_wrong_real_word
+rxhandbd,lora_ceonly,P0165.jpg,Bilaxe,merdau,hallucination_far_off
+rxhandbd,lora_ceonly,P0166.jpg,Beklo,Beklo,correct
+rxhandbd,lora_ceonly,P0167.jpg,Coragen-D,Coragen-D,correct
+rxhandbd,lora_ceonly,P0168.jpg,TRD Coutine,Tab outline,hallucination_far_off
+rxhandbd,lora_ceonly,P0169.jpg,prelics CR,pollus Cr,hallucination_far_off
+rxhandbd,lora_ceonly,P0170.jpg,Cortan,Cortan,correct
+rxhandbd,lora_ceonly,P0171.jpg,Trilock,Trilock,correct
+rxhandbd,lora_ceonly,P0172.jpg,Brezofil,Brazofil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0173.jpg,Dinovo,Nexe mups,other_wrong_real_word
+rxhandbd,lora_ceonly,P0174.jpg,Nexemig,suppu Voltaliy,hallucination_far_off
+rxhandbd,lora_ceonly,P0175.jpg,Elodep,Elockp,hallucination_far_off
+rxhandbd,lora_ceonly,P0176.jpg,Rifagut,Rifagur,minor_ocr_noise
+rxhandbd,lora_ceonly,P0177.jpg,Itoklav,tokin-,hallucination_far_off
+rxhandbd,lora_ceonly,P0178.jpg,Coragen-D,Ursodil,hallucination_far_off
+rxhandbd,lora_ceonly,P0179.jpg,Clavutil,Nexe One,hallucination_far_off
+rxhandbd,lora_ceonly,P0180.jpg,ALOS,acos,minor_ocr_noise
+rxhandbd,lora_ceonly,P0181.jpg,Cortan,Cootax,hallucination_far_off
+rxhandbd,lora_ceonly,P0182.jpg,Bilax,Biku,hallucination_far_off
+rxhandbd,lora_ceonly,P0183.jpg,Trilock,Filace,hallucination_far_off
+rxhandbd,lora_ceonly,P0184.jpg,Nexum Mups,Nexe mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0185.jpg,ocof,Ocof,correct
+rxhandbd,lora_ceonly,P0186.jpg,Dinovo,dinovo,correct
+rxhandbd,lora_ceonly,P0187.jpg,Nexemig,Neuroig,hallucination_far_off
+rxhandbd,lora_ceonly,P0188.jpg,Coragen-D,Coragen-D,correct
+rxhandbd,lora_ceonly,P0189.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P0190.jpg,Rosuva,Zarepro,hallucination_far_off
+rxhandbd,lora_ceonly,P0191.jpg,Termitan,Iintax-M 2-B,hallucination_far_off
+rxhandbd,lora_ceonly,P0192.jpg,Limtab,Duollock,hallucination_far_off
+rxhandbd,lora_ceonly,P0193.jpg,Nexum Mups,Cildip,other_wrong_real_word
+rxhandbd,lora_ceonly,P0194.jpg,Limbix,limbix,correct
+rxhandbd,lora_ceonly,P0195.jpg,Indever,Indavivo,hallucination_far_off
+rxhandbd,lora_ceonly,P0196.jpg,Zo.mups,Zo.oneps,hallucination_far_off
+rxhandbd,lora_ceonly,P0197.jpg,Mervax,Meridan,hallucination_far_off
+rxhandbd,lora_ceonly,P0198.jpg,Beklo,Beko,minor_ocr_noise
+rxhandbd,lora_ceonly,P0199.jpg,Coragen-D,Coragen-D,correct
+rxhandbd,lora_ceonly,P0200.jpg,Clavutil,Clavutil,correct
+rxhandbd,lora_ceonly,P0201.jpg,Trilock,Trifock,minor_ocr_noise
+rxhandbd,lora_ceonly,P0202.jpg,Brezofil,Brezofil,correct
+rxhandbd,lora_ceonly,P0203.jpg,Beklo,Beko,minor_ocr_noise
+rxhandbd,lora_ceonly,P0204.jpg,Rifagut,Rifagut,correct
+rxhandbd,lora_ceonly,P0205.jpg,Zo.mups,Zoonepro,hallucination_far_off
+rxhandbd,lora_ceonly,P0206.jpg,Ecosprin Plus,Cosprin plus,minor_ocr_noise
+rxhandbd,lora_ceonly,P0207.jpg,Rosuva,Rosova,minor_ocr_noise
+rxhandbd,lora_ceonly,P0208.jpg,Termitan,jelmitau,hallucination_far_off
+rxhandbd,lora_ceonly,P0209.jpg,Limtab,Linatab,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0210.jpg,Nexum Mups,Aexe mups,minor_ocr_noise
+rxhandbd,lora_ceonly,P0211.jpg,Clavutil,clavutil,correct
+rxhandbd,lora_ceonly,P0212.jpg,Zolfin,Zolfin,correct
+rxhandbd,lora_ceonly,P0213.jpg,Beklo,Beklo,correct
+rxhandbd,lora_ceonly,P0214.jpg,Zo.mups,Zo mups,correct
+rxhandbd,lora_ceonly,P0215.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P0216.jpg,TRD Coutine,Trd outline,minor_ocr_noise
+rxhandbd,lora_ceonly,P0217.jpg,Methomol,Metaxol,hallucination_far_off
+rxhandbd,lora_ceonly,P0218.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P0219.jpg,Cor algen-D,Coropen-D,hallucination_far_off
+rxhandbd,lora_ceonly,P0220.jpg,DDR,DDR,correct
+rxhandbd,lora_ceonly,P0221.jpg,Elodep,clodep,minor_ocr_noise
+rxhandbd,lora_ceonly,P0222.jpg,Itokine,Itokine,correct
+rxhandbd,lora_ceonly,P0223.jpg,Neuming,Neurovig,hallucination_far_off
+rxhandbd,lora_ceonly,P0224.jpg,Rivotril,Rivotril,correct
+rxhandbd,lora_ceonly,P0225.jpg,Duoblock,Duoblock,correct
+rxhandbd,lora_ceonly,P0226.jpg,Nexum Mups,nexe mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0227.jpg,Clavutil,Clavutil,correct
+rxhandbd,lora_ceonly,P0228.jpg,Itokine,Itokine,correct
+rxhandbd,lora_ceonly,P0229.jpg,Cinaron,Cinaroy,minor_ocr_noise
+rxhandbd,lora_ceonly,P0230.jpg,Zo.mups,Zo-mups,correct
+rxhandbd,lora_ceonly,P0231.jpg,Atoz,Atoz poevving,hallucination_far_off
+rxhandbd,lora_ceonly,P0232.jpg,Sup. Apelz,Super Apeter,hallucination_far_off
+rxhandbd,lora_ceonly,P0233.jpg,TRD Coutine,Trd Coutine,correct
+rxhandbd,lora_ceonly,P0234.jpg,Beklo,Bekio,minor_ocr_noise
+rxhandbd,lora_ceonly,P0235.jpg,Coralgue D,Coragen-D,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0236.jpg,Zo.mups,Zo-mepro,hallucination_far_off
+rxhandbd,lora_ceonly,P0237.jpg,Ancor,Ancor,correct
+rxhandbd,lora_ceonly,P0238.jpg,Itolcive,Itolcine,minor_ocr_noise
+rxhandbd,lora_ceonly,P0239.jpg,Zolfin,Zolfin,correct
+rxhandbd,lora_ceonly,P0240.jpg,Coralgue D,Coragen-D,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0241.jpg,Trilock,Triloaxo,hallucination_far_off
+rxhandbd,lora_ceonly,P0242.jpg,Zo.mups,Zw-nupro,hallucination_far_off
+rxhandbd,lora_ceonly,P0243.jpg,Levox,Levox,correct
+rxhandbd,lora_ceonly,P0244.jpg,Bilan,Bilau,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0245.jpg,Trilock,Trilock,correct
+rxhandbd,lora_ceonly,P0246.jpg,Ambrox,ambrox,correct
+rxhandbd,lora_ceonly,P0247.jpg,Nexum Mups,nexe Onepro-D,hallucination_far_off
+rxhandbd,lora_ceonly,P0248.jpg,Texit,texit,correct
+rxhandbd,lora_ceonly,P0249.jpg,Esomand,escomax,hallucination_far_off
+rxhandbd,lora_ceonly,P0250.jpg,Rolac,rolec,minor_ocr_noise
+rxhandbd,lora_ceonly,P0251.jpg,Max dol,Maxdup,hallucination_far_off
+rxhandbd,lora_ceonly,P0252.jpg,Bromen,bionen,hallucination_far_off
+rxhandbd,lora_ceonly,P0253.jpg,Nexum Mups,nexemups,minor_ocr_noise
+rxhandbd,lora_ceonly,P0254.jpg,Macrobac,Macroba,minor_ocr_noise
+rxhandbd,lora_ceonly,P0255.jpg,Periodontitis,Periodontis,minor_ocr_noise
+rxhandbd,lora_ceonly,P0256.jpg,clavutil,Clavutil,correct
+rxhandbd,lora_ceonly,P0257.jpg,Esover,Esmer,hallucination_far_off
+rxhandbd,lora_ceonly,P0258.jpg,Rolac,Medri,hallucination_far_off
+rxhandbd,lora_ceonly,P0259.jpg,Lestarin,Lestarin,correct
+rxhandbd,lora_ceonly,P0260.jpg,clavutil,Ceavutil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0261.jpg,Esmax,Espour,hallucination_far_off
+rxhandbd,lora_ceonly,P0262.jpg,Renova,Removil,hallucination_far_off
+rxhandbd,lora_ceonly,P0263.jpg,Maxsulin,Toxit (,hallucination_far_off
+rxhandbd,lora_ceonly,P0264.jpg,Brezofil,Bosofil,hallucination_far_off
+rxhandbd,lora_ceonly,P0265.jpg,Adovas,Adoras,minor_ocr_noise
+rxhandbd,lora_ceonly,P0266.jpg,Monfast,morve-ext,hallucination_far_off
+rxhandbd,lora_ceonly,P0267.jpg,Texit,texit,correct
+rxhandbd,lora_ceonly,P0268.jpg,Esover,esoven,minor_ocr_noise
+rxhandbd,lora_ceonly,P0269.jpg,Fixcef Plus,Fixef plus,minor_ocr_noise
+rxhandbd,lora_ceonly,P0270.jpg,Nexum Mups,nexe mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0271.jpg,Texit,texit,correct
+rxhandbd,lora_ceonly,P0272.jpg,Alfix,alafix,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0273.jpg,Monfast,Monfast,correct
+rxhandbd,lora_ceonly,P0274.jpg,Neopenem,Neopenem,correct
+rxhandbd,lora_ceonly,P0275.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0276.jpg,Emprelina,Emparima,hallucination_far_off
+rxhandbd,lora_ceonly,P0277.jpg,Maxsulin,Maxulin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0278.jpg,Rolip,Rolip,correct
+rxhandbd,lora_ceonly,P0279.jpg,Clonapex,Clonapex,correct
+rxhandbd,lora_ceonly,P0280.jpg,Denvar,denvar,correct
+rxhandbd,lora_ceonly,P0281.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0282.jpg,Flux,Flux,correct
+rxhandbd,lora_ceonly,P0283.jpg,Filmet,Filmet,correct
+rxhandbd,lora_ceonly,P0284.jpg,??r??,torax,other_wrong_real_word
+rxhandbd,lora_ceonly,P0285.jpg,??r??,torax,other_wrong_real_word
+rxhandbd,lora_ceonly,P0286.jpg,Fixgut,firegut,minor_ocr_noise
+rxhandbd,lora_ceonly,P0287.jpg,Clonapex,clonapex,correct
+rxhandbd,lora_ceonly,P0288.jpg,Ceevit,Ceevit,correct
+rxhandbd,lora_ceonly,P0289.jpg,Rafino Forte,ratinol Forte,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0290.jpg,Voltalin,Voptalin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0291.jpg,BONID,Bonid,correct
+rxhandbd,lora_ceonly,P0292.jpg,Avolac,Fenton,hallucination_far_off
+rxhandbd,lora_ceonly,P0293.jpg,Xinc B,xinc,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0294.jpg,Nexum Mups,Merriemaps,hallucination_far_off
+rxhandbd,lora_ceonly,P0295.jpg,Texit,texit,correct
+rxhandbd,lora_ceonly,P0296.jpg,Fixgut,Cecinos,hallucination_far_off
+rxhandbd,lora_ceonly,P0297.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0298.jpg,Alc,Al,hallucination_far_off
+rxhandbd,lora_ceonly,P0299.jpg,Indo,Injection,other_wrong_real_word
+rxhandbd,lora_ceonly,P0300.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0301.jpg,Seko,Seko,correct
+rxhandbd,lora_ceonly,P0302.jpg,Nexe,Nexe,correct
+rxhandbd,lora_ceonly,P0303.jpg,Zolivox,Zolivox,correct
+rxhandbd,lora_ceonly,P0304.jpg,Renova,remova,minor_ocr_noise
+rxhandbd,lora_ceonly,P0305.jpg,Fixgut,fixgut,correct
+rxhandbd,lora_ceonly,P0306.jpg,Alcet,Alcet,correct
+rxhandbd,lora_ceonly,P0307.jpg,Spilac,Spilac,correct
+rxhandbd,lora_ceonly,P0308.jpg,Avolac,Avolac,correct
+rxhandbd,lora_ceonly,P0309.jpg,Abicon,abican,minor_ocr_noise
+rxhandbd,lora_ceonly,P0310.jpg,Xyflo,Xyflo,correct
+rxhandbd,lora_ceonly,P0311.jpg,Kindial-D,kindful,hallucination_far_off
+rxhandbd,lora_ceonly,P0312.jpg,Hemofir FZ,Hemativ,hallucination_far_off
+rxhandbd,lora_ceonly,P0313.jpg,Brodin,Brodn,minor_ocr_noise
+rxhandbd,lora_ceonly,P0314.jpg,Gestrenol,Crestrenol,minor_ocr_noise
+rxhandbd,lora_ceonly,P0315.jpg,Feup,Femp,minor_ocr_noise
+rxhandbd,lora_ceonly,P0316.jpg,Ossica,Ossica,correct
+rxhandbd,lora_ceonly,P0317.jpg,Esohil,Esofil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0318.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0319.jpg,mixit,Mixit,correct
+rxhandbd,lora_ceonly,P0320.jpg,Vonocab,Vonocab,correct
+rxhandbd,lora_ceonly,P0321.jpg,Itogut,Itogut,correct
+rxhandbd,lora_ceonly,P0322.jpg,Syrup,Syrup,correct
+rxhandbd,lora_ceonly,P0323.jpg,Etorix,Eforix,minor_ocr_noise
+rxhandbd,lora_ceonly,P0324.jpg,Ezytake,Ezytake,correct
+rxhandbd,lora_ceonly,P0325.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0326.jpg,Palonron,Paloron,minor_ocr_noise
+rxhandbd,lora_ceonly,P0327.jpg,Vonocab,vonocab,correct
+rxhandbd,lora_ceonly,P0328.jpg,kinate,Kinate,correct
+rxhandbd,lora_ceonly,P0329.jpg,Gintabac,Gentabac,minor_ocr_noise
+rxhandbd,lora_ceonly,P0330.jpg,Tuspel,Taspel,minor_ocr_noise
+rxhandbd,lora_ceonly,P0331.jpg,Telmocal,Telmoral,minor_ocr_noise
+rxhandbd,lora_ceonly,P0332.jpg,mixit,Mixit,correct
+rxhandbd,lora_ceonly,P0333.jpg,Rodiflex,radiflex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0334.jpg,Napxon,Nupxon,minor_ocr_noise
+rxhandbd,lora_ceonly,P0335.jpg,Dexnaaf,Dexnaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0336.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0337.jpg,Esohil,Esotil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0338.jpg,Vonocab,Vonoeab,minor_ocr_noise
+rxhandbd,lora_ceonly,P0339.jpg,Ruchigold,Ruehigold,minor_ocr_noise
+rxhandbd,lora_ceonly,P0340.jpg,Ciponaal,Cipronasf,hallucination_far_off
+rxhandbd,lora_ceonly,P0341.jpg,Azibact,Azibact,correct
+rxhandbd,lora_ceonly,P0342.jpg,Vonocab,vonocab,correct
+rxhandbd,lora_ceonly,P0343.jpg,Eylox,Eylox,correct
+rxhandbd,lora_ceonly,P0344.jpg,Montelon,Montelon,correct
+rxhandbd,lora_ceonly,P0345.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0346.jpg,Neopem,Neopen,minor_ocr_noise
+rxhandbd,lora_ceonly,P0347.jpg,Napxon,Nopxon,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0348.jpg,Xiva,Xiva,correct
+rxhandbd,lora_ceonly,P0349.jpg,xyflo,Xyflo,correct
+rxhandbd,lora_ceonly,P0350.jpg,Esohil,Eschil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0351.jpg,Kinate,Kinate,correct
+rxhandbd,lora_ceonly,P0352.jpg,Alben,alben,correct
+rxhandbd,lora_ceonly,P0353.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0354.jpg,Vonocab,Vomo cab,minor_ocr_noise
+rxhandbd,lora_ceonly,P0355.jpg,Sponocid,Spincid,minor_ocr_noise
+rxhandbd,lora_ceonly,P0356.jpg,Texit,texit,correct
+rxhandbd,lora_ceonly,P0357.jpg,Katomor,Ketoman,hallucination_far_off
+rxhandbd,lora_ceonly,P0358.jpg,Purtisol,pultical,hallucination_far_off
+rxhandbd,lora_ceonly,P0359.jpg,Monas,Monas,correct
+rxhandbd,lora_ceonly,P0360.jpg,Normant,Normanal,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0361.jpg,Loxodol,Loxodol,correct
+rxhandbd,lora_ceonly,P0362.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0363.jpg,Vonocab,Eriaxcal,hallucination_far_off
+rxhandbd,lora_ceonly,P0364.jpg,Avolac,Avolac,correct
+rxhandbd,lora_ceonly,P0365.jpg,Apeclo,vhoden solution,hallucination_far_off
+rxhandbd,lora_ceonly,P0366.jpg,Prestel,Prestel,correct
+rxhandbd,lora_ceonly,P0367.jpg,Cinamycin,Cinamycin,correct
+rxhandbd,lora_ceonly,P0368.jpg,Flamex,flame,minor_ocr_noise
+rxhandbd,lora_ceonly,P0369.jpg,Nexpro,Nexpro,correct
+rxhandbd,lora_ceonly,P0370.jpg,Ezytake,Ezytake,correct
+rxhandbd,lora_ceonly,P0371.jpg,Anustat,Anustat,correct
+rxhandbd,lora_ceonly,P0372.jpg,Telmacal,telmacal,correct
+rxhandbd,lora_ceonly,P0373.jpg,Coralcal,Coralcal,correct
+rxhandbd,lora_ceonly,P0374.jpg,Apeclo,Apeclo,correct
+rxhandbd,lora_ceonly,P0375.jpg,Myolax,myolax,correct
+rxhandbd,lora_ceonly,P0376.jpg,Dexnaaf,Dexnaaf,correct
+rxhandbd,lora_ceonly,P0377.jpg,Raditil,radifil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0378.jpg,Apeclo,Apeclo,correct
+rxhandbd,lora_ceonly,P0379.jpg,Myolax,myolax,correct
+rxhandbd,lora_ceonly,P0380.jpg,Decoral,Decoral,correct
+rxhandbd,lora_ceonly,P0381.jpg,Vonocab,Vonocab,correct
+rxhandbd,lora_ceonly,P0382.jpg,Fylox,Fylox,correct
+rxhandbd,lora_ceonly,P0383.jpg,Montelon,Montelon,correct
+rxhandbd,lora_ceonly,P0384.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0385.jpg,Dexila,Dexilu,minor_ocr_noise
+rxhandbd,lora_ceonly,P0386.jpg,Dexnaaf,Dexnaaf,correct
+rxhandbd,lora_ceonly,P0387.jpg,Napxon,Napxon,correct
+rxhandbd,lora_ceonly,P0388.jpg,Apeclo,Apec,hallucination_far_off
+rxhandbd,lora_ceonly,P0389.jpg,Nexpro,Nexpro,correct
+rxhandbd,lora_ceonly,P0390.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0391.jpg,Rostil,Rosil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0392.jpg,Bionic,Bionie,minor_ocr_noise
+rxhandbd,lora_ceonly,P0393.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0394.jpg,Prestel,Prustel,minor_ocr_noise
+rxhandbd,lora_ceonly,P0395.jpg,Tajenta,Tajesta,minor_ocr_noise
+rxhandbd,lora_ceonly,P0396.jpg,Ecosprin,Ecosprin,correct
+rxhandbd,lora_ceonly,P0397.jpg,Mixit,Mixit,correct
+rxhandbd,lora_ceonly,P0398.jpg,Medragust,Medragast,minor_ocr_noise
+rxhandbd,lora_ceonly,P0399.jpg,Dexnaat,dexraaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0400.jpg,Tojenta,Tajenta,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0401.jpg,Diaryl,Diary,minor_ocr_noise
+rxhandbd,lora_ceonly,P0402.jpg,Tarlica,Tarlica,correct
+rxhandbd,lora_ceonly,P0403.jpg,Raditil,raditil,correct
+rxhandbd,lora_ceonly,P0404.jpg,Fylox,Fylox,correct
+rxhandbd,lora_ceonly,P0405.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0406.jpg,Dexnaaf,Devnacf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0407.jpg,myolax,myolax,correct
+rxhandbd,lora_ceonly,P0408.jpg,Raditil,raditil,correct
+rxhandbd,lora_ceonly,P0409.jpg,Montelon,Montelon,correct
+rxhandbd,lora_ceonly,P0410.jpg,Dexnaaf,Dexnaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0411.jpg,Apeclo,Apeclo,correct
+rxhandbd,lora_ceonly,P0412.jpg,Nebanol,Nebanol,correct
+rxhandbd,lora_ceonly,P0413.jpg,Prestel,prustel,minor_ocr_noise
+rxhandbd,lora_ceonly,P0414.jpg,Gestirenol,Gestrenol,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0415.jpg,Coraleal,Coraleal,correct
+rxhandbd,lora_ceonly,P0416.jpg,Orofer,orofer,correct
+rxhandbd,lora_ceonly,P0417.jpg,Dexnaaf,Dexnaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0418.jpg,Xyflo,Xyflo,correct
+rxhandbd,lora_ceonly,P0419.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0420.jpg,Utifos,vifos,hallucination_far_off
+rxhandbd,lora_ceonly,P0421.jpg,Elodep,elodep,correct
+rxhandbd,lora_ceonly,P0422.jpg,Tryptin,Triphy,hallucination_far_off
+rxhandbd,lora_ceonly,P0423.jpg,Itokine,tokine,minor_ocr_noise
+rxhandbd,lora_ceonly,P0424.jpg,Atoz,atoz premium,hallucination_far_off
+rxhandbd,lora_ceonly,P0425.jpg,Nexum Mups,Nexe mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0426.jpg,Clavutil,clavutil,correct
+rxhandbd,lora_ceonly,P0427.jpg,Bilau,Bilau,correct
+rxhandbd,lora_ceonly,P0428.jpg,Trilock,Trilock,correct
+rxhandbd,lora_ceonly,P0429.jpg,ocof,Ocof,correct
+rxhandbd,lora_ceonly,P0430.jpg,Cortan,Costan,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0431.jpg,Ecosprin,6cospsin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0432.jpg,Rosuva,Rosova,minor_ocr_noise
+rxhandbd,lora_ceonly,P0433.jpg,Telmidip,Termidip,minor_ocr_noise
+rxhandbd,lora_ceonly,P0434.jpg,Zo.mups,Zo-mups,correct
+rxhandbd,lora_ceonly,P0435.jpg,Levox,Levox,correct
+rxhandbd,lora_ceonly,P0436.jpg,Bilau,Bilau,correct
+rxhandbd,lora_ceonly,P0437.jpg,Trilock,Triloul,minor_ocr_noise
+rxhandbd,lora_ceonly,P0438.jpg,Brezofil,Boezofil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0439.jpg,Ambrox,ambrox,correct
+rxhandbd,lora_ceonly,P0440.jpg,Telmidip,telmidip,correct
+rxhandbd,lora_ceonly,P0441.jpg,Nexe,Nexe,correct
+rxhandbd,lora_ceonly,P0442.jpg,Bilau,Haemfix,hallucination_far_off
+rxhandbd,lora_ceonly,P0443.jpg,Itokine,Itokine,correct
+rxhandbd,lora_ceonly,P0444.jpg,Nexum Mups,Nexe mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0445.jpg,Brodil,Breodil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0446.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0447.jpg,pantonix,Pantorax,minor_ocr_noise
+rxhandbd,lora_ceonly,P0448.jpg,Bilaxe,glens-D,hallucination_far_off
+rxhandbd,lora_ceonly,P0449.jpg,Tigover,Tigover,correct
+rxhandbd,lora_ceonly,P0450.jpg,Raditril,raditril,correct
+rxhandbd,lora_ceonly,P0451.jpg,melpred,Melpred,correct
+rxhandbd,lora_ceonly,P0452.jpg,Esohil,Esotil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0453.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0454.jpg,Telmiaip,telmidip,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0455.jpg,Rivo,Ardance,hallucination_far_off
+rxhandbd,lora_ceonly,P0456.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0457.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0458.jpg,xyflo,Xylo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0459.jpg,Tuspel,Taspel,minor_ocr_noise
+rxhandbd,lora_ceonly,P0460.jpg,Esohil,Eso-hil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0461.jpg,Rivo,Rivo,correct
+rxhandbd,lora_ceonly,P0462.jpg,Adora,Adova,minor_ocr_noise
+rxhandbd,lora_ceonly,P0463.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0464.jpg,Ligazid,ligazod,minor_ocr_noise
+rxhandbd,lora_ceonly,P0465.jpg,Telmiva,Telmiva,correct
+rxhandbd,lora_ceonly,P0466.jpg,Furotil,Futatil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0467.jpg,Alatol,Alatsol,minor_ocr_noise
+rxhandbd,lora_ceonly,P0468.jpg,Coralcal,Comsred,hallucination_far_off
+rxhandbd,lora_ceonly,P0469.jpg,Nexe,Nexe,correct
+rxhandbd,lora_ceonly,P0470.jpg,Itokine,Itoline,minor_ocr_noise
+rxhandbd,lora_ceonly,P0471.jpg,Tryptin,Tryptic,minor_ocr_noise
+rxhandbd,lora_ceonly,P0472.jpg,Nexe mups,Nexe mups,correct
+rxhandbd,lora_ceonly,P0473.jpg,Duoblock,Duoloek,minor_ocr_noise
+rxhandbd,lora_ceonly,P0474.jpg,Inderal,Indore,hallucination_far_off
+rxhandbd,lora_ceonly,P0475.jpg,Coralcal,Coxacal,minor_ocr_noise
+rxhandbd,lora_ceonly,P0476.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0477.jpg,Vonocab,Vonocab,correct
+rxhandbd,lora_ceonly,P0478.jpg,Gavinaaf,Gavinauf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0479.jpg,Rhinomist,rhinomist,correct
+rxhandbd,lora_ceonly,P0480.jpg,Nopxon,Nopxon,correct
+rxhandbd,lora_ceonly,P0481.jpg,Carticare,Corticare,minor_ocr_noise
+rxhandbd,lora_ceonly,P0482.jpg,Vonocab,vonoeab,minor_ocr_noise
+rxhandbd,lora_ceonly,P0483.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0484.jpg,Raditil,raditil,correct
+rxhandbd,lora_ceonly,P0485.jpg,Ralee,Rulce,hallucination_far_off
+rxhandbd,lora_ceonly,P0486.jpg,Prestel,prestel,correct
+rxhandbd,lora_ceonly,P0487.jpg,Rofixim,Rofixim,correct
+rxhandbd,lora_ceonly,P0488.jpg,Nexpro,Nexpro,correct
+rxhandbd,lora_ceonly,P0489.jpg,Vonorab,Vonorab,correct
+rxhandbd,lora_ceonly,P0490.jpg,kinate,Kinate,correct
+rxhandbd,lora_ceonly,P0491.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0492.jpg,ucrafate,Ucrofate,minor_ocr_noise
+rxhandbd,lora_ceonly,P0493.jpg,Gavinaaf,Gavin A,minor_ocr_noise
+rxhandbd,lora_ceonly,P0494.jpg,Duracef,duracel,minor_ocr_noise
+rxhandbd,lora_ceonly,P0495.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0496.jpg,Fixgul,fixgul,correct
+rxhandbd,lora_ceonly,P0497.jpg,Rolac,Rolac,correct
+rxhandbd,lora_ceonly,P0498.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0499.jpg,Alcet,alcet,correct
+rxhandbd,lora_ceonly,P0500.jpg,Arlin,Arlin,correct
+rxhandbd,lora_ceonly,P0501.jpg,Spilac,Spilac,correct
+rxhandbd,lora_ceonly,P0502.jpg,Lactu,lactu,correct
+rxhandbd,lora_ceonly,P0503.jpg,Nexe mups,Nexemups,minor_ocr_noise
+rxhandbd,lora_ceonly,P0504.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0505.jpg,Nexpro,Neuro,other_wrong_real_word
+rxhandbd,lora_ceonly,P0506.jpg,Kinate,Kinate,correct
+rxhandbd,lora_ceonly,P0507.jpg,Amilin,Amilin,correct
+rxhandbd,lora_ceonly,P0508.jpg,Utromeg,Utromeg,correct
+rxhandbd,lora_ceonly,P0509.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0510.jpg,Prestel,prestel,correct
+rxhandbd,lora_ceonly,P0511.jpg,Fylox,Fylox,correct
+rxhandbd,lora_ceonly,P0512.jpg,Avloclav,Avlo elav,minor_ocr_noise
+rxhandbd,lora_ceonly,P0513.jpg,Klabid,klabid,correct
+rxhandbd,lora_ceonly,P0514.jpg,Dexila,Dexila,correct
+rxhandbd,lora_ceonly,P0515.jpg,Atozen,Atozen,correct
+rxhandbd,lora_ceonly,P0516.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0517.jpg,Mixit,Mixit,correct
+rxhandbd,lora_ceonly,P0518.jpg,Normens,Normens,correct
+rxhandbd,lora_ceonly,P0519.jpg,Raditil,raditil,correct
+rxhandbd,lora_ceonly,P0520.jpg,Vonocab,vorocab,minor_ocr_noise
+rxhandbd,lora_ceonly,P0521.jpg,Furotil Plus,Furottiplus,minor_ocr_noise
+rxhandbd,lora_ceonly,P0522.jpg,Algin,Agin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0523.jpg,hemofix,Hemofiz,minor_ocr_noise
+rxhandbd,lora_ceonly,P0524.jpg,kindical D,kindical,minor_ocr_noise
+rxhandbd,lora_ceonly,P0525.jpg,Gestrenol,Crestrenol,minor_ocr_noise
+rxhandbd,lora_ceonly,P0526.jpg,Feup,Femp,minor_ocr_noise
+rxhandbd,lora_ceonly,P0527.jpg,Cidex,Cietex,hallucination_far_off
+rxhandbd,lora_ceonly,P0528.jpg,Nexpro,nexpro,correct
+rxhandbd,lora_ceonly,P0529.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0530.jpg,Airmont,airmont,correct
+rxhandbd,lora_ceonly,P0531.jpg,Sardopa,Sardopa,correct
+rxhandbd,lora_ceonly,P0532.jpg,Adovas,Adovas,correct
+rxhandbd,lora_ceonly,P0533.jpg,Normens,Normens,correct
+rxhandbd,lora_ceonly,P0534.jpg,Loxodol,Loxado,minor_ocr_noise
+rxhandbd,lora_ceonly,P0535.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0536.jpg,Seko,Seko,correct
+rxhandbd,lora_ceonly,P0537.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0538.jpg,Indo,Indo,correct
+rxhandbd,lora_ceonly,P0539.jpg,Seko,Sek,minor_ocr_noise
+rxhandbd,lora_ceonly,P0540.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0541.jpg,Texit,texit,correct
+rxhandbd,lora_ceonly,P0542.jpg,Finix,Inix,minor_ocr_noise
+rxhandbd,lora_ceonly,P0543.jpg,Nexe,Nexe,correct
+rxhandbd,lora_ceonly,P0544.jpg,Seko,Seko,correct
+rxhandbd,lora_ceonly,P0545.jpg,Seko,Scko,minor_ocr_noise
+rxhandbd,lora_ceonly,P0546.jpg,Esonix,Fronix,hallucination_far_off
+rxhandbd,lora_ceonly,P0547.jpg,K-flex,K- flam,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0548.jpg,herpex,Chen-plex,hallucination_far_off
+rxhandbd,lora_ceonly,P0549.jpg,Indo,In.do,minor_ocr_noise
+rxhandbd,lora_ceonly,P0550.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0551.jpg,Seko,Seko,correct
+rxhandbd,lora_ceonly,P0552.jpg,Seko,Seko,correct
+rxhandbd,lora_ceonly,P0553.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0554.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0555.jpg,Seko,Seko,correct
+rxhandbd,lora_ceonly,P0556.jpg,Indo,Injection,other_wrong_real_word
+rxhandbd,lora_ceonly,P0557.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0558.jpg,Arlin,Arlin,correct
+rxhandbd,lora_ceonly,P0559.jpg,Ceevit,Coevit,minor_ocr_noise
+rxhandbd,lora_ceonly,P0560.jpg,Dexnaaf,Dexnaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0561.jpg,Bilaxe,bilaxe,correct
+rxhandbd,lora_ceonly,P0562.jpg,Ezytake,Ezytake,correct
+rxhandbd,lora_ceonly,P0563.jpg,viodin,Violin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0564.jpg,Anustat,Anustat,correct
+rxhandbd,lora_ceonly,P0565.jpg,Tryptin,Tryptin,correct
+rxhandbd,lora_ceonly,P0566.jpg,Montelon,Monteln,minor_ocr_noise
+rxhandbd,lora_ceonly,P0567.jpg,Lyric,Lyril,minor_ocr_noise
+rxhandbd,lora_ceonly,P0568.jpg,Dextac,dextac,correct
+rxhandbd,lora_ceonly,P0569.jpg,Flexi,flexi,correct
+rxhandbd,lora_ceonly,P0570.jpg,Beklo,Beklo,correct
+rxhandbd,lora_ceonly,P0571.jpg,Xiva,Xiva,correct
+rxhandbd,lora_ceonly,P0572.jpg,Xyflo,Xyfto,minor_ocr_noise
+rxhandbd,lora_ceonly,P0573.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,lora_ceonly,P0574.jpg,Dexnaaf,Devraaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0575.jpg,Frenxit,Frenxit,correct
+rxhandbd,lora_ceonly,P0576.jpg,Bexitrol,Bexitrol,correct
+rxhandbd,lora_ceonly,P0577.jpg,Methicap,methicap,correct
+rxhandbd,lora_ceonly,P0578.jpg,Cefotil,Cefotil,correct
+rxhandbd,lora_ceonly,P0579.jpg,Nexe,nexe,correct
+rxhandbd,lora_ceonly,P0580.jpg,HPR DS,H-PR-D,hallucination_far_off
+rxhandbd,lora_ceonly,P0581.jpg,Fixocard,Fixocated,minor_ocr_noise
+rxhandbd,lora_ceonly,P0582.jpg,Telmacal,telmacal,correct
+rxhandbd,lora_ceonly,P0583.jpg,Tajenta,Tajenta,correct
+rxhandbd,lora_ceonly,P0584.jpg,Diaryl,Diaryl,correct
+rxhandbd,lora_ceonly,P0585.jpg,mixit,Mixit,correct
+rxhandbd,lora_ceonly,P0586.jpg,Dexnaaf,Dexraaf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0587.jpg,Povital,Povital,correct
+rxhandbd,lora_ceonly,P0588.jpg,Flamyd,Flumad,hallucination_far_off
+rxhandbd,lora_ceonly,P0589.jpg,Delanix,Delanix,correct
+rxhandbd,lora_ceonly,P0590.jpg,Torax,torax,correct
+rxhandbd,lora_ceonly,P0591.jpg,Fixgut,fixgut,correct
+rxhandbd,lora_ceonly,P0592.jpg,Ratinol,Routinol,minor_ocr_noise
+rxhandbd,lora_ceonly,P0593.jpg,Lactomore,lactmore,minor_ocr_noise
+rxhandbd,lora_ceonly,P0594.jpg,Novotril,Novotril,correct
+rxhandbd,lora_ceonly,P0595.jpg,Voltalin,voltalin,correct
+rxhandbd,lora_ceonly,P0596.jpg,Telmivas,Telmivas,correct
+rxhandbd,lora_ceonly,P0597.jpg,Pantonix,Pantonix,correct
+rxhandbd,lora_ceonly,P0598.jpg,fusid,fusid,correct
+rxhandbd,lora_ceonly,P0599.jpg,Anfree,Ainface,hallucination_far_off
+rxhandbd,lora_ceonly,P0600.jpg,Disopan,disopen,minor_ocr_noise
+rxhandbd,lora_ceonly,P0601.jpg,Amlocal,Androlal,hallucination_far_off
+rxhandbd,lora_ceonly,P0602.jpg,escilex,Eslilep,minor_ocr_noise
+rxhandbd,lora_ceonly,P0603.jpg,Estes,Estes,correct
+rxhandbd,lora_ceonly,P0604.jpg,escilex,whlilax,hallucination_far_off
+rxhandbd,lora_ceonly,P0605.jpg,Analac,Audac,hallucination_far_off
+rxhandbd,lora_ceonly,P0606.jpg,Zimax,Zimax,correct
+rxhandbd,lora_ceonly,P0607.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0608.jpg,Xinc,Xtac,hallucination_far_off
+rxhandbd,lora_ceonly,P0609.jpg,Ben A,Don A,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0610.jpg,Dexter,Dwytac,hallucination_far_off
+rxhandbd,lora_ceonly,P0611.jpg,Vorinox,varinax,minor_ocr_noise
+rxhandbd,lora_ceonly,P0612.jpg,Xyril,xyril,correct
+rxhandbd,lora_ceonly,P0613.jpg,Fenadin,Feralin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0614.jpg,Bilan,Bilan,correct
+rxhandbd,lora_ceonly,P0615.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0616.jpg,Deflacort,Daflav,hallucination_far_off
+rxhandbd,lora_ceonly,P0617.jpg,Estes,Cantilid,other_wrong_real_word
+rxhandbd,lora_ceonly,P0618.jpg,clavusef,Clavulf,minor_ocr_noise
+rxhandbd,lora_ceonly,P0619.jpg,DON A,Don A,correct
+rxhandbd,lora_ceonly,P0620.jpg,Panaseng,Pamaling,hallucination_far_off
+rxhandbd,lora_ceonly,P0621.jpg,xinc B,xinc,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0622.jpg,M-Kast,m-lucas,other_wrong_real_word
+rxhandbd,lora_ceonly,P0623.jpg,Bexter,Bexton,hallucination_far_off
+rxhandbd,lora_ceonly,P0624.jpg,cildip,Cildip,correct
+rxhandbd,lora_ceonly,P0625.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0626.jpg,vorinox,Vorinox,correct
+rxhandbd,lora_ceonly,P0627.jpg,Xyril,xyril,correct
+rxhandbd,lora_ceonly,P0628.jpg,Fenadin,Feralin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0629.jpg,Bilan,Bilan,correct
+rxhandbd,lora_ceonly,P0630.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0631.jpg,Phenocid,Phenoid,minor_ocr_noise
+rxhandbd,lora_ceonly,P0632.jpg,viglimet,Daflav,hallucination_far_off
+rxhandbd,lora_ceonly,P0633.jpg,Glymed,viglimf,hallucination_far_off
+rxhandbd,lora_ceonly,P0634.jpg,Dexter,Glymfc,hallucination_far_off
+rxhandbd,lora_ceonly,P0635.jpg,ropitor,Dexter,other_wrong_real_word
+rxhandbd,lora_ceonly,P0636.jpg,Neuroxen,Nupiter,hallucination_far_off
+rxhandbd,lora_ceonly,P0637.jpg,methomol,Neuroxen,other_wrong_real_word
+rxhandbd,lora_ceonly,P0638.jpg,Relaxo,methof,hallucination_far_off
+rxhandbd,lora_ceonly,P0639.jpg,Dexter,relaxo,other_wrong_real_word
+rxhandbd,lora_ceonly,P0640.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0641.jpg,Emlidus,Emliclas,hallucination_far_off
+rxhandbd,lora_ceonly,P0642.jpg,lanolin,Neurolin,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0643.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0644.jpg,DON A,Don A,correct
+rxhandbd,lora_ceonly,P0645.jpg,Xinc,xinc,correct
+rxhandbd,lora_ceonly,P0646.jpg,norium,Norium,correct
+rxhandbd,lora_ceonly,P0647.jpg,Nameton,Nameton,correct
+rxhandbd,lora_ceonly,P0648.jpg,voligel,Voliget,minor_ocr_noise
+rxhandbd,lora_ceonly,P0649.jpg,Gel,gef,hallucination_far_off
+rxhandbd,lora_ceonly,P0650.jpg,Combicid,Ceuralid,hallucination_far_off
+rxhandbd,lora_ceonly,P0651.jpg,cildip,Cranj,hallucination_far_off
+rxhandbd,lora_ceonly,P0652.jpg,Naproxen,Neuroxen,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0653.jpg,Salost,Salost,correct
+rxhandbd,lora_ceonly,P0654.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0655.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0656.jpg,propenta,Frifract,hallucination_far_off
+rxhandbd,lora_ceonly,P0657.jpg,Ecosprin,Ecosprin,correct
+rxhandbd,lora_ceonly,P0658.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0659.jpg,Dexter,Devix,hallucination_far_off
+rxhandbd,lora_ceonly,P0660.jpg,Gefapix,Crefapix,minor_ocr_noise
+rxhandbd,lora_ceonly,P0661.jpg,Monas,Monasio,minor_ocr_noise
+rxhandbd,lora_ceonly,P0662.jpg,fexo,Ferro,hallucination_far_off
+rxhandbd,lora_ceonly,P0663.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0664.jpg,Neuroxen,Nafumf,hallucination_far_off
+rxhandbd,lora_ceonly,P0665.jpg,m-lucas,Arin,hallucination_far_off
+rxhandbd,lora_ceonly,P0666.jpg,Naproxen,Neemoxew,other_wrong_real_word
+rxhandbd,lora_ceonly,P0667.jpg,radiflex,Naliflex,minor_ocr_noise
+rxhandbd,lora_ceonly,P0668.jpg,DON A,halloul Bx,hallucination_far_off
+rxhandbd,lora_ceonly,P0669.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0670.jpg,Denixil,Denixil,correct
+rxhandbd,lora_ceonly,P0671.jpg,moxilin,maxilin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0672.jpg,Montene,Montane,minor_ocr_noise
+rxhandbd,lora_ceonly,P0673.jpg,Fenadin,Feralin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0674.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0675.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0676.jpg,probio,Tablet,other_wrong_real_word
+rxhandbd,lora_ceonly,P0677.jpg,DON A,Don A,correct
+rxhandbd,lora_ceonly,P0678.jpg,denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0679.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P0680.jpg,Asynta,Asyn A,minor_ocr_noise
+rxhandbd,lora_ceonly,P0681.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0682.jpg,Bislol,Capsule,other_wrong_real_word
+rxhandbd,lora_ceonly,P0683.jpg,rosu,bed,hallucination_far_off
+rxhandbd,lora_ceonly,P0684.jpg,Dexter,Nest,hallucination_far_off
+rxhandbd,lora_ceonly,P0685.jpg,Alfane,B. soforf,hallucination_far_off
+rxhandbd,lora_ceonly,P0686.jpg,DON A,Don A,correct
+rxhandbd,lora_ceonly,P0687.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0688.jpg,Avolac,Auolac,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0689.jpg,Toramax,Toramex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0690.jpg,Relentus,relent,minor_ocr_noise
+rxhandbd,lora_ceonly,P0691.jpg,arth,Arth,correct
+rxhandbd,lora_ceonly,P0692.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P0693.jpg,Calbon,Calboral,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0694.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0695.jpg,Flamfix,Flemfix,minor_ocr_noise
+rxhandbd,lora_ceonly,P0696.jpg,arth,Arth,correct
+rxhandbd,lora_ceonly,P0697.jpg,Neuroxen,Nuroxen,minor_ocr_noise
+rxhandbd,lora_ceonly,P0698.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0699.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0700.jpg,Fenadin,Fenasw,hallucination_far_off
+rxhandbd,lora_ceonly,P0701.jpg,Terbikill,Terbilil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0702.jpg,Xyril,Xyri,minor_ocr_noise
+rxhandbd,lora_ceonly,P0703.jpg,Biscor,Biscat,hallucination_far_off
+rxhandbd,lora_ceonly,P0704.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0705.jpg,Combicid,Calrid,hallucination_far_off
+rxhandbd,lora_ceonly,P0706.jpg,Gintex,Gintep,minor_ocr_noise
+rxhandbd,lora_ceonly,P0707.jpg,Estes,Estes,correct
+rxhandbd,lora_ceonly,P0708.jpg,Setra,Setra,correct
+rxhandbd,lora_ceonly,P0709.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0710.jpg,vigorex,vigorex,correct
+rxhandbd,lora_ceonly,P0711.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0712.jpg,E-vit,E-nif,hallucination_far_off
+rxhandbd,lora_ceonly,P0713.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0714.jpg,Ecosprin Plus,Ecosfriw plus,minor_ocr_noise
+rxhandbd,lora_ceonly,P0715.jpg,Rivarox,Nisrox,hallucination_far_off
+rxhandbd,lora_ceonly,P0716.jpg,Bislol,Biscor,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0717.jpg,rosu,Nosu,minor_ocr_noise
+rxhandbd,lora_ceonly,P0718.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0719.jpg,Alfane,Alface,minor_ocr_noise
+rxhandbd,lora_ceonly,P0720.jpg,Neuroxen,Neuroxew,minor_ocr_noise
+rxhandbd,lora_ceonly,P0721.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0722.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0723.jpg,Calboral dx,Calbonem,hallucination_far_off
+rxhandbd,lora_ceonly,P0724.jpg,deviry,Devix,hallucination_far_off
+rxhandbd,lora_ceonly,P0725.jpg,Bislol,Stern,hallucination_far_off
+rxhandbd,lora_ceonly,P0726.jpg,rosu,Cave,hallucination_far_off
+rxhandbd,lora_ceonly,P0727.jpg,vbi care,Vbilove,hallucination_far_off
+rxhandbd,lora_ceonly,P0728.jpg,ENQ,Enjection,hallucination_far_off
+rxhandbd,lora_ceonly,P0729.jpg,Setra,Seta,minor_ocr_noise
+rxhandbd,lora_ceonly,P0730.jpg,Gintex,Gintup,hallucination_far_off
+rxhandbd,lora_ceonly,P0731.jpg,vigorex,vigorex,correct
+rxhandbd,lora_ceonly,P0732.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0733.jpg,clacef,Clauf,hallucination_far_off
+rxhandbd,lora_ceonly,P0734.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P0735.jpg,acliz plus,Dorygfline,hallucination_far_off
+rxhandbd,lora_ceonly,P0736.jpg,Dexter,Deshas,hallucination_far_off
+rxhandbd,lora_ceonly,P0737.jpg,Amlip,Dexter,other_wrong_real_word
+rxhandbd,lora_ceonly,P0738.jpg,Cildip,Cildip,correct
+rxhandbd,lora_ceonly,P0739.jpg,denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0740.jpg,folzin,Polzin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0741.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0742.jpg,esprazo,Bsprazo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0743.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0744.jpg,acliz plus,Filipins,hallucination_far_off
+rxhandbd,lora_ceonly,P0745.jpg,geolan,Geoton,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0746.jpg,naprox,Neprox,minor_ocr_noise
+rxhandbd,lora_ceonly,P0747.jpg,esprazo,Gsprazo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0748.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0749.jpg,Zimax,Zincx,hallucination_far_off
+rxhandbd,lora_ceonly,P0750.jpg,montene,Montcal,hallucination_far_off
+rxhandbd,lora_ceonly,P0751.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0752.jpg,Calboral,Ceulboril,hallucination_far_off
+rxhandbd,lora_ceonly,P0753.jpg,Amlip,Anifip,hallucination_far_off
+rxhandbd,lora_ceonly,P0754.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0755.jpg,folzin,Kolgin,hallucination_far_off
+rxhandbd,lora_ceonly,P0756.jpg,Esprazo,Espsazo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0757.jpg,viset,Nisef,hallucination_far_off
+rxhandbd,lora_ceonly,P0758.jpg,Neuro-B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0759.jpg,Napa,Gexos,hallucination_far_off
+rxhandbd,lora_ceonly,P0760.jpg,Cap. Foldin,Caps Folzin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0761.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0762.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0763.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0764.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0765.jpg,lecor,Montenelong,hallucination_far_off
+rxhandbd,lora_ceonly,P0766.jpg,Revarol,Revapsi,hallucination_far_off
+rxhandbd,lora_ceonly,P0767.jpg,Gerhinal,Cespre-B,hallucination_far_off
+rxhandbd,lora_ceonly,P0768.jpg,folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0769.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0770.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0771.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P0772.jpg,Calboral,Nmax,hallucination_far_off
+rxhandbd,lora_ceonly,P0773.jpg,Montene,Montene,correct
+rxhandbd,lora_ceonly,P0774.jpg,calboral,All your,hallucination_far_off
+rxhandbd,lora_ceonly,P0775.jpg,Folzin,Naproxyn,hallucination_far_off
+rxhandbd,lora_ceonly,P0776.jpg,Plus,Plus,correct
+rxhandbd,lora_ceonly,P0777.jpg,Dekalin,Dekalin,correct
+rxhandbd,lora_ceonly,P0778.jpg,Zimax,Bsprazo,hallucination_far_off
+rxhandbd,lora_ceonly,P0779.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0780.jpg,Calboral,Calbotil,minor_ocr_noise
+rxhandbd,lora_ceonly,P0781.jpg,Flugal,Flugal,correct
+rxhandbd,lora_ceonly,P0782.jpg,lecor,Lecor,correct
+rxhandbd,lora_ceonly,P0783.jpg,A-fun,A-fun,correct
+rxhandbd,lora_ceonly,P0784.jpg,Neuro,Ceptsu,hallucination_far_off
+rxhandbd,lora_ceonly,P0785.jpg,Amlip,Amitip,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0786.jpg,calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0787.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0788.jpg,Nexum,Esprazo,other_wrong_real_word
+rxhandbd,lora_ceonly,P0789.jpg,visel,Visel,correct
+rxhandbd,lora_ceonly,P0790.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0791.jpg,Calboral,Ceups,hallucination_far_off
+rxhandbd,lora_ceonly,P0792.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0793.jpg,epitra,Nexum mups,other_wrong_real_word
+rxhandbd,lora_ceonly,P0794.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0795.jpg,Calboral,clionex,hallucination_far_off
+rxhandbd,lora_ceonly,P0796.jpg,Montene,Montene,correct
+rxhandbd,lora_ceonly,P0797.jpg,Neuro,Ciecos,hallucination_far_off
+rxhandbd,lora_ceonly,P0798.jpg,Ambroy,ambrix,hallucination_far_off
+rxhandbd,lora_ceonly,P0799.jpg,Desolon,Desolon,correct
+rxhandbd,lora_ceonly,P0800.jpg,pel. Desolan,pau. Desolon,minor_ocr_noise
+rxhandbd,lora_ceonly,P0801.jpg,Barbit,Naprox,other_wrong_real_word
+rxhandbd,lora_ceonly,P0802.jpg,Flugal,pingcal,hallucination_far_off
+rxhandbd,lora_ceonly,P0803.jpg,Naprox,Bsprazo,hallucination_far_off
+rxhandbd,lora_ceonly,P0804.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0805.jpg,calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0806.jpg,Arnitip,Amitip,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0807.jpg,epitra,Epitura,minor_ocr_noise
+rxhandbd,lora_ceonly,P0808.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0809.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0810.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0811.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0812.jpg,Linax,Zionax,hallucination_far_off
+rxhandbd,lora_ceonly,P0813.jpg,Montene,Montene,correct
+rxhandbd,lora_ceonly,P0814.jpg,Microgest,Microgen,minor_ocr_noise
+rxhandbd,lora_ceonly,P0815.jpg,Revatol,Revato,minor_ocr_noise
+rxhandbd,lora_ceonly,P0816.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0817.jpg,Folzin,Fotrin,hallucination_far_off
+rxhandbd,lora_ceonly,P0818.jpg,Norium,Nexum,other_wrong_real_word
+rxhandbd,lora_ceonly,P0819.jpg,viset,visep,minor_ocr_noise
+rxhandbd,lora_ceonly,P0820.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0821.jpg,Barbit,Barbit,correct
+rxhandbd,lora_ceonly,P0822.jpg,geolan,German,hallucination_far_off
+rxhandbd,lora_ceonly,P0823.jpg,Novelon lite,Novelon Lite,correct
+rxhandbd,lora_ceonly,P0824.jpg,Seclo,Sells,hallucination_far_off
+rxhandbd,lora_ceonly,P0825.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0826.jpg,Calbo,Calbo,correct
+rxhandbd,lora_ceonly,P0827.jpg,Naprox,Naprox,correct
+rxhandbd,lora_ceonly,P0828.jpg,Flugal,Fungal,hallucination_far_off
+rxhandbd,lora_ceonly,P0829.jpg,Lecor,Lecor,correct
+rxhandbd,lora_ceonly,P0830.jpg,Amitip,Aonitip,minor_ocr_noise
+rxhandbd,lora_ceonly,P0831.jpg,epitra,Epitra,correct
+rxhandbd,lora_ceonly,P0832.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0833.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0834.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0835.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0836.jpg,Acliz Plus,deliz plus,minor_ocr_noise
+rxhandbd,lora_ceonly,P0837.jpg,geolan,Geston,other_wrong_real_word
+rxhandbd,lora_ceonly,P0838.jpg,Fenix-v,Fesix-V,minor_ocr_noise
+rxhandbd,lora_ceonly,P0839.jpg,Calboral-DX,Calboral-Dx,correct
+rxhandbd,lora_ceonly,P0840.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0841.jpg,Neuro,Neuss,hallucination_far_off
+rxhandbd,lora_ceonly,P0842.jpg,Combicid,Combile,hallucination_far_off
+rxhandbd,lora_ceonly,P0843.jpg,Ointment,ointment,correct
+rxhandbd,lora_ceonly,P0844.jpg,Rupa,Rupa,correct
+rxhandbd,lora_ceonly,P0845.jpg,Fungidal,Fungidol,minor_ocr_noise
+rxhandbd,lora_ceonly,P0846.jpg,demelon,Desolon,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0847.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0848.jpg,Flugal,Fungal,hallucination_far_off
+rxhandbd,lora_ceonly,P0849.jpg,Dekalin,Dekalin,correct
+rxhandbd,lora_ceonly,P0850.jpg,Lecor,Lelor,minor_ocr_noise
+rxhandbd,lora_ceonly,P0851.jpg,Amitip,Anitip,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0852.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0853.jpg,calcor,Calcor,correct
+rxhandbd,lora_ceonly,P0854.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0855.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0856.jpg,Esprazo,Esprazo,correct
+rxhandbd,lora_ceonly,P0857.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0858.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0859.jpg,Algin Plus,deliz plus,hallucination_far_off
+rxhandbd,lora_ceonly,P0860.jpg,Gestrenol,Genres,hallucination_far_off
+rxhandbd,lora_ceonly,P0861.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0862.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0863.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0864.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0865.jpg,zimax,linax,other_wrong_real_word
+rxhandbd,lora_ceonly,P0866.jpg,Montene,Montene,correct
+rxhandbd,lora_ceonly,P0867.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0868.jpg,Gestrenol,Ceofrenol,hallucination_far_off
+rxhandbd,lora_ceonly,P0869.jpg,Flugal,Flugal,correct
+rxhandbd,lora_ceonly,P0870.jpg,Dekalin,Dekalin,correct
+rxhandbd,lora_ceonly,P0871.jpg,Naprox,Naprox,correct
+rxhandbd,lora_ceonly,P0872.jpg,Lecor,Lecor,correct
+rxhandbd,lora_ceonly,P0873.jpg,Seclo,Seklo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0874.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0875.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0876.jpg,Amitip,Aonitip,minor_ocr_noise
+rxhandbd,lora_ceonly,P0877.jpg,fenix-v,Ferix-V,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0878.jpg,Calboral-DX,Calboral-DX,correct
+rxhandbd,lora_ceonly,P0879.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0880.jpg,Mups,Mups,correct
+rxhandbd,lora_ceonly,P0881.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0882.jpg,zimax,Zimax,correct
+rxhandbd,lora_ceonly,P0883.jpg,Montene,Monten,minor_ocr_noise
+rxhandbd,lora_ceonly,P0884.jpg,Gestrenol,Gensev,hallucination_far_off
+rxhandbd,lora_ceonly,P0885.jpg,gascon,Gascom,minor_ocr_noise
+rxhandbd,lora_ceonly,P0886.jpg,demelon,Desolon,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0887.jpg,Naprox,Naprox,correct
+rxhandbd,lora_ceonly,P0888.jpg,Esprazo,Bsprazo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0889.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0890.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0891.jpg,Amitip,Aonitip,minor_ocr_noise
+rxhandbd,lora_ceonly,P0892.jpg,epitra,Griton,hallucination_far_off
+rxhandbd,lora_ceonly,P0893.jpg,D Cap,Dr. Cap,minor_ocr_noise
+rxhandbd,lora_ceonly,P0894.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0895.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0896.jpg,Nexe mups,Nexum mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0897.jpg,Algin,Argin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0898.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0899.jpg,Barbit,Barbit,correct
+rxhandbd,lora_ceonly,P0900.jpg,gascon,Garson,hallucination_far_off
+rxhandbd,lora_ceonly,P0901.jpg,Gestrenol,German,hallucination_far_off
+rxhandbd,lora_ceonly,P0902.jpg,Normen,Normens,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0903.jpg,AC PR,Aepr,hallucination_far_off
+rxhandbd,lora_ceonly,P0904.jpg,Seclo,Seclo,correct
+rxhandbd,lora_ceonly,P0905.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0906.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0907.jpg,Amitip,Amitip,correct
+rxhandbd,lora_ceonly,P0908.jpg,epitra,Epetra,minor_ocr_noise
+rxhandbd,lora_ceonly,P0909.jpg,Folzin,Folzin,correct
+rxhandbd,lora_ceonly,P0910.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0911.jpg,Esprazo,Esprazo,correct
+rxhandbd,lora_ceonly,P0912.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0913.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0914.jpg,Gestrenol,Geotrenol,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0915.jpg,Desolon,Desolon,correct
+rxhandbd,lora_ceonly,P0916.jpg,Seclo,Seelo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0917.jpg,Naprox,Vaprox,minor_ocr_noise
+rxhandbd,lora_ceonly,P0918.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0919.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0920.jpg,Amitip,Emitip,minor_ocr_noise
+rxhandbd,lora_ceonly,P0921.jpg,Epitra,Epitra,correct
+rxhandbd,lora_ceonly,P0922.jpg,Flugal,Flugal,correct
+rxhandbd,lora_ceonly,P0923.jpg,Lecor,Lecor,correct
+rxhandbd,lora_ceonly,P0924.jpg,Folzin,Fotain,hallucination_far_off
+rxhandbd,lora_ceonly,P0925.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0926.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0927.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0928.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0929.jpg,Gestrenol,Gespenol,minor_ocr_noise
+rxhandbd,lora_ceonly,P0930.jpg,Fenix-v,Ferix-v,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0931.jpg,Calboral DX,Calboral-Dx,correct
+rxhandbd,lora_ceonly,P0932.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0933.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0934.jpg,Bukof,Basholt,hallucination_far_off
+rxhandbd,lora_ceonly,P0935.jpg,Microgest,Mico-Gls,hallucination_far_off
+rxhandbd,lora_ceonly,P0936.jpg,Folzin,Fo-27in,hallucination_far_off
+rxhandbd,lora_ceonly,P0937.jpg,calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0938.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0939.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0940.jpg,Neuro,Neuro,correct
+rxhandbd,lora_ceonly,P0941.jpg,Acliz Plus,Acloplus,minor_ocr_noise
+rxhandbd,lora_ceonly,P0942.jpg,geolan,Geops,hallucination_far_off
+rxhandbd,lora_ceonly,P0943.jpg,demelon,Desolon,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0944.jpg,Flugal,Finger,hallucination_far_off
+rxhandbd,lora_ceonly,P0945.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0946.jpg,Naprox,Naporo,hallucination_far_off
+rxhandbd,lora_ceonly,P0947.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0948.jpg,calboral,Calboral,correct
+rxhandbd,lora_ceonly,P0949.jpg,Epitra,Epitra,correct
+rxhandbd,lora_ceonly,P0950.jpg,Amitip,Amitip,correct
+rxhandbd,lora_ceonly,P0951.jpg,Fenix,Fenix,correct
+rxhandbd,lora_ceonly,P0952.jpg,Calboral-DX,Calboral-Dx,correct
+rxhandbd,lora_ceonly,P0953.jpg,Esprazo,Bspruzo,minor_ocr_noise
+rxhandbd,lora_ceonly,P0954.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P0955.jpg,Neuro-B,Neuro-B,correct
+rxhandbd,lora_ceonly,P0956.jpg,?icrogent,microgen,minor_ocr_noise
+rxhandbd,lora_ceonly,P0957.jpg,Nystat,Nystat,correct
+rxhandbd,lora_ceonly,P0958.jpg,ESCilex,Seton,hallucination_far_off
+rxhandbd,lora_ceonly,P0959.jpg,Escilex,Eclilex,minor_ocr_noise
+rxhandbd,lora_ceonly,P0960.jpg,Tryptin,Tryptin,correct
+rxhandbd,lora_ceonly,P0961.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0962.jpg,Xyril,Yyril,minor_ocr_noise
+rxhandbd,lora_ceonly,P0963.jpg,Cantilid,Cenbid,hallucination_far_off
+rxhandbd,lora_ceonly,P0964.jpg,calboral,Lulizoflren,hallucination_far_off
+rxhandbd,lora_ceonly,P0965.jpg,Farofew,Farofen,minor_ocr_noise
+rxhandbd,lora_ceonly,P0966.jpg,Malucan,m-lucas,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0967.jpg,Esprazo,Prutranof,hallucination_far_off
+rxhandbd,lora_ceonly,P0968.jpg,reelife,Neelife,minor_ocr_noise
+rxhandbd,lora_ceonly,P0969.jpg,lufilox,Lufilax,minor_ocr_noise
+rxhandbd,lora_ceonly,P0970.jpg,Avolac,Aulac,hallucination_far_off
+rxhandbd,lora_ceonly,P0971.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P0972.jpg,Deuxil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0973.jpg,Nystat,Nystat,correct
+rxhandbd,lora_ceonly,P0974.jpg,Setra,Seton,hallucination_far_off
+rxhandbd,lora_ceonly,P0975.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0976.jpg,Tryptin,Typefix,hallucination_far_off
+rxhandbd,lora_ceonly,P0977.jpg,Nexum,Nexum,correct
+rxhandbd,lora_ceonly,P0978.jpg,Don A,Don A,correct
+rxhandbd,lora_ceonly,P0979.jpg,Xinc,xinc,correct
+rxhandbd,lora_ceonly,P0980.jpg,Zovia,Aonic,hallucination_far_off
+rxhandbd,lora_ceonly,P0981.jpg,Zymet Pro,Zymefro,hallucination_far_off
+rxhandbd,lora_ceonly,P0982.jpg,algin,Algin,correct
+rxhandbd,lora_ceonly,P0983.jpg,Paloxi,Pelox,hallucination_far_off
+rxhandbd,lora_ceonly,P0984.jpg,finix,Fimax,hallucination_far_off
+rxhandbd,lora_ceonly,P0985.jpg,cefotil,Cefotil,correct
+rxhandbd,lora_ceonly,P0986.jpg,FLAMEX,Flamex,correct
+rxhandbd,lora_ceonly,P0987.jpg,Bilon,Bilon,correct
+rxhandbd,lora_ceonly,P0988.jpg,sergel,Sergel,correct
+rxhandbd,lora_ceonly,P0989.jpg,Bartrocin,Bactrocin,confusable_wrong_drug
+rxhandbd,lora_ceonly,P0990.jpg,ointment,ointment,correct
+rxhandbd,lora_ceonly,P0991.jpg,viodin,Violin,minor_ocr_noise
+rxhandbd,lora_ceonly,P0992.jpg,mouthwash,Monthwork,hallucination_far_off
+rxhandbd,lora_ceonly,P0993.jpg,Bislol,Crist,hallucination_far_off
+rxhandbd,lora_ceonly,P0994.jpg,Ecosprin,Ecosfus,hallucination_far_off
+rxhandbd,lora_ceonly,P0995.jpg,zithrox,Zithrox,correct
+rxhandbd,lora_ceonly,P0996.jpg,m-lucas,m-fucas,minor_ocr_noise
+rxhandbd,lora_ceonly,P0997.jpg,Dophylin,Dophylline,minor_ocr_noise
+rxhandbd,lora_ceonly,P0998.jpg,Neuroxen,Neuroxew,minor_ocr_noise
+rxhandbd,lora_ceonly,P0999.jpg,sergel,Rupatoe,hallucination_far_off
+rxhandbd,lora_ceonly,P1000.jpg,celebrex,Calboretx,hallucination_far_off
+rxhandbd,lora_ceonly,P1001.jpg,Fusid,Fusid,correct
+rxhandbd,lora_ceonly,P1002.jpg,Vildamet,vildamef,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1003.jpg,Emazid,Emad,hallucination_far_off
+rxhandbd,lora_ceonly,P1004.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1005.jpg,algin,Brist,hallucination_far_off
+rxhandbd,lora_ceonly,P1006.jpg,gaviflux,Gainflex,hallucination_far_off
+rxhandbd,lora_ceonly,P1007.jpg,uliv,Nlv,hallucination_far_off
+rxhandbd,lora_ceonly,P1008.jpg,prolix,Tablet,other_wrong_real_word
+rxhandbd,lora_ceonly,P1009.jpg,Zymet,Zymef,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1010.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1011.jpg,Denixil,Deixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1012.jpg,gaviflux,Gavifluw,minor_ocr_noise
+rxhandbd,lora_ceonly,P1013.jpg,Bislol,Brist,hallucination_far_off
+rxhandbd,lora_ceonly,P1014.jpg,M-lucas,m-luc,minor_ocr_noise
+rxhandbd,lora_ceonly,P1015.jpg,ginoba,Ginoba,correct
+rxhandbd,lora_ceonly,P1016.jpg,moxilin,moxilin,correct
+rxhandbd,lora_ceonly,P1017.jpg,vergon,vergon,correct
+rxhandbd,lora_ceonly,P1018.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1019.jpg,m-lucas,Alodic,hallucination_far_off
+rxhandbd,lora_ceonly,P1020.jpg,viglimet,viglinef,minor_ocr_noise
+rxhandbd,lora_ceonly,P1021.jpg,Emlidus,Emladus,minor_ocr_noise
+rxhandbd,lora_ceonly,P1022.jpg,nutrifil,Xufifil,hallucination_far_off
+rxhandbd,lora_ceonly,P1023.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1024.jpg,Escolex,Eslilex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1025.jpg,Revocit,Revocit,correct
+rxhandbd,lora_ceonly,P1026.jpg,Coralcal,Conalcal,minor_ocr_noise
+rxhandbd,lora_ceonly,P1027.jpg,maxpro,Maxpro,correct
+rxhandbd,lora_ceonly,P1028.jpg,Neuroxen,Neurogen,minor_ocr_noise
+rxhandbd,lora_ceonly,P1029.jpg,drise,Dnjte,hallucination_far_off
+rxhandbd,lora_ceonly,P1030.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P1031.jpg,doxoven,Doxoven,correct
+rxhandbd,lora_ceonly,P1032.jpg,don A,Don A,correct
+rxhandbd,lora_ceonly,P1033.jpg,Xinc,xinc,correct
+rxhandbd,lora_ceonly,P1034.jpg,Xyril,Xyril,correct
+rxhandbd,lora_ceonly,P1035.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1036.jpg,Revocit,Revoit,minor_ocr_noise
+rxhandbd,lora_ceonly,P1037.jpg,ostocal,Osboril,hallucination_far_off
+rxhandbd,lora_ceonly,P1038.jpg,maxpro,Maxpro,correct
+rxhandbd,lora_ceonly,P1039.jpg,Algin,Algin,correct
+rxhandbd,lora_ceonly,P1040.jpg,uliv,Vlin,hallucination_far_off
+rxhandbd,lora_ceonly,P1041.jpg,prolix,Tablet,other_wrong_real_word
+rxhandbd,lora_ceonly,P1042.jpg,Zymet,Zymef,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1043.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1044.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1045.jpg,gaviflux,Gavifluw,minor_ocr_noise
+rxhandbd,lora_ceonly,P1046.jpg,nameton,Namefon,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1047.jpg,don A,Nalftex,hallucination_far_off
+rxhandbd,lora_ceonly,P1048.jpg,neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P1049.jpg,doxoven,Hallal,hallucination_far_off
+rxhandbd,lora_ceonly,P1050.jpg,Bislol,Brist,hallucination_far_off
+rxhandbd,lora_ceonly,P1051.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1052.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1053.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1054.jpg,Folita,Folita,correct
+rxhandbd,lora_ceonly,P1055.jpg,Barbit,Narbit,minor_ocr_noise
+rxhandbd,lora_ceonly,P1056.jpg,Pregmos,pregmaj,minor_ocr_noise
+rxhandbd,lora_ceonly,P1057.jpg,progest,Prosept,minor_ocr_noise
+rxhandbd,lora_ceonly,P1058.jpg,algin,Hex,hallucination_far_off
+rxhandbd,lora_ceonly,P1059.jpg,nexum,Moncere,hallucination_far_off
+rxhandbd,lora_ceonly,P1060.jpg,algin,Algin,correct
+rxhandbd,lora_ceonly,P1061.jpg,Asynta,Asyrte,hallucination_far_off
+rxhandbd,lora_ceonly,P1062.jpg,napro,Nafro,minor_ocr_noise
+rxhandbd,lora_ceonly,P1063.jpg,neuroxen,Neuroxum,minor_ocr_noise
+rxhandbd,lora_ceonly,P1064.jpg,mig,Injection,other_wrong_real_word
+rxhandbd,lora_ceonly,P1065.jpg,arth,Arth,correct
+rxhandbd,lora_ceonly,P1066.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1067.jpg,zithrox,Zithrox,correct
+rxhandbd,lora_ceonly,P1068.jpg,m-lucas,m-lucas,correct
+rxhandbd,lora_ceonly,P1069.jpg,Cortan,Cortan,correct
+rxhandbd,lora_ceonly,P1070.jpg,Fenadin,Fenasu,hallucination_far_off
+rxhandbd,lora_ceonly,P1071.jpg,combicid,Cantril,hallucination_far_off
+rxhandbd,lora_ceonly,P1072.jpg,nexum,Nexum,correct
+rxhandbd,lora_ceonly,P1073.jpg,Fusid,Fusid,correct
+rxhandbd,lora_ceonly,P1074.jpg,neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P1075.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P1076.jpg,mig,mig,correct
+rxhandbd,lora_ceonly,P1077.jpg,methomol,methomet,minor_ocr_noise
+rxhandbd,lora_ceonly,P1078.jpg,Neugalin,Xempalin,hallucination_far_off
+rxhandbd,lora_ceonly,P1079.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1080.jpg,Flexi,Flexi,correct
+rxhandbd,lora_ceonly,P1081.jpg,m-lucas,relumfus,hallucination_far_off
+rxhandbd,lora_ceonly,P1082.jpg,arth,Arth,correct
+rxhandbd,lora_ceonly,P1083.jpg,neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P1084.jpg,nabumet,Nabumet,correct
+rxhandbd,lora_ceonly,P1085.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1086.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1087.jpg,Dexter,Emile,hallucination_far_off
+rxhandbd,lora_ceonly,P1088.jpg,folive,Folive,correct
+rxhandbd,lora_ceonly,P1089.jpg,nystat,Nystat,correct
+rxhandbd,lora_ceonly,P1090.jpg,Zymef,Zymefro,minor_ocr_noise
+rxhandbd,lora_ceonly,P1091.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1092.jpg,Escilex,Escapee,hallucination_far_off
+rxhandbd,lora_ceonly,P1093.jpg,Asynta,Asyrata,minor_ocr_noise
+rxhandbd,lora_ceonly,P1094.jpg,Beklo,Bexo,hallucination_far_off
+rxhandbd,lora_ceonly,P1095.jpg,neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P1096.jpg,Napa,Halloml-Dx,hallucination_far_off
+rxhandbd,lora_ceonly,P1097.jpg,Zimax,relent,hallucination_far_off
+rxhandbd,lora_ceonly,P1098.jpg,Dexter,Dexter,correct
+rxhandbd,lora_ceonly,P1099.jpg,Denixil,Denxil,minor_ocr_noise
+rxhandbd,lora_ceonly,P1100.jpg,mig,mig,correct
+rxhandbd,lora_ceonly,P1101.jpg,Folzin,Caf. Folzin,hallucination_far_off
+rxhandbd,lora_ceonly,P1102.jpg,Calboral,Calboral,correct
+rxhandbd,lora_ceonly,P1103.jpg,Nexe Mups,Nexum mups,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1104.jpg,Neuro B,Neuro-B,correct
+rxhandbd,lora_ceonly,P1105.jpg,Napa,Napa,correct
+rxhandbd,lora_ceonly,P1106.jpg,Zimax,Zimax,correct
+rxhandbd,lora_ceonly,P1107.jpg,Montelon,Montenegraz,hallucination_far_off
+rxhandbd,lora_ceonly,P1108.jpg,Revital,Revapsi,hallucination_far_off
+rxhandbd,lora_ceonly,P1109.jpg,gestrenol,Gesvenoj,hallucination_far_off
+rxhandbd,lora_ceonly,P1110.jpg,maxrin,Maxrin O.G,hallucination_far_off
+rxhandbd,lora_ceonly,P1111.jpg,Bislol,Biscor,confusable_wrong_drug
+rxhandbd,lora_ceonly,P1112.jpg,neurolin,Neurolin,correct
+rxhandbd,lora_ceonly,P1113.jpg,neuroxen,Neuroxen,correct
+rxhandbd,lora_ceonly,P1114.jpg,Denixil,Devix-,hallucination_far_off
+rxhandbd,lora_ceonly,P1115.jpg,Lubilax,lubilax,correct

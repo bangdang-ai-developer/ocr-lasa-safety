@@ -1,0 +1,1561 @@
+dataset,stage,image,true_label,pred,error_category
+kaggle_bd,zeroshot,0.png,Aceta,Acute .,hallucination_far_off
+kaggle_bd,zeroshot,1.png,Aceta,aceta,correct
+kaggle_bd,zeroshot,2.png,Aceta,. Aceta,correct
+kaggle_bd,zeroshot,3.png,Aceta,Atlanta .,hallucination_far_off
+kaggle_bd,zeroshot,4.png,Aceta,Aeeto,hallucination_far_off
+kaggle_bd,zeroshot,5.png,Aceta,acort .,hallucination_far_off
+kaggle_bd,zeroshot,6.png,Aceta,Austin .,hallucination_far_off
+kaggle_bd,zeroshot,7.png,Aceta,Atlanta .,hallucination_far_off
+kaggle_bd,zeroshot,8.png,Aceta,Atlanta .,hallucination_far_off
+kaggle_bd,zeroshot,9.png,Aceta,agreements,hallucination_far_off
+kaggle_bd,zeroshot,10.png,Ace,are,hallucination_far_off
+kaggle_bd,zeroshot,11.png,Ace,age,hallucination_far_off
+kaggle_bd,zeroshot,12.png,Ace,aen,hallucination_far_off
+kaggle_bd,zeroshot,13.png,Ace,ace .,correct
+kaggle_bd,zeroshot,14.png,Ace,ace,correct
+kaggle_bd,zeroshot,15.png,Ace,ace,correct
+kaggle_bd,zeroshot,16.png,Ace,face,minor_ocr_noise
+kaggle_bd,zeroshot,17.png,Ace,fittled,hallucination_far_off
+kaggle_bd,zeroshot,18.png,Ace,ace,correct
+kaggle_bd,zeroshot,19.png,Ace,Ae e,hallucination_far_off
+kaggle_bd,zeroshot,20.png,Alatrol,alatno !,hallucination_far_off
+kaggle_bd,zeroshot,21.png,Alatrol,Alatro I,minor_ocr_noise
+kaggle_bd,zeroshot,22.png,Alatrol,2 Abstract,hallucination_far_off
+kaggle_bd,zeroshot,23.png,Alatrol,Alatno !,hallucination_far_off
+kaggle_bd,zeroshot,24.png,Alatrol,jettlestral,hallucination_far_off
+kaggle_bd,zeroshot,25.png,Alatrol,al Atrol,minor_ocr_noise
+kaggle_bd,zeroshot,26.png,Alatrol,. Alcatino !,hallucination_far_off
+kaggle_bd,zeroshot,27.png,Alatrol,Alatino !,hallucination_far_off
+kaggle_bd,zeroshot,28.png,Alatrol,alatnef,hallucination_far_off
+kaggle_bd,zeroshot,29.png,Alatrol,"peatual . """,hallucination_far_off
+kaggle_bd,zeroshot,30.png,Amodis,Armedia,hallucination_far_off
+kaggle_bd,zeroshot,31.png,Amodis,Amadi,hallucination_far_off
+kaggle_bd,zeroshot,32.png,Amodis,Amodin .,hallucination_far_off
+kaggle_bd,zeroshot,33.png,Amodis,Amadia,hallucination_far_off
+kaggle_bd,zeroshot,34.png,Amodis,Armodis,minor_ocr_noise
+kaggle_bd,zeroshot,35.png,Amodis,Amanda's,hallucination_far_off
+kaggle_bd,zeroshot,36.png,Amodis,Armodin .,hallucination_far_off
+kaggle_bd,zeroshot,37.png,Amodis,Amedis,minor_ocr_noise
+kaggle_bd,zeroshot,38.png,Amodis,Amodis .,correct
+kaggle_bd,zeroshot,39.png,Amodis,1 Aprilist,hallucination_far_off
+kaggle_bd,zeroshot,40.png,Atrizin,Atizits,hallucination_far_off
+kaggle_bd,zeroshot,41.png,Atrizin,afocign,hallucination_far_off
+kaggle_bd,zeroshot,42.png,Atrizin,Afruizin .,hallucination_far_off
+kaggle_bd,zeroshot,43.png,Atrizin,Afruizin .,hallucination_far_off
+kaggle_bd,zeroshot,44.png,Atrizin,attrition .,hallucination_far_off
+kaggle_bd,zeroshot,45.png,Atrizin,atrition .,hallucination_far_off
+kaggle_bd,zeroshot,46.png,Atrizin,Afrizin .,hallucination_far_off
+kaggle_bd,zeroshot,47.png,Atrizin,Atruzin,minor_ocr_noise
+kaggle_bd,zeroshot,48.png,Atrizin,Admirists,hallucination_far_off
+kaggle_bd,zeroshot,49.png,Atrizin,Afonists .,hallucination_far_off
+kaggle_bd,zeroshot,50.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,51.png,Axodin,axtoldin .,hallucination_far_off
+kaggle_bd,zeroshot,52.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,53.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,54.png,Axodin,Assomaker,hallucination_far_off
+kaggle_bd,zeroshot,55.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,56.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,57.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,58.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,59.png,Axodin,axodin .,correct
+kaggle_bd,zeroshot,60.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,61.png,Azithrocin,a zithrocin .,minor_ocr_noise
+kaggle_bd,zeroshot,62.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,63.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,64.png,Azithrocin,asithracian,minor_ocr_noise
+kaggle_bd,zeroshot,65.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,66.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,67.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,68.png,Azithrocin,azithmocin .,minor_ocr_noise
+kaggle_bd,zeroshot,69.png,Azithrocin,azithrocin .,correct
+kaggle_bd,zeroshot,70.png,Azyth,azyth .,correct
+kaggle_bd,zeroshot,71.png,Azyth,azyth,correct
+kaggle_bd,zeroshot,72.png,Azyth,azyth .,correct
+kaggle_bd,zeroshot,73.png,Azyth,azyth,correct
+kaggle_bd,zeroshot,74.png,Azyth,"Azeyth ,",hallucination_far_off
+kaggle_bd,zeroshot,75.png,Azyth,altyth,hallucination_far_off
+kaggle_bd,zeroshot,76.png,Azyth,azyth,correct
+kaggle_bd,zeroshot,77.png,Azyth,azyth .,correct
+kaggle_bd,zeroshot,78.png,Azyth,azyth,correct
+kaggle_bd,zeroshot,79.png,Azyth,azyth,correct
+kaggle_bd,zeroshot,80.png,Az,after,hallucination_far_off
+kaggle_bd,zeroshot,81.png,Az,An,hallucination_far_off
+kaggle_bd,zeroshot,82.png,Az,az,correct
+kaggle_bd,zeroshot,83.png,Az,Az,correct
+kaggle_bd,zeroshot,84.png,Az,2 a,hallucination_far_off
+kaggle_bd,zeroshot,85.png,Az,extention,hallucination_far_off
+kaggle_bd,zeroshot,86.png,Az,1A2,hallucination_far_off
+kaggle_bd,zeroshot,87.png,Az,Az,correct
+kaggle_bd,zeroshot,88.png,Az,AR,hallucination_far_off
+kaggle_bd,zeroshot,89.png,Az,Az,correct
+kaggle_bd,zeroshot,90.png,Bacaid,Bocaid,minor_ocr_noise
+kaggle_bd,zeroshot,91.png,Bacaid,Bercaid .,hallucination_far_off
+kaggle_bd,zeroshot,92.png,Bacaid,Bacid,minor_ocr_noise
+kaggle_bd,zeroshot,93.png,Bacaid,record,hallucination_far_off
+kaggle_bd,zeroshot,94.png,Bacaid,Bacaid .,correct
+kaggle_bd,zeroshot,95.png,Bacaid,1 . Bracaist,hallucination_far_off
+kaggle_bd,zeroshot,96.png,Bacaid,Baerhill .,hallucination_far_off
+kaggle_bd,zeroshot,97.png,Bacaid,8 Brazil,hallucination_far_off
+kaggle_bd,zeroshot,98.png,Bacaid,B acid,hallucination_far_off
+kaggle_bd,zeroshot,99.png,Bacaid,Bacaid,correct
+kaggle_bd,zeroshot,100.png,Backtone,Practiture .,hallucination_far_off
+kaggle_bd,zeroshot,101.png,Backtone,back tone .,minor_ocr_noise
+kaggle_bd,zeroshot,102.png,Backtone,expectation .,hallucination_far_off
+kaggle_bd,zeroshot,103.png,Backtone,back time .,hallucination_far_off
+kaggle_bd,zeroshot,104.png,Backtone,Backtone .,correct
+kaggle_bd,zeroshot,105.png,Backtone,backtone .,correct
+kaggle_bd,zeroshot,106.png,Backtone,expelled for the,hallucination_far_off
+kaggle_bd,zeroshot,107.png,Backtone,- Blackton .,hallucination_far_off
+kaggle_bd,zeroshot,108.png,Backtone,back him .,hallucination_far_off
+kaggle_bd,zeroshot,109.png,Backtone,back tone .,minor_ocr_noise
+kaggle_bd,zeroshot,110.png,Baclofen,Bac.lefen .,hallucination_far_off
+kaggle_bd,zeroshot,111.png,Baclofen,Beach of an,hallucination_far_off
+kaggle_bd,zeroshot,112.png,Baclofen,bachelor .,hallucination_far_off
+kaggle_bd,zeroshot,113.png,Baclofen,Baclofen .,correct
+kaggle_bd,zeroshot,114.png,Baclofen,8 Benchlofen .,hallucination_far_off
+kaggle_bd,zeroshot,115.png,Baclofen,backlopen .,hallucination_far_off
+kaggle_bd,zeroshot,116.png,Baclofen,Peace before,hallucination_far_off
+kaggle_bd,zeroshot,117.png,Baclofen,saclofen .,minor_ocr_noise
+kaggle_bd,zeroshot,118.png,Baclofen,Bacle for,hallucination_far_off
+kaggle_bd,zeroshot,119.png,Baclofen,Bordofen .,hallucination_far_off
+kaggle_bd,zeroshot,120.png,Baclon,Bonelina,hallucination_far_off
+kaggle_bd,zeroshot,121.png,Baclon,Benelum,hallucination_far_off
+kaggle_bd,zeroshot,122.png,Baclon,Baclow .,hallucination_far_off
+kaggle_bd,zeroshot,123.png,Baclon,Bmelon .,hallucination_far_off
+kaggle_bd,zeroshot,124.png,Baclon,boelon .,hallucination_far_off
+kaggle_bd,zeroshot,125.png,Baclon,becline .,hallucination_far_off
+kaggle_bd,zeroshot,126.png,Baclon,Bmelon .,hallucination_far_off
+kaggle_bd,zeroshot,127.png,Baclon,Praelen .,hallucination_far_off
+kaggle_bd,zeroshot,128.png,Baclon,balcom .,hallucination_far_off
+kaggle_bd,zeroshot,129.png,Baclon,Racelove,hallucination_far_off
+kaggle_bd,zeroshot,130.png,Bacmax,exaceways .,hallucination_far_off
+kaggle_bd,zeroshot,131.png,Bacmax,fracenary .,hallucination_far_off
+kaggle_bd,zeroshot,132.png,Bacmax,Bacmar .,hallucination_far_off
+kaggle_bd,zeroshot,133.png,Bacmax,paeeways .,hallucination_far_off
+kaggle_bd,zeroshot,134.png,Bacmax,bueman .,hallucination_far_off
+kaggle_bd,zeroshot,135.png,Bacmax,Race-,hallucination_far_off
+kaggle_bd,zeroshot,136.png,Bacmax,recoming a,hallucination_far_off
+kaggle_bd,zeroshot,137.png,Bacmax,baemers .,hallucination_far_off
+kaggle_bd,zeroshot,138.png,Bacmax,Bacmas,minor_ocr_noise
+kaggle_bd,zeroshot,139.png,Bacmax,reasmers .,hallucination_far_off
+kaggle_bd,zeroshot,140.png,Beklo,Baklo,minor_ocr_noise
+kaggle_bd,zeroshot,141.png,Beklo,bercino,hallucination_far_off
+kaggle_bd,zeroshot,142.png,Beklo,refixio,hallucination_far_off
+kaggle_bd,zeroshot,143.png,Beklo,bekio,minor_ocr_noise
+kaggle_bd,zeroshot,144.png,Beklo,beklo,correct
+kaggle_bd,zeroshot,145.png,Beklo,""" Labor # B.B.E.K.ING -",hallucination_far_off
+kaggle_bd,zeroshot,146.png,Beklo,beklo,correct
+kaggle_bd,zeroshot,147.png,Beklo,beklb .,hallucination_far_off
+kaggle_bd,zeroshot,148.png,Beklo,beklo,correct
+kaggle_bd,zeroshot,149.png,Beklo,Beklo,correct
+kaggle_bd,zeroshot,150.png,Bicozin,bicozin .,correct
+kaggle_bd,zeroshot,151.png,Bicozin,Bjection,hallucination_far_off
+kaggle_bd,zeroshot,152.png,Bicozin,bicozin .,correct
+kaggle_bd,zeroshot,153.png,Bicozin,Biluzin,minor_ocr_noise
+kaggle_bd,zeroshot,154.png,Bicozin,buzzing,hallucination_far_off
+kaggle_bd,zeroshot,155.png,Bicozin,bier than,hallucination_far_off
+kaggle_bd,zeroshot,156.png,Bicozin,Bicarin .,hallucination_far_off
+kaggle_bd,zeroshot,157.png,Bicozin,Bicozin .,correct
+kaggle_bd,zeroshot,158.png,Bicozin,Bicozin .,correct
+kaggle_bd,zeroshot,159.png,Bicozin,Biscopy .,hallucination_far_off
+kaggle_bd,zeroshot,160.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,161.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,162.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,163.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,164.png,Canazole,commonwealth .,hallucination_far_off
+kaggle_bd,zeroshot,165.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,166.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,167.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,168.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,169.png,Canazole,canazole,correct
+kaggle_bd,zeroshot,170.png,Candinil,""" Cardinal",hallucination_far_off
+kaggle_bd,zeroshot,171.png,Candinil,cambinal,hallucination_far_off
+kaggle_bd,zeroshot,172.png,Candinil,0 Commercial .,hallucination_far_off
+kaggle_bd,zeroshot,173.png,Candinil,cordine . ),hallucination_far_off
+kaggle_bd,zeroshot,174.png,Candinil,caudinil .,minor_ocr_noise
+kaggle_bd,zeroshot,175.png,Candinil,"condimil ,",hallucination_far_off
+kaggle_bd,zeroshot,176.png,Candinil,6 Carmelini !,hallucination_far_off
+kaggle_bd,zeroshot,177.png,Candinil,candine .,hallucination_far_off
+kaggle_bd,zeroshot,178.png,Candinil,carndinal,minor_ocr_noise
+kaggle_bd,zeroshot,179.png,Candinil,candimir,minor_ocr_noise
+kaggle_bd,zeroshot,180.png,Cetisoft,Cetisoft .,correct
+kaggle_bd,zeroshot,181.png,Cetisoft,Catisoft .,minor_ocr_noise
+kaggle_bd,zeroshot,182.png,Cetisoft,Cabinet .,hallucination_far_off
+kaggle_bd,zeroshot,183.png,Cetisoft,Cetisoft .,correct
+kaggle_bd,zeroshot,184.png,Cetisoft,3 Cefisett .,hallucination_far_off
+kaggle_bd,zeroshot,185.png,Cetisoft,Catisoft .,minor_ocr_noise
+kaggle_bd,zeroshot,186.png,Cetisoft,Cetisoft .,correct
+kaggle_bd,zeroshot,187.png,Cetisoft,Cabinoff,hallucination_far_off
+kaggle_bd,zeroshot,188.png,Cetisoft,Cetesoft .,minor_ocr_noise
+kaggle_bd,zeroshot,189.png,Cetisoft,celtisoft .,minor_ocr_noise
+kaggle_bd,zeroshot,190.png,Conaz,conan .,hallucination_far_off
+kaggle_bd,zeroshot,191.png,Conaz,conaz,correct
+kaggle_bd,zeroshot,192.png,Conaz,comoz,hallucination_far_off
+kaggle_bd,zeroshot,193.png,Conaz,conal .,hallucination_far_off
+kaggle_bd,zeroshot,194.png,Conaz,cona 7,hallucination_far_off
+kaggle_bd,zeroshot,195.png,Conaz,comaz,minor_ocr_noise
+kaggle_bd,zeroshot,196.png,Conaz,comar .,hallucination_far_off
+kaggle_bd,zeroshot,197.png,Conaz,conaz,correct
+kaggle_bd,zeroshot,198.png,Conaz,cenar .,hallucination_far_off
+kaggle_bd,zeroshot,199.png,Conaz,cossal,hallucination_far_off
+kaggle_bd,zeroshot,200.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,201.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,202.png,Dancel,danced,minor_ocr_noise
+kaggle_bd,zeroshot,203.png,Dancel,firmed,hallucination_far_off
+kaggle_bd,zeroshot,204.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,205.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,206.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,207.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,208.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,209.png,Dancel,dancel,correct
+kaggle_bd,zeroshot,210.png,Denixil,Terminal .,hallucination_far_off
+kaggle_bd,zeroshot,211.png,Denixil,SE nixil .,hallucination_far_off
+kaggle_bd,zeroshot,212.png,Denixil,Terminal .,hallucination_far_off
+kaggle_bd,zeroshot,213.png,Denixil,Decisional .,hallucination_far_off
+kaggle_bd,zeroshot,214.png,Denixil,Denixil .,correct
+kaggle_bd,zeroshot,215.png,Denixil,DENIX IL.,minor_ocr_noise
+kaggle_bd,zeroshot,216.png,Denixil,Decisional .,hallucination_far_off
+kaggle_bd,zeroshot,217.png,Denixil,Decisional .,hallucination_far_off
+kaggle_bd,zeroshot,218.png,Denixil,Pennsylvania,hallucination_far_off
+kaggle_bd,zeroshot,219.png,Denixil,Denisil,minor_ocr_noise
+kaggle_bd,zeroshot,220.png,Diflu,piflin .,hallucination_far_off
+kaggle_bd,zeroshot,221.png,Diflu,difflin .,hallucination_far_off
+kaggle_bd,zeroshot,222.png,Diflu,piflin .,hallucination_far_off
+kaggle_bd,zeroshot,223.png,Diflu,diff-film .,hallucination_far_off
+kaggle_bd,zeroshot,224.png,Diflu,High .,hallucination_far_off
+kaggle_bd,zeroshot,225.png,Diflu,pitch .,hallucination_far_off
+kaggle_bd,zeroshot,226.png,Diflu,difflin .,hallucination_far_off
+kaggle_bd,zeroshot,227.png,Diflu,difflin .,hallucination_far_off
+kaggle_bd,zeroshot,228.png,Diflu,1 2 2million .,hallucination_far_off
+kaggle_bd,zeroshot,229.png,Diflu,diffler .,hallucination_far_off
+kaggle_bd,zeroshot,230.png,Dinafex,Dinofax .,hallucination_far_off
+kaggle_bd,zeroshot,231.png,Dinafex,fixal,other_wrong_real_word
+kaggle_bd,zeroshot,232.png,Dinafex,Dinspex .,hallucination_far_off
+kaggle_bd,zeroshot,233.png,Dinafex,dinofex .,hallucination_far_off
+kaggle_bd,zeroshot,234.png,Dinafex,Dinnifex .,hallucination_far_off
+kaggle_bd,zeroshot,235.png,Dinafex,dinaflex,minor_ocr_noise
+kaggle_bd,zeroshot,236.png,Dinafex,dinafax .,hallucination_far_off
+kaggle_bd,zeroshot,237.png,Dinafex,dinnatex,minor_ocr_noise
+kaggle_bd,zeroshot,238.png,Dinafex,dinafax .,hallucination_far_off
+kaggle_bd,zeroshot,239.png,Dinafex,dinnatex,minor_ocr_noise
+kaggle_bd,zeroshot,240.png,Disopan,2 Disopan .,hallucination_far_off
+kaggle_bd,zeroshot,241.png,Disopan,disopan .,correct
+kaggle_bd,zeroshot,242.png,Disopan,disopan .,correct
+kaggle_bd,zeroshot,243.png,Disopan,disopan .,correct
+kaggle_bd,zeroshot,244.png,Disopan,phiscopern .,hallucination_far_off
+kaggle_bd,zeroshot,245.png,Disopan,disopan .,correct
+kaggle_bd,zeroshot,246.png,Disopan,1 Disopan .,hallucination_far_off
+kaggle_bd,zeroshot,247.png,Disopan,2 Disopan .,hallucination_far_off
+kaggle_bd,zeroshot,248.png,Disopan,Disopan 1,minor_ocr_noise
+kaggle_bd,zeroshot,249.png,Disopan,disopan .,correct
+kaggle_bd,zeroshot,250.png,Esonix,expensive,hallucination_far_off
+kaggle_bd,zeroshot,251.png,Esonix,E.B.D N.IX .,hallucination_far_off
+kaggle_bd,zeroshot,252.png,Esonix,economic,hallucination_far_off
+kaggle_bd,zeroshot,253.png,Esonix,economic,hallucination_far_off
+kaggle_bd,zeroshot,254.png,Esonix,bromix,hallucination_far_off
+kaggle_bd,zeroshot,255.png,Esonix,E soonixi,hallucination_far_off
+kaggle_bd,zeroshot,256.png,Esonix,esorix,minor_ocr_noise
+kaggle_bd,zeroshot,257.png,Esonix,esomex,hallucination_far_off
+kaggle_bd,zeroshot,258.png,Esonix,asonix,minor_ocr_noise
+kaggle_bd,zeroshot,259.png,Esonix,esonix,correct
+kaggle_bd,zeroshot,260.png,Esoral,essential,hallucination_far_off
+kaggle_bd,zeroshot,261.png,Esoral,E Soipal,hallucination_far_off
+kaggle_bd,zeroshot,262.png,Esoral,"esoma ,",hallucination_far_off
+kaggle_bd,zeroshot,263.png,Esoral,esoral,correct
+kaggle_bd,zeroshot,264.png,Esoral,jesoral,minor_ocr_noise
+kaggle_bd,zeroshot,265.png,Esoral,Es oral,minor_ocr_noise
+kaggle_bd,zeroshot,266.png,Esoral,equal,hallucination_far_off
+kaggle_bd,zeroshot,267.png,Esoral,esoral,correct
+kaggle_bd,zeroshot,268.png,Esoral,e soral,minor_ocr_noise
+kaggle_bd,zeroshot,269.png,Esoral,eson al.,hallucination_far_off
+kaggle_bd,zeroshot,270.png,Etizin,eitzin .,hallucination_far_off
+kaggle_bd,zeroshot,271.png,Etizin,Britain .,hallucination_far_off
+kaggle_bd,zeroshot,272.png,Etizin,extain .,hallucination_far_off
+kaggle_bd,zeroshot,273.png,Etizin,eitizen .,hallucination_far_off
+kaggle_bd,zeroshot,274.png,Etizin,etizim .,hallucination_far_off
+kaggle_bd,zeroshot,275.png,Etizin,6 Britain .,hallucination_far_off
+kaggle_bd,zeroshot,276.png,Etizin,eitein .,hallucination_far_off
+kaggle_bd,zeroshot,277.png,Etizin,extrain .,hallucination_far_off
+kaggle_bd,zeroshot,278.png,Etizin,6 E Citizen .,hallucination_far_off
+kaggle_bd,zeroshot,279.png,Etizin,leitson .,hallucination_far_off
+kaggle_bd,zeroshot,280.png,Exium,expenses .,hallucination_far_off
+kaggle_bd,zeroshot,281.png,Exium,tinipeways,hallucination_far_off
+kaggle_bd,zeroshot,282.png,Exium,exime .,hallucination_far_off
+kaggle_bd,zeroshot,283.png,Exium,Experiment,hallucination_far_off
+kaggle_bd,zeroshot,284.png,Exium,Ilexium,minor_ocr_noise
+kaggle_bd,zeroshot,285.png,Exium,expirms,hallucination_far_off
+kaggle_bd,zeroshot,286.png,Exium,Experiment,hallucination_far_off
+kaggle_bd,zeroshot,287.png,Exium,exxium .,hallucination_far_off
+kaggle_bd,zeroshot,288.png,Exium,exiurn .,hallucination_far_off
+kaggle_bd,zeroshot,289.png,Exium,exjum .,hallucination_far_off
+kaggle_bd,zeroshot,290.png,Fenadin,Expansion .,hallucination_far_off
+kaggle_bd,zeroshot,291.png,Fenadin,fexxo,hallucination_far_off
+kaggle_bd,zeroshot,292.png,Fenadin,fenadin .,correct
+kaggle_bd,zeroshot,293.png,Fenadin,terned in .,hallucination_far_off
+kaggle_bd,zeroshot,294.png,Fenadin,feneddin,minor_ocr_noise
+kaggle_bd,zeroshot,295.png,Fenadin,fenadin .,correct
+kaggle_bd,zeroshot,296.png,Fenadin,fenadin .,correct
+kaggle_bd,zeroshot,297.png,Fenadin,- Fort. ( Ferrocillin-veavy-over ... -,hallucination_far_off
+kaggle_bd,zeroshot,298.png,Fenadin,fexo,other_wrong_real_word
+kaggle_bd,zeroshot,299.png,Fenadin,fenadin .,correct
+kaggle_bd,zeroshot,300.png,Fexofast,flexofost,minor_ocr_noise
+kaggle_bd,zeroshot,301.png,Fexofast,fexofast,correct
+kaggle_bd,zeroshot,302.png,Fexofast,fexofast,correct
+kaggle_bd,zeroshot,303.png,Fexofast,fexofost,minor_ocr_noise
+kaggle_bd,zeroshot,304.png,Fexofast,Fexfant .,hallucination_far_off
+kaggle_bd,zeroshot,305.png,Fexofast,texofast,minor_ocr_noise
+kaggle_bd,zeroshot,306.png,Fexofast,fexoflast .,minor_ocr_noise
+kaggle_bd,zeroshot,307.png,Fexofast,fexofast,correct
+kaggle_bd,zeroshot,308.png,Fexofast,fexofast,correct
+kaggle_bd,zeroshot,309.png,Fexofast,fexofast,correct
+kaggle_bd,zeroshot,310.png,Fexo,to # to,hallucination_far_off
+kaggle_bd,zeroshot,311.png,Fexo,flexo,minor_ocr_noise
+kaggle_bd,zeroshot,312.png,Fexo,fero,minor_ocr_noise
+kaggle_bd,zeroshot,313.png,Fexo,Fix en,hallucination_far_off
+kaggle_bd,zeroshot,314.png,Fexo,fexxo,minor_ocr_noise
+kaggle_bd,zeroshot,315.png,Fexo,fenadien .,hallucination_far_off
+kaggle_bd,zeroshot,316.png,Fexo,nextap,hallucination_far_off
+kaggle_bd,zeroshot,317.png,Fexo,fexo,correct
+kaggle_bd,zeroshot,318.png,Fexo,fexo,correct
+kaggle_bd,zeroshot,319.png,Fexo,feiko,hallucination_far_off
+kaggle_bd,zeroshot,320.png,Filmet,filmet .,correct
+kaggle_bd,zeroshot,321.png,Filmet,ril met,minor_ocr_noise
+kaggle_bd,zeroshot,322.png,Filmet,Print export .,hallucination_far_off
+kaggle_bd,zeroshot,323.png,Filmet,filmet .,correct
+kaggle_bd,zeroshot,324.png,Filmet,filmed,minor_ocr_noise
+kaggle_bd,zeroshot,325.png,Filmet,filmet .,correct
+kaggle_bd,zeroshot,326.png,Filmet,fitment .,hallucination_far_off
+kaggle_bd,zeroshot,327.png,Filmet,thilst,hallucination_far_off
+kaggle_bd,zeroshot,328.png,Filmet,F.I.market,hallucination_far_off
+kaggle_bd,zeroshot,329.png,Filmet,film-,hallucination_far_off
+kaggle_bd,zeroshot,330.png,Fixal,fixal,correct
+kaggle_bd,zeroshot,331.png,Fixal,fixal,correct
+kaggle_bd,zeroshot,332.png,Fixal,Fixal,correct
+kaggle_bd,zeroshot,333.png,Fixal,Freol,hallucination_far_off
+kaggle_bd,zeroshot,334.png,Fixal,fixed,hallucination_far_off
+kaggle_bd,zeroshot,335.png,Fixal,fixal,correct
+kaggle_bd,zeroshot,336.png,Fixal,Fexal,minor_ocr_noise
+kaggle_bd,zeroshot,337.png,Fixal,offixed,hallucination_far_off
+kaggle_bd,zeroshot,338.png,Fixal,fenadin .,other_wrong_real_word
+kaggle_bd,zeroshot,339.png,Fixal,fixal,correct
+kaggle_bd,zeroshot,340.png,Flamyd,flarmyd,minor_ocr_noise
+kaggle_bd,zeroshot,341.png,Flamyd,flamyd,correct
+kaggle_bd,zeroshot,342.png,Flamyd,flamyd,correct
+kaggle_bd,zeroshot,343.png,Flamyd,flamyd,correct
+kaggle_bd,zeroshot,344.png,Flamyd,flamaged .,hallucination_far_off
+kaggle_bd,zeroshot,345.png,Flamyd,flamyd,correct
+kaggle_bd,zeroshot,346.png,Flamyd,fellamyid,hallucination_far_off
+kaggle_bd,zeroshot,347.png,Flamyd,fellamyid,hallucination_far_off
+kaggle_bd,zeroshot,348.png,Flamyd,flannyd,minor_ocr_noise
+kaggle_bd,zeroshot,349.png,Flamyd,flamyd,correct
+kaggle_bd,zeroshot,350.png,Flexibac,Fluxibae .,hallucination_far_off
+kaggle_bd,zeroshot,351.png,Flexibac,flexibac .,correct
+kaggle_bd,zeroshot,352.png,Flexibac,Flexisine .,hallucination_far_off
+kaggle_bd,zeroshot,353.png,Flexibac,Flexisine .,hallucination_far_off
+kaggle_bd,zeroshot,354.png,Flexibac,flexite,hallucination_far_off
+kaggle_bd,zeroshot,355.png,Flexibac,flexibee .,hallucination_far_off
+kaggle_bd,zeroshot,356.png,Flexibac,flexibac .,correct
+kaggle_bd,zeroshot,357.png,Flexibac,oflexibac .,minor_ocr_noise
+kaggle_bd,zeroshot,358.png,Flexibac,oflexibac .,minor_ocr_noise
+kaggle_bd,zeroshot,359.png,Flexibac,flexibac .,correct
+kaggle_bd,zeroshot,360.png,Flexilax,F luxilage .,hallucination_far_off
+kaggle_bd,zeroshot,361.png,Flexilax,jflexilax,minor_ocr_noise
+kaggle_bd,zeroshot,362.png,Flexilax,F luxilage .,hallucination_far_off
+kaggle_bd,zeroshot,363.png,Flexilax,Flewigs .,hallucination_far_off
+kaggle_bd,zeroshot,364.png,Flexilax,flexibix,minor_ocr_noise
+kaggle_bd,zeroshot,365.png,Flexilax,flexilax,correct
+kaggle_bd,zeroshot,366.png,Flexilax,Flexview .,hallucination_far_off
+kaggle_bd,zeroshot,367.png,Flexilax,Flexilax,correct
+kaggle_bd,zeroshot,368.png,Flexilax,flexilax,correct
+kaggle_bd,zeroshot,369.png,Flexilax,flexilax,correct
+kaggle_bd,zeroshot,370.png,Flugal,fingged,hallucination_far_off
+kaggle_bd,zeroshot,371.png,Flugal,flugal,correct
+kaggle_bd,zeroshot,372.png,Flugal,flugal,correct
+kaggle_bd,zeroshot,373.png,Flugal,illegal,hallucination_far_off
+kaggle_bd,zeroshot,374.png,Flugal,2 Fluorescent .,hallucination_far_off
+kaggle_bd,zeroshot,375.png,Flugal,flugal,correct
+kaggle_bd,zeroshot,376.png,Flugal,flugal,correct
+kaggle_bd,zeroshot,377.png,Flugal,tengat,hallucination_far_off
+kaggle_bd,zeroshot,378.png,Flugal,prigal,hallucination_far_off
+kaggle_bd,zeroshot,379.png,Flugal,fungal,hallucination_far_off
+kaggle_bd,zeroshot,380.png,Ketocon,keto can,minor_ocr_noise
+kaggle_bd,zeroshot,381.png,Ketocon,cutocon,minor_ocr_noise
+kaggle_bd,zeroshot,382.png,Ketocon,keto can,minor_ocr_noise
+kaggle_bd,zeroshot,383.png,Ketocon,berto con,hallucination_far_off
+kaggle_bd,zeroshot,384.png,Ketocon,ketocon .,correct
+kaggle_bd,zeroshot,385.png,Ketocon,leetocon .,hallucination_far_off
+kaggle_bd,zeroshot,386.png,Ketocon,berto con,hallucination_far_off
+kaggle_bd,zeroshot,387.png,Ketocon,retocean .,hallucination_far_off
+kaggle_bd,zeroshot,388.png,Ketocon,retocean .,hallucination_far_off
+kaggle_bd,zeroshot,389.png,Ketocon,cutocon,minor_ocr_noise
+kaggle_bd,zeroshot,390.png,Ketoral,external,hallucination_far_off
+kaggle_bd,zeroshot,391.png,Ketoral,retoral,minor_ocr_noise
+kaggle_bd,zeroshot,392.png,Ketoral,external,hallucination_far_off
+kaggle_bd,zeroshot,393.png,Ketoral,rectorial .,hallucination_far_off
+kaggle_bd,zeroshot,394.png,Ketoral,Kelonal,minor_ocr_noise
+kaggle_bd,zeroshot,395.png,Ketoral,retoreal,minor_ocr_noise
+kaggle_bd,zeroshot,396.png,Ketoral,ketorial .,minor_ocr_noise
+kaggle_bd,zeroshot,397.png,Ketoral,ketorum .,hallucination_far_off
+kaggle_bd,zeroshot,398.png,Ketoral,kutorail .,hallucination_far_off
+kaggle_bd,zeroshot,399.png,Ketoral,returnal .,hallucination_far_off
+kaggle_bd,zeroshot,400.png,Ketotab,ketotants,hallucination_far_off
+kaggle_bd,zeroshot,401.png,Ketotab,ketotat .,hallucination_far_off
+kaggle_bd,zeroshot,402.png,Ketotab,next to,hallucination_far_off
+kaggle_bd,zeroshot,403.png,Ketotab,keriforthons .,hallucination_far_off
+kaggle_bd,zeroshot,404.png,Ketotab,ketatab,minor_ocr_noise
+kaggle_bd,zeroshot,405.png,Ketotab,ketotab .,correct
+kaggle_bd,zeroshot,406.png,Ketotab,ketotals,minor_ocr_noise
+kaggle_bd,zeroshot,407.png,Ketotab,kurtotato,hallucination_far_off
+kaggle_bd,zeroshot,408.png,Ketotab,ketotably,minor_ocr_noise
+kaggle_bd,zeroshot,409.png,Ketotab,keto tab .,minor_ocr_noise
+kaggle_bd,zeroshot,410.png,Ketozol,ventoral,hallucination_far_off
+kaggle_bd,zeroshot,411.png,Ketozol,retoral .,hallucination_far_off
+kaggle_bd,zeroshot,412.png,Ketozol,ventoral,hallucination_far_off
+kaggle_bd,zeroshot,413.png,Ketozol,ketoral,confusable_wrong_drug
+kaggle_bd,zeroshot,414.png,Ketozol,hafogel,hallucination_far_off
+kaggle_bd,zeroshot,415.png,Ketozol,retozoa,minor_ocr_noise
+kaggle_bd,zeroshot,416.png,Ketozol,ketzel .,hallucination_far_off
+kaggle_bd,zeroshot,417.png,Ketozol,ketoral .,confusable_wrong_drug
+kaggle_bd,zeroshot,418.png,Ketozol,ventoral .,hallucination_far_off
+kaggle_bd,zeroshot,419.png,Ketozol,ketoral .,confusable_wrong_drug
+kaggle_bd,zeroshot,420.png,Leptic,Leptic,correct
+kaggle_bd,zeroshot,421.png,Leptic,heptic,minor_ocr_noise
+kaggle_bd,zeroshot,422.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,423.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,424.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,425.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,426.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,427.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,428.png,Leptic,leptic,correct
+kaggle_bd,zeroshot,429.png,Leptic,Leptic,correct
+kaggle_bd,zeroshot,430.png,Lucan-R,Luevara-R.,hallucination_far_off
+kaggle_bd,zeroshot,431.png,Lucan-R,Lecmatt .,hallucination_far_off
+kaggle_bd,zeroshot,432.png,Lucan-R,Lucan-R.,correct
+kaggle_bd,zeroshot,433.png,Lucan-R,Lacamp .,hallucination_far_off
+kaggle_bd,zeroshot,434.png,Lucan-R,encorn-R.,hallucination_far_off
+kaggle_bd,zeroshot,435.png,Lucan-R,linear R,hallucination_far_off
+kaggle_bd,zeroshot,436.png,Lucan-R,cucan-R.,minor_ocr_noise
+kaggle_bd,zeroshot,437.png,Lucan-R,2 Lincoln-R.,hallucination_far_off
+kaggle_bd,zeroshot,438.png,Lucan-R,Lencuss-R.,hallucination_far_off
+kaggle_bd,zeroshot,439.png,Lucan-R,Lacuum-r.,hallucination_far_off
+kaggle_bd,zeroshot,440.png,Lumona,Lumona,correct
+kaggle_bd,zeroshot,441.png,Lumona,""" Lumona",minor_ocr_noise
+kaggle_bd,zeroshot,442.png,Lumona,""" Lemmonies .",hallucination_far_off
+kaggle_bd,zeroshot,443.png,Lumona,""" Lemmonies .",hallucination_far_off
+kaggle_bd,zeroshot,444.png,Lumona,lumond .,hallucination_far_off
+kaggle_bd,zeroshot,445.png,Lumona,L Lemons .,hallucination_far_off
+kaggle_bd,zeroshot,446.png,Lumona,turnous a,hallucination_far_off
+kaggle_bd,zeroshot,447.png,Lumona,L Umova,minor_ocr_noise
+kaggle_bd,zeroshot,448.png,Lumona,lumona,correct
+kaggle_bd,zeroshot,449.png,Lumona,Liesmo on h.,hallucination_far_off
+kaggle_bd,zeroshot,450.png,M-Kast,mckart .,hallucination_far_off
+kaggle_bd,zeroshot,451.png,M-Kast,M-kast,correct
+kaggle_bd,zeroshot,452.png,M-Kast,M-reant,hallucination_far_off
+kaggle_bd,zeroshot,453.png,M-Kast,mkart .,hallucination_far_off
+kaggle_bd,zeroshot,454.png,M-Kast,minkast,minor_ocr_noise
+kaggle_bd,zeroshot,455.png,M-Kast,mackport .,hallucination_far_off
+kaggle_bd,zeroshot,456.png,M-Kast,M-kust,minor_ocr_noise
+kaggle_bd,zeroshot,457.png,M-Kast,Arkant,hallucination_far_off
+kaggle_bd,zeroshot,458.png,M-Kast,M-Kast,correct
+kaggle_bd,zeroshot,459.png,M-Kast,M- KAST,correct
+kaggle_bd,zeroshot,460.png,Maxima,maximum,minor_ocr_noise
+kaggle_bd,zeroshot,461.png,Maxima,maxima,correct
+kaggle_bd,zeroshot,462.png,Maxima,maxima,correct
+kaggle_bd,zeroshot,463.png,Maxima,transimen .,hallucination_far_off
+kaggle_bd,zeroshot,464.png,Maxima,maxima,correct
+kaggle_bd,zeroshot,465.png,Maxima,maxima,correct
+kaggle_bd,zeroshot,466.png,Maxima,transimen .,hallucination_far_off
+kaggle_bd,zeroshot,467.png,Maxima,transimen .,hallucination_far_off
+kaggle_bd,zeroshot,468.png,Maxima,programmen .,hallucination_far_off
+kaggle_bd,zeroshot,469.png,Maxima,maxima,correct
+kaggle_bd,zeroshot,470.png,Maxpro,Muxipo,hallucination_far_off
+kaggle_bd,zeroshot,471.png,Maxpro,transp no,hallucination_far_off
+kaggle_bd,zeroshot,472.png,Maxpro,maxups,hallucination_far_off
+kaggle_bd,zeroshot,473.png,Maxpro,musexpto,hallucination_far_off
+kaggle_bd,zeroshot,474.png,Maxpro,maxpro,correct
+kaggle_bd,zeroshot,475.png,Maxpro,Maxipino -,hallucination_far_off
+kaggle_bd,zeroshot,476.png,Maxpro,massup to,hallucination_far_off
+kaggle_bd,zeroshot,477.png,Maxpro,naxipas .,hallucination_far_off
+kaggle_bd,zeroshot,478.png,Maxpro,Macophone Leding,hallucination_far_off
+kaggle_bd,zeroshot,479.png,Maxpro,Macophone Leding,hallucination_far_off
+kaggle_bd,zeroshot,480.png,Metro,mefro,minor_ocr_noise
+kaggle_bd,zeroshot,481.png,Metro,met no,hallucination_far_off
+kaggle_bd,zeroshot,482.png,Metro,thetno,hallucination_far_off
+kaggle_bd,zeroshot,483.png,Metro,met no,hallucination_far_off
+kaggle_bd,zeroshot,484.png,Metro,meago,hallucination_far_off
+kaggle_bd,zeroshot,485.png,Metro,metno,minor_ocr_noise
+kaggle_bd,zeroshot,486.png,Metro,metino,hallucination_far_off
+kaggle_bd,zeroshot,487.png,Metro,metric,hallucination_far_off
+kaggle_bd,zeroshot,488.png,Metro,questivo,hallucination_far_off
+kaggle_bd,zeroshot,489.png,Metro,metto,minor_ocr_noise
+kaggle_bd,zeroshot,490.png,Metsina,metanism .,hallucination_far_off
+kaggle_bd,zeroshot,491.png,Metsina,mutansin .,hallucination_far_off
+kaggle_bd,zeroshot,492.png,Metsina,pubusir .,hallucination_far_off
+kaggle_bd,zeroshot,493.png,Metsina,metanism .,hallucination_far_off
+kaggle_bd,zeroshot,494.png,Metsina,meta mater .,hallucination_far_off
+kaggle_bd,zeroshot,495.png,Metsina,meeting,hallucination_far_off
+kaggle_bd,zeroshot,496.png,Metsina,metamin .,hallucination_far_off
+kaggle_bd,zeroshot,497.png,Metsina,mentamin,hallucination_far_off
+kaggle_bd,zeroshot,498.png,Metsina,metamin,hallucination_far_off
+kaggle_bd,zeroshot,499.png,Metsina,metanism .,hallucination_far_off
+kaggle_bd,zeroshot,500.png,Monas,momours .,hallucination_far_off
+kaggle_bd,zeroshot,501.png,Monas,pleness,hallucination_far_off
+kaggle_bd,zeroshot,502.png,Monas,p.MONIA .,hallucination_far_off
+kaggle_bd,zeroshot,503.png,Monas,Mon as,minor_ocr_noise
+kaggle_bd,zeroshot,504.png,Monas,1 Marines .,hallucination_far_off
+kaggle_bd,zeroshot,505.png,Monas,monas .,correct
+kaggle_bd,zeroshot,506.png,Monas,ynonyms,hallucination_far_off
+kaggle_bd,zeroshot,507.png,Monas,movie,hallucination_far_off
+kaggle_bd,zeroshot,508.png,Monas,m ongs .,hallucination_far_off
+kaggle_bd,zeroshot,509.png,Monas,manas .,hallucination_far_off
+kaggle_bd,zeroshot,510.png,Montair,montais .,hallucination_far_off
+kaggle_bd,zeroshot,511.png,Montair,mountains .,hallucination_far_off
+kaggle_bd,zeroshot,512.png,Montair,montaers .,hallucination_far_off
+kaggle_bd,zeroshot,513.png,Montair,moonfarm .,hallucination_far_off
+kaggle_bd,zeroshot,514.png,Montair,manning the,hallucination_far_off
+kaggle_bd,zeroshot,515.png,Montair,affamation .,hallucination_far_off
+kaggle_bd,zeroshot,516.png,Montair,theaters of spending,hallucination_far_off
+kaggle_bd,zeroshot,517.png,Montair,momontain .,hallucination_far_off
+kaggle_bd,zeroshot,518.png,Montair,an on semi,hallucination_far_off
+kaggle_bd,zeroshot,519.png,Montair,nonfair,minor_ocr_noise
+kaggle_bd,zeroshot,520.png,Montene,monstone .,hallucination_far_off
+kaggle_bd,zeroshot,521.png,Montene,PM competence,hallucination_far_off
+kaggle_bd,zeroshot,522.png,Montene,montene .,correct
+kaggle_bd,zeroshot,523.png,Montene,montone .,hallucination_far_off
+kaggle_bd,zeroshot,524.png,Montene,becaid .,hallucination_far_off
+kaggle_bd,zeroshot,525.png,Montene,moon tone .,hallucination_far_off
+kaggle_bd,zeroshot,526.png,Montene,monstone .,hallucination_far_off
+kaggle_bd,zeroshot,527.png,Montene,montone .,hallucination_far_off
+kaggle_bd,zeroshot,528.png,Montene,MONVIP NE,hallucination_far_off
+kaggle_bd,zeroshot,529.png,Montene,mom.,hallucination_far_off
+kaggle_bd,zeroshot,530.png,Montex,mentes .,hallucination_far_off
+kaggle_bd,zeroshot,531.png,Montex,in convex .,hallucination_far_off
+kaggle_bd,zeroshot,532.png,Montex,monters .,hallucination_far_off
+kaggle_bd,zeroshot,533.png,Montex,montess .,hallucination_far_off
+kaggle_bd,zeroshot,534.png,Montex,imconders,hallucination_far_off
+kaggle_bd,zeroshot,535.png,Montex,moontex .,hallucination_far_off
+kaggle_bd,zeroshot,536.png,Montex,promtex .,hallucination_far_off
+kaggle_bd,zeroshot,537.png,Montex,Miss Teen .,hallucination_far_off
+kaggle_bd,zeroshot,538.png,Montex,non tax,hallucination_far_off
+kaggle_bd,zeroshot,539.png,Montex,monitex,minor_ocr_noise
+kaggle_bd,zeroshot,540.png,Napa Extend,Napa ex-towed,hallucination_far_off
+kaggle_bd,zeroshot,541.png,Napa Extend,Napa Extend,correct
+kaggle_bd,zeroshot,542.png,Napa Extend,Napa exeterrd,minor_ocr_noise
+kaggle_bd,zeroshot,543.png,Napa Extend,Napa External,minor_ocr_noise
+kaggle_bd,zeroshot,544.png,Napa Extend,Napa Richard,hallucination_far_off
+kaggle_bd,zeroshot,545.png,Napa Extend,play from the existence of the military history,hallucination_far_off
+kaggle_bd,zeroshot,546.png,Napa Extend,proper S-food .,hallucination_far_off
+kaggle_bd,zeroshot,547.png,Napa Extend,Napeh eghorid,hallucination_far_off
+kaggle_bd,zeroshot,548.png,Napa Extend,propa stand .,hallucination_far_off
+kaggle_bd,zeroshot,549.png,Napa Extend,nipa extend,minor_ocr_noise
+kaggle_bd,zeroshot,550.png,Napa,Napa,correct
+kaggle_bd,zeroshot,551.png,Napa,Napa,correct
+kaggle_bd,zeroshot,552.png,Napa,nagoro,hallucination_far_off
+kaggle_bd,zeroshot,553.png,Napa,ploopa,hallucination_far_off
+kaggle_bd,zeroshot,554.png,Napa,napa,correct
+kaggle_bd,zeroshot,555.png,Napa,prodvertiser .,hallucination_far_off
+kaggle_bd,zeroshot,556.png,Napa,napa,correct
+kaggle_bd,zeroshot,557.png,Napa,Nlips,hallucination_far_off
+kaggle_bd,zeroshot,558.png,Napa,wadia .,hallucination_far_off
+kaggle_bd,zeroshot,559.png,Napa,Napa,correct
+kaggle_bd,zeroshot,560.png,Nexcap,nexcap,correct
+kaggle_bd,zeroshot,561.png,Nexcap,option .,hallucination_far_off
+kaggle_bd,zeroshot,562.png,Nexcap,nexcap,correct
+kaggle_bd,zeroshot,563.png,Nexcap,nox cap,minor_ocr_noise
+kaggle_bd,zeroshot,564.png,Nexcap,poxcap,hallucination_far_off
+kaggle_bd,zeroshot,565.png,Nexcap,newcap,minor_ocr_noise
+kaggle_bd,zeroshot,566.png,Nexcap,N excap,minor_ocr_noise
+kaggle_bd,zeroshot,567.png,Nexcap,new cap,minor_ocr_noise
+kaggle_bd,zeroshot,568.png,Nexcap,option,hallucination_far_off
+kaggle_bd,zeroshot,569.png,Nexcap,nexcap,correct
+kaggle_bd,zeroshot,570.png,Nexum,maximum,hallucination_far_off
+kaggle_bd,zeroshot,571.png,Nexum,nexumn .,hallucination_far_off
+kaggle_bd,zeroshot,572.png,Nexum,intercomm,hallucination_far_off
+kaggle_bd,zeroshot,573.png,Nexum,nkxum,minor_ocr_noise
+kaggle_bd,zeroshot,574.png,Nexum,""" Mexican . """,hallucination_far_off
+kaggle_bd,zeroshot,575.png,Nexum,maximum,hallucination_far_off
+kaggle_bd,zeroshot,576.png,Nexum,nexus .,hallucination_far_off
+kaggle_bd,zeroshot,577.png,Nexum,phoscurn,hallucination_far_off
+kaggle_bd,zeroshot,578.png,Nexum,maximum .,hallucination_far_off
+kaggle_bd,zeroshot,579.png,Nexum,boxrum .,hallucination_far_off
+kaggle_bd,zeroshot,580.png,Nidazyl,military #,hallucination_far_off
+kaggle_bd,zeroshot,581.png,Nidazyl,Nidazyl,correct
+kaggle_bd,zeroshot,582.png,Nidazyl,midnoye .,hallucination_far_off
+kaggle_bd,zeroshot,583.png,Nidazyl,Nidney ),hallucination_far_off
+kaggle_bd,zeroshot,584.png,Nidazyl,undgyly,hallucination_far_off
+kaggle_bd,zeroshot,585.png,Nidazyl,Nidney I,hallucination_far_off
+kaggle_bd,zeroshot,586.png,Nidazyl,Widney ),hallucination_far_off
+kaggle_bd,zeroshot,587.png,Nidazyl,nidszyl,minor_ocr_noise
+kaggle_bd,zeroshot,588.png,Nidazyl,midnight,hallucination_far_off
+kaggle_bd,zeroshot,589.png,Nidazyl,midney !,hallucination_far_off
+kaggle_bd,zeroshot,590.png,Nizoder,nizden .,hallucination_far_off
+kaggle_bd,zeroshot,591.png,Nizoder,ovizody,hallucination_far_off
+kaggle_bd,zeroshot,592.png,Nizoder,wigsden .,hallucination_far_off
+kaggle_bd,zeroshot,593.png,Nizoder,nizodu,minor_ocr_noise
+kaggle_bd,zeroshot,594.png,Nizoder,hizoderc,minor_ocr_noise
+kaggle_bd,zeroshot,595.png,Nizoder,N.I 20 LV.,hallucination_far_off
+kaggle_bd,zeroshot,596.png,Nizoder,nigsider .,hallucination_far_off
+kaggle_bd,zeroshot,597.png,Nizoder,wizodar,minor_ocr_noise
+kaggle_bd,zeroshot,598.png,Nizoder,nizode,minor_ocr_noise
+kaggle_bd,zeroshot,599.png,Nizoder,nizodun,minor_ocr_noise
+kaggle_bd,zeroshot,600.png,Odmon,octonion .,hallucination_far_off
+kaggle_bd,zeroshot,601.png,Odmon,Odom on,minor_ocr_noise
+kaggle_bd,zeroshot,602.png,Odmon,octurion .,hallucination_far_off
+kaggle_bd,zeroshot,603.png,Odmon,odmore .,hallucination_far_off
+kaggle_bd,zeroshot,604.png,Odmon,odmon .,correct
+kaggle_bd,zeroshot,605.png,Odmon,oldmoon,minor_ocr_noise
+kaggle_bd,zeroshot,606.png,Odmon,odomon .,hallucination_far_off
+kaggle_bd,zeroshot,607.png,Odmon,odmore .,hallucination_far_off
+kaggle_bd,zeroshot,608.png,Odmon,odium,hallucination_far_off
+kaggle_bd,zeroshot,609.png,Odmon,common .,hallucination_far_off
+kaggle_bd,zeroshot,610.png,Omastin,opponentity .,hallucination_far_off
+kaggle_bd,zeroshot,611.png,Omastin,omastin .,correct
+kaggle_bd,zeroshot,612.png,Omastin,Ourpartisan,hallucination_far_off
+kaggle_bd,zeroshot,613.png,Omastin,Ourpartisan,hallucination_far_off
+kaggle_bd,zeroshot,614.png,Omastin,omastic,minor_ocr_noise
+kaggle_bd,zeroshot,615.png,Omastin,omastments .,hallucination_far_off
+kaggle_bd,zeroshot,616.png,Omastin,Oppenuation .,hallucination_far_off
+kaggle_bd,zeroshot,617.png,Omastin,omastin .,correct
+kaggle_bd,zeroshot,618.png,Omastin,omastin .,correct
+kaggle_bd,zeroshot,619.png,Omastin,omastin .,correct
+kaggle_bd,zeroshot,620.png,Opton,epton .,hallucination_far_off
+kaggle_bd,zeroshot,621.png,Opton,option,minor_ocr_noise
+kaggle_bd,zeroshot,622.png,Opton,option,minor_ocr_noise
+kaggle_bd,zeroshot,623.png,Opton,oparton .,hallucination_far_off
+kaggle_bd,zeroshot,624.png,Opton,option .,hallucination_far_off
+kaggle_bd,zeroshot,625.png,Opton,option .,hallucination_far_off
+kaggle_bd,zeroshot,626.png,Opton,oparton .,hallucination_far_off
+kaggle_bd,zeroshot,627.png,Opton,option .,hallucination_far_off
+kaggle_bd,zeroshot,628.png,Opton,option .,hallucination_far_off
+kaggle_bd,zeroshot,629.png,Opton,nexus .,hallucination_far_off
+kaggle_bd,zeroshot,630.png,Progut,Proponent .,hallucination_far_off
+kaggle_bd,zeroshot,631.png,Progut,through,hallucination_far_off
+kaggle_bd,zeroshot,632.png,Progut,Proponent .,hallucination_far_off
+kaggle_bd,zeroshot,633.png,Progut,prominent,hallucination_far_off
+kaggle_bd,zeroshot,634.png,Progut,threveport .,hallucination_far_off
+kaggle_bd,zeroshot,635.png,Progut,procept,hallucination_far_off
+kaggle_bd,zeroshot,636.png,Progut,prominent,hallucination_far_off
+kaggle_bd,zeroshot,637.png,Progut,precept,hallucination_far_off
+kaggle_bd,zeroshot,638.png,Progut,precept,hallucination_far_off
+kaggle_bd,zeroshot,639.png,Progut,through,hallucination_far_off
+kaggle_bd,zeroshot,640.png,Provair,prevision,hallucination_far_off
+kaggle_bd,zeroshot,641.png,Provair,provoir .,hallucination_far_off
+kaggle_bd,zeroshot,642.png,Provair,provincial,hallucination_far_off
+kaggle_bd,zeroshot,643.png,Provair,prevains .,hallucination_far_off
+kaggle_bd,zeroshot,644.png,Provair,# provocative,hallucination_far_off
+kaggle_bd,zeroshot,645.png,Provair,firovairs .,hallucination_far_off
+kaggle_bd,zeroshot,646.png,Provair,frennain .,hallucination_far_off
+kaggle_bd,zeroshot,647.png,Provair,Pinovation .,hallucination_far_off
+kaggle_bd,zeroshot,648.png,Provair,2 Provairs .,hallucination_far_off
+kaggle_bd,zeroshot,649.png,Provair,provain .,hallucination_far_off
+kaggle_bd,zeroshot,650.png,Renova,Renova XR.,hallucination_far_off
+kaggle_bd,zeroshot,651.png,Renova,renona,minor_ocr_noise
+kaggle_bd,zeroshot,652.png,Renova,pennont,hallucination_far_off
+kaggle_bd,zeroshot,653.png,Renova,remont,hallucination_far_off
+kaggle_bd,zeroshot,654.png,Renova,remons .,hallucination_far_off
+kaggle_bd,zeroshot,655.png,Renova,RONOVA,minor_ocr_noise
+kaggle_bd,zeroshot,656.png,Renova,RE nova .,hallucination_far_off
+kaggle_bd,zeroshot,657.png,Renova,renova .,correct
+kaggle_bd,zeroshot,658.png,Renova,remora,hallucination_far_off
+kaggle_bd,zeroshot,659.png,Renova,remontment,hallucination_far_off
+kaggle_bd,zeroshot,660.png,Rhinil,rhondid,hallucination_far_off
+kaggle_bd,zeroshot,661.png,Rhinil,2 Rhinil .,hallucination_far_off
+kaggle_bd,zeroshot,662.png,Rhinil,rhind,hallucination_far_off
+kaggle_bd,zeroshot,663.png,Rhinil,rhinil .,correct
+kaggle_bd,zeroshot,664.png,Rhinil,rhinil,correct
+kaggle_bd,zeroshot,665.png,Rhinil,publicstill,hallucination_far_off
+kaggle_bd,zeroshot,666.png,Rhinil,rhinil .,correct
+kaggle_bd,zeroshot,667.png,Rhinil,rhinil .,correct
+kaggle_bd,zeroshot,668.png,Rhinil,rhinil .,correct
+kaggle_bd,zeroshot,669.png,Rhinil,RR. R. R. R. F. F.F. F.S.P. F. F. F.C.P.P,hallucination_far_off
+kaggle_bd,zeroshot,670.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,671.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,672.png,Ritch,Riteh,minor_ocr_noise
+kaggle_bd,zeroshot,673.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,674.png,Ritch,mittet !,hallucination_far_off
+kaggle_bd,zeroshot,675.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,676.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,677.png,Ritch,retch .,hallucination_far_off
+kaggle_bd,zeroshot,678.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,679.png,Ritch,ritch .,correct
+kaggle_bd,zeroshot,680.png,Rivotril,"first ,",hallucination_far_off
+kaggle_bd,zeroshot,681.png,Rivotril,rivotri I,minor_ocr_noise
+kaggle_bd,zeroshot,682.png,Rivotril,rivotsi .,hallucination_far_off
+kaggle_bd,zeroshot,683.png,Rivotril,Rivotri L,minor_ocr_noise
+kaggle_bd,zeroshot,684.png,Rivotril,risetsil,hallucination_far_off
+kaggle_bd,zeroshot,685.png,Rivotril,microsurvey .,hallucination_far_off
+kaggle_bd,zeroshot,686.png,Rivotril,rivotal,minor_ocr_noise
+kaggle_bd,zeroshot,687.png,Rivotril,PI vote,hallucination_far_off
+kaggle_bd,zeroshot,688.png,Rivotril,Kivo to it,hallucination_far_off
+kaggle_bd,zeroshot,689.png,Rivotril,Rivo tail,minor_ocr_noise
+kaggle_bd,zeroshot,690.png,Romycin,Romey van,hallucination_far_off
+kaggle_bd,zeroshot,691.png,Romycin,Romycin,correct
+kaggle_bd,zeroshot,692.png,Romycin,romsein .,hallucination_far_off
+kaggle_bd,zeroshot,693.png,Romycin,changes in,hallucination_far_off
+kaggle_bd,zeroshot,694.png,Romycin,pompeing,hallucination_far_off
+kaggle_bd,zeroshot,695.png,Romycin,Romiglin .,hallucination_far_off
+kaggle_bd,zeroshot,696.png,Romycin,romucian .,hallucination_far_off
+kaggle_bd,zeroshot,697.png,Romycin,romycin .,correct
+kaggle_bd,zeroshot,698.png,Romycin,romydia .,hallucination_far_off
+kaggle_bd,zeroshot,699.png,Romycin,Romaycin,minor_ocr_noise
+kaggle_bd,zeroshot,700.png,Rozith,dorith .,hallucination_far_off
+kaggle_bd,zeroshot,701.png,Rozith,ropigh,hallucination_far_off
+kaggle_bd,zeroshot,702.png,Rozith,rorith .,hallucination_far_off
+kaggle_bd,zeroshot,703.png,Rozith,Rozith .,correct
+kaggle_bd,zeroshot,704.png,Rozith,roguth .,hallucination_far_off
+kaggle_bd,zeroshot,705.png,Rozith,thopping,hallucination_far_off
+kaggle_bd,zeroshot,706.png,Rozith,rozith .,correct
+kaggle_bd,zeroshot,707.png,Rozith,Rozi Min .,hallucination_far_off
+kaggle_bd,zeroshot,708.png,Rozith,re zith .,hallucination_far_off
+kaggle_bd,zeroshot,709.png,Rozith,rorish .,hallucination_far_off
+kaggle_bd,zeroshot,710.png,Sergel,senzel,hallucination_far_off
+kaggle_bd,zeroshot,711.png,Sergel,mnaxpro,hallucination_far_off
+kaggle_bd,zeroshot,712.png,Sergel,serigel,minor_ocr_noise
+kaggle_bd,zeroshot,713.png,Sergel,segged,hallucination_far_off
+kaggle_bd,zeroshot,714.png,Sergel,isengly,hallucination_far_off
+kaggle_bd,zeroshot,715.png,Sergel,sergey,minor_ocr_noise
+kaggle_bd,zeroshot,716.png,Sergel,sergel .,correct
+kaggle_bd,zeroshot,717.png,Sergel,sergel .,correct
+kaggle_bd,zeroshot,718.png,Sergel,senzef,hallucination_far_off
+kaggle_bd,zeroshot,719.png,Sergel,senzel,hallucination_far_off
+kaggle_bd,zeroshot,720.png,Tamen,Tarnion .,hallucination_far_off
+kaggle_bd,zeroshot,721.png,Tamen,Tarmion .,hallucination_far_off
+kaggle_bd,zeroshot,722.png,Tamen,Tarmum .,hallucination_far_off
+kaggle_bd,zeroshot,723.png,Tamen,Tamun,minor_ocr_noise
+kaggle_bd,zeroshot,724.png,Tamen,-taxmen .,hallucination_far_off
+kaggle_bd,zeroshot,725.png,Tamen,Tarmion,hallucination_far_off
+kaggle_bd,zeroshot,726.png,Tamen,Tommen .,hallucination_far_off
+kaggle_bd,zeroshot,727.png,Tamen,tarnums .,hallucination_far_off
+kaggle_bd,zeroshot,728.png,Tamen,Tarmon .,hallucination_far_off
+kaggle_bd,zeroshot,729.png,Tamen,Tamum .,hallucination_far_off
+kaggle_bd,zeroshot,730.png,Telfast,Telelfant,hallucination_far_off
+kaggle_bd,zeroshot,731.png,Telfast,telfast,correct
+kaggle_bd,zeroshot,732.png,Telfast,tellant .,hallucination_far_off
+kaggle_bd,zeroshot,733.png,Telfast,Telfant .,hallucination_far_off
+kaggle_bd,zeroshot,734.png,Telfast,telpast,minor_ocr_noise
+kaggle_bd,zeroshot,735.png,Telfast,telfast,correct
+kaggle_bd,zeroshot,736.png,Telfast,tele-past,hallucination_far_off
+kaggle_bd,zeroshot,737.png,Telfast,telfast,correct
+kaggle_bd,zeroshot,738.png,Telfast,telfast,correct
+kaggle_bd,zeroshot,739.png,Telfast,telfast,correct
+kaggle_bd,zeroshot,740.png,Tridosil,tridesil,minor_ocr_noise
+kaggle_bd,zeroshot,741.png,Tridosil,Truidosil,minor_ocr_noise
+kaggle_bd,zeroshot,742.png,Tridosil,Truddoxist,hallucination_far_off
+kaggle_bd,zeroshot,743.png,Tridosil,Tridosit .,minor_ocr_noise
+kaggle_bd,zeroshot,744.png,Tridosil,trudyly,hallucination_far_off
+kaggle_bd,zeroshot,745.png,Tridosil,Trnickset .,hallucination_far_off
+kaggle_bd,zeroshot,746.png,Tridosil,Trudoxia,hallucination_far_off
+kaggle_bd,zeroshot,747.png,Tridosil,Trubbist,hallucination_far_off
+kaggle_bd,zeroshot,748.png,Tridosil,treyidosil .,hallucination_far_off
+kaggle_bd,zeroshot,749.png,Tridosil,truidosil,minor_ocr_noise
+kaggle_bd,zeroshot,750.png,Trilock,Toxic table .,hallucination_far_off
+kaggle_bd,zeroshot,751.png,Trilock,inifock .,hallucination_far_off
+kaggle_bd,zeroshot,752.png,Trilock,trailock .,minor_ocr_noise
+kaggle_bd,zeroshot,753.png,Trilock,at in its,hallucination_far_off
+kaggle_bd,zeroshot,754.png,Trilock,trillock .,minor_ocr_noise
+kaggle_bd,zeroshot,755.png,Trilock,""" Trilock",minor_ocr_noise
+kaggle_bd,zeroshot,756.png,Trilock,trillock .,minor_ocr_noise
+kaggle_bd,zeroshot,757.png,Trilock,at.m.i.Cocile .,hallucination_far_off
+kaggle_bd,zeroshot,758.png,Trilock,trilock,correct
+kaggle_bd,zeroshot,759.png,Trilock,""" First Lincoln",hallucination_far_off
+kaggle_bd,zeroshot,760.png,Vifas,vigas .,hallucination_far_off
+kaggle_bd,zeroshot,761.png,Vifas,vifias .,hallucination_far_off
+kaggle_bd,zeroshot,762.png,Vifas,vigan .,hallucination_far_off
+kaggle_bd,zeroshot,763.png,Vifas,vifers .,hallucination_far_off
+kaggle_bd,zeroshot,764.png,Vifas,vifas,correct
+kaggle_bd,zeroshot,765.png,Vifas,vifans .,hallucination_far_off
+kaggle_bd,zeroshot,766.png,Vifas,mifons .,hallucination_far_off
+kaggle_bd,zeroshot,767.png,Vifas,urfing them .,hallucination_far_off
+kaggle_bd,zeroshot,768.png,Vifas,vistas .,hallucination_far_off
+kaggle_bd,zeroshot,769.png,Vifas,vitas .,hallucination_far_off
+kaggle_bd,zeroshot,770.png,Zithrin,either the,hallucination_far_off
+kaggle_bd,zeroshot,771.png,Zithrin,6 Within .,hallucination_far_off
+kaggle_bd,zeroshot,772.png,Zithrin,2withmin .,hallucination_far_off
+kaggle_bd,zeroshot,773.png,Zithrin,within .,hallucination_far_off
+kaggle_bd,zeroshot,774.png,Zithrin,ziffin .,hallucination_far_off
+kaggle_bd,zeroshot,775.png,Zithrin,zithmin .,hallucination_far_off
+kaggle_bd,zeroshot,776.png,Zithrin,zwithin .,hallucination_far_off
+kaggle_bd,zeroshot,777.png,Zithrin,within .,hallucination_far_off
+kaggle_bd,zeroshot,778.png,Zithrin,2ithrin .,hallucination_far_off
+kaggle_bd,zeroshot,779.png,Zithrin,although,hallucination_far_off
+kaggle_bd,lora_ceonly,0.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,1.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,2.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,3.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,4.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,5.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,6.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,7.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,8.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,9.png,Aceta,Aceta,correct
+kaggle_bd,lora_ceonly,10.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,11.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,12.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,13.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,14.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,15.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,16.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,17.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,18.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,19.png,Ace,Ace,correct
+kaggle_bd,lora_ceonly,20.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,21.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,22.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,23.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,24.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,25.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,26.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,27.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,28.png,Alatrol,Alatrol,correct
+kaggle_bd,lora_ceonly,29.png,Alatrol,Nexlon,hallucination_far_off
+kaggle_bd,lora_ceonly,30.png,Amodis,Amodin,minor_ocr_noise
+kaggle_bd,lora_ceonly,31.png,Amodis,Amodin,minor_ocr_noise
+kaggle_bd,lora_ceonly,32.png,Amodis,Amodin,minor_ocr_noise
+kaggle_bd,lora_ceonly,33.png,Amodis,Amodis,correct
+kaggle_bd,lora_ceonly,34.png,Amodis,Amodis,correct
+kaggle_bd,lora_ceonly,35.png,Amodis,Amodis,correct
+kaggle_bd,lora_ceonly,36.png,Amodis,Amodin,minor_ocr_noise
+kaggle_bd,lora_ceonly,37.png,Amodis,Amodis,correct
+kaggle_bd,lora_ceonly,38.png,Amodis,Amodis,correct
+kaggle_bd,lora_ceonly,39.png,Amodis,Amodis,correct
+kaggle_bd,lora_ceonly,40.png,Atrizin,Atizin,minor_ocr_noise
+kaggle_bd,lora_ceonly,41.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,42.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,43.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,44.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,45.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,46.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,47.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,48.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,49.png,Atrizin,Atrizin,correct
+kaggle_bd,lora_ceonly,50.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,51.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,52.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,53.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,54.png,Axodin,Axolin,minor_ocr_noise
+kaggle_bd,lora_ceonly,55.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,56.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,57.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,58.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,59.png,Axodin,Axodin,correct
+kaggle_bd,lora_ceonly,60.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,61.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,62.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,63.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,64.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,65.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,66.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,67.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,68.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,69.png,Azithrocin,Azithrocin,correct
+kaggle_bd,lora_ceonly,70.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,71.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,72.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,73.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,74.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,75.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,76.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,77.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,78.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,79.png,Azyth,Azyth,correct
+kaggle_bd,lora_ceonly,80.png,Az,Az,correct
+kaggle_bd,lora_ceonly,81.png,Az,Az,correct
+kaggle_bd,lora_ceonly,82.png,Az,Az,correct
+kaggle_bd,lora_ceonly,83.png,Az,Az,correct
+kaggle_bd,lora_ceonly,84.png,Az,Az,correct
+kaggle_bd,lora_ceonly,85.png,Az,Exop,hallucination_far_off
+kaggle_bd,lora_ceonly,86.png,Az,Az,correct
+kaggle_bd,lora_ceonly,87.png,Az,Az,correct
+kaggle_bd,lora_ceonly,88.png,Az,Az,correct
+kaggle_bd,lora_ceonly,89.png,Az,Az,correct
+kaggle_bd,lora_ceonly,90.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,91.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,92.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,93.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,94.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,95.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,96.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,97.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,98.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,99.png,Bacaid,Bacaid,correct
+kaggle_bd,lora_ceonly,100.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,101.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,102.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,103.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,104.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,105.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,106.png,Backtone,Daclon,hallucination_far_off
+kaggle_bd,lora_ceonly,107.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,108.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,109.png,Backtone,Backtone,correct
+kaggle_bd,lora_ceonly,110.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,111.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,112.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,113.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,114.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,115.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,116.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,117.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,118.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,119.png,Baclofen,Baclofen,correct
+kaggle_bd,lora_ceonly,120.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,121.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,122.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,123.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,124.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,125.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,126.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,127.png,Baclon,Baclon,correct
+kaggle_bd,lora_ceonly,128.png,Baclon,Bacom,hallucination_far_off
+kaggle_bd,lora_ceonly,129.png,Baclon,Rocolov,hallucination_far_off
+kaggle_bd,lora_ceonly,130.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,131.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,132.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,133.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,134.png,Bacmax,Bueman,hallucination_far_off
+kaggle_bd,lora_ceonly,135.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,136.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,137.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,138.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,139.png,Bacmax,Bacmax,correct
+kaggle_bd,lora_ceonly,140.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,141.png,Beklo,Bexo,hallucination_far_off
+kaggle_bd,lora_ceonly,142.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,143.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,144.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,145.png,Beklo,TateBeklu,hallucination_far_off
+kaggle_bd,lora_ceonly,146.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,147.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,148.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,149.png,Beklo,Beklo,correct
+kaggle_bd,lora_ceonly,150.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,151.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,152.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,153.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,154.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,155.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,156.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,157.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,158.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,159.png,Bicozin,Bicozin,correct
+kaggle_bd,lora_ceonly,160.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,161.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,162.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,163.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,164.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,165.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,166.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,167.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,168.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,169.png,Canazole,Canazole,correct
+kaggle_bd,lora_ceonly,170.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,171.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,172.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,173.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,174.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,175.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,176.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,177.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,178.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,179.png,Candinil,Candinil,correct
+kaggle_bd,lora_ceonly,180.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,181.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,182.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,183.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,184.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,185.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,186.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,187.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,188.png,Cetisoft,Cetosof,minor_ocr_noise
+kaggle_bd,lora_ceonly,189.png,Cetisoft,Cetisoft,correct
+kaggle_bd,lora_ceonly,190.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,191.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,192.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,193.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,194.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,195.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,196.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,197.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,198.png,Conaz,Conaz,correct
+kaggle_bd,lora_ceonly,199.png,Conaz,Cetaz,hallucination_far_off
+kaggle_bd,lora_ceonly,200.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,201.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,202.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,203.png,Dancel,Famen,hallucination_far_off
+kaggle_bd,lora_ceonly,204.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,205.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,206.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,207.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,208.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,209.png,Dancel,Dancel,correct
+kaggle_bd,lora_ceonly,210.png,Denixil,Denixil,correct
+kaggle_bd,lora_ceonly,211.png,Denixil,Enixil,minor_ocr_noise
+kaggle_bd,lora_ceonly,212.png,Denixil,Denixil,correct
+kaggle_bd,lora_ceonly,213.png,Denixil,Denizail,minor_ocr_noise
+kaggle_bd,lora_ceonly,214.png,Denixil,Denixil,correct
+kaggle_bd,lora_ceonly,215.png,Denixil,Denixil,correct
+kaggle_bd,lora_ceonly,216.png,Denixil,Denizail,minor_ocr_noise
+kaggle_bd,lora_ceonly,217.png,Denixil,Denizail,minor_ocr_noise
+kaggle_bd,lora_ceonly,218.png,Denixil,Denixil,correct
+kaggle_bd,lora_ceonly,219.png,Denixil,Denixil,correct
+kaggle_bd,lora_ceonly,220.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,221.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,222.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,223.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,224.png,Diflu,Dizhi,hallucination_far_off
+kaggle_bd,lora_ceonly,225.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,226.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,227.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,228.png,Diflu,Riflu,minor_ocr_noise
+kaggle_bd,lora_ceonly,229.png,Diflu,Diflu,correct
+kaggle_bd,lora_ceonly,230.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,231.png,Dinafex,Fixal,other_wrong_real_word
+kaggle_bd,lora_ceonly,232.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,233.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,234.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,235.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,236.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,237.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,238.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,239.png,Dinafex,Dinafex,correct
+kaggle_bd,lora_ceonly,240.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,241.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,242.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,243.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,244.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,245.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,246.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,247.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,248.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,249.png,Disopan,Disopan,correct
+kaggle_bd,lora_ceonly,250.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,251.png,Esonix,Ebonix,minor_ocr_noise
+kaggle_bd,lora_ceonly,252.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,253.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,254.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,255.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,256.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,257.png,Esonix,Esomex,hallucination_far_off
+kaggle_bd,lora_ceonly,258.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,259.png,Esonix,Esonix,correct
+kaggle_bd,lora_ceonly,260.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,261.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,262.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,263.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,264.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,265.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,266.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,267.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,268.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,269.png,Esoral,Esoral,correct
+kaggle_bd,lora_ceonly,270.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,271.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,272.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,273.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,274.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,275.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,276.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,277.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,278.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,279.png,Etizin,Etizin,correct
+kaggle_bd,lora_ceonly,280.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,281.png,Exium,Tizozozos,hallucination_far_off
+kaggle_bd,lora_ceonly,282.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,283.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,284.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,285.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,286.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,287.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,288.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,289.png,Exium,Exium,correct
+kaggle_bd,lora_ceonly,290.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,291.png,Fenadin,Fexo,other_wrong_real_word
+kaggle_bd,lora_ceonly,292.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,293.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,294.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,295.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,296.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,297.png,Fenadin,FaunaFlexadin,hallucination_far_off
+kaggle_bd,lora_ceonly,298.png,Fenadin,Fexo,other_wrong_real_word
+kaggle_bd,lora_ceonly,299.png,Fenadin,Fenadin,correct
+kaggle_bd,lora_ceonly,300.png,Fexofast,Flexofast,minor_ocr_noise
+kaggle_bd,lora_ceonly,301.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,302.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,303.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,304.png,Fexofast,Fixfast,minor_ocr_noise
+kaggle_bd,lora_ceonly,305.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,306.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,307.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,308.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,309.png,Fexofast,Fexofast,correct
+kaggle_bd,lora_ceonly,310.png,Fexo,Foex,hallucination_far_off
+kaggle_bd,lora_ceonly,311.png,Fexo,Fexo,correct
+kaggle_bd,lora_ceonly,312.png,Fexo,Fexo,correct
+kaggle_bd,lora_ceonly,313.png,Fexo,Fixeu,hallucination_far_off
+kaggle_bd,lora_ceonly,314.png,Fexo,Fexo,correct
+kaggle_bd,lora_ceonly,315.png,Fexo,Fenadin,other_wrong_real_word
+kaggle_bd,lora_ceonly,316.png,Fexo,Nexcap,other_wrong_real_word
+kaggle_bd,lora_ceonly,317.png,Fexo,Fexo,correct
+kaggle_bd,lora_ceonly,318.png,Fexo,Fexo,correct
+kaggle_bd,lora_ceonly,319.png,Fexo,Fexo,correct
+kaggle_bd,lora_ceonly,320.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,321.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,322.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,323.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,324.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,325.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,326.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,327.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,328.png,Filmet,Fiumab,hallucination_far_off
+kaggle_bd,lora_ceonly,329.png,Filmet,Filmet,correct
+kaggle_bd,lora_ceonly,330.png,Fixal,Fixal,correct
+kaggle_bd,lora_ceonly,331.png,Fixal,Fixal,correct
+kaggle_bd,lora_ceonly,332.png,Fixal,Fixal,correct
+kaggle_bd,lora_ceonly,333.png,Fixal,Rocol,hallucination_far_off
+kaggle_bd,lora_ceonly,334.png,Fixal,Rixal,minor_ocr_noise
+kaggle_bd,lora_ceonly,335.png,Fixal,Fixal,correct
+kaggle_bd,lora_ceonly,336.png,Fixal,Fexal,minor_ocr_noise
+kaggle_bd,lora_ceonly,337.png,Fixal,Fixal,correct
+kaggle_bd,lora_ceonly,338.png,Fixal,Fenadin,other_wrong_real_word
+kaggle_bd,lora_ceonly,339.png,Fixal,Fixal,correct
+kaggle_bd,lora_ceonly,340.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,341.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,342.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,343.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,344.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,345.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,346.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,347.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,348.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,349.png,Flamyd,Flamyd,correct
+kaggle_bd,lora_ceonly,350.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,351.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,352.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,353.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,354.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,355.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,356.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,357.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,358.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,359.png,Flexibac,Flexibac,correct
+kaggle_bd,lora_ceonly,360.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,361.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,362.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,363.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,364.png,Flexilax,Flexibex,minor_ocr_noise
+kaggle_bd,lora_ceonly,365.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,366.png,Flexilax,Flexixex,minor_ocr_noise
+kaggle_bd,lora_ceonly,367.png,Flexilax,Flexibac,confusable_wrong_drug
+kaggle_bd,lora_ceonly,368.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,369.png,Flexilax,Flexilax,correct
+kaggle_bd,lora_ceonly,370.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,371.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,372.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,373.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,374.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,375.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,376.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,377.png,Flugal,Tengot,hallucination_far_off
+kaggle_bd,lora_ceonly,378.png,Flugal,Progol,hallucination_far_off
+kaggle_bd,lora_ceonly,379.png,Flugal,Flugal,correct
+kaggle_bd,lora_ceonly,380.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,381.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,382.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,383.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,384.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,385.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,386.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,387.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,388.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,389.png,Ketocon,Ketocon,correct
+kaggle_bd,lora_ceonly,390.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,391.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,392.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,393.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,394.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,395.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,396.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,397.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,398.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,399.png,Ketoral,Ketoral,correct
+kaggle_bd,lora_ceonly,400.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,401.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,402.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,403.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,404.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,405.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,406.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,407.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,408.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,409.png,Ketotab,Ketotab,correct
+kaggle_bd,lora_ceonly,410.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,411.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,412.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,413.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,414.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,415.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,416.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,417.png,Ketozol,Ketoral,confusable_wrong_drug
+kaggle_bd,lora_ceonly,418.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,419.png,Ketozol,Ketozol,correct
+kaggle_bd,lora_ceonly,420.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,421.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,422.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,423.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,424.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,425.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,426.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,427.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,428.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,429.png,Leptic,Leptic,correct
+kaggle_bd,lora_ceonly,430.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,431.png,Lucan-R,Lucmar,hallucination_far_off
+kaggle_bd,lora_ceonly,432.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,433.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,434.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,435.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,436.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,437.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,438.png,Lucan-R,Lucan-R,correct
+kaggle_bd,lora_ceonly,439.png,Lucan-R,Locan-R,minor_ocr_noise
+kaggle_bd,lora_ceonly,440.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,441.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,442.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,443.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,444.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,445.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,446.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,447.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,448.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,449.png,Lumona,Lumona,correct
+kaggle_bd,lora_ceonly,450.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,451.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,452.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,453.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,454.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,455.png,M-Kast,M-Ocast,minor_ocr_noise
+kaggle_bd,lora_ceonly,456.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,457.png,M-Kast,Rivot,hallucination_far_off
+kaggle_bd,lora_ceonly,458.png,M-Kast,M-Kast,correct
+kaggle_bd,lora_ceonly,459.png,M-Kast,Monast,hallucination_far_off
+kaggle_bd,lora_ceonly,460.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,461.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,462.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,463.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,464.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,465.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,466.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,467.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,468.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,469.png,Maxima,Maxima,correct
+kaggle_bd,lora_ceonly,470.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,471.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,472.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,473.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,474.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,475.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,476.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,477.png,Maxpro,Nexos,hallucination_far_off
+kaggle_bd,lora_ceonly,478.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,479.png,Maxpro,Maxpro,correct
+kaggle_bd,lora_ceonly,480.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,481.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,482.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,483.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,484.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,485.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,486.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,487.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,488.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,489.png,Metro,Metro,correct
+kaggle_bd,lora_ceonly,490.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,491.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,492.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,493.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,494.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,495.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,496.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,497.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,498.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,499.png,Metsina,Metsina,correct
+kaggle_bd,lora_ceonly,500.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,501.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,502.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,503.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,504.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,505.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,506.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,507.png,Monas,Monaz,minor_ocr_noise
+kaggle_bd,lora_ceonly,508.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,509.png,Monas,Monas,correct
+kaggle_bd,lora_ceonly,510.png,Montair,Montair,correct
+kaggle_bd,lora_ceonly,511.png,Montair,Montrips,hallucination_far_off
+kaggle_bd,lora_ceonly,512.png,Montair,Montair,correct
+kaggle_bd,lora_ceonly,513.png,Montair,Monasin,hallucination_far_off
+kaggle_bd,lora_ceonly,514.png,Montair,Montex,confusable_wrong_drug
+kaggle_bd,lora_ceonly,515.png,Montair,Montair,correct
+kaggle_bd,lora_ceonly,516.png,Montair,Monazin,hallucination_far_off
+kaggle_bd,lora_ceonly,517.png,Montair,Montair,correct
+kaggle_bd,lora_ceonly,518.png,Montair,Montex,confusable_wrong_drug
+kaggle_bd,lora_ceonly,519.png,Montair,Napaix,hallucination_far_off
+kaggle_bd,lora_ceonly,520.png,Montene,Montene,correct
+kaggle_bd,lora_ceonly,521.png,Montene,Monazene,minor_ocr_noise
+kaggle_bd,lora_ceonly,522.png,Montene,Montene,correct
+kaggle_bd,lora_ceonly,523.png,Montene,Montene,correct
+kaggle_bd,lora_ceonly,524.png,Montene,Bacaid,other_wrong_real_word
+kaggle_bd,lora_ceonly,525.png,Montene,Montex,confusable_wrong_drug
+kaggle_bd,lora_ceonly,526.png,Montene,Monkou,hallucination_far_off
+kaggle_bd,lora_ceonly,527.png,Montene,Montene,correct
+kaggle_bd,lora_ceonly,528.png,Montene,Montene,correct
+kaggle_bd,lora_ceonly,529.png,Montene,Montene,correct
+kaggle_bd,lora_ceonly,530.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,531.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,532.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,533.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,534.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,535.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,536.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,537.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,538.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,539.png,Montex,Montex,correct
+kaggle_bd,lora_ceonly,540.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,541.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,542.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,543.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,544.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,545.png,Napa Extend,Monazonal,hallucination_far_off
+kaggle_bd,lora_ceonly,546.png,Napa Extend,Napa S-Kivot,hallucination_far_off
+kaggle_bd,lora_ceonly,547.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,548.png,Napa Extend,Napa Etonil,hallucination_far_off
+kaggle_bd,lora_ceonly,549.png,Napa Extend,Napa Extend,correct
+kaggle_bd,lora_ceonly,550.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,551.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,552.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,553.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,554.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,555.png,Napa,Monazole,hallucination_far_off
+kaggle_bd,lora_ceonly,556.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,557.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,558.png,Napa,Nexia,hallucination_far_off
+kaggle_bd,lora_ceonly,559.png,Napa,Napa,correct
+kaggle_bd,lora_ceonly,560.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,561.png,Nexcap,Opton,other_wrong_real_word
+kaggle_bd,lora_ceonly,562.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,563.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,564.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,565.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,566.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,567.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,568.png,Nexcap,Opton,other_wrong_real_word
+kaggle_bd,lora_ceonly,569.png,Nexcap,Nexcap,correct
+kaggle_bd,lora_ceonly,570.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,571.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,572.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,573.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,574.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,575.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,576.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,577.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,578.png,Nexum,Nexum,correct
+kaggle_bd,lora_ceonly,579.png,Nexum,Exum,minor_ocr_noise
+kaggle_bd,lora_ceonly,580.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,581.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,582.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,583.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,584.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,585.png,Nidazyl,Nidosyl,minor_ocr_noise
+kaggle_bd,lora_ceonly,586.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,587.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,588.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,589.png,Nidazyl,Nidazyl,correct
+kaggle_bd,lora_ceonly,590.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,591.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,592.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,593.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,594.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,595.png,Nizoder,Nizole,minor_ocr_noise
+kaggle_bd,lora_ceonly,596.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,597.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,598.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,599.png,Nizoder,Nizoder,correct
+kaggle_bd,lora_ceonly,600.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,601.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,602.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,603.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,604.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,605.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,606.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,607.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,608.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,609.png,Odmon,Odmon,correct
+kaggle_bd,lora_ceonly,610.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,611.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,612.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,613.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,614.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,615.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,616.png,Omastin,Odmastin,minor_ocr_noise
+kaggle_bd,lora_ceonly,617.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,618.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,619.png,Omastin,Omastin,correct
+kaggle_bd,lora_ceonly,620.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,621.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,622.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,623.png,Opton,Ototan,hallucination_far_off
+kaggle_bd,lora_ceonly,624.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,625.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,626.png,Opton,Ototan,hallucination_far_off
+kaggle_bd,lora_ceonly,627.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,628.png,Opton,Opton,correct
+kaggle_bd,lora_ceonly,629.png,Opton,Nexum,other_wrong_real_word
+kaggle_bd,lora_ceonly,630.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,631.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,632.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,633.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,634.png,Progut,Trilocent,hallucination_far_off
+kaggle_bd,lora_ceonly,635.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,636.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,637.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,638.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,639.png,Progut,Progut,correct
+kaggle_bd,lora_ceonly,640.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,641.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,642.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,643.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,644.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,645.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,646.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,647.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,648.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,649.png,Provair,Provair,correct
+kaggle_bd,lora_ceonly,650.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,651.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,652.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,653.png,Renova,Rivot,hallucination_far_off
+kaggle_bd,lora_ceonly,654.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,655.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,656.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,657.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,658.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,659.png,Renova,Renova,correct
+kaggle_bd,lora_ceonly,660.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,661.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,662.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,663.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,664.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,665.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,666.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,667.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,668.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,669.png,Rhinil,Rhinil,correct
+kaggle_bd,lora_ceonly,670.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,671.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,672.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,673.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,674.png,Ritch,Mitch,minor_ocr_noise
+kaggle_bd,lora_ceonly,675.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,676.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,677.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,678.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,679.png,Ritch,Ritch,correct
+kaggle_bd,lora_ceonly,680.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,681.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,682.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,683.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,684.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,685.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,686.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,687.png,Rivotril,Rivotri,minor_ocr_noise
+kaggle_bd,lora_ceonly,688.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,689.png,Rivotril,Rivotril,correct
+kaggle_bd,lora_ceonly,690.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,691.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,692.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,693.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,694.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,695.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,696.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,697.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,698.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,699.png,Romycin,Romycin,correct
+kaggle_bd,lora_ceonly,700.png,Rozith,Exith,hallucination_far_off
+kaggle_bd,lora_ceonly,701.png,Rozith,Rozyth,minor_ocr_noise
+kaggle_bd,lora_ceonly,702.png,Rozith,Rozith,correct
+kaggle_bd,lora_ceonly,703.png,Rozith,Rozith,correct
+kaggle_bd,lora_ceonly,704.png,Rozith,Rozith,correct
+kaggle_bd,lora_ceonly,705.png,Rozith,Rozizin,hallucination_far_off
+kaggle_bd,lora_ceonly,706.png,Rozith,Rozith,correct
+kaggle_bd,lora_ceonly,707.png,Rozith,Rozith,correct
+kaggle_bd,lora_ceonly,708.png,Rozith,Rozith,correct
+kaggle_bd,lora_ceonly,709.png,Rozith,Rizith,minor_ocr_noise
+kaggle_bd,lora_ceonly,710.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,711.png,Sergel,Maxpro,other_wrong_real_word
+kaggle_bd,lora_ceonly,712.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,713.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,714.png,Sergel,Sergl,minor_ocr_noise
+kaggle_bd,lora_ceonly,715.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,716.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,717.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,718.png,Sergel,Sergof,hallucination_far_off
+kaggle_bd,lora_ceonly,719.png,Sergel,Sergel,correct
+kaggle_bd,lora_ceonly,720.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,721.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,722.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,723.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,724.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,725.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,726.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,727.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,728.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,729.png,Tamen,Tamen,correct
+kaggle_bd,lora_ceonly,730.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,731.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,732.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,733.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,734.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,735.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,736.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,737.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,738.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,739.png,Telfast,Telfast,correct
+kaggle_bd,lora_ceonly,740.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,741.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,742.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,743.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,744.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,745.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,746.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,747.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,748.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,749.png,Tridosil,Tridosil,correct
+kaggle_bd,lora_ceonly,750.png,Trilock,Trilock,correct
+kaggle_bd,lora_ceonly,751.png,Trilock,Trifock,minor_ocr_noise
+kaggle_bd,lora_ceonly,752.png,Trilock,Fixilock,hallucination_far_off
+kaggle_bd,lora_ceonly,753.png,Trilock,Trilock,correct
+kaggle_bd,lora_ceonly,754.png,Trilock,Trilock,correct
+kaggle_bd,lora_ceonly,755.png,Trilock,Trilock,correct
+kaggle_bd,lora_ceonly,756.png,Trilock,Trilock,correct
+kaggle_bd,lora_ceonly,757.png,Trilock,Canidazole,hallucination_far_off
+kaggle_bd,lora_ceonly,758.png,Trilock,Trilock,correct
+kaggle_bd,lora_ceonly,759.png,Trilock,Fixilazole,hallucination_far_off
+kaggle_bd,lora_ceonly,760.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,761.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,762.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,763.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,764.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,765.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,766.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,767.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,768.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,769.png,Vifas,Vifas,correct
+kaggle_bd,lora_ceonly,770.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,771.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,772.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,773.png,Zithrin,Atanix,hallucination_far_off
+kaggle_bd,lora_ceonly,774.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,775.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,776.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,777.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,778.png,Zithrin,Zithrin,correct
+kaggle_bd,lora_ceonly,779.png,Zithrin,Zithrin,correct
