@@ -1,0 +1,781 @@
+dataset,image,true_label,tesseract_pred,tesseract_error_category,trocr_zeroshot_pred,trocr_zeroshot_error_category
+kaggle_bd,0.png,Aceta,hs,hallucination_far_off,Acute .,hallucination_far_off
+kaggle_bd,1.png,Aceta,Acale,hallucination_far_off,aceta,correct
+kaggle_bd,2.png,Aceta,"fresh,",hallucination_far_off,. Aceta,correct
+kaggle_bd,3.png,Aceta,Dcata,hallucination_far_off,Atlanta .,hallucination_far_off
+kaggle_bd,4.png,Aceta,Acelan,hallucination_far_off,Aeeto,hallucination_far_off
+kaggle_bd,5.png,Aceta,nf,hallucination_far_off,acort .,hallucination_far_off
+kaggle_bd,6.png,Aceta,i) z,hallucination_far_off,Austin .,hallucination_far_off
+kaggle_bd,7.png,Aceta,Aeske,hallucination_far_off,Atlanta .,hallucination_far_off
+kaggle_bd,8.png,Aceta,Lops,hallucination_far_off,Atlanta .,hallucination_far_off
+kaggle_bd,9.png,Aceta,hee,hallucination_far_off,agreements,hallucination_far_off
+kaggle_bd,10.png,Ace,Ate,hallucination_far_off,are,hallucination_far_off
+kaggle_bd,11.png,Ace,A ee,hallucination_far_off,age,hallucination_far_off
+kaggle_bd,12.png,Ace,Aen,hallucination_far_off,aen,hallucination_far_off
+kaggle_bd,13.png,Ace,Aco —,hallucination_far_off,ace .,correct
+kaggle_bd,14.png,Ace,free,hallucination_far_off,ace,correct
+kaggle_bd,15.png,Ace,AGP,hallucination_far_off,ace,correct
+kaggle_bd,16.png,Ace,Fi,hallucination_far_off,face,minor_ocr_noise
+kaggle_bd,17.png,Ace,fie,hallucination_far_off,fittled,hallucination_far_off
+kaggle_bd,18.png,Ace,yr ce.,hallucination_far_off,ace,correct
+kaggle_bd,19.png,Ace,Beo,hallucination_far_off,Ae e,hallucination_far_off
+kaggle_bd,20.png,Alatrol,Alabeo!,hallucination_far_off,alatno !,hallucination_far_off
+kaggle_bd,21.png,Alatrol,ftlatrco |,hallucination_far_off,Alatro I,minor_ocr_noise
+kaggle_bd,22.png,Alatrol,Alsbro|,hallucination_far_off,2 Abstract,hallucination_far_off
+kaggle_bd,23.png,Alatrol,Abateo|,hallucination_far_off,Alatno !,hallucination_far_off
+kaggle_bd,24.png,Alatrol,Mtre!h,hallucination_far_off,jettlestral,hallucination_far_off
+kaggle_bd,25.png,Alatrol,ALA TASL,hallucination_far_off,al Atrol,minor_ocr_noise
+kaggle_bd,26.png,Alatrol,Austral,hallucination_far_off,. Alcatino !,hallucination_far_off
+kaggle_bd,27.png,Alatrol,Aiteo|,hallucination_far_off,Alatino !,hallucination_far_off
+kaggle_bd,28.png,Alatrol,pbideel,hallucination_far_off,alatnef,hallucination_far_off
+kaggle_bd,29.png,Alatrol,prda pF} |.,hallucination_far_off,"peatual . """,hallucination_far_off
+kaggle_bd,30.png,Amodis,"Arn ds,",hallucination_far_off,Armedia,hallucination_far_off
+kaggle_bd,31.png,Amodis,Aro,hallucination_far_off,Amadi,hallucination_far_off
+kaggle_bd,32.png,Amodis,fimo der,hallucination_far_off,Amodin .,hallucination_far_off
+kaggle_bd,33.png,Amodis,Armed,hallucination_far_off,Amadia,hallucination_far_off
+kaggle_bd,34.png,Amodis,Amodis,correct,Armodis,minor_ocr_noise
+kaggle_bd,35.png,Amodis,paroles,hallucination_far_off,Amanda's,hallucination_far_off
+kaggle_bd,36.png,Amodis,A modn,hallucination_far_off,Armodin .,hallucination_far_off
+kaggle_bd,37.png,Amodis,Armed’s,hallucination_far_off,Amedis,minor_ocr_noise
+kaggle_bd,38.png,Amodis,Amodr,hallucination_far_off,Amodis .,correct
+kaggle_bd,39.png,Amodis,Ams,hallucination_far_off,1 Aprilist,hallucination_far_off
+kaggle_bd,40.png,Atrizin,Pirin,hallucination_far_off,Atizits,hallucination_far_off
+kaggle_bd,41.png,Atrizin,Sr Tte 2JWw,hallucination_far_off,afocign,hallucination_far_off
+kaggle_bd,42.png,Atrizin,Atrizir,minor_ocr_noise,Afruizin .,hallucination_far_off
+kaggle_bd,43.png,Atrizin,Atrizir,minor_ocr_noise,Afruizin .,hallucination_far_off
+kaggle_bd,44.png,Atrizin,Dekver in,hallucination_far_off,attrition .,hallucination_far_off
+kaggle_bd,45.png,Atrizin,Peerage,hallucination_far_off,atrition .,hallucination_far_off
+kaggle_bd,46.png,Atrizin,Abriwn,hallucination_far_off,Afrizin .,hallucination_far_off
+kaggle_bd,47.png,Atrizin,Pru zinr,hallucination_far_off,Atruzin,minor_ocr_noise
+kaggle_bd,48.png,Atrizin,Ptnirip,hallucination_far_off,Admirists,hallucination_far_off
+kaggle_bd,49.png,Atrizin,Prive,hallucination_far_off,Afonists .,hallucination_far_off
+kaggle_bd,50.png,Axodin,Axodin,correct,axodin .,correct
+kaggle_bd,51.png,Axodin,cAxodin,minor_ocr_noise,axtoldin .,hallucination_far_off
+kaggle_bd,52.png,Axodin,Axedin,minor_ocr_noise,axodin .,correct
+kaggle_bd,53.png,Axodin,Axodin,correct,axodin .,correct
+kaggle_bd,54.png,Axodin,for lin,hallucination_far_off,Assomaker,hallucination_far_off
+kaggle_bd,55.png,Axodin,Axedin,minor_ocr_noise,axodin .,correct
+kaggle_bd,56.png,Axodin,Axrodin,minor_ocr_noise,axodin .,correct
+kaggle_bd,57.png,Axodin,Hxodin,minor_ocr_noise,axodin .,correct
+kaggle_bd,58.png,Axodin,AxOdin,correct,axodin .,correct
+kaggle_bd,59.png,Axodin,Pxodin,minor_ocr_noise,axodin .,correct
+kaggle_bd,60.png,Azithrocin,Azithrocin,correct,azithrocin .,correct
+kaggle_bd,61.png,Azithrocin,cAzithrocin,minor_ocr_noise,a zithrocin .,minor_ocr_noise
+kaggle_bd,62.png,Azithrocin,Az2\ithvocin,minor_ocr_noise,azithrocin .,correct
+kaggle_bd,63.png,Azithrocin,Azithrocin,correct,azithrocin .,correct
+kaggle_bd,64.png,Azithrocin,Puthoue,hallucination_far_off,asithracian,minor_ocr_noise
+kaggle_bd,65.png,Azithrocin,Azithrecin,minor_ocr_noise,azithrocin .,correct
+kaggle_bd,66.png,Azithrocin,Azithrocin,correct,azithrocin .,correct
+kaggle_bd,67.png,Azithrocin,H2ithrocin,minor_ocr_noise,azithrocin .,correct
+kaggle_bd,68.png,Azithrocin,Azit nnOcin,minor_ocr_noise,azithmocin .,minor_ocr_noise
+kaggle_bd,69.png,Azithrocin,Parthrocin,minor_ocr_noise,azithrocin .,correct
+kaggle_bd,70.png,Azyth,Azyth,correct,azyth .,correct
+kaggle_bd,71.png,Azyth,Ha2yth,hallucination_far_off,azyth,correct
+kaggle_bd,72.png,Azyth,Azyth,correct,azyth .,correct
+kaggle_bd,73.png,Azyth,Az2yth,minor_ocr_noise,azyth,correct
+kaggle_bd,74.png,Azyth,"Arsytt,",hallucination_far_off,"Azeyth ,",hallucination_far_off
+kaggle_bd,75.png,Azyth,Kayltk,hallucination_far_off,altyth,hallucination_far_off
+kaggle_bd,76.png,Azyth,Prauth,hallucination_far_off,azyth,correct
+kaggle_bd,77.png,Azyth,cAzyth,minor_ocr_noise,azyth .,correct
+kaggle_bd,78.png,Azyth,Azyth,correct,azyth,correct
+kaggle_bd,79.png,Azyth,Azyth,correct,azyth,correct
+kaggle_bd,80.png,Az,anya,hallucination_far_off,after,hallucination_far_off
+kaggle_bd,81.png,Az,fo.,hallucination_far_off,An,hallucination_far_off
+kaggle_bd,82.png,Az,f\,hallucination_far_off,az,correct
+kaggle_bd,83.png,Az,"Rez,",hallucination_far_off,Az,correct
+kaggle_bd,84.png,Az,RR.,hallucination_far_off,2 a,hallucination_far_off
+kaggle_bd,85.png,Az,wa,hallucination_far_off,extention,hallucination_far_off
+kaggle_bd,86.png,Az,Ae,hallucination_far_off,1A2,hallucination_far_off
+kaggle_bd,87.png,Az,Aa,hallucination_far_off,Az,correct
+kaggle_bd,88.png,Az,fr.,hallucination_far_off,AR,hallucination_far_off
+kaggle_bd,89.png,Az,il,hallucination_far_off,Az,correct
+kaggle_bd,90.png,Bacaid,fpaastd.,hallucination_far_off,Bocaid,minor_ocr_noise
+kaggle_bd,91.png,Bacaid,Proend,hallucination_far_off,Bercaid .,hallucination_far_off
+kaggle_bd,92.png,Bacaid,Po acoed,hallucination_far_off,Bacid,minor_ocr_noise
+kaggle_bd,93.png,Bacaid,Precaid_,hallucination_far_off,record,hallucination_far_off
+kaggle_bd,94.png,Bacaid,Bacaid,correct,Bacaid .,correct
+kaggle_bd,95.png,Bacaid,Qecauk,hallucination_far_off,1 . Bracaist,hallucination_far_off
+kaggle_bd,96.png,Bacaid,Preied,hallucination_far_off,Baerhill .,hallucination_far_off
+kaggle_bd,97.png,Bacaid,(Paroid,hallucination_far_off,8 Brazil,hallucination_far_off
+kaggle_bd,98.png,Bacaid,> ocad,hallucination_far_off,B acid,hallucination_far_off
+kaggle_bd,99.png,Bacaid,Dewotd,hallucination_far_off,Bacaid,correct
+kaggle_bd,100.png,Backtone,Boackh,hallucination_far_off,Practiture .,hallucination_far_off
+kaggle_bd,101.png,Backtone,ach Fo,hallucination_far_off,back tone .,minor_ocr_noise
+kaggle_bd,102.png,Backtone,Bobi,hallucination_far_off,expectation .,hallucination_far_off
+kaggle_bd,103.png,Backtone,Caelfae,hallucination_far_off,back time .,hallucination_far_off
+kaggle_bd,104.png,Backtone,bnentrne,hallucination_far_off,Backtone .,correct
+kaggle_bd,105.png,Backtone,Barker,hallucination_far_off,backtone .,correct
+kaggle_bd,106.png,Backtone,odcins,hallucination_far_off,expelled for the,hallucination_far_off
+kaggle_bd,107.png,Backtone,ooh,hallucination_far_off,- Blackton .,hallucination_far_off
+kaggle_bd,108.png,Backtone,(poek hn,hallucination_far_off,back him .,hallucination_far_off
+kaggle_bd,109.png,Backtone,ach Fo,hallucination_far_off,back tone .,minor_ocr_noise
+kaggle_bd,110.png,Baclofen,Rac Lh rn,hallucination_far_off,Bac.lefen .,hallucination_far_off
+kaggle_bd,111.png,Baclofen,Bare Sefer,hallucination_far_off,Beach of an,hallucination_far_off
+kaggle_bd,112.png,Baclofen,erent Sof en,hallucination_far_off,bachelor .,hallucination_far_off
+kaggle_bd,113.png,Baclofen,Bachofen,minor_ocr_noise,Baclofen .,correct
+kaggle_bd,114.png,Baclofen,Ponek Lo fer,hallucination_far_off,8 Benchlofen .,hallucination_far_off
+kaggle_bd,115.png,Baclofen,BACLOFEN,correct,backlopen .,hallucination_far_off
+kaggle_bd,116.png,Baclofen,Bra Lefoon,hallucination_far_off,Peace before,hallucination_far_off
+kaggle_bd,117.png,Baclofen,Pont defen,hallucination_far_off,saclofen .,minor_ocr_noise
+kaggle_bd,118.png,Baclofen,Bevelefen,hallucination_far_off,Bacle for,hallucination_far_off
+kaggle_bd,119.png,Baclofen,Cache Pen,hallucination_far_off,Bordofen .,hallucination_far_off
+kaggle_bd,120.png,Baclon,roel,hallucination_far_off,Bonelina,hallucination_far_off
+kaggle_bd,121.png,Baclon,(hac em,hallucination_far_off,Benelum,hallucination_far_off
+kaggle_bd,122.png,Baclon,enc low,hallucination_far_off,Baclow .,hallucination_far_off
+kaggle_bd,123.png,Baclon,Penele ~~,hallucination_far_off,Bmelon .,hallucination_far_off
+kaggle_bd,124.png,Baclon,Boelon,hallucination_far_off,boelon .,hallucination_far_off
+kaggle_bd,125.png,Baclon,,hallucination_far_off,becline .,hallucination_far_off
+kaggle_bd,126.png,Baclon,Penele ~~,hallucination_far_off,Bmelon .,hallucination_far_off
+kaggle_bd,127.png,Baclon,Bade,hallucination_far_off,Praelen .,hallucination_far_off
+kaggle_bd,128.png,Baclon,‘bale.,hallucination_far_off,balcom .,hallucination_far_off
+kaggle_bd,129.png,Baclon,Bera levt,hallucination_far_off,Racelove,hallucination_far_off
+kaggle_bd,130.png,Bacmax,Ph on 4,hallucination_far_off,exaceways .,hallucination_far_off
+kaggle_bd,131.png,Bacmax,Coo,hallucination_far_off,fracenary .,hallucination_far_off
+kaggle_bd,132.png,Bacmax,Cosin 3,hallucination_far_off,Bacmar .,hallucination_far_off
+kaggle_bd,133.png,Bacmax,= i,hallucination_far_off,paeeways .,hallucination_far_off
+kaggle_bd,134.png,Bacmax,bueren,hallucination_far_off,bueman .,hallucination_far_off
+kaggle_bd,135.png,Bacmax,Boag fry,hallucination_far_off,Race-,hallucination_far_off
+kaggle_bd,136.png,Bacmax,Wacmse,hallucination_far_off,recoming a,hallucination_far_off
+kaggle_bd,137.png,Bacmax,Bo Bop,hallucination_far_off,baemers .,hallucination_far_off
+kaggle_bd,138.png,Bacmax,fos,hallucination_far_off,Bacmas,minor_ocr_noise
+kaggle_bd,139.png,Bacmax,Or» 4,hallucination_far_off,reasmers .,hallucination_far_off
+kaggle_bd,140.png,Beklo,Bo flee,hallucination_far_off,Baklo,minor_ocr_noise
+kaggle_bd,141.png,Beklo,Bere ro,hallucination_far_off,bercino,hallucination_far_off
+kaggle_bd,142.png,Beklo,Rte KLro,hallucination_far_off,refixio,hallucination_far_off
+kaggle_bd,143.png,Beklo,REkLO,minor_ocr_noise,bekio,minor_ocr_noise
+kaggle_bd,144.png,Beklo,iZek\e,hallucination_far_off,beklo,correct
+kaggle_bd,145.png,Beklo,‘lake BeklbG@ng,hallucination_far_off,""" Labor # B.B.E.K.ING -",hallucination_far_off
+kaggle_bd,146.png,Beklo,beklo,correct,beklo,correct
+kaggle_bd,147.png,Beklo,RPEKLS,hallucination_far_off,beklb .,hallucination_far_off
+kaggle_bd,148.png,Beklo,Reklo,minor_ocr_noise,beklo,correct
+kaggle_bd,149.png,Beklo,BEkLG,minor_ocr_noise,Beklo,correct
+kaggle_bd,150.png,Bicozin,,hallucination_far_off,bicozin .,correct
+kaggle_bd,151.png,Bicozin,Beah tor),hallucination_far_off,Bjection,hallucination_far_off
+kaggle_bd,152.png,Bicozin,,hallucination_far_off,bicozin .,correct
+kaggle_bd,153.png,Bicozin,Psi Din,hallucination_far_off,Biluzin,minor_ocr_noise
+kaggle_bd,154.png,Bicozin,Cit 22 Nh,hallucination_far_off,buzzing,hallucination_far_off
+kaggle_bd,155.png,Bicozin,Brean Hn,hallucination_far_off,bier than,hallucination_far_off
+kaggle_bd,156.png,Bicozin,CH worn,hallucination_far_off,Bicarin .,hallucination_far_off
+kaggle_bd,157.png,Bicozin,Biteun,hallucination_far_off,Bicozin .,correct
+kaggle_bd,158.png,Bicozin,"iwi,",hallucination_far_off,Bicozin .,correct
+kaggle_bd,159.png,Bicozin,Remy,hallucination_far_off,Biscopy .,hallucination_far_off
+kaggle_bd,160.png,Canazole,Canazole,correct,canazole,correct
+kaggle_bd,161.png,Canazole,Canazole,correct,canazole,correct
+kaggle_bd,162.png,Canazole,Canazole,correct,canazole,correct
+kaggle_bd,163.png,Canazole,CanazOle,correct,canazole,correct
+kaggle_bd,164.png,Canazole,Gonrta)-,hallucination_far_off,commonwealth .,hallucination_far_off
+kaggle_bd,165.png,Canazole,Canajele,minor_ocr_noise,canazole,correct
+kaggle_bd,166.png,Canazole,Canazole,correct,canazole,correct
+kaggle_bd,167.png,Canazole,Canazol\le,minor_ocr_noise,canazole,correct
+kaggle_bd,168.png,Canazole,Canazo\|e,minor_ocr_noise,canazole,correct
+kaggle_bd,169.png,Canazole,Canagzole,minor_ocr_noise,canazole,correct
+kaggle_bd,170.png,Candinil,amar],hallucination_far_off,""" Cardinal",hallucination_far_off
+kaggle_bd,171.png,Candinil,Candia!,hallucination_far_off,cambinal,hallucination_far_off
+kaggle_bd,172.png,Candinil,Gndeal,hallucination_far_off,0 Commercial .,hallucination_far_off
+kaggle_bd,173.png,Candinil,Coden’ |,hallucination_far_off,cordine . ),hallucination_far_off
+kaggle_bd,174.png,Candinil,CnAinel,hallucination_far_off,caudinil .,minor_ocr_noise
+kaggle_bd,175.png,Candinil,Con derek,hallucination_far_off,"condimil ,",hallucination_far_off
+kaggle_bd,176.png,Candinil,Com dail,hallucination_far_off,6 Carmelini !,hallucination_far_off
+kaggle_bd,177.png,Candinil,Comdine(,hallucination_far_off,candine .,hallucination_far_off
+kaggle_bd,178.png,Candinil,Com dsr],hallucination_far_off,carndinal,minor_ocr_noise
+kaggle_bd,179.png,Candinil,Con ders|,hallucination_far_off,candimir,minor_ocr_noise
+kaggle_bd,180.png,Cetisoft,CaHaeft,hallucination_far_off,Cetisoft .,correct
+kaggle_bd,181.png,Cetisoft,Gantt,hallucination_far_off,Catisoft .,minor_ocr_noise
+kaggle_bd,182.png,Cetisoft,Ching,hallucination_far_off,Cabinet .,hallucination_far_off
+kaggle_bd,183.png,Cetisoft,Cab nef ¥,hallucination_far_off,Cetisoft .,correct
+kaggle_bd,184.png,Cetisoft,Cefis of A,hallucination_far_off,3 Cefisett .,hallucination_far_off
+kaggle_bd,185.png,Cetisoft,Ghiogt,hallucination_far_off,Catisoft .,minor_ocr_noise
+kaggle_bd,186.png,Cetisoft,Cetinoft,minor_ocr_noise,Cetisoft .,correct
+kaggle_bd,187.png,Cetisoft,Cet,hallucination_far_off,Cabinoff,hallucination_far_off
+kaggle_bd,188.png,Cetisoft,(dunoft,hallucination_far_off,Cetesoft .,minor_ocr_noise
+kaggle_bd,189.png,Cetisoft,Cahineft,hallucination_far_off,celtisoft .,minor_ocr_noise
+kaggle_bd,190.png,Conaz,Con.,hallucination_far_off,conan .,hallucination_far_off
+kaggle_bd,191.png,Conaz,Comat,hallucination_far_off,conaz,correct
+kaggle_bd,192.png,Conaz,Come2,hallucination_far_off,comoz,hallucination_far_off
+kaggle_bd,193.png,Conaz,ConaAL_,hallucination_far_off,conal .,hallucination_far_off
+kaggle_bd,194.png,Conaz,Cor~a.,hallucination_far_off,cona 7,hallucination_far_off
+kaggle_bd,195.png,Conaz,(omar,hallucination_far_off,comaz,minor_ocr_noise
+kaggle_bd,196.png,Conaz,Ona,hallucination_far_off,comar .,hallucination_far_off
+kaggle_bd,197.png,Conaz,Gnert,hallucination_far_off,conaz,correct
+kaggle_bd,198.png,Conaz,Camat,hallucination_far_off,cenar .,hallucination_far_off
+kaggle_bd,199.png,Conaz,Cera.,hallucination_far_off,cossal,hallucination_far_off
+kaggle_bd,200.png,Dancel,Danae,hallucination_far_off,dancel,correct
+kaggle_bd,201.png,Dancel,Dance!,minor_ocr_noise,dancel,correct
+kaggle_bd,202.png,Dancel,Danar,hallucination_far_off,danced,minor_ocr_noise
+kaggle_bd,203.png,Dancel,qa,hallucination_far_off,firmed,hallucination_far_off
+kaggle_bd,204.png,Dancel,“Jan coh,hallucination_far_off,dancel,correct
+kaggle_bd,205.png,Dancel,Aantel,hallucination_far_off,dancel,correct
+kaggle_bd,206.png,Dancel,Vance,hallucination_far_off,dancel,correct
+kaggle_bd,207.png,Dancel,pune,hallucination_far_off,dancel,correct
+kaggle_bd,208.png,Dancel,Dancel,correct,dancel,correct
+kaggle_bd,209.png,Dancel,Dancet,minor_ocr_noise,dancel,correct
+kaggle_bd,210.png,Denixil,Serine t,hallucination_far_off,Terminal .,hallucination_far_off
+kaggle_bd,211.png,Denixil,denixid,minor_ocr_noise,SE nixil .,hallucination_far_off
+kaggle_bd,212.png,Denixil,Serine t,hallucination_far_off,Terminal .,hallucination_far_off
+kaggle_bd,213.png,Denixil,Denined,hallucination_far_off,Decisional .,hallucination_far_off
+kaggle_bd,214.png,Denixil,Denil,minor_ocr_noise,Denixil .,correct
+kaggle_bd,215.png,Denixil,NEw ye,hallucination_far_off,DENIX IL.,minor_ocr_noise
+kaggle_bd,216.png,Denixil,Denined,hallucination_far_off,Decisional .,hallucination_far_off
+kaggle_bd,217.png,Denixil,Denined,hallucination_far_off,Decisional .,hallucination_far_off
+kaggle_bd,218.png,Denixil,Pew pak,hallucination_far_off,Pennsylvania,hallucination_far_off
+kaggle_bd,219.png,Denixil,Denia A,hallucination_far_off,Denisil,minor_ocr_noise
+kaggle_bd,220.png,Diflu,"PUL,",hallucination_far_off,piflin .,hallucination_far_off
+kaggle_bd,221.png,Diflu,~pDift—,hallucination_far_off,difflin .,hallucination_far_off
+kaggle_bd,222.png,Diflu,"PUL,",hallucination_far_off,piflin .,hallucination_far_off
+kaggle_bd,223.png,Diflu,bifh—,hallucination_far_off,diff-film .,hallucination_far_off
+kaggle_bd,224.png,Diflu,Df.,hallucination_far_off,High .,hallucination_far_off
+kaggle_bd,225.png,Diflu,Dikb—,hallucination_far_off,pitch .,hallucination_far_off
+kaggle_bd,226.png,Diflu,bikin,hallucination_far_off,difflin .,hallucination_far_off
+kaggle_bd,227.png,Diflu,DiPL~,hallucination_far_off,difflin .,hallucination_far_off
+kaggle_bd,228.png,Diflu,pita,hallucination_far_off,1 2 2million .,hallucination_far_off
+kaggle_bd,229.png,Diflu,DigDr,hallucination_far_off,diffler .,hallucination_far_off
+kaggle_bd,230.png,Dinafex,Dinokes,hallucination_far_off,Dinofax .,hallucination_far_off
+kaggle_bd,231.png,Dinafex,Kad,hallucination_far_off,fixal,other_wrong_real_word
+kaggle_bd,232.png,Dinafex,Dinefer,minor_ocr_noise,Dinspex .,hallucination_far_off
+kaggle_bd,233.png,Dinafex,Dinefex,minor_ocr_noise,dinofex .,hallucination_far_off
+kaggle_bd,234.png,Dinafex,,hallucination_far_off,Dinnifex .,hallucination_far_off
+kaggle_bd,235.png,Dinafex,Dineefex,minor_ocr_noise,dinaflex,minor_ocr_noise
+kaggle_bd,236.png,Dinafex,Dtanorte*,hallucination_far_off,dinafax .,hallucination_far_off
+kaggle_bd,237.png,Dinafex,Dronanyey*,hallucination_far_off,dinnatex,minor_ocr_noise
+kaggle_bd,238.png,Dinafex,Dtanorte*,hallucination_far_off,dinafax .,hallucination_far_off
+kaggle_bd,239.png,Dinafex,Dronanyey*,hallucination_far_off,dinnatex,minor_ocr_noise
+kaggle_bd,240.png,Disopan,Disopan,correct,2 Disopan .,hallucination_far_off
+kaggle_bd,241.png,Disopan,Disopan,correct,disopan .,correct
+kaggle_bd,242.png,Disopan,Qisepa,hallucination_far_off,disopan .,correct
+kaggle_bd,243.png,Disopan,Dicopan,minor_ocr_noise,disopan .,correct
+kaggle_bd,244.png,Disopan,"Diep,",hallucination_far_off,phiscopern .,hallucination_far_off
+kaggle_bd,245.png,Disopan,Disopan,correct,disopan .,correct
+kaggle_bd,246.png,Disopan,Disopan,correct,1 Disopan .,hallucination_far_off
+kaggle_bd,247.png,Disopan,Disopan,correct,2 Disopan .,hallucination_far_off
+kaggle_bd,248.png,Disopan,Disopan,correct,Disopan 1,minor_ocr_noise
+kaggle_bd,249.png,Disopan,Disoran,minor_ocr_noise,disopan .,correct
+kaggle_bd,250.png,Esonix,Epon 4,hallucination_far_off,expensive,hallucination_far_off
+kaggle_bd,251.png,Esonix,E RDA] xX,hallucination_far_off,E.B.D N.IX .,hallucination_far_off
+kaggle_bd,252.png,Esonix,Eton,hallucination_far_off,economic,hallucination_far_off
+kaggle_bd,253.png,Esonix,rorve,hallucination_far_off,economic,hallucination_far_off
+kaggle_bd,254.png,Esonix,PB geome,hallucination_far_off,bromix,hallucination_far_off
+kaggle_bd,255.png,Esonix,LE gonix,hallucination_far_off,E soonixi,hallucination_far_off
+kaggle_bd,256.png,Esonix,Esonix,correct,esorix,minor_ocr_noise
+kaggle_bd,257.png,Esonix,Lsonte,hallucination_far_off,esomex,hallucination_far_off
+kaggle_bd,258.png,Esonix,"Zsonix,",minor_ocr_noise,asonix,minor_ocr_noise
+kaggle_bd,259.png,Esonix,oix,hallucination_far_off,esonix,correct
+kaggle_bd,260.png,Esoral,Eps nal,hallucination_far_off,essential,hallucination_far_off
+kaggle_bd,261.png,Esoral,,hallucination_far_off,E Soipal,hallucination_far_off
+kaggle_bd,262.png,Esoral,E Saya],hallucination_far_off,"esoma ,",hallucination_far_off
+kaggle_bd,263.png,Esoral,Eroral,minor_ocr_noise,esoral,correct
+kaggle_bd,264.png,Esoral,1 @so pal,hallucination_far_off,jesoral,minor_ocr_noise
+kaggle_bd,265.png,Esoral,bx oval,hallucination_far_off,Es oral,minor_ocr_noise
+kaggle_bd,266.png,Esoral,Ero,hallucination_far_off,equal,hallucination_far_off
+kaggle_bd,267.png,Esoral,ECRAL,hallucination_far_off,esoral,correct
+kaggle_bd,268.png,Esoral,Esoral,correct,e soral,minor_ocr_noise
+kaggle_bd,269.png,Esoral,sone.,hallucination_far_off,eson al.,hallucination_far_off
+kaggle_bd,270.png,Etizin,Sidi,hallucination_far_off,eitzin .,hallucination_far_off
+kaggle_bd,271.png,Etizin,Schum,hallucination_far_off,Britain .,hallucination_far_off
+kaggle_bd,272.png,Etizin,Ebi,hallucination_far_off,extain .,hallucination_far_off
+kaggle_bd,273.png,Etizin,Sitrin,hallucination_far_off,eitizen .,hallucination_far_off
+kaggle_bd,274.png,Etizin,Ek zm,hallucination_far_off,etizim .,hallucination_far_off
+kaggle_bd,275.png,Etizin,Liben,hallucination_far_off,6 Britain .,hallucination_far_off
+kaggle_bd,276.png,Etizin,Ectuin,hallucination_far_off,eitein .,hallucination_far_off
+kaggle_bd,277.png,Etizin,Setain,hallucination_far_off,extrain .,hallucination_far_off
+kaggle_bd,278.png,Etizin,Lidia,hallucination_far_off,6 E Citizen .,hallucination_far_off
+kaggle_bd,279.png,Etizin,Ett,hallucination_far_off,leitson .,hallucination_far_off
+kaggle_bd,280.png,Exium,tatu,hallucination_far_off,expenses .,hallucination_far_off
+kaggle_bd,281.png,Exium,FF ef LR,hallucination_far_off,tinipeways,hallucination_far_off
+kaggle_bd,282.png,Exium,Patan,hallucination_far_off,exime .,hallucination_far_off
+kaggle_bd,283.png,Exium,Loar,hallucination_far_off,Experiment,hallucination_far_off
+kaggle_bd,284.png,Exium,| Exiu,hallucination_far_off,Ilexium,minor_ocr_noise
+kaggle_bd,285.png,Exium,Hts,hallucination_far_off,expirms,hallucination_far_off
+kaggle_bd,286.png,Exium,Loar,hallucination_far_off,Experiment,hallucination_far_off
+kaggle_bd,287.png,Exium,LoxLLum,hallucination_far_off,exxium .,hallucination_far_off
+kaggle_bd,288.png,Exium,Exium,correct,exiurn .,hallucination_far_off
+kaggle_bd,289.png,Exium,4 jue,hallucination_far_off,exjum .,hallucination_far_off
+kaggle_bd,290.png,Fenadin,Prnndiwn,hallucination_far_off,Expansion .,hallucination_far_off
+kaggle_bd,291.png,Fenadin,fe Ke,hallucination_far_off,fexxo,hallucination_far_off
+kaggle_bd,292.png,Fenadin,Forsdunm.,hallucination_far_off,fenadin .,correct
+kaggle_bd,293.png,Fenadin,teynad (nm:,hallucination_far_off,terned in .,hallucination_far_off
+kaggle_bd,294.png,Fenadin,Cyroli—,hallucination_far_off,feneddin,minor_ocr_noise
+kaggle_bd,295.png,Fenadin,Reradin,minor_ocr_noise,fenadin .,correct
+kaggle_bd,296.png,Fenadin,Forsdunm.,hallucination_far_off,fenadin .,correct
+kaggle_bd,297.png,Fenadin,ef en. imenaachlwrihuy Soe act 7,hallucination_far_off,- Fort. ( Ferrocillin-veavy-over ... -,hallucination_far_off
+kaggle_bd,298.png,Fenadin,Fexo,other_wrong_real_word,fexo,other_wrong_real_word
+kaggle_bd,299.png,Fenadin,Fenadin,correct,fenadin .,correct
+kaggle_bd,300.png,Fexofast,Roantest-,hallucination_far_off,flexofost,minor_ocr_noise
+kaggle_bd,301.png,Fexofast,Texyofast,minor_ocr_noise,fexofast,correct
+kaggle_bd,302.png,Fexofast,Fexotast,minor_ocr_noise,fexofast,correct
+kaggle_bd,303.png,Fexofast,Fexo fas}—,minor_ocr_noise,fexofost,minor_ocr_noise
+kaggle_bd,304.png,Fexofast,FaxBant,hallucination_far_off,Fexfant .,hallucination_far_off
+kaggle_bd,305.png,Fexofast,Fepefaal,hallucination_far_off,texofast,minor_ocr_noise
+kaggle_bd,306.png,Fexofast,Fexotast,minor_ocr_noise,fexoflast .,minor_ocr_noise
+kaggle_bd,307.png,Fexofast,Fexofast,correct,fexofast,correct
+kaggle_bd,308.png,Fexofast,Fexotast+,minor_ocr_noise,fexofast,correct
+kaggle_bd,309.png,Fexofast,Fexotast,minor_ocr_noise,fexofast,correct
+kaggle_bd,310.png,Fexo,fa tox,hallucination_far_off,to # to,hallucination_far_off
+kaggle_bd,311.png,Fexo,eX,hallucination_far_off,flexo,minor_ocr_noise
+kaggle_bd,312.png,Fexo,oxo,hallucination_far_off,fero,minor_ocr_noise
+kaggle_bd,313.png,Fexo,,hallucination_far_off,Fix en,hallucination_far_off
+kaggle_bd,314.png,Fexo,Fe x2,hallucination_far_off,fexxo,minor_ocr_noise
+kaggle_bd,315.png,Fexo,Fenadin,other_wrong_real_word,fenadien .,hallucination_far_off
+kaggle_bd,316.png,Fexo,Nexcap,other_wrong_real_word,nextap,hallucination_far_off
+kaggle_bd,317.png,Fexo,Fexo,correct,fexo,correct
+kaggle_bd,318.png,Fexo,Fexo.,correct,fexo,correct
+kaggle_bd,319.png,Fexo,Fete,hallucination_far_off,feiko,hallucination_far_off
+kaggle_bd,320.png,Filmet,Filme,minor_ocr_noise,filmet .,correct
+kaggle_bd,321.png,Filmet,Al met,hallucination_far_off,ril met,minor_ocr_noise
+kaggle_bd,322.png,Filmet,Filme t,minor_ocr_noise,Print export .,hallucination_far_off
+kaggle_bd,323.png,Filmet,Cilmi,hallucination_far_off,filmet .,correct
+kaggle_bd,324.png,Filmet,Feline!,hallucination_far_off,filmed,minor_ocr_noise
+kaggle_bd,325.png,Filmet,Siaed,hallucination_far_off,filmet .,correct
+kaggle_bd,326.png,Filmet,Pith,hallucination_far_off,fitment .,hallucination_far_off
+kaggle_bd,327.png,Filmet,Arhm et,hallucination_far_off,thilst,hallucination_far_off
+kaggle_bd,328.png,Filmet,oo jae ial,hallucination_far_off,F.I.market,hallucination_far_off
+kaggle_bd,329.png,Filmet,FALMET,minor_ocr_noise,film-,hallucination_far_off
+kaggle_bd,330.png,Fixal,Fux,hallucination_far_off,fixal,correct
+kaggle_bd,331.png,Fixal,al,hallucination_far_off,fixal,correct
+kaggle_bd,332.png,Fixal,al,hallucination_far_off,Fixal,correct
+kaggle_bd,333.png,Fixal,Roel,hallucination_far_off,Freol,hallucination_far_off
+kaggle_bd,334.png,Fixal,Ged,hallucination_far_off,fixed,hallucination_far_off
+kaggle_bd,335.png,Fixal,Fixol,minor_ocr_noise,fixal,correct
+kaggle_bd,336.png,Fixal,Fv xal,hallucination_far_off,Fexal,minor_ocr_noise
+kaggle_bd,337.png,Fixal,402/,hallucination_far_off,offixed,hallucination_far_off
+kaggle_bd,338.png,Fixal,Fenadin,other_wrong_real_word,fenadin .,other_wrong_real_word
+kaggle_bd,339.png,Fixal,Fixal,correct,fixal,correct
+kaggle_bd,340.png,Flamyd,Flory,hallucination_far_off,flarmyd,minor_ocr_noise
+kaggle_bd,341.png,Flamyd,flamyd,correct,flamyd,correct
+kaggle_bd,342.png,Flamyd,Flomyeh,hallucination_far_off,flamyd,correct
+kaggle_bd,343.png,Flamyd,Floradl,hallucination_far_off,flamyd,correct
+kaggle_bd,344.png,Flamyd,Panett,hallucination_far_off,flamaged .,hallucination_far_off
+kaggle_bd,345.png,Flamyd,Flamyd,correct,flamyd,correct
+kaggle_bd,346.png,Flamyd,Fiomyd,hallucination_far_off,fellamyid,hallucination_far_off
+kaggle_bd,347.png,Flamyd,a |,hallucination_far_off,fellamyid,hallucination_far_off
+kaggle_bd,348.png,Flamyd,Flamuc,hallucination_far_off,flannyd,minor_ocr_noise
+kaggle_bd,349.png,Flamyd,Flamyd,correct,flamyd,correct
+kaggle_bd,350.png,Flexibac,Flaite,hallucination_far_off,Fluxibae .,hallucination_far_off
+kaggle_bd,351.png,Flexibac,Plexrbar,hallucination_far_off,flexibac .,correct
+kaggle_bd,352.png,Flexibac,Elen Vy,hallucination_far_off,Flexisine .,hallucination_far_off
+kaggle_bd,353.png,Flexibac,Elen Vy,hallucination_far_off,Flexisine .,hallucination_far_off
+kaggle_bd,354.png,Flexibac,flexi oe _,hallucination_far_off,flexite,hallucination_far_off
+kaggle_bd,355.png,Flexibac,"Hoxthe,",hallucination_far_off,flexibee .,hallucination_far_off
+kaggle_bd,356.png,Flexibac,pilex: bac,hallucination_far_off,flexibac .,correct
+kaggle_bd,357.png,Flexibac,Llexibae,minor_ocr_noise,oflexibac .,minor_ocr_noise
+kaggle_bd,358.png,Flexibac,tt \enxiboe,hallucination_far_off,oflexibac .,minor_ocr_noise
+kaggle_bd,359.png,Flexibac,© LEX\BAC,hallucination_far_off,flexibac .,correct
+kaggle_bd,360.png,Flexilax,Elixiles,hallucination_far_off,F luxilage .,hallucination_far_off
+kaggle_bd,361.png,Flexilax,lr L EXT LAK,hallucination_far_off,jflexilax,minor_ocr_noise
+kaggle_bd,362.png,Flexilax,Elixiles,hallucination_far_off,F luxilage .,hallucination_far_off
+kaggle_bd,363.png,Flexilax,F Li wi bye,hallucination_far_off,Flewigs .,hallucination_far_off
+kaggle_bd,364.png,Flexilax,$ keri ror,hallucination_far_off,flexibix,minor_ocr_noise
+kaggle_bd,365.png,Flexilax,Cheni2aXxk,hallucination_far_off,flexilax,correct
+kaggle_bd,366.png,Flexilax,Few] vex,hallucination_far_off,Flexview .,hallucination_far_off
+kaggle_bd,367.png,Flexilax,Flpi lax,hallucination_far_off,Flexilax,correct
+kaggle_bd,368.png,Flexilax,AAO RIVAL,hallucination_far_off,flexilax,correct
+kaggle_bd,369.png,Flexilax,Flexitlax,minor_ocr_noise,flexilax,correct
+kaggle_bd,370.png,Flugal,“Wage,hallucination_far_off,fingged,hallucination_far_off
+kaggle_bd,371.png,Flugal,Flugal,correct,flugal,correct
+kaggle_bd,372.png,Flugal,frugal,minor_ocr_noise,flugal,correct
+kaggle_bd,373.png,Flugal,Wager,hallucination_far_off,illegal,hallucination_far_off
+kaggle_bd,374.png,Flugal,Elon,hallucination_far_off,2 Fluorescent .,hallucination_far_off
+kaggle_bd,375.png,Flugal,flugal,correct,flugal,correct
+kaggle_bd,376.png,Flugal,Praga,hallucination_far_off,flugal,correct
+kaggle_bd,377.png,Flugal,lugar,hallucination_far_off,tengat,hallucination_far_off
+kaggle_bd,378.png,Flugal,Higa,hallucination_far_off,prigal,hallucination_far_off
+kaggle_bd,379.png,Flugal,uaa!,hallucination_far_off,fungal,hallucination_far_off
+kaggle_bd,380.png,Ketocon,véeto cv,hallucination_far_off,keto can,minor_ocr_noise
+kaggle_bd,381.png,Ketocon,to con —,hallucination_far_off,cutocon,minor_ocr_noise
+kaggle_bd,382.png,Ketocon,véeto cv,hallucination_far_off,keto can,minor_ocr_noise
+kaggle_bd,383.png,Ketocon,laete Cor—,hallucination_far_off,berto con,hallucination_far_off
+kaggle_bd,384.png,Ketocon,Keds n,hallucination_far_off,ketocon .,correct
+kaggle_bd,385.png,Ketocon,lerdoce,hallucination_far_off,leetocon .,hallucination_far_off
+kaggle_bd,386.png,Ketocon,laete Cor—,hallucination_far_off,berto con,hallucination_far_off
+kaggle_bd,387.png,Ketocon,yeko com —,hallucination_far_off,retocean .,hallucination_far_off
+kaggle_bd,388.png,Ketocon,yeko com —,hallucination_far_off,retocean .,hallucination_far_off
+kaggle_bd,389.png,Ketocon,to con —,hallucination_far_off,cutocon,minor_ocr_noise
+kaggle_bd,390.png,Ketoral,ratonal,hallucination_far_off,external,hallucination_far_off
+kaggle_bd,391.png,Ketoral,yoke mat _,hallucination_far_off,retoral,minor_ocr_noise
+kaggle_bd,392.png,Ketoral,ratonal,hallucination_far_off,external,hallucination_far_off
+kaggle_bd,393.png,Ketoral,pete rt,hallucination_far_off,rectorial .,hallucination_far_off
+kaggle_bd,394.png,Ketoral,Keone,hallucination_far_off,Kelonal,minor_ocr_noise
+kaggle_bd,395.png,Ketoral,rove,hallucination_far_off,retoreal,minor_ocr_noise
+kaggle_bd,396.png,Ketoral,Jeko nonl,hallucination_far_off,ketorial .,minor_ocr_noise
+kaggle_bd,397.png,Ketoral,Keb mt—,hallucination_far_off,ketorum .,hallucination_far_off
+kaggle_bd,398.png,Ketoral,ies,hallucination_far_off,kutorail .,hallucination_far_off
+kaggle_bd,399.png,Ketoral,yatre nok,hallucination_far_off,returnal .,hallucination_far_off
+kaggle_bd,400.png,Ketotab,Voto tn,hallucination_far_off,ketotants,hallucination_far_off
+kaggle_bd,401.png,Ketotab,ketotas,minor_ocr_noise,ketotat .,hallucination_far_off
+kaggle_bd,402.png,Ketotab,wero trv,hallucination_far_off,next to,hallucination_far_off
+kaggle_bd,403.png,Ketotab,eo int,hallucination_far_off,keriforthons .,hallucination_far_off
+kaggle_bd,404.png,Ketotab,kale?,hallucination_far_off,ketatab,minor_ocr_noise
+kaggle_bd,405.png,Ketotab,i4ttotnb,hallucination_far_off,ketotab .,correct
+kaggle_bd,406.png,Ketotab,Kelotebo,hallucination_far_off,ketotals,minor_ocr_noise
+kaggle_bd,407.png,Ketotab,abo tale,hallucination_far_off,kurtotato,hallucination_far_off
+kaggle_bd,408.png,Ketotab,Kelotab,minor_ocr_noise,ketotably,minor_ocr_noise
+kaggle_bd,409.png,Ketotab,\eeto ta lo,hallucination_far_off,keto tab .,minor_ocr_noise
+kaggle_bd,410.png,Ketozol,2 A2 Doh,hallucination_far_off,ventoral,hallucination_far_off
+kaggle_bd,411.png,Ketozol,ukoref,hallucination_far_off,retoral .,hallucination_far_off
+kaggle_bd,412.png,Ketozol,2 A2 Doh,hallucination_far_off,ventoral,hallucination_far_off
+kaggle_bd,413.png,Ketozol,lector),hallucination_far_off,ketoral,confusable_wrong_drug
+kaggle_bd,414.png,Ketozol,LAeee|,hallucination_far_off,hafogel,hallucination_far_off
+kaggle_bd,415.png,Ketozol,Keke rep,hallucination_far_off,retozoa,minor_ocr_noise
+kaggle_bd,416.png,Ketozol,leks 208,hallucination_far_off,ketzel .,hallucination_far_off
+kaggle_bd,417.png,Ketozol,tor,hallucination_far_off,ketoral .,confusable_wrong_drug
+kaggle_bd,418.png,Ketozol,utoz),hallucination_far_off,ventoral .,hallucination_far_off
+kaggle_bd,419.png,Ketozol,wekors fh,hallucination_far_off,ketoral .,confusable_wrong_drug
+kaggle_bd,420.png,Leptic,pt ce,hallucination_far_off,Leptic,correct
+kaggle_bd,421.png,Leptic,be etre,hallucination_far_off,heptic,minor_ocr_noise
+kaggle_bd,422.png,Leptic,leg &,hallucination_far_off,leptic,correct
+kaggle_bd,423.png,Leptic,Lept ec,minor_ocr_noise,leptic,correct
+kaggle_bd,424.png,Leptic,LET.,hallucination_far_off,leptic,correct
+kaggle_bd,425.png,Leptic,Lepre,hallucination_far_off,leptic,correct
+kaggle_bd,426.png,Leptic,Lepti ¢,minor_ocr_noise,leptic,correct
+kaggle_bd,427.png,Leptic,Leptic,correct,leptic,correct
+kaggle_bd,428.png,Leptic,Lagi <,hallucination_far_off,leptic,correct
+kaggle_bd,429.png,Leptic,LEPTIi¢a,hallucination_far_off,Leptic,correct
+kaggle_bd,430.png,Lucan-R,Leesa PR,hallucination_far_off,Luevara-R.,hallucination_far_off
+kaggle_bd,431.png,Lucan-R,Leos tR_,hallucination_far_off,Lecmatt .,hallucination_far_off
+kaggle_bd,432.png,Lucan-R,tesa,hallucination_far_off,Lucan-R.,correct
+kaggle_bd,433.png,Lucan-R,,hallucination_far_off,Lacamp .,hallucination_far_off
+kaggle_bd,434.png,Lucan-R,Brecon -R,hallucination_far_off,encorn-R.,hallucination_far_off
+kaggle_bd,435.png,Lucan-R,bevegr FR,hallucination_far_off,linear R,hallucination_far_off
+kaggle_bd,436.png,Lucan-R,Lacan fA,hallucination_far_off,cucan-R.,minor_ocr_noise
+kaggle_bd,437.png,Lucan-R,Lean,hallucination_far_off,2 Lincoln-R.,hallucination_far_off
+kaggle_bd,438.png,Lucan-R,Lew -R,hallucination_far_off,Lencuss-R.,hallucination_far_off
+kaggle_bd,439.png,Lucan-R,ee,hallucination_far_off,Lacuum-r.,hallucination_far_off
+kaggle_bd,440.png,Lumona,Lue ur,hallucination_far_off,Lumona,correct
+kaggle_bd,441.png,Lumona,Lumena,minor_ocr_noise,""" Lumona",minor_ocr_noise
+kaggle_bd,442.png,Lumona,,hallucination_far_off,""" Lemmonies .",hallucination_far_off
+kaggle_bd,443.png,Lumona,,hallucination_far_off,""" Lemmonies .",hallucination_far_off
+kaggle_bd,444.png,Lumona,bt UMONK,hallucination_far_off,lumond .,hallucination_far_off
+kaggle_bd,445.png,Lumona,LLL VA,hallucination_far_off,L Lemons .,hallucination_far_off
+kaggle_bd,446.png,Lumona,Somnn a,hallucination_far_off,turnous a,hallucination_far_off
+kaggle_bd,447.png,Lumona,- UMAaNA,hallucination_far_off,L Umova,minor_ocr_noise
+kaggle_bd,448.png,Lumona,QuUmong,hallucination_far_off,lumona,correct
+kaggle_bd,449.png,Lumona,Lira nk,hallucination_far_off,Liesmo on h.,hallucination_far_off
+kaggle_bd,450.png,M-Kast,Mead,hallucination_far_off,mckart .,hallucination_far_off
+kaggle_bd,451.png,M-Kast,M-KAST,correct,M-kast,correct
+kaggle_bd,452.png,M-Kast,M-vart,hallucination_far_off,M-reant,hallucination_far_off
+kaggle_bd,453.png,M-Kast,Mant,hallucination_far_off,mkart .,hallucination_far_off
+kaggle_bd,454.png,M-Kast,NAY AST,hallucination_far_off,minkast,minor_ocr_noise
+kaggle_bd,455.png,M-Kast,fa ~\ yt,hallucination_far_off,mackport .,hallucination_far_off
+kaggle_bd,456.png,M-Kast,Meet,hallucination_far_off,M-kust,minor_ocr_noise
+kaggle_bd,457.png,M-Kast,Mew,hallucination_far_off,Arkant,hallucination_far_off
+kaggle_bd,458.png,M-Kast,M-Kast,correct,M-Kast,correct
+kaggle_bd,459.png,M-Kast,Mn~ KAST,hallucination_far_off,M- KAST,correct
+kaggle_bd,460.png,Maxima,Megi ms,hallucination_far_off,maximum,minor_ocr_noise
+kaggle_bd,461.png,Maxima,Maxime,minor_ocr_noise,maxima,correct
+kaggle_bd,462.png,Maxima,Mayiman,minor_ocr_noise,maxima,correct
+kaggle_bd,463.png,Maxima,Mu a,hallucination_far_off,transimen .,hallucination_far_off
+kaggle_bd,464.png,Maxima,MAXIM A,minor_ocr_noise,maxima,correct
+kaggle_bd,465.png,Maxima,Moxima,minor_ocr_noise,maxima,correct
+kaggle_bd,466.png,Maxima,Mu a,hallucination_far_off,transimen .,hallucination_far_off
+kaggle_bd,467.png,Maxima,Mu a,hallucination_far_off,transimen .,hallucination_far_off
+kaggle_bd,468.png,Maxima,Mestre,hallucination_far_off,programmen .,hallucination_far_off
+kaggle_bd,469.png,Maxima,Maxima,correct,maxima,correct
+kaggle_bd,470.png,Maxpro,Neovo,hallucination_far_off,Muxipo,hallucination_far_off
+kaggle_bd,471.png,Maxpro,Mog rh?,hallucination_far_off,transp no,hallucination_far_off
+kaggle_bd,472.png,Maxpro,Nays pra,hallucination_far_off,maxups,hallucination_far_off
+kaggle_bd,473.png,Maxpro,Map teo,hallucination_far_off,musexpto,hallucination_far_off
+kaggle_bd,474.png,Maxpro,Manpd,hallucination_far_off,maxpro,correct
+kaggle_bd,475.png,Maxpro,Mes g — Yn,hallucination_far_off,Maxipino -,hallucination_far_off
+kaggle_bd,476.png,Maxpro,Yamre,hallucination_far_off,massup to,hallucination_far_off
+kaggle_bd,477.png,Maxpro,Nox ap,hallucination_far_off,naxipas .,hallucination_far_off
+kaggle_bd,478.png,Maxpro,Mago bem,hallucination_far_off,Macophone Leding,hallucination_far_off
+kaggle_bd,479.png,Maxpro,Mago bem,hallucination_far_off,Macophone Leding,hallucination_far_off
+kaggle_bd,480.png,Metro,5,hallucination_far_off,mefro,minor_ocr_noise
+kaggle_bd,481.png,Metro,Nutt,hallucination_far_off,met no,hallucination_far_off
+kaggle_bd,482.png,Metro,rake,hallucination_far_off,thetno,hallucination_far_off
+kaggle_bd,483.png,Metro,fies,hallucination_far_off,met no,hallucination_far_off
+kaggle_bd,484.png,Metro,Whee,hallucination_far_off,meago,hallucination_far_off
+kaggle_bd,485.png,Metro,otro,hallucination_far_off,metno,minor_ocr_noise
+kaggle_bd,486.png,Metro,,hallucination_far_off,metino,hallucination_far_off
+kaggle_bd,487.png,Metro,7,hallucination_far_off,metric,hallucination_far_off
+kaggle_bd,488.png,Metro,JMudeo,hallucination_far_off,questivo,hallucination_far_off
+kaggle_bd,489.png,Metro,Moth,hallucination_far_off,metto,minor_ocr_noise
+kaggle_bd,490.png,Metsina,ene,hallucination_far_off,metanism .,hallucination_far_off
+kaggle_bd,491.png,Metsina,tule,hallucination_far_off,mutansin .,hallucination_far_off
+kaggle_bd,492.png,Metsina,Mike,hallucination_far_off,pubusir .,hallucination_far_off
+kaggle_bd,493.png,Metsina,Melanin,hallucination_far_off,metanism .,hallucination_far_off
+kaggle_bd,494.png,Metsina,"MELsiNa,",minor_ocr_noise,meta mater .,hallucination_far_off
+kaggle_bd,495.png,Metsina,ME Th Ina,hallucination_far_off,meeting,hallucination_far_off
+kaggle_bd,496.png,Metsina,Muikerin,hallucination_far_off,metamin .,hallucination_far_off
+kaggle_bd,497.png,Metsina,PMabair,hallucination_far_off,mentamin,hallucination_far_off
+kaggle_bd,498.png,Metsina,pilenn,hallucination_far_off,metamin,hallucination_far_off
+kaggle_bd,499.png,Metsina,fudaernn,hallucination_far_off,metanism .,hallucination_far_off
+kaggle_bd,500.png,Monas,Mane,hallucination_far_off,momours .,hallucination_far_off
+kaggle_bd,501.png,Monas,Bn9,hallucination_far_off,pleness,hallucination_far_off
+kaggle_bd,502.png,Monas,M\laNA,hallucination_far_off,p.MONIA .,hallucination_far_off
+kaggle_bd,503.png,Monas,Mon As,minor_ocr_noise,Mon as,minor_ocr_noise
+kaggle_bd,504.png,Monas,LMU xeon,hallucination_far_off,1 Marines .,hallucination_far_off
+kaggle_bd,505.png,Monas,one,hallucination_far_off,monas .,correct
+kaggle_bd,506.png,Monas,AMO NAS,minor_ocr_noise,ynonyms,hallucination_far_off
+kaggle_bd,507.png,Monas,Mow Ag,hallucination_far_off,movie,hallucination_far_off
+kaggle_bd,508.png,Monas,M On4A4,hallucination_far_off,m ongs .,hallucination_far_off
+kaggle_bd,509.png,Monas,Manat,hallucination_far_off,manas .,hallucination_far_off
+kaggle_bd,510.png,Montair,Mortara,hallucination_far_off,montais .,hallucination_far_off
+kaggle_bd,511.png,Montair,MA oul,hallucination_far_off,mountains .,hallucination_far_off
+kaggle_bd,512.png,Montair,Montarr,minor_ocr_noise,montaers .,hallucination_far_off
+kaggle_bd,513.png,Montair,Mon f ve,hallucination_far_off,moonfarm .,hallucination_far_off
+kaggle_bd,514.png,Montair,pron A,hallucination_far_off,manning the,hallucination_far_off
+kaggle_bd,515.png,Montair,(Mowdotn,hallucination_far_off,affamation .,hallucination_far_off
+kaggle_bd,516.png,Montair,Mee des,hallucination_far_off,theaters of spending,hallucination_far_off
+kaggle_bd,517.png,Montair,Monwrm™,hallucination_far_off,momontain .,hallucination_far_off
+kaggle_bd,518.png,Montair,01) On t-eU,hallucination_far_off,an on semi,hallucination_far_off
+kaggle_bd,519.png,Montair,Morbi s,hallucination_far_off,nonfair,minor_ocr_noise
+kaggle_bd,520.png,Montene,Mearytono—,hallucination_far_off,monstone .,hallucination_far_off
+kaggle_bd,521.png,Montene,VM t= TOM,hallucination_far_off,PM competence,hallucination_far_off
+kaggle_bd,522.png,Montene,Msnders-,hallucination_far_off,montene .,correct
+kaggle_bd,523.png,Montene,Martane,hallucination_far_off,montone .,hallucination_far_off
+kaggle_bd,524.png,Montene,BeCAK,hallucination_far_off,becaid .,hallucination_far_off
+kaggle_bd,525.png,Montene,Verton Te Ne.,hallucination_far_off,moon tone .,hallucination_far_off
+kaggle_bd,526.png,Montene,Moher,hallucination_far_off,monstone .,hallucination_far_off
+kaggle_bd,527.png,Montene,Monkrd—,hallucination_far_off,montone .,hallucination_far_off
+kaggle_bd,528.png,Montene,Moarnst ene,hallucination_far_off,MONVIP NE,hallucination_far_off
+kaggle_bd,529.png,Montene,Wentene,minor_ocr_noise,mom.,hallucination_far_off
+kaggle_bd,530.png,Montex,Marisa,hallucination_far_off,mentes .,hallucination_far_off
+kaggle_bd,531.png,Montex,dV\ O(NFEX,hallucination_far_off,in convex .,hallucination_far_off
+kaggle_bd,532.png,Montex,Mor tes,hallucination_far_off,monters .,hallucination_far_off
+kaggle_bd,533.png,Montex,Maw tere,hallucination_far_off,montess .,hallucination_far_off
+kaggle_bd,534.png,Montex,MAI,hallucination_far_off,imconders,hallucination_far_off
+kaggle_bd,535.png,Montex,Men ex,hallucination_far_off,moontex .,hallucination_far_off
+kaggle_bd,536.png,Montex,pn TAs,hallucination_far_off,promtex .,hallucination_far_off
+kaggle_bd,537.png,Montex,Pitsr Tn,hallucination_far_off,Miss Teen .,hallucination_far_off
+kaggle_bd,538.png,Montex,Ry ontex,hallucination_far_off,non tax,hallucination_far_off
+kaggle_bd,539.png,Montex,MonTey,minor_ocr_noise,monitex,minor_ocr_noise
+kaggle_bd,540.png,Napa Extend,Napa Sar ona.,hallucination_far_off,Napa ex-towed,hallucination_far_off
+kaggle_bd,541.png,Napa Extend,Napa Extowol.,hallucination_far_off,Napa Extend,correct
+kaggle_bd,542.png,Napa Extend,Népa Eaton,hallucination_far_off,Napa exeterrd,minor_ocr_noise
+kaggle_bd,543.png,Napa Extend,,hallucination_far_off,Napa External,minor_ocr_noise
+kaggle_bd,544.png,Napa Extend,Nope Exded,hallucination_far_off,Napa Richard,hallucination_far_off
+kaggle_bd,545.png,Napa Extend,EE,hallucination_far_off,play from the existence of the military history,hallucination_far_off
+kaggle_bd,546.png,Napa Extend,rips Sobor,hallucination_far_off,proper S-food .,hallucination_far_off
+kaggle_bd,547.png,Napa Extend,Nepe —— G bed,hallucination_far_off,Napeh eghorid,hallucination_far_off
+kaggle_bd,548.png,Napa Extend,Napa gdend,minor_ocr_noise,propa stand .,hallucination_far_off
+kaggle_bd,549.png,Napa Extend,Nep e Pwr,hallucination_far_off,nipa extend,minor_ocr_noise
+kaggle_bd,550.png,Napa,N ape,hallucination_far_off,Napa,correct
+kaggle_bd,551.png,Napa,Nopa,minor_ocr_noise,Napa,correct
+kaggle_bd,552.png,Napa,Na(ore,hallucination_far_off,nagoro,hallucination_far_off
+kaggle_bd,553.png,Napa,Nepo_,hallucination_far_off,ploopa,hallucination_far_off
+kaggle_bd,554.png,Napa,Nope,hallucination_far_off,napa,correct
+kaggle_bd,555.png,Napa,"Pho,",hallucination_far_off,prodvertiser .,hallucination_far_off
+kaggle_bd,556.png,Napa,NaPo—,hallucination_far_off,napa,correct
+kaggle_bd,557.png,Napa,Vip,hallucination_far_off,Nlips,hallucination_far_off
+kaggle_bd,558.png,Napa,Warm,hallucination_far_off,wadia .,hallucination_far_off
+kaggle_bd,559.png,Napa,Norpa,hallucination_far_off,Napa,correct
+kaggle_bd,560.png,Nexcap,Mercae,hallucination_far_off,nexcap,correct
+kaggle_bd,561.png,Nexcap,OPT Bh,hallucination_far_off,option .,hallucination_far_off
+kaggle_bd,562.png,Nexcap,Mercae,hallucination_far_off,nexcap,correct
+kaggle_bd,563.png,Nexcap,Nex coe,hallucination_far_off,nox cap,minor_ocr_noise
+kaggle_bd,564.png,Nexcap,yo eA ce P,hallucination_far_off,poxcap,hallucination_far_off
+kaggle_bd,565.png,Nexcap,NexCap,correct,newcap,minor_ocr_noise
+kaggle_bd,566.png,Nexcap,N tacap,hallucination_far_off,N excap,minor_ocr_noise
+kaggle_bd,567.png,Nexcap,Divcag.,hallucination_far_off,new cap,minor_ocr_noise
+kaggle_bd,568.png,Nexcap,Opton,other_wrong_real_word,option,hallucination_far_off
+kaggle_bd,569.png,Nexcap,NexCap,correct,nexcap,correct
+kaggle_bd,570.png,Nexum,Nenuuum,hallucination_far_off,maximum,hallucination_far_off
+kaggle_bd,571.png,Nexum,power,hallucination_far_off,nexumn .,hallucination_far_off
+kaggle_bd,572.png,Nexum,Nes,hallucination_far_off,intercomm,hallucination_far_off
+kaggle_bd,573.png,Nexum,Nwouwm,hallucination_far_off,nkxum,minor_ocr_noise
+kaggle_bd,574.png,Nexum,Pon rr’,hallucination_far_off,""" Mexican . """,hallucination_far_off
+kaggle_bd,575.png,Nexum,Naum,hallucination_far_off,maximum,hallucination_far_off
+kaggle_bd,576.png,Nexum,Nem,hallucination_far_off,nexus .,hallucination_far_off
+kaggle_bd,577.png,Nexum,Narn,hallucination_far_off,phoscurn,hallucination_far_off
+kaggle_bd,578.png,Nexum,Nepuee,hallucination_far_off,maximum .,hallucination_far_off
+kaggle_bd,579.png,Nexum,Ne fu,hallucination_far_off,boxrum .,hallucination_far_off
+kaggle_bd,580.png,Nidazyl,Mdany i,hallucination_far_off,military #,hallucination_far_off
+kaggle_bd,581.png,Nidazyl,Ny dary L,hallucination_far_off,Nidazyl,correct
+kaggle_bd,582.png,Nidazyl,Adan X,hallucination_far_off,midnoye .,hallucination_far_off
+kaggle_bd,583.png,Nidazyl,Nedazyd,minor_ocr_noise,Nidney ),hallucination_far_off
+kaggle_bd,584.png,Nidazyl,NAgy|,hallucination_far_off,undgyly,hallucination_far_off
+kaggle_bd,585.png,Nidazyl,Ninoy Q,hallucination_far_off,Nidney I,hallucination_far_off
+kaggle_bd,586.png,Nidazyl,WN idavy dh,hallucination_far_off,Widney ),hallucination_far_off
+kaggle_bd,587.png,Nidazyl,Nradtl,hallucination_far_off,nidszyl,minor_ocr_noise
+kaggle_bd,588.png,Nidazyl,Midna lt,hallucination_far_off,midnight,hallucination_far_off
+kaggle_bd,589.png,Nidazyl,UiaaryS,hallucination_far_off,midney !,hallucination_far_off
+kaggle_bd,590.png,Nizoder,Niven,hallucination_far_off,nizden .,hallucination_far_off
+kaggle_bd,591.png,Nizoder,Dizevy_,hallucination_far_off,ovizody,hallucination_far_off
+kaggle_bd,592.png,Nizoder,Viaedn—,hallucination_far_off,wigsden .,hallucination_far_off
+kaggle_bd,593.png,Nizoder,Nivdn_,hallucination_far_off,nizodu,minor_ocr_noise
+kaggle_bd,594.png,Nizoder,hizodere,minor_ocr_noise,hizoderc,minor_ocr_noise
+kaggle_bd,595.png,Nizoder,K/l 20 A,hallucination_far_off,N.I 20 LV.,hallucination_far_off
+kaggle_bd,596.png,Nizoder,Moan,hallucination_far_off,nigsider .,hallucination_far_off
+kaggle_bd,597.png,Nizoder,Viva,hallucination_far_off,wizodar,minor_ocr_noise
+kaggle_bd,598.png,Nizoder,Nip,hallucination_far_off,nizode,minor_ocr_noise
+kaggle_bd,599.png,Nizoder,Pie,hallucination_far_off,nizodun,minor_ocr_noise
+kaggle_bd,600.png,Odmon,Bdron,hallucination_far_off,octonion .,hallucination_far_off
+kaggle_bd,601.png,Odmon,Odm on.,minor_ocr_noise,Odom on,minor_ocr_noise
+kaggle_bd,602.png,Odmon,Odeon,minor_ocr_noise,octurion .,hallucination_far_off
+kaggle_bd,603.png,Odmon,ddr,hallucination_far_off,odmore .,hallucination_far_off
+kaggle_bd,604.png,Odmon,Odmon,correct,odmon .,correct
+kaggle_bd,605.png,Odmon,feumon,hallucination_far_off,oldmoon,minor_ocr_noise
+kaggle_bd,606.png,Odmon,Odmen,minor_ocr_noise,odomon .,hallucination_far_off
+kaggle_bd,607.png,Odmon,Odea,hallucination_far_off,odmore .,hallucination_far_off
+kaggle_bd,608.png,Odmon,odean,hallucination_far_off,odium,hallucination_far_off
+kaggle_bd,609.png,Odmon,ovren,hallucination_far_off,common .,hallucination_far_off
+kaggle_bd,610.png,Omastin,Beat +,hallucination_far_off,opponentity .,hallucination_far_off
+kaggle_bd,611.png,Omastin,Omestin,minor_ocr_noise,omastin .,correct
+kaggle_bd,612.png,Omastin,Ouaantin,hallucination_far_off,Ourpartisan,hallucination_far_off
+kaggle_bd,613.png,Omastin,Ouaantin,hallucination_far_off,Ourpartisan,hallucination_far_off
+kaggle_bd,614.png,Omastin,es,hallucination_far_off,omastic,minor_ocr_noise
+kaggle_bd,615.png,Omastin,O/U OS TH,hallucination_far_off,omastments .,hallucination_far_off
+kaggle_bd,616.png,Omastin,Oprntion,hallucination_far_off,Oppenuation .,hallucination_far_off
+kaggle_bd,617.png,Omastin,Omadtin,minor_ocr_noise,omastin .,correct
+kaggle_bd,618.png,Omastin,Omastin,correct,omastin .,correct
+kaggle_bd,619.png,Omastin,Gmastin,minor_ocr_noise,omastin .,correct
+kaggle_bd,620.png,Opton,Spten,hallucination_far_off,epton .,hallucination_far_off
+kaggle_bd,621.png,Opton,Opton,correct,option,minor_ocr_noise
+kaggle_bd,622.png,Opton,bFten,hallucination_far_off,option,minor_ocr_noise
+kaggle_bd,623.png,Opton,"otter,",hallucination_far_off,oparton .,hallucination_far_off
+kaggle_bd,624.png,Opton,oplon,minor_ocr_noise,option .,hallucination_far_off
+kaggle_bd,625.png,Opton,Opton,correct,option .,hallucination_far_off
+kaggle_bd,626.png,Opton,"otter,",hallucination_far_off,oparton .,hallucination_far_off
+kaggle_bd,627.png,Opton,opten,minor_ocr_noise,option .,hallucination_far_off
+kaggle_bd,628.png,Opton,OPT Bh,hallucination_far_off,option .,hallucination_far_off
+kaggle_bd,629.png,Opton,Nexur,hallucination_far_off,nexus .,hallucination_far_off
+kaggle_bd,630.png,Progut,Groot”,hallucination_far_off,Proponent .,hallucination_far_off
+kaggle_bd,631.png,Progut,Cm,hallucination_far_off,through,hallucination_far_off
+kaggle_bd,632.png,Progut,Groot”,hallucination_far_off,Proponent .,hallucination_far_off
+kaggle_bd,633.png,Progut,Pane,hallucination_far_off,prominent,hallucination_far_off
+kaggle_bd,634.png,Progut,"trent,",hallucination_far_off,threveport .,hallucination_far_off
+kaggle_bd,635.png,Progut,Crrtyet,hallucination_far_off,procept,hallucination_far_off
+kaggle_bd,636.png,Progut,Pane,hallucination_far_off,prominent,hallucination_far_off
+kaggle_bd,637.png,Progut,fou,hallucination_far_off,precept,hallucination_far_off
+kaggle_bd,638.png,Progut,fou,hallucination_far_off,precept,hallucination_far_off
+kaggle_bd,639.png,Progut,Cm,hallucination_far_off,through,hallucination_far_off
+kaggle_bd,640.png,Provair,Paneer,hallucination_far_off,prevision,hallucination_far_off
+kaggle_bd,641.png,Provair,Preevain,hallucination_far_off,provoir .,hallucination_far_off
+kaggle_bd,642.png,Provair,Pravah.,hallucination_far_off,provincial,hallucination_far_off
+kaggle_bd,643.png,Provair,Preveio,hallucination_far_off,prevains .,hallucination_far_off
+kaggle_bd,644.png,Provair,Pro vat,hallucination_far_off,# provocative,hallucination_far_off
+kaggle_bd,645.png,Provair,Pay OLY?,hallucination_far_off,firovairs .,hallucination_far_off
+kaggle_bd,646.png,Provair,Freeveud ¥>,hallucination_far_off,frennain .,hallucination_far_off
+kaggle_bd,647.png,Provair,Pre Von,hallucination_far_off,Pinovation .,hallucination_far_off
+kaggle_bd,648.png,Provair,Revoir,hallucination_far_off,2 Provairs .,hallucination_far_off
+kaggle_bd,649.png,Provair,Poovain,minor_ocr_noise,provain .,hallucination_far_off
+kaggle_bd,650.png,Renova,Kevove XR,hallucination_far_off,Renova XR.,hallucination_far_off
+kaggle_bd,651.png,Renova,LEN0 Vt-,hallucination_far_off,renona,minor_ocr_noise
+kaggle_bd,652.png,Renova,LRwmayve,hallucination_far_off,pennont,hallucination_far_off
+kaggle_bd,653.png,Renova,PR wowt,hallucination_far_off,remont,hallucination_far_off
+kaggle_bd,654.png,Renova,Roe,hallucination_far_off,remons .,hallucination_far_off
+kaggle_bd,655.png,Renova,RGROU-,hallucination_far_off,RONOVA,minor_ocr_noise
+kaggle_bd,656.png,Renova,Re rave,hallucination_far_off,RE nova .,hallucination_far_off
+kaggle_bd,657.png,Renova,Renava,minor_ocr_noise,renova .,correct
+kaggle_bd,658.png,Renova,Ro maya,hallucination_far_off,remora,hallucination_far_off
+kaggle_bd,659.png,Renova,REMOVE -,hallucination_far_off,remontment,hallucination_far_off
+kaggle_bd,660.png,Rhinil,Rook,hallucination_far_off,rhondid,hallucination_far_off
+kaggle_bd,661.png,Rhinil,Rhienil,minor_ocr_noise,2 Rhinil .,hallucination_far_off
+kaggle_bd,662.png,Rhinil,Rc,hallucination_far_off,rhind,hallucination_far_off
+kaggle_bd,663.png,Rhinil,Pind,hallucination_far_off,rhinil .,correct
+kaggle_bd,664.png,Rhinil,Rand,hallucination_far_off,rhinil,correct
+kaggle_bd,665.png,Rhinil,Ret,hallucination_far_off,publicstill,hallucination_far_off
+kaggle_bd,666.png,Rhinil,Phin,hallucination_far_off,rhinil .,correct
+kaggle_bd,667.png,Rhinil,Rhenil,minor_ocr_noise,rhinil .,correct
+kaggle_bd,668.png,Rhinil,Rhin),hallucination_far_off,rhinil .,correct
+kaggle_bd,669.png,Rhinil,Reel,hallucination_far_off,RR. R. R. R. F. F.F. F.S.P. F. F. F.C.P.P,hallucination_far_off
+kaggle_bd,670.png,Ritch,Baten,hallucination_far_off,ritch .,correct
+kaggle_bd,671.png,Ritch,Ritch,correct,ritch .,correct
+kaggle_bd,672.png,Ritch,Biteh,hallucination_far_off,Riteh,minor_ocr_noise
+kaggle_bd,673.png,Ritch,Rabel,hallucination_far_off,ritch .,correct
+kaggle_bd,674.png,Ritch,rad eH,hallucination_far_off,mittet !,hallucination_far_off
+kaggle_bd,675.png,Ritch,Ritch,correct,ritch .,correct
+kaggle_bd,676.png,Ritch,Ritch,correct,ritch .,correct
+kaggle_bd,677.png,Ritch,Ritch,correct,retch .,hallucination_far_off
+kaggle_bd,678.png,Ritch,Rito,hallucination_far_off,ritch .,correct
+kaggle_bd,679.png,Ritch,Rik,hallucination_far_off,ritch .,correct
+kaggle_bd,680.png,Rivotril,Rivedy7,hallucination_far_off,"first ,",hallucination_far_off
+kaggle_bd,681.png,Rivotril,feivotr |,hallucination_far_off,rivotri I,minor_ocr_noise
+kaggle_bd,682.png,Rivotril,Rivotn:,hallucination_far_off,rivotsi .,hallucination_far_off
+kaggle_bd,683.png,Rivotril,Rivetril,minor_ocr_noise,Rivotri L,minor_ocr_noise
+kaggle_bd,684.png,Rivotril,"nN, 4.",hallucination_far_off,risetsil,hallucination_far_off
+kaggle_bd,685.png,Rivotril,Rivo 15 2),hallucination_far_off,microsurvey .,hallucination_far_off
+kaggle_bd,686.png,Rivotril,RIVOTR I,minor_ocr_noise,rivotal,minor_ocr_noise
+kaggle_bd,687.png,Rivotril,Eivorny,hallucination_far_off,PI vote,hallucination_far_off
+kaggle_bd,688.png,Rivotril,Rivet,hallucination_far_off,Kivo to it,hallucination_far_off
+kaggle_bd,689.png,Rivotril,Rivototh,hallucination_far_off,Rivo tail,minor_ocr_noise
+kaggle_bd,690.png,Romycin,Rey ory,hallucination_far_off,Romey van,hallucination_far_off
+kaggle_bd,691.png,Romycin,Romy ve,hallucination_far_off,Romycin,correct
+kaggle_bd,692.png,Romycin,"Pom cin,",hallucination_far_off,romsein .,hallucination_far_off
+kaggle_bd,693.png,Romycin,"Sumy wa,",hallucination_far_off,changes in,hallucination_far_off
+kaggle_bd,694.png,Romycin,RANCN,hallucination_far_off,pompeing,hallucination_far_off
+kaggle_bd,695.png,Romycin,Ramey Amy,hallucination_far_off,Romiglin .,hallucination_far_off
+kaggle_bd,696.png,Romycin,Bem cin,hallucination_far_off,romucian .,hallucination_far_off
+kaggle_bd,697.png,Romycin,Romy tin,minor_ocr_noise,romycin .,correct
+kaggle_bd,698.png,Romycin,"Ramm cin,",hallucination_far_off,romydia .,hallucination_far_off
+kaggle_bd,699.png,Romycin,Remy ory,hallucination_far_off,Romaycin,minor_ocr_noise
+kaggle_bd,700.png,Rozith,"Levitt,",hallucination_far_off,dorith .,hallucination_far_off
+kaggle_bd,701.png,Rozith,"Rowdy,",hallucination_far_off,ropigh,hallucination_far_off
+kaggle_bd,702.png,Rozith,Re itn,hallucination_far_off,rorith .,hallucination_far_off
+kaggle_bd,703.png,Rozith,"Pozi,",hallucination_far_off,Rozith .,correct
+kaggle_bd,704.png,Rozith,Kaaith,hallucination_far_off,roguth .,hallucination_far_off
+kaggle_bd,705.png,Rozith,tov wy,hallucination_far_off,thopping,hallucination_far_off
+kaggle_bd,706.png,Rozith,Roritn,hallucination_far_off,rozith .,correct
+kaggle_bd,707.png,Rozith,Rea th,hallucination_far_off,Rozi Min .,hallucination_far_off
+kaggle_bd,708.png,Rozith,Revit,hallucination_far_off,re zith .,hallucination_far_off
+kaggle_bd,709.png,Rozith,Pauttn,hallucination_far_off,rorish .,hallucination_far_off
+kaggle_bd,710.png,Sergel,Stlar &,hallucination_far_off,senzel,hallucination_far_off
+kaggle_bd,711.png,Sergel,Meoxpro,hallucination_far_off,mnaxpro,hallucination_far_off
+kaggle_bd,712.png,Sergel,J,hallucination_far_off,serigel,minor_ocr_noise
+kaggle_bd,713.png,Sergel,Stésch,hallucination_far_off,segged,hallucination_far_off
+kaggle_bd,714.png,Sergel,Aengl,hallucination_far_off,isengly,hallucination_far_off
+kaggle_bd,715.png,Sergel,Safty,hallucination_far_off,sergey,minor_ocr_noise
+kaggle_bd,716.png,Sergel,Sergel,correct,sergel .,correct
+kaggle_bd,717.png,Sergel,shergel,minor_ocr_noise,sergel .,correct
+kaggle_bd,718.png,Sergel,Soupl,hallucination_far_off,senzef,hallucination_far_off
+kaggle_bd,719.png,Sergel,Stlar &,hallucination_far_off,senzel,hallucination_far_off
+kaggle_bd,720.png,Tamen,T carn,hallucination_far_off,Tarnion .,hallucination_far_off
+kaggle_bd,721.png,Tamen,Yom,hallucination_far_off,Tarmion .,hallucination_far_off
+kaggle_bd,722.png,Tamen,"“Jormurn,",hallucination_far_off,Tarmum .,hallucination_far_off
+kaggle_bd,723.png,Tamen,VY gerum,hallucination_far_off,Tamun,minor_ocr_noise
+kaggle_bd,724.png,Tamen,a1 f,hallucination_far_off,-taxmen .,hallucination_far_off
+kaggle_bd,725.png,Tamen,7 amar,hallucination_far_off,Tarmion,hallucination_far_off
+kaggle_bd,726.png,Tamen,Tome,hallucination_far_off,Tommen .,hallucination_far_off
+kaggle_bd,727.png,Tamen,Toney,hallucination_far_off,tarnums .,hallucination_far_off
+kaggle_bd,728.png,Tamen,T amon,hallucination_far_off,Tarmon .,hallucination_far_off
+kaggle_bd,729.png,Tamen,“Varery,hallucination_far_off,Tamum .,hallucination_far_off
+kaggle_bd,730.png,Telfast,Tabet,hallucination_far_off,Telelfant,hallucination_far_off
+kaggle_bd,731.png,Telfast,Telfast,correct,telfast,correct
+kaggle_bd,732.png,Telfast,AS been,hallucination_far_off,tellant .,hallucination_far_off
+kaggle_bd,733.png,Telfast,TH hank,hallucination_far_off,Telfant .,hallucination_far_off
+kaggle_bd,734.png,Telfast,Te pet,hallucination_far_off,telpast,minor_ocr_noise
+kaggle_bd,735.png,Telfast,Telhast,minor_ocr_noise,telfast,correct
+kaggle_bd,736.png,Telfast,tTeLhytt,hallucination_far_off,tele-past,hallucination_far_off
+kaggle_bd,737.png,Telfast,Tethast,minor_ocr_noise,telfast,correct
+kaggle_bd,738.png,Telfast,Teltast,minor_ocr_noise,telfast,correct
+kaggle_bd,739.png,Telfast,Tes fast,minor_ocr_noise,telfast,correct
+kaggle_bd,740.png,Tridosil,Tridiml,hallucination_far_off,tridesil,minor_ocr_noise
+kaggle_bd,741.png,Tridosil,Tv alant!,hallucination_far_off,Truidosil,minor_ocr_noise
+kaggle_bd,742.png,Tridosil,piso,hallucination_far_off,Truddoxist,hallucination_far_off
+kaggle_bd,743.png,Tridosil,Thi denis,hallucination_far_off,Tridosit .,minor_ocr_noise
+kaggle_bd,744.png,Tridosil,TRY G,hallucination_far_off,trudyly,hallucination_far_off
+kaggle_bd,745.png,Tridosil,Tider,hallucination_far_off,Trnickset .,hallucination_far_off
+kaggle_bd,746.png,Tridosil,Tri dard,hallucination_far_off,Trudoxia,hallucination_far_off
+kaggle_bd,747.png,Tridosil,Trident,hallucination_far_off,Trubbist,hallucination_far_off
+kaggle_bd,748.png,Tridosil,Trude,hallucination_far_off,treyidosil .,hallucination_far_off
+kaggle_bd,749.png,Tridosil,Trident,hallucination_far_off,truidosil,minor_ocr_noise
+kaggle_bd,750.png,Trilock,Tri doen,hallucination_far_off,Toxic table .,hallucination_far_off
+kaggle_bd,751.png,Trilock,TAs feck,hallucination_far_off,inifock .,hallucination_far_off
+kaggle_bd,752.png,Trilock,tn leek,hallucination_far_off,trailock .,minor_ocr_noise
+kaggle_bd,753.png,Trilock,eearlock,hallucination_far_off,at in its,hallucination_far_off
+kaggle_bd,754.png,Trilock,Trilpe,hallucination_far_off,trillock .,minor_ocr_noise
+kaggle_bd,755.png,Trilock,—y jute,hallucination_far_off,""" Trilock",minor_ocr_noise
+kaggle_bd,756.png,Trilock,TREK,hallucination_far_off,trillock .,minor_ocr_noise
+kaggle_bd,757.png,Trilock,Arn lock,hallucination_far_off,at.m.i.Cocile .,hallucination_far_off
+kaggle_bd,758.png,Trilock,TRiLotK,minor_ocr_noise,trilock,correct
+kaggle_bd,759.png,Trilock,Test lye he,hallucination_far_off,""" First Lincoln",hallucination_far_off
+kaggle_bd,760.png,Vifas,Vis,hallucination_far_off,vigas .,hallucination_far_off
+kaggle_bd,761.png,Vifas,Vifas,correct,vifias .,hallucination_far_off
+kaggle_bd,762.png,Vifas,Vif,hallucination_far_off,vigan .,hallucination_far_off
+kaggle_bd,763.png,Vifas,Vikas,minor_ocr_noise,vifers .,hallucination_far_off
+kaggle_bd,764.png,Vifas,fas,hallucination_far_off,vifas,correct
+kaggle_bd,765.png,Vifas,Vilas,minor_ocr_noise,vifans .,hallucination_far_off
+kaggle_bd,766.png,Vifas,vifas,correct,mifons .,hallucination_far_off
+kaggle_bd,767.png,Vifas,Uibon,hallucination_far_off,urfing them .,hallucination_far_off
+kaggle_bd,768.png,Vifas,Vibas,minor_ocr_noise,vistas .,hallucination_far_off
+kaggle_bd,769.png,Vifas,Vifas,correct,vitas .,hallucination_far_off
+kaggle_bd,770.png,Zithrin,Oi Fen,hallucination_far_off,either the,hallucination_far_off
+kaggle_bd,771.png,Zithrin,Qi Kring,hallucination_far_off,6 Within .,hallucination_far_off
+kaggle_bd,772.png,Zithrin,Qslkaen,hallucination_far_off,2withmin .,hallucination_far_off
+kaggle_bd,773.png,Zithrin,Chhey__,hallucination_far_off,within .,hallucination_far_off
+kaggle_bd,774.png,Zithrin,mA R A,hallucination_far_off,ziffin .,hallucination_far_off
+kaggle_bd,775.png,Zithrin,Athan,hallucination_far_off,zithmin .,hallucination_far_off
+kaggle_bd,776.png,Zithrin,Bethan,hallucination_far_off,zwithin .,hallucination_far_off
+kaggle_bd,777.png,Zithrin,Pilon,hallucination_far_off,within .,hallucination_far_off
+kaggle_bd,778.png,Zithrin,Ab rin,hallucination_far_off,2ithrin .,hallucination_far_off
+kaggle_bd,779.png,Zithrin,Qi oy,hallucination_far_off,although,hallucination_far_off
