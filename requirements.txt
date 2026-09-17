@@ -1,0 +1,11 @@
+jellyfish
+rapidfuzz
+kaggle
+torch
+transformers
+peft
+pillow
+pytesseract
+pandas
+numpy
+scipy

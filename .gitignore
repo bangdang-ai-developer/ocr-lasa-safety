@@ -1,0 +1,29 @@
+# Data & downloads
+data/raw/
+data/external/
+*.zip
+*.tar.gz
+
+# Kaggle credentials (NEVER commit)
+kaggle.json
+*.token
+access_token
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+.venv/
+*.egg-info/
+
+# Model checkpoints / large artifacts
+results/checkpoints/
+results/*.pt
+results/*.bin
+results/*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
