@@ -19,7 +19,14 @@ import sys
 import time
 
 print("Installing peft...")
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "peft", "jellyfish", "rapidfuzz"], check=False)
+# Pin peft==0.13.2: ban moi hon tren Kaggle bi loi import-time voi torchao
+# preinstalled (0.10.0 < 0.16.0 yeu cau) trong dispatch_torchao cua LoRA -
+# da xac nhan qua 1 lan chay that bai (KernelWorkerStatus.ERROR) + smoke
+# test cuc bo cho thay 0.13.2 hoat dong dung voi logic trong script nay.
+subprocess.run(
+    [sys.executable, "-m", "pip", "install", "-q", "peft==0.13.2", "jellyfish", "rapidfuzz"],
+    check=False,
+)
 
 import jellyfish  # noqa: E402
 import pandas as pd  # noqa: E402
