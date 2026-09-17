@@ -1,0 +1,16 @@
+{
+  "id": "bangdang007112/ocr-lasa-margin-sweep",
+  "title": "OCR LASA margin sweep",
+  "code_file": "margin_sweep_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "mamun1113/doctors-handwritten-prescription-bd-dataset",
+    "abrahametry/rxhandbd-handwritten-word-image-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
