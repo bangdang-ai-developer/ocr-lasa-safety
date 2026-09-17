@@ -1,0 +1,16 @@
+{
+  "id": "bangdang007112/ocr-lasa-baseline-benchmark",
+  "title": "OCR LASA baseline benchmark",
+  "code_file": "ocr_benchmark_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "mamun1113/doctors-handwritten-prescription-bd-dataset",
+    "abrahametry/rxhandbd-handwritten-word-image-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
