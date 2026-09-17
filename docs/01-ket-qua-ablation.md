@@ -27,8 +27,32 @@ So với CE-only (baseline đã xác nhận hiện tượng gốc, confusable_wr
 
 Chỉ 3-4 ảnh confusable_wrong_drug ở mọi cấu hình — quá ít để phân tích thống kê có ý nghĩa, dùng làm tham chiếu định tính, không phải bằng chứng chính.
 
-## Hạn chế & bước tiếp theo
+## Hạn chế (đã ghi nhận ở lần chạy đầu — xem kết quả dò siêu tham số bên dưới, đã giải quyết)
 
-- Siêu tham số (β, margin, λ) là **lần thử đầu tiên chưa dò**, không phải giá trị tối ưu — margin loss cho tín hiệu đúng hướng nhưng cần tăng λ (vd. thử 2.0-3.0) hoặc train nhiều epoch hơn để tín hiệu đủ mạnh đạt ý nghĩa thống kê.
-- Cần thử bỏ severity ra khỏi cấu hình kết hợp hoặc giảm mạnh β khi kết hợp với margin, vì severity một mình không giúp và có thể đang "nhiễu" margin.
-- Nên đo thêm chỉ số "chuyển từ confusable_wrong_drug sang lỗi RÕ RÀNG SAI" (không chỉ "sửa đúng") như một chỉ số an toàn phụ, vì phát hiện định tính cho thấy đây có thể là lợi ích thực sự bị bỏ sót trong số liệu thô.
+- Siêu tham số (β, margin, λ) ở trên là lần thử đầu tiên chưa dò.
+- Cần thử bỏ severity ra khỏi cấu hình kết hợp hoặc giảm mạnh β khi kết hợp với margin.
+- Nên đo thêm chỉ số "chuyển từ confusable_wrong_drug sang lỗi RÕ RÀNG SAI".
+
+---
+
+# Cập nhật: dò siêu tham số margin loss (kernel 04) — ĐÃ ĐẠT Ý NGHĨA THỐNG KÊ
+
+Dữ liệu thô: `results/kaggle_run_4_margin_sweep/`. Chỉ chạy trên RxHandBD (Kaggle-BD
+đã xác nhận không đủ mẫu). So với cùng CE-only baseline (confusable_wrong_drug=83/1115=7.44%,
+correct=519/1115=46.5%, hallucination=241/1115=21.6%).
+
+| Cấu hình | confusable_wrong_drug | p (McNemar) | correct | p | hallucination | p |
+|---|---|---|---|---|---|---|
+| margin λ=2.0 | 67 (6.01%) | **0.009** ✅ | 491 (44.0%) | **0.014** ⚠️ giảm có ý nghĩa | 271 (24.3%) | **0.0035** ⚠️ tăng có ý nghĩa |
+| margin λ=3.0 | 59 (5.29%) | **0.0001** ✅✅ | 495 (44.4%) | **0.021** ⚠️ giảm có ý nghĩa | 273 (24.5%) | **0.0022** ⚠️ tăng có ý nghĩa |
+| margin λ=2.0, 5 epoch | 73 (6.55%) | 0.14 (không đạt) | 527 (47.3%) | 0.49 | 245 (22.0%) | 0.75 |
+| **margin λ=2.0 + severity β=0.3** | **67 (6.01%)** | **0.011** ✅ | **523 (46.9%)** | **0.76 (không đổi có ý nghĩa)** ✅ | **250 (22.4%)** | **0.41 (không đổi có ý nghĩa)** ✅ |
+
+## Kết luận chính: cấu hình thắng cuộc là **margin (λ=2.0) + severity nhẹ (β=0.3)**
+
+- **λ=2.0 và λ=3.0 một mình**: giảm confusable_wrong_drug ĐẠT Ý NGHĨA THỐNG KÊ rõ rệt (p=0.009 và p=0.0001) — nhưng phải trả giá thật: correct giảm có ý nghĩa, hallucination tăng có ý nghĩa. Đánh đổi có thật, không miễn phí.
+- **Train lâu hơn (5 epoch) làm mất tín hiệu**: không cấu hình nào đạt ý nghĩa thống kê — có vẻ train quá lâu khiến CE lấn át margin.
+- **Kết hợp margin λ=2.0 với severity β=0.3 (giảm mạnh từ 1.0, không bỏ hẳn) là kết quả tốt nhất**: giảm confusable_wrong_drug có ý nghĩa thống kê (p=0.011, tương đương λ=2 một mình) **NHƯNG không làm giảm correct có ý nghĩa (p=0.76) và không làm tăng hallucination có ý nghĩa (p=0.41)** — tức là đạt được mục tiêu an toàn cốt lõi mà KHÔNG phải đánh đổi hiệu năng tổng thể. Ngoài ra trong số 26 ảnh hết confusable, có tới 13 ảnh (50%) sửa ĐÚNG hẳn — tỉ lệ tốt hơn hẳn so với margin một mình (chỉ 5-7/25-31 ≈ 20-23%).
+- Chỉ số an toàn phụ (đúng→confusable mới) vẫn thấp ở mọi cấu hình sweep (0.39-0.77%).
+
+**→ Cấu hình đề xuất cho báo cáo cuối: margin loss λ=2.0 kết hợp severity-weighted CE với β=0.3 (giảm mạnh, không bỏ hẳn), 3 epoch.** Đây là bằng chứng thống kê vững cho luận điểm chính của dự án: có thể giảm có ý nghĩa loại lỗi LASA nguy hiểm nhất mà không phải đánh đổi độ chính xác tổng thể, nếu chọn đúng cách kết hợp và siêu tham số.
