@@ -1,0 +1,16 @@
+{
+  "id": "bangdang007112/ocr-lasa-ablation-margin-severity",
+  "title": "OCR LASA ablation margin severity",
+  "code_file": "lora_ablation_kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "mamun1113/doctors-handwritten-prescription-bd-dataset",
+    "abrahametry/rxhandbd-handwritten-word-image-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
