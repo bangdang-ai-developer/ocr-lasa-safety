@@ -1,0 +1,1116 @@
+dataset,config,image,true_label,pred,error_category
+rxhandbd,seed4_winning,P0001.jpg,Nexcital,Nexcitac,minor_ocr_noise
+rxhandbd,seed4_winning,P0002.jpg,Inderen,Inderex,minor_ocr_noise
+rxhandbd,seed4_winning,P0003.jpg,Indever,Indever,correct
+rxhandbd,seed4_winning,P0004.jpg,Losita,Losita,correct
+rxhandbd,seed4_winning,P0005.jpg,Rivotril,Rivotril,correct
+rxhandbd,seed4_winning,P0006.jpg,Asynta,Asynta,correct
+rxhandbd,seed4_winning,P0007.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0008.jpg,Econate,Econate,correct
+rxhandbd,seed4_winning,P0009.jpg,Exeptim,Exephins,hallucination_far_off
+rxhandbd,seed4_winning,P0010.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0011.jpg,Kacin,Kacin,correct
+rxhandbd,seed4_winning,P0012.jpg,Lubilay,Lubilax,confusable_wrong_drug
+rxhandbd,seed4_winning,P0013.jpg,T-Cef,T-Cef,correct
+rxhandbd,seed4_winning,P0014.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0015.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0016.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,seed4_winning,P0017.jpg,Traxy,Tracyil500,hallucination_far_off
+rxhandbd,seed4_winning,P0018.jpg,Setra,Setzu,hallucination_far_off
+rxhandbd,seed4_winning,P0019.jpg,HPR DS,Tipr D.,hallucination_far_off
+rxhandbd,seed4_winning,P0020.jpg,palpitation,palpitation,correct
+rxhandbd,seed4_winning,P0021.jpg,Napa,Galotonimha,hallucination_far_off
+rxhandbd,seed4_winning,P0022.jpg,Kacin,prolactin,hallucination_far_off
+rxhandbd,seed4_winning,P0023.jpg,Zimax,Xian-B,hallucination_far_off
+rxhandbd,seed4_winning,P0024.jpg,Dexter,Zimax,other_wrong_real_word
+rxhandbd,seed4_winning,P0025.jpg,Panied,Flamex,other_wrong_real_word
+rxhandbd,seed4_winning,P0026.jpg,Nimens,Podiel,hallucination_far_off
+rxhandbd,seed4_winning,P0027.jpg,Elija,Nomenas,hallucination_far_off
+rxhandbd,seed4_winning,P0028.jpg,Comet,Elija,other_wrong_real_word
+rxhandbd,seed4_winning,P0029.jpg,bengel,Comet,other_wrong_real_word
+rxhandbd,seed4_winning,P0030.jpg,Relvis,Bengel,other_wrong_real_word
+rxhandbd,seed4_winning,P0031.jpg,Medroxy,Relvis,other_wrong_real_word
+rxhandbd,seed4_winning,P0032.jpg,myosit,Medroxy,other_wrong_real_word
+rxhandbd,seed4_winning,P0033.jpg,Furocef,Nyosit,hallucination_far_off
+rxhandbd,seed4_winning,P0034.jpg,Torat,Furocef,other_wrong_real_word
+rxhandbd,seed4_winning,P0035.jpg,Dextal,Tonat,hallucination_far_off
+rxhandbd,seed4_winning,P0036.jpg,Thyrox,Dexiac,hallucination_far_off
+rxhandbd,seed4_winning,P0037.jpg,Voligel,Remens,hallucination_far_off
+rxhandbd,seed4_winning,P0038.jpg,Sandin,RML,hallucination_far_off
+rxhandbd,seed4_winning,P0039.jpg,Paloxi,Sandin,other_wrong_real_word
+rxhandbd,seed4_winning,P0040.jpg,Domin,Paloxi,other_wrong_real_word
+rxhandbd,seed4_winning,P0041.jpg,Sergel,Domin,other_wrong_real_word
+rxhandbd,seed4_winning,P0042.jpg,HPR DS,Beryl,hallucination_far_off
+rxhandbd,seed4_winning,P0043.jpg,Nitrofur,Colican,hallucination_far_off
+rxhandbd,seed4_winning,P0044.jpg,Doxycap,Nirofur,hallucination_far_off
+rxhandbd,seed4_winning,P0045.jpg,???,Doxycap,other_wrong_real_word
+rxhandbd,seed4_winning,P0046.jpg,Omep,Xp.,hallucination_far_off
+rxhandbd,seed4_winning,P0047.jpg,Doxycap,Omep,other_wrong_real_word
+rxhandbd,seed4_winning,P0048.jpg,Robac,Descyclop,hallucination_far_off
+rxhandbd,seed4_winning,P0049.jpg,Omep,Rotac,hallucination_far_off
+rxhandbd,seed4_winning,P0050.jpg,CORTAN,Omep,other_wrong_real_word
+rxhandbd,seed4_winning,P0051.jpg,VASCO,Cortan,other_wrong_real_word
+rxhandbd,seed4_winning,P0052.jpg,Losectil,Vasco,other_wrong_real_word
+rxhandbd,seed4_winning,P0053.jpg,Paloxi,loSectil,other_wrong_real_word
+rxhandbd,seed4_winning,P0054.jpg,Precabil,Monacacac,hallucination_far_off
+rxhandbd,seed4_winning,P0055.jpg,Fougest,Precsil,hallucination_far_off
+rxhandbd,seed4_winning,P0056.jpg,Omep,Fquest,hallucination_far_off
+rxhandbd,seed4_winning,P0057.jpg,RUPIN,Sulfalin,hallucination_far_off
+rxhandbd,seed4_winning,P0058.jpg,FEXO,Rupin,other_wrong_real_word
+rxhandbd,seed4_winning,P0059.jpg,Omep,Fexo,other_wrong_real_word
+rxhandbd,seed4_winning,P0060.jpg,Maxpro,visco Harbor,hallucination_far_off
+rxhandbd,seed4_winning,P0061.jpg,Sergel,Maxpro,other_wrong_real_word
+rxhandbd,seed4_winning,P0062.jpg,Disopan,Serrix O.S,hallucination_far_off
+rxhandbd,seed4_winning,P0063.jpg,Indever,Desopax,hallucination_far_off
+rxhandbd,seed4_winning,P0064.jpg,N-MAX SO,Indever,other_wrong_real_word
+rxhandbd,seed4_winning,P0065.jpg,Sergel,Nmax S.B,hallucination_far_off
+rxhandbd,seed4_winning,P0066.jpg,Domin,Sesclno,hallucination_far_off
+rxhandbd,seed4_winning,P0067.jpg,Profenid Gel,Diculfid,hallucination_far_off
+rxhandbd,seed4_winning,P0068.jpg,Rudi,Profend sol,hallucination_far_off
+rxhandbd,seed4_winning,P0069.jpg,Sergel,Rudor,hallucination_far_off
+rxhandbd,seed4_winning,P0070.jpg,Indever,Cesse no,hallucination_far_off
+rxhandbd,seed4_winning,P0071.jpg,Etorix,Inderex cros,hallucination_far_off
+rxhandbd,seed4_winning,P0072.jpg,Traxyl,Nexcital b,hallucination_far_off
+rxhandbd,seed4_winning,P0073.jpg,Apeelo,Traxy,other_wrong_real_word
+rxhandbd,seed4_winning,P0074.jpg,myolax,Cinemal plus,hallucination_far_off
+rxhandbd,seed4_winning,P0075.jpg,Tenocab,Menanil-B,hallucination_far_off
+rxhandbd,seed4_winning,P0076.jpg,Mixit,Tenocab,other_wrong_real_word
+rxhandbd,seed4_winning,P0077.jpg,Radifil,Biscorzin,hallucination_far_off
+rxhandbd,seed4_winning,P0078.jpg,Nervion,idecalid,hallucination_far_off
+rxhandbd,seed4_winning,P0079.jpg,Povital,Remmo,other_wrong_real_word
+rxhandbd,seed4_winning,P0080.jpg,Napa,Napdas,hallucination_far_off
+rxhandbd,seed4_winning,P0081.jpg,Voligel,volisep,minor_ocr_noise
+rxhandbd,seed4_winning,P0082.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,seed4_winning,P0083.jpg,Radifil,Raditil,confusable_wrong_drug
+rxhandbd,seed4_winning,P0084.jpg,Vonocab,Vonoevb,minor_ocr_noise
+rxhandbd,seed4_winning,P0085.jpg,Thyrox,Thyrox,correct
+rxhandbd,seed4_winning,P0086.jpg,Voligel,Voligel,correct
+rxhandbd,seed4_winning,P0087.jpg,Etorix,Etorix,correct
+rxhandbd,seed4_winning,P0088.jpg,Apeelo,Apeelo,correct
+rxhandbd,seed4_winning,P0089.jpg,myolax,Myolax,correct
+rxhandbd,seed4_winning,P0090.jpg,Nervion,Nervion,correct
+rxhandbd,seed4_winning,P0091.jpg,Esahil,Esobil,hallucination_far_off
+rxhandbd,seed4_winning,P0092.jpg,Kinate,Kinate,correct
+rxhandbd,seed4_winning,P0093.jpg,Frulae,Frulac,confusable_wrong_drug
+rxhandbd,seed4_winning,P0094.jpg,Mixit,Mixit,correct
+rxhandbd,seed4_winning,P0095.jpg,Radifil,raditil,confusable_wrong_drug
+rxhandbd,seed4_winning,P0096.jpg,Nervion,Neprion,minor_ocr_noise
+rxhandbd,seed4_winning,P0097.jpg,Povital,Povital,correct
+rxhandbd,seed4_winning,P0098.jpg,Fylox,Fylox,correct
+rxhandbd,seed4_winning,P0099.jpg,Vonocab,Vonocab,correct
+rxhandbd,seed4_winning,P0100.jpg,Etorix,Etorix,correct
+rxhandbd,seed4_winning,P0101.jpg,Telmacal,Telmaevl,minor_ocr_noise
+rxhandbd,seed4_winning,P0102.jpg,Rosu,Rosu,correct
+rxhandbd,seed4_winning,P0103.jpg,Apeelo,Apeelo,correct
+rxhandbd,seed4_winning,P0104.jpg,Myolax,Myolax,correct
+rxhandbd,seed4_winning,P0105.jpg,Cora DX,Cora Dx,correct
+rxhandbd,seed4_winning,P0106.jpg,Vonocab,Dexnaf,hallucination_far_off
+rxhandbd,seed4_winning,P0107.jpg,Duloxen,Duloxen,correct
+rxhandbd,seed4_winning,P0108.jpg,Fixocard,fixocared,minor_ocr_noise
+rxhandbd,seed4_winning,P0109.jpg,Pregan,pregan,correct
+rxhandbd,seed4_winning,P0110.jpg,Emep,emep,correct
+rxhandbd,seed4_winning,P0111.jpg,myotax,myotax,correct
+rxhandbd,seed4_winning,P0112.jpg,Napronex,Nepanax,hallucination_far_off
+rxhandbd,seed4_winning,P0113.jpg,Avloclav,Avloclav,correct
+rxhandbd,seed4_winning,P0114.jpg,Klobid,klabid,confusable_wrong_drug
+rxhandbd,seed4_winning,P0115.jpg,Montelon,Montelon,correct
+rxhandbd,seed4_winning,P0116.jpg,Vonocab,Nonocab,minor_ocr_noise
+rxhandbd,seed4_winning,P0117.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0118.jpg,Esohil,Esohil,correct
+rxhandbd,seed4_winning,P0119.jpg,Vonocab,vonocab,correct
+rxhandbd,seed4_winning,P0120.jpg,Kinate,Kinate,correct
+rxhandbd,seed4_winning,P0121.jpg,Ulfix,ulfix,correct
+rxhandbd,seed4_winning,P0122.jpg,Montelon,Montelon,correct
+rxhandbd,seed4_winning,P0123.jpg,Ezylife,Ezylife,correct
+rxhandbd,seed4_winning,P0124.jpg,TRD Couture,Anustat ofnfruit,hallucination_far_off
+rxhandbd,seed4_winning,P0125.jpg,Turboclav,Turbolar,minor_ocr_noise
+rxhandbd,seed4_winning,P0126.jpg,Esotid,esotid,correct
+rxhandbd,seed4_winning,P0127.jpg,Nortum,Norium,confusable_wrong_drug
+rxhandbd,seed4_winning,P0128.jpg,Rupa,Rupa,correct
+rxhandbd,seed4_winning,P0129.jpg,Montelon,Montelum,minor_ocr_noise
+rxhandbd,seed4_winning,P0130.jpg,Napa one,Napa one,correct
+rxhandbd,seed4_winning,P0131.jpg,Apeelo,Apeclo,confusable_wrong_drug
+rxhandbd,seed4_winning,P0132.jpg,Prestal,Prestel,confusable_wrong_drug
+rxhandbd,seed4_winning,P0133.jpg,Cidex,Ciden,minor_ocr_noise
+rxhandbd,seed4_winning,P0134.jpg,Etorix,Etorin,minor_ocr_noise
+rxhandbd,seed4_winning,P0135.jpg,Esohil,esohil,correct
+rxhandbd,seed4_winning,P0136.jpg,Napa one,Reservix-SR,hallucination_far_off
+rxhandbd,seed4_winning,P0137.jpg,Nexe,Nexo,minor_ocr_noise
+rxhandbd,seed4_winning,P0138.jpg,Montelon,Baumax bong,hallucination_far_off
+rxhandbd,seed4_winning,P0139.jpg,Scluprud,Salupred,minor_ocr_noise
+rxhandbd,seed4_winning,P0140.jpg,Synogen,synogen,correct
+rxhandbd,seed4_winning,P0141.jpg,Indever,Indevor,minor_ocr_noise
+rxhandbd,seed4_winning,P0142.jpg,Xyflo,Xyflo,correct
+rxhandbd,seed4_winning,P0143.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0144.jpg,Dexnaaf,Dexnaf,minor_ocr_noise
+rxhandbd,seed4_winning,P0145.jpg,Xiva,Xiva,correct
+rxhandbd,seed4_winning,P0146.jpg,Tuspel,Tuspel,correct
+rxhandbd,seed4_winning,P0147.jpg,Clavutil,clavufil,minor_ocr_noise
+rxhandbd,seed4_winning,P0148.jpg,TRD Couture,Trdcontine,hallucination_far_off
+rxhandbd,seed4_winning,P0149.jpg,Merthomol,Metronol,hallucination_far_off
+rxhandbd,seed4_winning,P0150.jpg,Synogen,Coonical,hallucination_far_off
+rxhandbd,seed4_winning,P0151.jpg,Neurou,Neuron,minor_ocr_noise
+rxhandbd,seed4_winning,P0152.jpg,Trypt,Tryptin,confusable_wrong_drug
+rxhandbd,seed4_winning,P0153.jpg,Tuspel,Zo. mups,other_wrong_real_word
+rxhandbd,seed4_winning,P0154.jpg,Methox,metrox,minor_ocr_noise
+rxhandbd,seed4_winning,P0155.jpg,Follison,Follison,correct
+rxhandbd,seed4_winning,P0156.jpg,Bilaxe,pulfilro,hallucination_far_off
+rxhandbd,seed4_winning,P0157.jpg,Trilock,Trilock,correct
+rxhandbd,seed4_winning,P0158.jpg,Rifagut,Bexitol F Bexicap,hallucination_far_off
+rxhandbd,seed4_winning,P0159.jpg,Costan,Cortan,confusable_wrong_drug
+rxhandbd,seed4_winning,P0160.jpg,Levox,tevox,confusable_wrong_drug
+rxhandbd,seed4_winning,P0161.jpg,Cortan,Nexe mups,other_wrong_real_word
+rxhandbd,seed4_winning,P0162.jpg,Limbix,limbix,correct
+rxhandbd,seed4_winning,P0163.jpg,Indever,Indavero,minor_ocr_noise
+rxhandbd,seed4_winning,P0164.jpg,Xyflo,Zo-mups,other_wrong_real_word
+rxhandbd,seed4_winning,P0165.jpg,Bilaxe,merdau,hallucination_far_off
+rxhandbd,seed4_winning,P0166.jpg,Beklo,Bekio,minor_ocr_noise
+rxhandbd,seed4_winning,P0167.jpg,Coragen-D,Coragen D,correct
+rxhandbd,seed4_winning,P0168.jpg,TRD Coutine,Ted Cutine,minor_ocr_noise
+rxhandbd,seed4_winning,P0169.jpg,prelics CR,poelix Cr,minor_ocr_noise
+rxhandbd,seed4_winning,P0170.jpg,Cortan,Cootan,minor_ocr_noise
+rxhandbd,seed4_winning,P0171.jpg,Trilock,Trilock,correct
+rxhandbd,seed4_winning,P0172.jpg,Brezofil,boezofil,minor_ocr_noise
+rxhandbd,seed4_winning,P0173.jpg,Dinovo,Nexe myx,hallucination_far_off
+rxhandbd,seed4_winning,P0174.jpg,Nexemig,suppu voltalily,hallucination_far_off
+rxhandbd,seed4_winning,P0175.jpg,Elodep,Elodep,correct
+rxhandbd,seed4_winning,P0176.jpg,Rifagut,Rifagur,minor_ocr_noise
+rxhandbd,seed4_winning,P0177.jpg,Itoklav,Itokinet,hallucination_far_off
+rxhandbd,seed4_winning,P0178.jpg,Coragen-D,ursodil,hallucination_far_off
+rxhandbd,seed4_winning,P0179.jpg,Clavutil,Nexe One,hallucination_far_off
+rxhandbd,seed4_winning,P0180.jpg,ALOS,acos,minor_ocr_noise
+rxhandbd,seed4_winning,P0181.jpg,Cortan,Cootax,hallucination_far_off
+rxhandbd,seed4_winning,P0182.jpg,Bilax,Biku,hallucination_far_off
+rxhandbd,seed4_winning,P0183.jpg,Trilock,Trilocie,minor_ocr_noise
+rxhandbd,seed4_winning,P0184.jpg,Nexum Mups,Nexe mups,confusable_wrong_drug
+rxhandbd,seed4_winning,P0185.jpg,ocof,Ocof,correct
+rxhandbd,seed4_winning,P0186.jpg,Dinovo,dinovo,correct
+rxhandbd,seed4_winning,P0187.jpg,Nexemig,Neuroig,hallucination_far_off
+rxhandbd,seed4_winning,P0188.jpg,Coragen-D,Coragen-D,correct
+rxhandbd,seed4_winning,P0189.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,seed4_winning,P0190.jpg,Rosuva,Zomero,hallucination_far_off
+rxhandbd,seed4_winning,P0191.jpg,Termitan,Tintax-M 2-B.,hallucination_far_off
+rxhandbd,seed4_winning,P0192.jpg,Limtab,Duollock 5140,hallucination_far_off
+rxhandbd,seed4_winning,P0193.jpg,Nexum Mups,Cildip,other_wrong_real_word
+rxhandbd,seed4_winning,P0194.jpg,Limbix,limbix,correct
+rxhandbd,seed4_winning,P0195.jpg,Indever,Indavivo,hallucination_far_off
+rxhandbd,seed4_winning,P0196.jpg,Zo.mups,Zo-oneps,hallucination_far_off
+rxhandbd,seed4_winning,P0197.jpg,Mervax,merdan,hallucination_far_off
+rxhandbd,seed4_winning,P0198.jpg,Beklo,Bekio,minor_ocr_noise
+rxhandbd,seed4_winning,P0199.jpg,Coragen-D,Coragen D,correct
+rxhandbd,seed4_winning,P0200.jpg,Clavutil,clavetil,minor_ocr_noise
+rxhandbd,seed4_winning,P0201.jpg,Trilock,Trilock,correct
+rxhandbd,seed4_winning,P0202.jpg,Brezofil,Brezofil,correct
+rxhandbd,seed4_winning,P0203.jpg,Beklo,Bekio,minor_ocr_noise
+rxhandbd,seed4_winning,P0204.jpg,Rifagut,Rifagut,correct
+rxhandbd,seed4_winning,P0205.jpg,Zo.mups,Zoonepf,hallucination_far_off
+rxhandbd,seed4_winning,P0206.jpg,Ecosprin Plus,teospoin plus,minor_ocr_noise
+rxhandbd,seed4_winning,P0207.jpg,Rosuva,Rosova,minor_ocr_noise
+rxhandbd,seed4_winning,P0208.jpg,Termitan,Telmitau,minor_ocr_noise
+rxhandbd,seed4_winning,P0209.jpg,Limtab,Limtab,correct
+rxhandbd,seed4_winning,P0210.jpg,Nexum Mups,Dexempro,hallucination_far_off
+rxhandbd,seed4_winning,P0211.jpg,Clavutil,clavutil,correct
+rxhandbd,seed4_winning,P0212.jpg,Zolfin,Zolfin,correct
+rxhandbd,seed4_winning,P0213.jpg,Beklo,Bekio,minor_ocr_noise
+rxhandbd,seed4_winning,P0214.jpg,Zo.mups,Zomups,minor_ocr_noise
+rxhandbd,seed4_winning,P0215.jpg,Neuroxen,Neuroxiet,minor_ocr_noise
+rxhandbd,seed4_winning,P0216.jpg,TRD Coutine,Trdoutine,minor_ocr_noise
+rxhandbd,seed4_winning,P0217.jpg,Methomol,Metaxol,hallucination_far_off
+rxhandbd,seed4_winning,P0218.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,seed4_winning,P0219.jpg,Cor algen-D,Cooragen-D,minor_ocr_noise
+rxhandbd,seed4_winning,P0220.jpg,DDR,DDR 30,hallucination_far_off
+rxhandbd,seed4_winning,P0221.jpg,Elodep,Elodep,correct
+rxhandbd,seed4_winning,P0222.jpg,Itokine,Itokine,correct
+rxhandbd,seed4_winning,P0223.jpg,Neuming,Neurorig,hallucination_far_off
+rxhandbd,seed4_winning,P0224.jpg,Rivotril,Rivotil,minor_ocr_noise
+rxhandbd,seed4_winning,P0225.jpg,Duoblock,Duobject,hallucination_far_off
+rxhandbd,seed4_winning,P0226.jpg,Nexum Mups,Nexe mupr,minor_ocr_noise
+rxhandbd,seed4_winning,P0227.jpg,Clavutil,clavutil,correct
+rxhandbd,seed4_winning,P0228.jpg,Itokine,Itokine,correct
+rxhandbd,seed4_winning,P0229.jpg,Cinaron,Cinarou,minor_ocr_noise
+rxhandbd,seed4_winning,P0230.jpg,Zo.mups,Zoraxylo,hallucination_far_off
+rxhandbd,seed4_winning,P0231.jpg,Atoz,Atoz poevving,hallucination_far_off
+rxhandbd,seed4_winning,P0232.jpg,Sup. Apelz,Sup. Apetz,minor_ocr_noise
+rxhandbd,seed4_winning,P0233.jpg,TRD Coutine,Trd Coutine,correct
+rxhandbd,seed4_winning,P0234.jpg,Beklo,bekio,minor_ocr_noise
+rxhandbd,seed4_winning,P0235.jpg,Coralgue D,Coralgem-D,minor_ocr_noise
+rxhandbd,seed4_winning,P0236.jpg,Zo.mups,Zo-meepro,hallucination_far_off
+rxhandbd,seed4_winning,P0237.jpg,Ancor,Ancor,correct
+rxhandbd,seed4_winning,P0238.jpg,Itolcive,Itolcine,minor_ocr_noise
+rxhandbd,seed4_winning,P0239.jpg,Zolfin,Zolfin,correct
+rxhandbd,seed4_winning,P0240.jpg,Coralgue D,Coragen-D,confusable_wrong_drug
+rxhandbd,seed4_winning,P0241.jpg,Trilock,Triloaxo,hallucination_far_off
+rxhandbd,seed4_winning,P0242.jpg,Zo.mups,Zw-nupfo,hallucination_far_off
+rxhandbd,seed4_winning,P0243.jpg,Levox,Levox,correct
+rxhandbd,seed4_winning,P0244.jpg,Bilan,Bilau,confusable_wrong_drug
+rxhandbd,seed4_winning,P0245.jpg,Trilock,Trilock,correct
+rxhandbd,seed4_winning,P0246.jpg,Ambrox,Ambrox,correct
+rxhandbd,seed4_winning,P0247.jpg,Nexum Mups,Nexe Onepholo,hallucination_far_off
+rxhandbd,seed4_winning,P0248.jpg,Texit,texit,correct
+rxhandbd,seed4_winning,P0249.jpg,Esomand,esomax,confusable_wrong_drug
+rxhandbd,seed4_winning,P0250.jpg,Rolac,rolec,minor_ocr_noise
+rxhandbd,seed4_winning,P0251.jpg,Max dol,Maxdup,hallucination_far_off
+rxhandbd,seed4_winning,P0252.jpg,Bromen,boomen,minor_ocr_noise
+rxhandbd,seed4_winning,P0253.jpg,Nexum Mups,nexemups,minor_ocr_noise
+rxhandbd,seed4_winning,P0254.jpg,Macrobac,Macrobae,minor_ocr_noise
+rxhandbd,seed4_winning,P0255.jpg,Periodontitis,Periodontis,minor_ocr_noise
+rxhandbd,seed4_winning,P0256.jpg,clavutil,clavintil,minor_ocr_noise
+rxhandbd,seed4_winning,P0257.jpg,Esover,esomer,minor_ocr_noise
+rxhandbd,seed4_winning,P0258.jpg,Rolac,Meitz,hallucination_far_off
+rxhandbd,seed4_winning,P0259.jpg,Lestarin,Lestaxin,minor_ocr_noise
+rxhandbd,seed4_winning,P0260.jpg,clavutil,ceavntil,minor_ocr_noise
+rxhandbd,seed4_winning,P0261.jpg,Esmax,esvour,hallucination_far_off
+rxhandbd,seed4_winning,P0262.jpg,Renova,Removil,hallucination_far_off
+rxhandbd,seed4_winning,P0263.jpg,Maxsulin,Text,hallucination_far_off
+rxhandbd,seed4_winning,P0264.jpg,Brezofil,Boesofil,minor_ocr_noise
+rxhandbd,seed4_winning,P0265.jpg,Adovas,Adoras,minor_ocr_noise
+rxhandbd,seed4_winning,P0266.jpg,Monfast,Enoxrypt,hallucination_far_off
+rxhandbd,seed4_winning,P0267.jpg,Texit,texit,correct
+rxhandbd,seed4_winning,P0268.jpg,Esover,esoven,minor_ocr_noise
+rxhandbd,seed4_winning,P0269.jpg,Fixcef Plus,Fixof plus,minor_ocr_noise
+rxhandbd,seed4_winning,P0270.jpg,Nexum Mups,Nexe Mups,confusable_wrong_drug
+rxhandbd,seed4_winning,P0271.jpg,Texit,texit,correct
+rxhandbd,seed4_winning,P0272.jpg,Alfix,Alafix,confusable_wrong_drug
+rxhandbd,seed4_winning,P0273.jpg,Monfast,Mon fast,minor_ocr_noise
+rxhandbd,seed4_winning,P0274.jpg,Neopenem,Neopenem,correct
+rxhandbd,seed4_winning,P0275.jpg,Dexter,Dextal,confusable_wrong_drug
+rxhandbd,seed4_winning,P0276.jpg,Emprelina,Empalina,minor_ocr_noise
+rxhandbd,seed4_winning,P0277.jpg,Maxsulin,mexulin,minor_ocr_noise
+rxhandbd,seed4_winning,P0278.jpg,Rolip,Rolip,correct
+rxhandbd,seed4_winning,P0279.jpg,Clonapex,clonapex,correct
+rxhandbd,seed4_winning,P0280.jpg,Denvar,denvar,correct
+rxhandbd,seed4_winning,P0281.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0282.jpg,Flux,Flux,correct
+rxhandbd,seed4_winning,P0283.jpg,Filmet,filmet,correct
+rxhandbd,seed4_winning,P0284.jpg,??r??,torax,other_wrong_real_word
+rxhandbd,seed4_winning,P0285.jpg,??r??,torax,other_wrong_real_word
+rxhandbd,seed4_winning,P0286.jpg,Fixgut,firegut,minor_ocr_noise
+rxhandbd,seed4_winning,P0287.jpg,Clonapex,clonapex,correct
+rxhandbd,seed4_winning,P0288.jpg,Ceevit,Ceevit,correct
+rxhandbd,seed4_winning,P0289.jpg,Rafino Forte,Ratinol Forte,confusable_wrong_drug
+rxhandbd,seed4_winning,P0290.jpg,Voltalin,Vopfahr,hallucination_far_off
+rxhandbd,seed4_winning,P0291.jpg,BONID,Bonid,correct
+rxhandbd,seed4_winning,P0292.jpg,Avolac,Featase,hallucination_far_off
+rxhandbd,seed4_winning,P0293.jpg,Xinc B,xcineB,hallucination_far_off
+rxhandbd,seed4_winning,P0294.jpg,Nexum Mups,Merocevlups,hallucination_far_off
+rxhandbd,seed4_winning,P0295.jpg,Texit,texit,correct
+rxhandbd,seed4_winning,P0296.jpg,Fixgut,Cecis,hallucination_far_off
+rxhandbd,seed4_winning,P0297.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0298.jpg,Alc,al,hallucination_far_off
+rxhandbd,seed4_winning,P0299.jpg,Indo,Indo,correct
+rxhandbd,seed4_winning,P0300.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0301.jpg,Seko,Seko,correct
+rxhandbd,seed4_winning,P0302.jpg,Nexe,Naxc,hallucination_far_off
+rxhandbd,seed4_winning,P0303.jpg,Zolivox,Zolivox,correct
+rxhandbd,seed4_winning,P0304.jpg,Renova,remova,minor_ocr_noise
+rxhandbd,seed4_winning,P0305.jpg,Fixgut,fixgut,correct
+rxhandbd,seed4_winning,P0306.jpg,Alcet,Alcet,correct
+rxhandbd,seed4_winning,P0307.jpg,Spilac,spilac,correct
+rxhandbd,seed4_winning,P0308.jpg,Avolac,Avolac,correct
+rxhandbd,seed4_winning,P0309.jpg,Abicon,fabican,minor_ocr_noise
+rxhandbd,seed4_winning,P0310.jpg,Xyflo,xyflo,correct
+rxhandbd,seed4_winning,P0311.jpg,Kindial-D,kindful-D,minor_ocr_noise
+rxhandbd,seed4_winning,P0312.jpg,Hemofir FZ,Hematir FZ,minor_ocr_noise
+rxhandbd,seed4_winning,P0313.jpg,Brodin,Brodin,correct
+rxhandbd,seed4_winning,P0314.jpg,Gestrenol,Crestrenol,minor_ocr_noise
+rxhandbd,seed4_winning,P0315.jpg,Feup,feup,correct
+rxhandbd,seed4_winning,P0316.jpg,Ossica,Ossica,correct
+rxhandbd,seed4_winning,P0317.jpg,Esohil,eschil,minor_ocr_noise
+rxhandbd,seed4_winning,P0318.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0319.jpg,mixit,Mixit,correct
+rxhandbd,seed4_winning,P0320.jpg,Vonocab,Vonocab,correct
+rxhandbd,seed4_winning,P0321.jpg,Itogut,Itogut,correct
+rxhandbd,seed4_winning,P0322.jpg,Syrup,Syrup,correct
+rxhandbd,seed4_winning,P0323.jpg,Etorix,Eforix,minor_ocr_noise
+rxhandbd,seed4_winning,P0324.jpg,Ezytake,Ezytake,correct
+rxhandbd,seed4_winning,P0325.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0326.jpg,Palonron,Paloron,minor_ocr_noise
+rxhandbd,seed4_winning,P0327.jpg,Vonocab,vonocab,correct
+rxhandbd,seed4_winning,P0328.jpg,kinate,Kinate,correct
+rxhandbd,seed4_winning,P0329.jpg,Gintabac,Centabac,minor_ocr_noise
+rxhandbd,seed4_winning,P0330.jpg,Tuspel,Tuspel,correct
+rxhandbd,seed4_winning,P0331.jpg,Telmocal,Telmacal,confusable_wrong_drug
+rxhandbd,seed4_winning,P0332.jpg,mixit,Mixit,correct
+rxhandbd,seed4_winning,P0333.jpg,Rodiflex,Radiflex,confusable_wrong_drug
+rxhandbd,seed4_winning,P0334.jpg,Napxon,Nupxon,minor_ocr_noise
+rxhandbd,seed4_winning,P0335.jpg,Dexnaaf,Dexnaaf,correct
+rxhandbd,seed4_winning,P0336.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0337.jpg,Esohil,Esobil,minor_ocr_noise
+rxhandbd,seed4_winning,P0338.jpg,Vonocab,Vono cab,minor_ocr_noise
+rxhandbd,seed4_winning,P0339.jpg,Ruchigold,Ruehigold,minor_ocr_noise
+rxhandbd,seed4_winning,P0340.jpg,Ciponaal,Cipronasf,hallucination_far_off
+rxhandbd,seed4_winning,P0341.jpg,Azibact,Azibact,correct
+rxhandbd,seed4_winning,P0342.jpg,Vonocab,vonocab,correct
+rxhandbd,seed4_winning,P0343.jpg,Eylox,Eylox,correct
+rxhandbd,seed4_winning,P0344.jpg,Montelon,Montelon,correct
+rxhandbd,seed4_winning,P0345.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0346.jpg,Neopem,Neopen,minor_ocr_noise
+rxhandbd,seed4_winning,P0347.jpg,Napxon,Nopxon,confusable_wrong_drug
+rxhandbd,seed4_winning,P0348.jpg,Xiva,Xiva,correct
+rxhandbd,seed4_winning,P0349.jpg,xyflo,Xyflo,correct
+rxhandbd,seed4_winning,P0350.jpg,Esohil,Eschil,minor_ocr_noise
+rxhandbd,seed4_winning,P0351.jpg,Kinate,Kinate,correct
+rxhandbd,seed4_winning,P0352.jpg,Alben,Alben,correct
+rxhandbd,seed4_winning,P0353.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0354.jpg,Vonocab,Vonacab,confusable_wrong_drug
+rxhandbd,seed4_winning,P0355.jpg,Sponocid,Spincid,minor_ocr_noise
+rxhandbd,seed4_winning,P0356.jpg,Texit,texit,correct
+rxhandbd,seed4_winning,P0357.jpg,Katomor,Ketoman,hallucination_far_off
+rxhandbd,seed4_winning,P0358.jpg,Purtisol,Pultical,hallucination_far_off
+rxhandbd,seed4_winning,P0359.jpg,Monas,monas,correct
+rxhandbd,seed4_winning,P0360.jpg,Normant,Normal,confusable_wrong_drug
+rxhandbd,seed4_winning,P0361.jpg,Loxodol,Loxodol,correct
+rxhandbd,seed4_winning,P0362.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0363.jpg,Vonocab,Emenzonal,hallucination_far_off
+rxhandbd,seed4_winning,P0364.jpg,Avolac,Avolac,correct
+rxhandbd,seed4_winning,P0365.jpg,Apeclo,modin solution,hallucination_far_off
+rxhandbd,seed4_winning,P0366.jpg,Prestel,Prestel,correct
+rxhandbd,seed4_winning,P0367.jpg,Cinamycin,Cinamycin,correct
+rxhandbd,seed4_winning,P0368.jpg,Flamex,Flamex,correct
+rxhandbd,seed4_winning,P0369.jpg,Nexpro,Nexpro,correct
+rxhandbd,seed4_winning,P0370.jpg,Ezytake,Ezytake,correct
+rxhandbd,seed4_winning,P0371.jpg,Anustat,Anustat,correct
+rxhandbd,seed4_winning,P0372.jpg,Telmacal,Telmacal,correct
+rxhandbd,seed4_winning,P0373.jpg,Coralcal,Coralcal,correct
+rxhandbd,seed4_winning,P0374.jpg,Apeclo,Apeclo,correct
+rxhandbd,seed4_winning,P0375.jpg,Myolax,Myolax,correct
+rxhandbd,seed4_winning,P0376.jpg,Dexnaaf,Dexnaaf,correct
+rxhandbd,seed4_winning,P0377.jpg,Raditil,Raditil,correct
+rxhandbd,seed4_winning,P0378.jpg,Apeclo,Apeclo,correct
+rxhandbd,seed4_winning,P0379.jpg,Myolax,myolax,correct
+rxhandbd,seed4_winning,P0380.jpg,Decoral,Decoral,correct
+rxhandbd,seed4_winning,P0381.jpg,Vonocab,Vonocab,correct
+rxhandbd,seed4_winning,P0382.jpg,Fylox,Fylox,correct
+rxhandbd,seed4_winning,P0383.jpg,Montelon,Montelon,correct
+rxhandbd,seed4_winning,P0384.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0385.jpg,Dexila,Dexila,correct
+rxhandbd,seed4_winning,P0386.jpg,Dexnaaf,Dexnaaf,correct
+rxhandbd,seed4_winning,P0387.jpg,Napxon,Napxon,correct
+rxhandbd,seed4_winning,P0388.jpg,Apeclo,Apeclo,correct
+rxhandbd,seed4_winning,P0389.jpg,Nexpro,Nexpro,correct
+rxhandbd,seed4_winning,P0390.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0391.jpg,Rostil,Rostil,correct
+rxhandbd,seed4_winning,P0392.jpg,Bionic,Bionie,minor_ocr_noise
+rxhandbd,seed4_winning,P0393.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0394.jpg,Prestel,Prestel,correct
+rxhandbd,seed4_winning,P0395.jpg,Tajenta,Tajenta,correct
+rxhandbd,seed4_winning,P0396.jpg,Ecosprin,ecosprin,correct
+rxhandbd,seed4_winning,P0397.jpg,Mixit,Mixit,correct
+rxhandbd,seed4_winning,P0398.jpg,Medragust,Medragust,correct
+rxhandbd,seed4_winning,P0399.jpg,Dexnaat,Dexnacf,minor_ocr_noise
+rxhandbd,seed4_winning,P0400.jpg,Tojenta,Tajenta,confusable_wrong_drug
+rxhandbd,seed4_winning,P0401.jpg,Diaryl,Diary,minor_ocr_noise
+rxhandbd,seed4_winning,P0402.jpg,Tarlica,Tarlica,correct
+rxhandbd,seed4_winning,P0403.jpg,Raditil,raditil,correct
+rxhandbd,seed4_winning,P0404.jpg,Fylox,Fylox,correct
+rxhandbd,seed4_winning,P0405.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0406.jpg,Dexnaaf,Dexnacf,minor_ocr_noise
+rxhandbd,seed4_winning,P0407.jpg,myolax,Myolax,correct
+rxhandbd,seed4_winning,P0408.jpg,Raditil,raditil,correct
+rxhandbd,seed4_winning,P0409.jpg,Montelon,Montelon,correct
+rxhandbd,seed4_winning,P0410.jpg,Dexnaaf,Dexnowf,minor_ocr_noise
+rxhandbd,seed4_winning,P0411.jpg,Apeclo,Apeclo,correct
+rxhandbd,seed4_winning,P0412.jpg,Nebanol,Nebanol,correct
+rxhandbd,seed4_winning,P0413.jpg,Prestel,prustel,minor_ocr_noise
+rxhandbd,seed4_winning,P0414.jpg,Gestirenol,Gestrenol,confusable_wrong_drug
+rxhandbd,seed4_winning,P0415.jpg,Coraleal,Coraleal,correct
+rxhandbd,seed4_winning,P0416.jpg,Orofer,Orofer,correct
+rxhandbd,seed4_winning,P0417.jpg,Dexnaaf,Dexnacf,minor_ocr_noise
+rxhandbd,seed4_winning,P0418.jpg,Xyflo,Xyflo,correct
+rxhandbd,seed4_winning,P0419.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0420.jpg,Utifos,Utifos,correct
+rxhandbd,seed4_winning,P0421.jpg,Elodep,elodep,correct
+rxhandbd,seed4_winning,P0422.jpg,Tryptin,Tryptiy,minor_ocr_noise
+rxhandbd,seed4_winning,P0423.jpg,Itokine,Stokine,minor_ocr_noise
+rxhandbd,seed4_winning,P0424.jpg,Atoz,atoz premium,hallucination_far_off
+rxhandbd,seed4_winning,P0425.jpg,Nexum Mups,Nexe mups,confusable_wrong_drug
+rxhandbd,seed4_winning,P0426.jpg,Clavutil,clavutil,correct
+rxhandbd,seed4_winning,P0427.jpg,Bilau,Bilau,correct
+rxhandbd,seed4_winning,P0428.jpg,Trilock,Trilock,correct
+rxhandbd,seed4_winning,P0429.jpg,ocof,Ocof,correct
+rxhandbd,seed4_winning,P0430.jpg,Cortan,Costan,confusable_wrong_drug
+rxhandbd,seed4_winning,P0431.jpg,Ecosprin,Geospole,hallucination_far_off
+rxhandbd,seed4_winning,P0432.jpg,Rosuva,Rosova,minor_ocr_noise
+rxhandbd,seed4_winning,P0433.jpg,Telmidip,Termidip,minor_ocr_noise
+rxhandbd,seed4_winning,P0434.jpg,Zo.mups,Zomups,minor_ocr_noise
+rxhandbd,seed4_winning,P0435.jpg,Levox,Levox,correct
+rxhandbd,seed4_winning,P0436.jpg,Bilau,Bilau,correct
+rxhandbd,seed4_winning,P0437.jpg,Trilock,Trilod,minor_ocr_noise
+rxhandbd,seed4_winning,P0438.jpg,Brezofil,Boezofil,minor_ocr_noise
+rxhandbd,seed4_winning,P0439.jpg,Ambrox,ambrox,correct
+rxhandbd,seed4_winning,P0440.jpg,Telmidip,telmidip,correct
+rxhandbd,seed4_winning,P0441.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0442.jpg,Bilau,Haemfix,hallucination_far_off
+rxhandbd,seed4_winning,P0443.jpg,Itokine,Itokine,correct
+rxhandbd,seed4_winning,P0444.jpg,Nexum Mups,Nexe mups,confusable_wrong_drug
+rxhandbd,seed4_winning,P0445.jpg,Brodil,Breodil,minor_ocr_noise
+rxhandbd,seed4_winning,P0446.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0447.jpg,pantonix,Pasitorax,hallucination_far_off
+rxhandbd,seed4_winning,P0448.jpg,Bilaxe,clads-D,hallucination_far_off
+rxhandbd,seed4_winning,P0449.jpg,Tigover,Tigover,correct
+rxhandbd,seed4_winning,P0450.jpg,Raditril,Raditril,correct
+rxhandbd,seed4_winning,P0451.jpg,melpred,Melpred,correct
+rxhandbd,seed4_winning,P0452.jpg,Esohil,Esobil,minor_ocr_noise
+rxhandbd,seed4_winning,P0453.jpg,Apeelo,Apexo,hallucination_far_off
+rxhandbd,seed4_winning,P0454.jpg,Telmiaip,telmidip,confusable_wrong_drug
+rxhandbd,seed4_winning,P0455.jpg,Rivo,Avdance,hallucination_far_off
+rxhandbd,seed4_winning,P0456.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0457.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0458.jpg,xyflo,Ceflo,hallucination_far_off
+rxhandbd,seed4_winning,P0459.jpg,Tuspel,Tuspel,correct
+rxhandbd,seed4_winning,P0460.jpg,Esohil,Esobil,minor_ocr_noise
+rxhandbd,seed4_winning,P0461.jpg,Rivo,rivo,correct
+rxhandbd,seed4_winning,P0462.jpg,Adora,Adova,minor_ocr_noise
+rxhandbd,seed4_winning,P0463.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0464.jpg,Ligazid,ligazod,minor_ocr_noise
+rxhandbd,seed4_winning,P0465.jpg,Telmiva,Telmiva,correct
+rxhandbd,seed4_winning,P0466.jpg,Furotil,Furati,minor_ocr_noise
+rxhandbd,seed4_winning,P0467.jpg,Alatol,Alatsol,minor_ocr_noise
+rxhandbd,seed4_winning,P0468.jpg,Coralcal,Consred,hallucination_far_off
+rxhandbd,seed4_winning,P0469.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0470.jpg,Itokine,Itokine,correct
+rxhandbd,seed4_winning,P0471.jpg,Tryptin,Trypticy,minor_ocr_noise
+rxhandbd,seed4_winning,P0472.jpg,Nexe mups,Nexe mups,correct
+rxhandbd,seed4_winning,P0473.jpg,Duoblock,Duoloek,minor_ocr_noise
+rxhandbd,seed4_winning,P0474.jpg,Inderal,Indoxals,hallucination_far_off
+rxhandbd,seed4_winning,P0475.jpg,Coralcal,Coralcal,correct
+rxhandbd,seed4_winning,P0476.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0477.jpg,Vonocab,Vonocab,correct
+rxhandbd,seed4_winning,P0478.jpg,Gavinaaf,Govinaaf,minor_ocr_noise
+rxhandbd,seed4_winning,P0479.jpg,Rhinomist,rhinamist,minor_ocr_noise
+rxhandbd,seed4_winning,P0480.jpg,Nopxon,Nopxon,correct
+rxhandbd,seed4_winning,P0481.jpg,Carticare,Corticare,minor_ocr_noise
+rxhandbd,seed4_winning,P0482.jpg,Vonocab,vonoeab,minor_ocr_noise
+rxhandbd,seed4_winning,P0483.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0484.jpg,Raditil,raditil,correct
+rxhandbd,seed4_winning,P0485.jpg,Ralee,Rulee,minor_ocr_noise
+rxhandbd,seed4_winning,P0486.jpg,Prestel,prestel,correct
+rxhandbd,seed4_winning,P0487.jpg,Rofixim,Rofixim,correct
+rxhandbd,seed4_winning,P0488.jpg,Nexpro,Nexpro,correct
+rxhandbd,seed4_winning,P0489.jpg,Vonorab,Vonorab,correct
+rxhandbd,seed4_winning,P0490.jpg,kinate,Kinate,correct
+rxhandbd,seed4_winning,P0491.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0492.jpg,ucrafate,UCrofate,minor_ocr_noise
+rxhandbd,seed4_winning,P0493.jpg,Gavinaaf,Govinaaf,minor_ocr_noise
+rxhandbd,seed4_winning,P0494.jpg,Duracef,durancef,minor_ocr_noise
+rxhandbd,seed4_winning,P0495.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0496.jpg,Fixgul,fixgul,correct
+rxhandbd,seed4_winning,P0497.jpg,Rolac,Rolac,correct
+rxhandbd,seed4_winning,P0498.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0499.jpg,Alcet,alcet,correct
+rxhandbd,seed4_winning,P0500.jpg,Arlin,Arlin,correct
+rxhandbd,seed4_winning,P0501.jpg,Spilac,spilac,correct
+rxhandbd,seed4_winning,P0502.jpg,Lactu,Lactu,correct
+rxhandbd,seed4_winning,P0503.jpg,Nexe mups,Nexemups,minor_ocr_noise
+rxhandbd,seed4_winning,P0504.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0505.jpg,Nexpro,Neupro,minor_ocr_noise
+rxhandbd,seed4_winning,P0506.jpg,Kinate,Kinate,correct
+rxhandbd,seed4_winning,P0507.jpg,Amilin,Amilin,correct
+rxhandbd,seed4_winning,P0508.jpg,Utromeg,Utromeg,correct
+rxhandbd,seed4_winning,P0509.jpg,Apeelo,Apeelo,correct
+rxhandbd,seed4_winning,P0510.jpg,Prestel,Prestel,correct
+rxhandbd,seed4_winning,P0511.jpg,Fylox,Fylox,correct
+rxhandbd,seed4_winning,P0512.jpg,Avloclav,Avloelav,minor_ocr_noise
+rxhandbd,seed4_winning,P0513.jpg,Klabid,klabid,correct
+rxhandbd,seed4_winning,P0514.jpg,Dexila,Dexila,correct
+rxhandbd,seed4_winning,P0515.jpg,Atozen,Atozen,correct
+rxhandbd,seed4_winning,P0516.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0517.jpg,Mixit,Mixit,correct
+rxhandbd,seed4_winning,P0518.jpg,Normens,Normens,correct
+rxhandbd,seed4_winning,P0519.jpg,Raditil,raditil,correct
+rxhandbd,seed4_winning,P0520.jpg,Vonocab,vonocab,correct
+rxhandbd,seed4_winning,P0521.jpg,Furotil Plus,Furottl plus,minor_ocr_noise
+rxhandbd,seed4_winning,P0522.jpg,Algin,Agin,minor_ocr_noise
+rxhandbd,seed4_winning,P0523.jpg,hemofix,Hemofiz,minor_ocr_noise
+rxhandbd,seed4_winning,P0524.jpg,kindical D,kindical D,correct
+rxhandbd,seed4_winning,P0525.jpg,Gestrenol,Gestrenol,correct
+rxhandbd,seed4_winning,P0526.jpg,Feup,Femp,minor_ocr_noise
+rxhandbd,seed4_winning,P0527.jpg,Cidex,Cider,minor_ocr_noise
+rxhandbd,seed4_winning,P0528.jpg,Nexpro,nexpro,correct
+rxhandbd,seed4_winning,P0529.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0530.jpg,Airmont,airmont,correct
+rxhandbd,seed4_winning,P0531.jpg,Sardopa,Sardopa,correct
+rxhandbd,seed4_winning,P0532.jpg,Adovas,Adovas,correct
+rxhandbd,seed4_winning,P0533.jpg,Normens,Normens,correct
+rxhandbd,seed4_winning,P0534.jpg,Loxodol,Loxadol,minor_ocr_noise
+rxhandbd,seed4_winning,P0535.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0536.jpg,Seko,Seko,correct
+rxhandbd,seed4_winning,P0537.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0538.jpg,Indo,Indo,correct
+rxhandbd,seed4_winning,P0539.jpg,Seko,Sek,minor_ocr_noise
+rxhandbd,seed4_winning,P0540.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0541.jpg,Texit,texit,correct
+rxhandbd,seed4_winning,P0542.jpg,Finix,finix,correct
+rxhandbd,seed4_winning,P0543.jpg,Nexe,Nexe,correct
+rxhandbd,seed4_winning,P0544.jpg,Seko,Seko,correct
+rxhandbd,seed4_winning,P0545.jpg,Seko,Scko,minor_ocr_noise
+rxhandbd,seed4_winning,P0546.jpg,Esonix,fromix,hallucination_far_off
+rxhandbd,seed4_winning,P0547.jpg,K-flex,K- flam,confusable_wrong_drug
+rxhandbd,seed4_winning,P0548.jpg,herpex,Chan-plex,hallucination_far_off
+rxhandbd,seed4_winning,P0549.jpg,Indo,Indo,correct
+rxhandbd,seed4_winning,P0550.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0551.jpg,Seko,Seko,correct
+rxhandbd,seed4_winning,P0552.jpg,Seko,Seko,correct
+rxhandbd,seed4_winning,P0553.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0554.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0555.jpg,Seko,Seko,correct
+rxhandbd,seed4_winning,P0556.jpg,Indo,In do,minor_ocr_noise
+rxhandbd,seed4_winning,P0557.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0558.jpg,Arlin,Arlin,correct
+rxhandbd,seed4_winning,P0559.jpg,Ceevit,Coevit,minor_ocr_noise
+rxhandbd,seed4_winning,P0560.jpg,Dexnaaf,Dexnaf,minor_ocr_noise
+rxhandbd,seed4_winning,P0561.jpg,Bilaxe,bilaxe,correct
+rxhandbd,seed4_winning,P0562.jpg,Ezytake,Ezytake,correct
+rxhandbd,seed4_winning,P0563.jpg,viodin,Violin,minor_ocr_noise
+rxhandbd,seed4_winning,P0564.jpg,Anustat,Anustat,correct
+rxhandbd,seed4_winning,P0565.jpg,Tryptin,Trioptin,minor_ocr_noise
+rxhandbd,seed4_winning,P0566.jpg,Montelon,Monteln,minor_ocr_noise
+rxhandbd,seed4_winning,P0567.jpg,Lyric,Lyril,minor_ocr_noise
+rxhandbd,seed4_winning,P0568.jpg,Dextac,Dexter,confusable_wrong_drug
+rxhandbd,seed4_winning,P0569.jpg,Flexi,Flexi,correct
+rxhandbd,seed4_winning,P0570.jpg,Beklo,Beklo,correct
+rxhandbd,seed4_winning,P0571.jpg,Xiva,Xiva,correct
+rxhandbd,seed4_winning,P0572.jpg,Xyflo,Xyfto,minor_ocr_noise
+rxhandbd,seed4_winning,P0573.jpg,Bilaxe,Bilaxe,correct
+rxhandbd,seed4_winning,P0574.jpg,Dexnaaf,Dexnaaf,correct
+rxhandbd,seed4_winning,P0575.jpg,Frenxit,Frenxit,correct
+rxhandbd,seed4_winning,P0576.jpg,Bexitrol,Bescitrol,minor_ocr_noise
+rxhandbd,seed4_winning,P0577.jpg,Methicap,methicap,correct
+rxhandbd,seed4_winning,P0578.jpg,Cefotil,Cefotil,correct
+rxhandbd,seed4_winning,P0579.jpg,Nexe,nexe,correct
+rxhandbd,seed4_winning,P0580.jpg,HPR DS,H-PR-D,hallucination_far_off
+rxhandbd,seed4_winning,P0581.jpg,Fixocard,fixocated,minor_ocr_noise
+rxhandbd,seed4_winning,P0582.jpg,Telmacal,telmacal,correct
+rxhandbd,seed4_winning,P0583.jpg,Tajenta,Tajenta,correct
+rxhandbd,seed4_winning,P0584.jpg,Diaryl,Diaryl,correct
+rxhandbd,seed4_winning,P0585.jpg,mixit,mixit,correct
+rxhandbd,seed4_winning,P0586.jpg,Dexnaaf,Dexraaf,minor_ocr_noise
+rxhandbd,seed4_winning,P0587.jpg,Povital,Povital,correct
+rxhandbd,seed4_winning,P0588.jpg,Flamyd,Flumyd,minor_ocr_noise
+rxhandbd,seed4_winning,P0589.jpg,Delanix,Delanix,correct
+rxhandbd,seed4_winning,P0590.jpg,Torax,torax,correct
+rxhandbd,seed4_winning,P0591.jpg,Fixgut,fixgut,correct
+rxhandbd,seed4_winning,P0592.jpg,Ratinol,Routinol,minor_ocr_noise
+rxhandbd,seed4_winning,P0593.jpg,Lactomore,lactmore,minor_ocr_noise
+rxhandbd,seed4_winning,P0594.jpg,Novotril,Novotnil,minor_ocr_noise
+rxhandbd,seed4_winning,P0595.jpg,Voltalin,Voltalin,correct
+rxhandbd,seed4_winning,P0596.jpg,Telmivas,Telmivas,correct
+rxhandbd,seed4_winning,P0597.jpg,Pantonix,Pantomix,minor_ocr_noise
+rxhandbd,seed4_winning,P0598.jpg,fusid,fusid,correct
+rxhandbd,seed4_winning,P0599.jpg,Anfree,Anfree,correct
+rxhandbd,seed4_winning,P0600.jpg,Disopan,disopen,minor_ocr_noise
+rxhandbd,seed4_winning,P0601.jpg,Amlocal,Androlal,hallucination_far_off
+rxhandbd,seed4_winning,P0602.jpg,escilex,Eslilup,hallucination_far_off
+rxhandbd,seed4_winning,P0603.jpg,Estes,Estes 300,hallucination_far_off
+rxhandbd,seed4_winning,P0604.jpg,escilex,utilax,hallucination_far_off
+rxhandbd,seed4_winning,P0605.jpg,Analac,Audac,hallucination_far_off
+rxhandbd,seed4_winning,P0606.jpg,Zimax,Zimax,correct
+rxhandbd,seed4_winning,P0607.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0608.jpg,Xinc,Xtac,hallucination_far_off
+rxhandbd,seed4_winning,P0609.jpg,Ben A,Dova,hallucination_far_off
+rxhandbd,seed4_winning,P0610.jpg,Dexter,Dextac,confusable_wrong_drug
+rxhandbd,seed4_winning,P0611.jpg,Vorinox,varinox,minor_ocr_noise
+rxhandbd,seed4_winning,P0612.jpg,Xyril,Xysil,minor_ocr_noise
+rxhandbd,seed4_winning,P0613.jpg,Fenadin,Feralin,minor_ocr_noise
+rxhandbd,seed4_winning,P0614.jpg,Bilan,Bilan,correct
+rxhandbd,seed4_winning,P0615.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0616.jpg,Deflacort,Deflect,hallucination_far_off
+rxhandbd,seed4_winning,P0617.jpg,Estes,Capsilid,hallucination_far_off
+rxhandbd,seed4_winning,P0618.jpg,clavusef,Clavulf,minor_ocr_noise
+rxhandbd,seed4_winning,P0619.jpg,DON A,Don A,correct
+rxhandbd,seed4_winning,P0620.jpg,Panaseng,Pamaileng,hallucination_far_off
+rxhandbd,seed4_winning,P0621.jpg,xinc B,Tinc B,minor_ocr_noise
+rxhandbd,seed4_winning,P0622.jpg,M-Kast,m-lucas,other_wrong_real_word
+rxhandbd,seed4_winning,P0623.jpg,Bexter,Dexter,confusable_wrong_drug
+rxhandbd,seed4_winning,P0624.jpg,cildip,Cildip,correct
+rxhandbd,seed4_winning,P0625.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0626.jpg,vorinox,varinox,minor_ocr_noise
+rxhandbd,seed4_winning,P0627.jpg,Xyril,Xynil,minor_ocr_noise
+rxhandbd,seed4_winning,P0628.jpg,Fenadin,Finalin,minor_ocr_noise
+rxhandbd,seed4_winning,P0629.jpg,Bilan,Bilan,correct
+rxhandbd,seed4_winning,P0630.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0631.jpg,Phenocid,Phenoid,minor_ocr_noise
+rxhandbd,seed4_winning,P0632.jpg,viglimet,Deflav,hallucination_far_off
+rxhandbd,seed4_winning,P0633.jpg,Glymed,viglimf,hallucination_far_off
+rxhandbd,seed4_winning,P0634.jpg,Dexter,Glymfc,hallucination_far_off
+rxhandbd,seed4_winning,P0635.jpg,ropitor,Dexter,other_wrong_real_word
+rxhandbd,seed4_winning,P0636.jpg,Neuroxen,Nupitar,hallucination_far_off
+rxhandbd,seed4_winning,P0637.jpg,methomol,Neuroxen,other_wrong_real_word
+rxhandbd,seed4_winning,P0638.jpg,Relaxo,Melhomof,hallucination_far_off
+rxhandbd,seed4_winning,P0639.jpg,Dexter,Relaxo,other_wrong_real_word
+rxhandbd,seed4_winning,P0640.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0641.jpg,Emlidus,Embidus,minor_ocr_noise
+rxhandbd,seed4_winning,P0642.jpg,lanolin,Xremlin,hallucination_far_off
+rxhandbd,seed4_winning,P0643.jpg,m-lucas,m-lucas,correct
+rxhandbd,seed4_winning,P0644.jpg,DON A,Don A,correct
+rxhandbd,seed4_winning,P0645.jpg,Xinc,xinc,correct
+rxhandbd,seed4_winning,P0646.jpg,norium,Novium,minor_ocr_noise
+rxhandbd,seed4_winning,P0647.jpg,Nameton,Nameton,correct
+rxhandbd,seed4_winning,P0648.jpg,voligel,Voligel,correct
+rxhandbd,seed4_winning,P0649.jpg,Gel,Gef,hallucination_far_off
+rxhandbd,seed4_winning,P0650.jpg,Combicid,Cewfilid,other_wrong_real_word
+rxhandbd,seed4_winning,P0651.jpg,cildip,Cran-,hallucination_far_off
+rxhandbd,seed4_winning,P0652.jpg,Naproxen,Neuroxew,hallucination_far_off
+rxhandbd,seed4_winning,P0653.jpg,Salost,Salost,correct
+rxhandbd,seed4_winning,P0654.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0655.jpg,m-lucas,m-lucen,minor_ocr_noise
+rxhandbd,seed4_winning,P0656.jpg,propenta,Frofranof,hallucination_far_off
+rxhandbd,seed4_winning,P0657.jpg,Ecosprin,Elofrin,hallucination_far_off
+rxhandbd,seed4_winning,P0658.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0659.jpg,Dexter,Devixil,other_wrong_real_word
+rxhandbd,seed4_winning,P0660.jpg,Gefapix,Crefapix,minor_ocr_noise
+rxhandbd,seed4_winning,P0661.jpg,Monas,Monasio,minor_ocr_noise
+rxhandbd,seed4_winning,P0662.jpg,fexo,Ferro,hallucination_far_off
+rxhandbd,seed4_winning,P0663.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0664.jpg,Neuroxen,Nafumf,hallucination_far_off
+rxhandbd,seed4_winning,P0665.jpg,m-lucas,Ann,hallucination_far_off
+rxhandbd,seed4_winning,P0666.jpg,Naproxen,Neemoxew,other_wrong_real_word
+rxhandbd,seed4_winning,P0667.jpg,radiflex,Naliflex,minor_ocr_noise
+rxhandbd,seed4_winning,P0668.jpg,DON A,halloulax,hallucination_far_off
+rxhandbd,seed4_winning,P0669.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0670.jpg,Denixil,Denixil,correct
+rxhandbd,seed4_winning,P0671.jpg,moxilin,moxilin,correct
+rxhandbd,seed4_winning,P0672.jpg,Montene,Montene,correct
+rxhandbd,seed4_winning,P0673.jpg,Fenadin,Feralin,minor_ocr_noise
+rxhandbd,seed4_winning,P0674.jpg,Napa,Nepa,minor_ocr_noise
+rxhandbd,seed4_winning,P0675.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0676.jpg,probio,Tablet,other_wrong_real_word
+rxhandbd,seed4_winning,P0677.jpg,DON A,Don A,correct
+rxhandbd,seed4_winning,P0678.jpg,denixil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P0679.jpg,Neuroxen,Neuroxew,minor_ocr_noise
+rxhandbd,seed4_winning,P0680.jpg,Asynta,Asyn A,minor_ocr_noise
+rxhandbd,seed4_winning,P0681.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0682.jpg,Bislol,Casule,hallucination_far_off
+rxhandbd,seed4_winning,P0683.jpg,rosu,bed,hallucination_far_off
+rxhandbd,seed4_winning,P0684.jpg,Dexter,nesf,hallucination_far_off
+rxhandbd,seed4_winning,P0685.jpg,Alfane,B. Soforfe,hallucination_far_off
+rxhandbd,seed4_winning,P0686.jpg,DON A,Don A,correct
+rxhandbd,seed4_winning,P0687.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0688.jpg,Avolac,Aulac,hallucination_far_off
+rxhandbd,seed4_winning,P0689.jpg,Toramax,Toramex,confusable_wrong_drug
+rxhandbd,seed4_winning,P0690.jpg,Relentus,Relentas,minor_ocr_noise
+rxhandbd,seed4_winning,P0691.jpg,arth,Arth,correct
+rxhandbd,seed4_winning,P0692.jpg,Neuroxen,Neuroxen,correct
+rxhandbd,seed4_winning,P0693.jpg,Calbon,Calbon,correct
+rxhandbd,seed4_winning,P0694.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0695.jpg,Flamfix,Flemfox,minor_ocr_noise
+rxhandbd,seed4_winning,P0696.jpg,arth,Asin,hallucination_far_off
+rxhandbd,seed4_winning,P0697.jpg,Neuroxen,Nemaxen,hallucination_far_off
+rxhandbd,seed4_winning,P0698.jpg,m-lucas,m-lucas,correct
+rxhandbd,seed4_winning,P0699.jpg,m-lucas,Ins-lucas,hallucination_far_off
+rxhandbd,seed4_winning,P0700.jpg,Fenadin,Fenasw,hallucination_far_off
+rxhandbd,seed4_winning,P0701.jpg,Terbikill,Terbinil,minor_ocr_noise
+rxhandbd,seed4_winning,P0702.jpg,Xyril,Xyni,hallucination_far_off
+rxhandbd,seed4_winning,P0703.jpg,Biscor,Biscol,minor_ocr_noise
+rxhandbd,seed4_winning,P0704.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0705.jpg,Combicid,Calrid,hallucination_far_off
+rxhandbd,seed4_winning,P0706.jpg,Gintex,Gintep,minor_ocr_noise
+rxhandbd,seed4_winning,P0707.jpg,Estes,Estes,correct
+rxhandbd,seed4_winning,P0708.jpg,Setra,Setra,correct
+rxhandbd,seed4_winning,P0709.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,seed4_winning,P0710.jpg,vigorex,vigorex,correct
+rxhandbd,seed4_winning,P0711.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0712.jpg,E-vit,E-nif,hallucination_far_off
+rxhandbd,seed4_winning,P0713.jpg,m-lucas,m-lucasio,minor_ocr_noise
+rxhandbd,seed4_winning,P0714.jpg,Ecosprin Plus,Elofrin Plus,minor_ocr_noise
+rxhandbd,seed4_winning,P0715.jpg,Rivarox,Nisrox,hallucination_far_off
+rxhandbd,seed4_winning,P0716.jpg,Bislol,Biscol,minor_ocr_noise
+rxhandbd,seed4_winning,P0717.jpg,rosu,Rosu,correct
+rxhandbd,seed4_winning,P0718.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0719.jpg,Alfane,Alface,minor_ocr_noise
+rxhandbd,seed4_winning,P0720.jpg,Neuroxen,Nuroxew,minor_ocr_noise
+rxhandbd,seed4_winning,P0721.jpg,m-lucas,M-lucas,correct
+rxhandbd,seed4_winning,P0722.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0723.jpg,Calboral dx,Calbonex,hallucination_far_off
+rxhandbd,seed4_winning,P0724.jpg,deviry,Deixit,hallucination_far_off
+rxhandbd,seed4_winning,P0725.jpg,Bislol,Sfrom,hallucination_far_off
+rxhandbd,seed4_winning,P0726.jpg,rosu,Cave,hallucination_far_off
+rxhandbd,seed4_winning,P0727.jpg,vbi care,Vbilove,hallucination_far_off
+rxhandbd,seed4_winning,P0728.jpg,ENQ,Enq,correct
+rxhandbd,seed4_winning,P0729.jpg,Setra,Seta,minor_ocr_noise
+rxhandbd,seed4_winning,P0730.jpg,Gintex,Gintup,hallucination_far_off
+rxhandbd,seed4_winning,P0731.jpg,vigorex,Nigorex,minor_ocr_noise
+rxhandbd,seed4_winning,P0732.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0733.jpg,clacef,Clauf,hallucination_far_off
+rxhandbd,seed4_winning,P0734.jpg,m-lucas,Mulac,hallucination_far_off
+rxhandbd,seed4_winning,P0735.jpg,acliz plus,Daphylline,hallucination_far_off
+rxhandbd,seed4_winning,P0736.jpg,Dexter,Deshas,hallucination_far_off
+rxhandbd,seed4_winning,P0737.jpg,Amlip,Dexter,other_wrong_real_word
+rxhandbd,seed4_winning,P0738.jpg,Cildip,Cildip,correct
+rxhandbd,seed4_winning,P0739.jpg,denixil,Devinil,minor_ocr_noise
+rxhandbd,seed4_winning,P0740.jpg,folzin,Polzin,minor_ocr_noise
+rxhandbd,seed4_winning,P0741.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0742.jpg,esprazo,Bspsezo,hallucination_far_off
+rxhandbd,seed4_winning,P0743.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0744.jpg,acliz plus,Seliz Plus,minor_ocr_noise
+rxhandbd,seed4_winning,P0745.jpg,geolan,Leson,hallucination_far_off
+rxhandbd,seed4_winning,P0746.jpg,naprox,Neprox,minor_ocr_noise
+rxhandbd,seed4_winning,P0747.jpg,esprazo,Gsprazo,minor_ocr_noise
+rxhandbd,seed4_winning,P0748.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0749.jpg,Zimax,Cinax,hallucination_far_off
+rxhandbd,seed4_winning,P0750.jpg,montene,Monten,minor_ocr_noise
+rxhandbd,seed4_winning,P0751.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0752.jpg,Calboral,Celboril,minor_ocr_noise
+rxhandbd,seed4_winning,P0753.jpg,Amlip,Smithip,hallucination_far_off
+rxhandbd,seed4_winning,P0754.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0755.jpg,folzin,Kolzin,minor_ocr_noise
+rxhandbd,seed4_winning,P0756.jpg,Esprazo,Espsazo,minor_ocr_noise
+rxhandbd,seed4_winning,P0757.jpg,viset,Nisef,hallucination_far_off
+rxhandbd,seed4_winning,P0758.jpg,Neuro-B,Neuro-B,correct
+rxhandbd,seed4_winning,P0759.jpg,Napa,Gisro,hallucination_far_off
+rxhandbd,seed4_winning,P0760.jpg,Cap. Foldin,Caps Folzin,minor_ocr_noise
+rxhandbd,seed4_winning,P0761.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0762.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0763.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0764.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0765.jpg,lecor,Montenelong,hallucination_far_off
+rxhandbd,seed4_winning,P0766.jpg,Revarol,Revapsi,hallucination_far_off
+rxhandbd,seed4_winning,P0767.jpg,Gerhinal,Cesprens,hallucination_far_off
+rxhandbd,seed4_winning,P0768.jpg,folzin,folzin,correct
+rxhandbd,seed4_winning,P0769.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0770.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0771.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P0772.jpg,Calboral,Zincx,hallucination_far_off
+rxhandbd,seed4_winning,P0773.jpg,Montene,Montene,correct
+rxhandbd,seed4_winning,P0774.jpg,calboral,All you,hallucination_far_off
+rxhandbd,seed4_winning,P0775.jpg,Folzin,Naproxylin,hallucination_far_off
+rxhandbd,seed4_winning,P0776.jpg,Plus,Plus,correct
+rxhandbd,seed4_winning,P0777.jpg,Dekalin, Dekalin,correct
+rxhandbd,seed4_winning,P0778.jpg,Zimax,Bsprazo,hallucination_far_off
+rxhandbd,seed4_winning,P0779.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0780.jpg,Calboral,Calbotil,minor_ocr_noise
+rxhandbd,seed4_winning,P0781.jpg,Flugal,Fungal,hallucination_far_off
+rxhandbd,seed4_winning,P0782.jpg,lecor,Lecox,minor_ocr_noise
+rxhandbd,seed4_winning,P0783.jpg,A-fun,A fun,correct
+rxhandbd,seed4_winning,P0784.jpg,Neuro,Gpitsu,hallucination_far_off
+rxhandbd,seed4_winning,P0785.jpg,Amlip,Amitip,confusable_wrong_drug
+rxhandbd,seed4_winning,P0786.jpg,calboral,Calboral,correct
+rxhandbd,seed4_winning,P0787.jpg,Folzin,Fol2rin,minor_ocr_noise
+rxhandbd,seed4_winning,P0788.jpg,Nexum,Esprazo,other_wrong_real_word
+rxhandbd,seed4_winning,P0789.jpg,visel,visel,correct
+rxhandbd,seed4_winning,P0790.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0791.jpg,Calboral,Ceups,hallucination_far_off
+rxhandbd,seed4_winning,P0792.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0793.jpg,epitra,Nexum mups,other_wrong_real_word
+rxhandbd,seed4_winning,P0794.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0795.jpg,Calboral,clionex,hallucination_far_off
+rxhandbd,seed4_winning,P0796.jpg,Montene,Montene,correct
+rxhandbd,seed4_winning,P0797.jpg,Neuro,Ceavos,hallucination_far_off
+rxhandbd,seed4_winning,P0798.jpg,Ambroy,ambrix,hallucination_far_off
+rxhandbd,seed4_winning,P0799.jpg,Desolon,Desolon,correct
+rxhandbd,seed4_winning,P0800.jpg,pel. Desolan,Peu- Desolon,minor_ocr_noise
+rxhandbd,seed4_winning,P0801.jpg,Barbit,Naprox S.B,hallucination_far_off
+rxhandbd,seed4_winning,P0802.jpg,Flugal,pingal,hallucination_far_off
+rxhandbd,seed4_winning,P0803.jpg,Naprox,Bspruzo,hallucination_far_off
+rxhandbd,seed4_winning,P0804.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0805.jpg,calboral,Calboral,correct
+rxhandbd,seed4_winning,P0806.jpg,Arnitip,Amitip,confusable_wrong_drug
+rxhandbd,seed4_winning,P0807.jpg,epitra,Epetaxa,hallucination_far_off
+rxhandbd,seed4_winning,P0808.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0809.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0810.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0811.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0812.jpg,Linax,Zionax,hallucination_far_off
+rxhandbd,seed4_winning,P0813.jpg,Montene,Montene,correct
+rxhandbd,seed4_winning,P0814.jpg,Microgest,Microgen,minor_ocr_noise
+rxhandbd,seed4_winning,P0815.jpg,Revatol,Revato,minor_ocr_noise
+rxhandbd,seed4_winning,P0816.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0817.jpg,Folzin,forrin,hallucination_far_off
+rxhandbd,seed4_winning,P0818.jpg,Norium,Nexum,other_wrong_real_word
+rxhandbd,seed4_winning,P0819.jpg,viset,visep,minor_ocr_noise
+rxhandbd,seed4_winning,P0820.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0821.jpg,Barbit,Barbi,minor_ocr_noise
+rxhandbd,seed4_winning,P0822.jpg,geolan,German,hallucination_far_off
+rxhandbd,seed4_winning,P0823.jpg,Novelon lite,Novelon life,minor_ocr_noise
+rxhandbd,seed4_winning,P0824.jpg,Seclo,Sells,hallucination_far_off
+rxhandbd,seed4_winning,P0825.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0826.jpg,Calbo,Calbo,correct
+rxhandbd,seed4_winning,P0827.jpg,Naprox,Naprox,correct
+rxhandbd,seed4_winning,P0828.jpg,Flugal,Fungal,hallucination_far_off
+rxhandbd,seed4_winning,P0829.jpg,Lecor,Lecor,correct
+rxhandbd,seed4_winning,P0830.jpg,Amitip,Anitip,confusable_wrong_drug
+rxhandbd,seed4_winning,P0831.jpg,epitra,Epitox,hallucination_far_off
+rxhandbd,seed4_winning,P0832.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0833.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0834.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0835.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0836.jpg,Acliz Plus,delispius,hallucination_far_off
+rxhandbd,seed4_winning,P0837.jpg,geolan,Gestos,hallucination_far_off
+rxhandbd,seed4_winning,P0838.jpg,Fenix-v,Fesix-V,minor_ocr_noise
+rxhandbd,seed4_winning,P0839.jpg,Calboral-DX,Calboral-Dx,correct
+rxhandbd,seed4_winning,P0840.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0841.jpg,Neuro,Neuss,hallucination_far_off
+rxhandbd,seed4_winning,P0842.jpg,Combicid,Combiceid,minor_ocr_noise
+rxhandbd,seed4_winning,P0843.jpg,Ointment,ointment,correct
+rxhandbd,seed4_winning,P0844.jpg,Rupa,Rupa,correct
+rxhandbd,seed4_winning,P0845.jpg,Fungidal,Fungidal,correct
+rxhandbd,seed4_winning,P0846.jpg,demelon,Desolon,confusable_wrong_drug
+rxhandbd,seed4_winning,P0847.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0848.jpg,Flugal,Fuyal,hallucination_far_off
+rxhandbd,seed4_winning,P0849.jpg,Dekalin,Dekalin,correct
+rxhandbd,seed4_winning,P0850.jpg,Lecor,Lelor,minor_ocr_noise
+rxhandbd,seed4_winning,P0851.jpg,Amitip,Smith,hallucination_far_off
+rxhandbd,seed4_winning,P0852.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0853.jpg,calcor,Calcor,correct
+rxhandbd,seed4_winning,P0854.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0855.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0856.jpg,Esprazo,Esprozo,confusable_wrong_drug
+rxhandbd,seed4_winning,P0857.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0858.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0859.jpg,Algin Plus,deliz plus,hallucination_far_off
+rxhandbd,seed4_winning,P0860.jpg,Gestrenol,Genrenol,minor_ocr_noise
+rxhandbd,seed4_winning,P0861.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0862.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0863.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0864.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0865.jpg,zimax,linax,other_wrong_real_word
+rxhandbd,seed4_winning,P0866.jpg,Montene,Montene,correct
+rxhandbd,seed4_winning,P0867.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0868.jpg,Gestrenol,Gerfrenol,minor_ocr_noise
+rxhandbd,seed4_winning,P0869.jpg,Flugal,Flugal,correct
+rxhandbd,seed4_winning,P0870.jpg,Dekalin,Dexalin,minor_ocr_noise
+rxhandbd,seed4_winning,P0871.jpg,Naprox,Naprox,correct
+rxhandbd,seed4_winning,P0872.jpg,Lecor,Lecox,minor_ocr_noise
+rxhandbd,seed4_winning,P0873.jpg,Seclo,Sevio,hallucination_far_off
+rxhandbd,seed4_winning,P0874.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0875.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0876.jpg,Amitip,Aonitip,minor_ocr_noise
+rxhandbd,seed4_winning,P0877.jpg,fenix-v,Ferixav,minor_ocr_noise
+rxhandbd,seed4_winning,P0878.jpg,Calboral-DX,Calboral-DX,correct
+rxhandbd,seed4_winning,P0879.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0880.jpg,Mups,Mups,correct
+rxhandbd,seed4_winning,P0881.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0882.jpg,zimax,Zimax,correct
+rxhandbd,seed4_winning,P0883.jpg,Montene,Monten R,minor_ocr_noise
+rxhandbd,seed4_winning,P0884.jpg,Gestrenol,Gensevol,hallucination_far_off
+rxhandbd,seed4_winning,P0885.jpg,gascon,Gascon,correct
+rxhandbd,seed4_winning,P0886.jpg,demelon,Desolon,confusable_wrong_drug
+rxhandbd,seed4_winning,P0887.jpg,Naprox,Naprox,correct
+rxhandbd,seed4_winning,P0888.jpg,Esprazo,Bspruzo,minor_ocr_noise
+rxhandbd,seed4_winning,P0889.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0890.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0891.jpg,Amitip,Aonitip,minor_ocr_noise
+rxhandbd,seed4_winning,P0892.jpg,epitra,Gpitou,hallucination_far_off
+rxhandbd,seed4_winning,P0893.jpg,D Cap,Dr Cap,minor_ocr_noise
+rxhandbd,seed4_winning,P0894.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0895.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0896.jpg,Nexe mups,Nexum mups,confusable_wrong_drug
+rxhandbd,seed4_winning,P0897.jpg,Algin,Argin,minor_ocr_noise
+rxhandbd,seed4_winning,P0898.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0899.jpg,Barbit,Barbit,correct
+rxhandbd,seed4_winning,P0900.jpg,gascon,Garon,hallucination_far_off
+rxhandbd,seed4_winning,P0901.jpg,Gestrenol,German,hallucination_far_off
+rxhandbd,seed4_winning,P0902.jpg,Normen,Normens,confusable_wrong_drug
+rxhandbd,seed4_winning,P0903.jpg,AC PR,Aepr,hallucination_far_off
+rxhandbd,seed4_winning,P0904.jpg,Seclo,Seclo,correct
+rxhandbd,seed4_winning,P0905.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0906.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0907.jpg,Amitip,Amitip,correct
+rxhandbd,seed4_winning,P0908.jpg,epitra,Epetox,hallucination_far_off
+rxhandbd,seed4_winning,P0909.jpg,Folzin,Folzin,correct
+rxhandbd,seed4_winning,P0910.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0911.jpg,Esprazo,Espsazo,minor_ocr_noise
+rxhandbd,seed4_winning,P0912.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0913.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0914.jpg,Gestrenol,Geotrenol,confusable_wrong_drug
+rxhandbd,seed4_winning,P0915.jpg,Desolon,Desolon,correct
+rxhandbd,seed4_winning,P0916.jpg,Seclo,Seelo,minor_ocr_noise
+rxhandbd,seed4_winning,P0917.jpg,Naprox,Vapsox,hallucination_far_off
+rxhandbd,seed4_winning,P0918.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0919.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0920.jpg,Amitip,Smithip,minor_ocr_noise
+rxhandbd,seed4_winning,P0921.jpg,Epitra,Epitra,correct
+rxhandbd,seed4_winning,P0922.jpg,Flugal,Flugal,correct
+rxhandbd,seed4_winning,P0923.jpg,Lecor,Lecor,correct
+rxhandbd,seed4_winning,P0924.jpg,Folzin,folain,minor_ocr_noise
+rxhandbd,seed4_winning,P0925.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P0926.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0927.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0928.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0929.jpg,Gestrenol,Gepronol,hallucination_far_off
+rxhandbd,seed4_winning,P0930.jpg,Fenix-v,Ferix-v,confusable_wrong_drug
+rxhandbd,seed4_winning,P0931.jpg,Calboral DX,Calboralox,minor_ocr_noise
+rxhandbd,seed4_winning,P0932.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0933.jpg,Neuro B,vensox,hallucination_far_off
+rxhandbd,seed4_winning,P0934.jpg,Bukof,Basket,hallucination_far_off
+rxhandbd,seed4_winning,P0935.jpg,Microgest,Microgesf,minor_ocr_noise
+rxhandbd,seed4_winning,P0936.jpg,Folzin,Folatin,minor_ocr_noise
+rxhandbd,seed4_winning,P0937.jpg,calboral,Calboral,correct
+rxhandbd,seed4_winning,P0938.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0939.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0940.jpg,Neuro,Neuro,correct
+rxhandbd,seed4_winning,P0941.jpg,Acliz Plus,Acloplus,minor_ocr_noise
+rxhandbd,seed4_winning,P0942.jpg,geolan,Geops,hallucination_far_off
+rxhandbd,seed4_winning,P0943.jpg,demelon,Desolon,confusable_wrong_drug
+rxhandbd,seed4_winning,P0944.jpg,Flugal,Finger,hallucination_far_off
+rxhandbd,seed4_winning,P0945.jpg,Nexum,Nexum,correct
+rxhandbd,seed4_winning,P0946.jpg,Naprox,Naporox,minor_ocr_noise
+rxhandbd,seed4_winning,P0947.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P0948.jpg,calboral,Calboral,correct
+rxhandbd,seed4_winning,P0949.jpg,Epitra,Epitou,hallucination_far_off
+rxhandbd,seed4_winning,P0950.jpg,Amitip,Amitip,correct
+rxhandbd,seed4_winning,P0951.jpg,Fenix,Ferix,minor_ocr_noise
+rxhandbd,seed4_winning,P0952.jpg,Calboral-DX,Calboral-DX,correct
+rxhandbd,seed4_winning,P0953.jpg,Esprazo,Bspruzo,minor_ocr_noise
+rxhandbd,seed4_winning,P0954.jpg,Algin,Algin,correct
+rxhandbd,seed4_winning,P0955.jpg,Neuro-B,Neuro-B,correct
+rxhandbd,seed4_winning,P0956.jpg,?icrogent,microgen,minor_ocr_noise
+rxhandbd,seed4_winning,P0957.jpg,Nystat,Nystat,correct
+rxhandbd,seed4_winning,P0958.jpg,ESCilex,Seton,hallucination_far_off
+rxhandbd,seed4_winning,P0959.jpg,Escilex,Eclilex,minor_ocr_noise
+rxhandbd,seed4_winning,P0960.jpg,Tryptin,Tryptin,correct
+rxhandbd,seed4_winning,P0961.jpg,Nexum,Nexun,minor_ocr_noise
+rxhandbd,seed4_winning,P0962.jpg,Xyril,Yyril,minor_ocr_noise
+rxhandbd,seed4_winning,P0963.jpg,Cantilid,Cenbid,hallucination_far_off
+rxhandbd,seed4_winning,P0964.jpg,calboral,Lulizoflien,hallucination_far_off
+rxhandbd,seed4_winning,P0965.jpg,Farofew,Farofen,minor_ocr_noise
+rxhandbd,seed4_winning,P0966.jpg,Malucan,m-lucon,minor_ocr_noise
+rxhandbd,seed4_winning,P0967.jpg,Esprazo,Pro-ranof,hallucination_far_off
+rxhandbd,seed4_winning,P0968.jpg,reelife,Neelife,minor_ocr_noise
+rxhandbd,seed4_winning,P0969.jpg,lufilox,Lubsilox,minor_ocr_noise
+rxhandbd,seed4_winning,P0970.jpg,Avolac,Aulac,hallucination_far_off
+rxhandbd,seed4_winning,P0971.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P0972.jpg,Deuxil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P0973.jpg,Nystat,Nystat,correct
+rxhandbd,seed4_winning,P0974.jpg,Setra,Seton,hallucination_far_off
+rxhandbd,seed4_winning,P0975.jpg,Escilex,Eslilex,confusable_wrong_drug
+rxhandbd,seed4_winning,P0976.jpg,Tryptin,Typefw,hallucination_far_off
+rxhandbd,seed4_winning,P0977.jpg,Nexum,Nexun,minor_ocr_noise
+rxhandbd,seed4_winning,P0978.jpg,Don A,Don A,correct
+rxhandbd,seed4_winning,P0979.jpg,Xinc,Xinc,correct
+rxhandbd,seed4_winning,P0980.jpg,Zovia,Aonic,hallucination_far_off
+rxhandbd,seed4_winning,P0981.jpg,Zymet Pro,Zymetfro,minor_ocr_noise
+rxhandbd,seed4_winning,P0982.jpg,algin,Algin,correct
+rxhandbd,seed4_winning,P0983.jpg,Paloxi,Pelox,hallucination_far_off
+rxhandbd,seed4_winning,P0984.jpg,finix,Finix,correct
+rxhandbd,seed4_winning,P0985.jpg,cefotil,Cefotil,correct
+rxhandbd,seed4_winning,P0986.jpg,FLAMEX,Flamex,correct
+rxhandbd,seed4_winning,P0987.jpg,Bilon,Bilon,correct
+rxhandbd,seed4_winning,P0988.jpg,sergel,Serogel,minor_ocr_noise
+rxhandbd,seed4_winning,P0989.jpg,Bartrocin,Bootrocin,minor_ocr_noise
+rxhandbd,seed4_winning,P0990.jpg,ointment,ointment,correct
+rxhandbd,seed4_winning,P0991.jpg,viodin,Violin,minor_ocr_noise
+rxhandbd,seed4_winning,P0992.jpg,mouthwash,Monthwosh,minor_ocr_noise
+rxhandbd,seed4_winning,P0993.jpg,Bislol,Crist,hallucination_far_off
+rxhandbd,seed4_winning,P0994.jpg,Ecosprin,Elofax,hallucination_far_off
+rxhandbd,seed4_winning,P0995.jpg,zithrox,Zithrox,correct
+rxhandbd,seed4_winning,P0996.jpg,m-lucas,m-fulon,hallucination_far_off
+rxhandbd,seed4_winning,P0997.jpg,Dophylin,Diphylline,minor_ocr_noise
+rxhandbd,seed4_winning,P0998.jpg,Neuroxen,Neuroxew,minor_ocr_noise
+rxhandbd,seed4_winning,P0999.jpg,sergel,Rupwox,hallucination_far_off
+rxhandbd,seed4_winning,P1000.jpg,celebrex,Calbonetix,hallucination_far_off
+rxhandbd,seed4_winning,P1001.jpg,Fusid,Fusid,correct
+rxhandbd,seed4_winning,P1002.jpg,Vildamet,vildamef,confusable_wrong_drug
+rxhandbd,seed4_winning,P1003.jpg,Emazid,Emard,hallucination_far_off
+rxhandbd,seed4_winning,P1004.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1005.jpg,algin,brist,hallucination_far_off
+rxhandbd,seed4_winning,P1006.jpg,gaviflux,Gainflex,hallucination_far_off
+rxhandbd,seed4_winning,P1007.jpg,uliv,Nlive,hallucination_far_off
+rxhandbd,seed4_winning,P1008.jpg,prolix,Tablet,other_wrong_real_word
+rxhandbd,seed4_winning,P1009.jpg,Zymet,Zymef,confusable_wrong_drug
+rxhandbd,seed4_winning,P1010.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1011.jpg,Denixil,Deixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P1012.jpg,gaviflux,Gaviflux,correct
+rxhandbd,seed4_winning,P1013.jpg,Bislol,Brist,hallucination_far_off
+rxhandbd,seed4_winning,P1014.jpg,M-lucas,m-lucas,correct
+rxhandbd,seed4_winning,P1015.jpg,ginoba,Ginoba,correct
+rxhandbd,seed4_winning,P1016.jpg,moxilin,moxilin,correct
+rxhandbd,seed4_winning,P1017.jpg,vergon,vergon,correct
+rxhandbd,seed4_winning,P1018.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P1019.jpg,m-lucas,Afodic,hallucination_far_off
+rxhandbd,seed4_winning,P1020.jpg,viglimet,viglinef,minor_ocr_noise
+rxhandbd,seed4_winning,P1021.jpg,Emlidus,Emladus,minor_ocr_noise
+rxhandbd,seed4_winning,P1022.jpg,nutrifil,Xufifil,hallucination_far_off
+rxhandbd,seed4_winning,P1023.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1024.jpg,Escolex,Eslilex,confusable_wrong_drug
+rxhandbd,seed4_winning,P1025.jpg,Revocit,Revocit,correct
+rxhandbd,seed4_winning,P1026.jpg,Coralcal,Conalcal,minor_ocr_noise
+rxhandbd,seed4_winning,P1027.jpg,maxpro,Maxas,hallucination_far_off
+rxhandbd,seed4_winning,P1028.jpg,Neuroxen,Neuroan,minor_ocr_noise
+rxhandbd,seed4_winning,P1029.jpg,drise,Dn-e,hallucination_far_off
+rxhandbd,seed4_winning,P1030.jpg,m-lucas,m-lucas,correct
+rxhandbd,seed4_winning,P1031.jpg,doxoven,Doxoven,correct
+rxhandbd,seed4_winning,P1032.jpg,don A,Dova,hallucination_far_off
+rxhandbd,seed4_winning,P1033.jpg,Xinc,Xinc,correct
+rxhandbd,seed4_winning,P1034.jpg,Xyril,Xyril,correct
+rxhandbd,seed4_winning,P1035.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1036.jpg,Revocit,Renoit,minor_ocr_noise
+rxhandbd,seed4_winning,P1037.jpg,ostocal,Osrocal,minor_ocr_noise
+rxhandbd,seed4_winning,P1038.jpg,maxpro,Maxpro,correct
+rxhandbd,seed4_winning,P1039.jpg,Algin,Drefin,hallucination_far_off
+rxhandbd,seed4_winning,P1040.jpg,uliv,Niliv,hallucination_far_off
+rxhandbd,seed4_winning,P1041.jpg,prolix,Tablet,other_wrong_real_word
+rxhandbd,seed4_winning,P1042.jpg,Zymet,Zymef,confusable_wrong_drug
+rxhandbd,seed4_winning,P1043.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1044.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P1045.jpg,gaviflux,Gariflux,minor_ocr_noise
+rxhandbd,seed4_winning,P1046.jpg,nameton,Namefon,confusable_wrong_drug
+rxhandbd,seed4_winning,P1047.jpg,don A,Nalftax,hallucination_far_off
+rxhandbd,seed4_winning,P1048.jpg,neuroxen,Neuroxen,correct
+rxhandbd,seed4_winning,P1049.jpg,doxoven,Hallal,hallucination_far_off
+rxhandbd,seed4_winning,P1050.jpg,Bislol,Bislof,minor_ocr_noise
+rxhandbd,seed4_winning,P1051.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1052.jpg,Escilex,Eslilax,minor_ocr_noise
+rxhandbd,seed4_winning,P1053.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P1054.jpg,Folita,Folita,correct
+rxhandbd,seed4_winning,P1055.jpg,Barbit,Narbit,minor_ocr_noise
+rxhandbd,seed4_winning,P1056.jpg,Pregmos,Prog moj,hallucination_far_off
+rxhandbd,seed4_winning,P1057.jpg,progest,Prosept,minor_ocr_noise
+rxhandbd,seed4_winning,P1058.jpg,algin,Arin,hallucination_far_off
+rxhandbd,seed4_winning,P1059.jpg,nexum,Moncere,hallucination_far_off
+rxhandbd,seed4_winning,P1060.jpg,algin,Algin,correct
+rxhandbd,seed4_winning,P1061.jpg,Asynta,Asynte,minor_ocr_noise
+rxhandbd,seed4_winning,P1062.jpg,napro,Nafro,minor_ocr_noise
+rxhandbd,seed4_winning,P1063.jpg,neuroxen,Neuroxum,minor_ocr_noise
+rxhandbd,seed4_winning,P1064.jpg,mig,Injection,other_wrong_real_word
+rxhandbd,seed4_winning,P1065.jpg,arth,Asth,minor_ocr_noise
+rxhandbd,seed4_winning,P1066.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P1067.jpg,zithrox,Zithrox,correct
+rxhandbd,seed4_winning,P1068.jpg,m-lucas,Inducan,hallucination_far_off
+rxhandbd,seed4_winning,P1069.jpg,Cortan,Cofan,hallucination_far_off
+rxhandbd,seed4_winning,P1070.jpg,Fenadin,Fenasu,hallucination_far_off
+rxhandbd,seed4_winning,P1071.jpg,combicid,Coutilid,hallucination_far_off
+rxhandbd,seed4_winning,P1072.jpg,nexum,Nexum,correct
+rxhandbd,seed4_winning,P1073.jpg,Fusid,Fusid,correct
+rxhandbd,seed4_winning,P1074.jpg,neuroxen,Neuroxen,correct
+rxhandbd,seed4_winning,P1075.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P1076.jpg,mig,mig,correct
+rxhandbd,seed4_winning,P1077.jpg,methomol,Methomat,minor_ocr_noise
+rxhandbd,seed4_winning,P1078.jpg,Neugalin,Xempalin,hallucination_far_off
+rxhandbd,seed4_winning,P1079.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1080.jpg,Flexi,Flexi,correct
+rxhandbd,seed4_winning,P1081.jpg,m-lucas,Relenfus,hallucination_far_off
+rxhandbd,seed4_winning,P1082.jpg,arth,Arth,correct
+rxhandbd,seed4_winning,P1083.jpg,neuroxen,Nemopen,hallucination_far_off
+rxhandbd,seed4_winning,P1084.jpg,nabumet,Nabumet,correct
+rxhandbd,seed4_winning,P1085.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1086.jpg,Denixil,Devixil,confusable_wrong_drug
+rxhandbd,seed4_winning,P1087.jpg,Dexter,Ignate,hallucination_far_off
+rxhandbd,seed4_winning,P1088.jpg,folive,Folive,correct
+rxhandbd,seed4_winning,P1089.jpg,nystat,Nrystat,minor_ocr_noise
+rxhandbd,seed4_winning,P1090.jpg,Zymef,Zymefro,minor_ocr_noise
+rxhandbd,seed4_winning,P1091.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1092.jpg,Escilex,Escape,hallucination_far_off
+rxhandbd,seed4_winning,P1093.jpg,Asynta,Asyrata,minor_ocr_noise
+rxhandbd,seed4_winning,P1094.jpg,Beklo,Bexo,hallucination_far_off
+rxhandbd,seed4_winning,P1095.jpg,neuroxen,Neuroxen,correct
+rxhandbd,seed4_winning,P1096.jpg,Napa,Halloml Dx,hallucination_far_off
+rxhandbd,seed4_winning,P1097.jpg,Zimax,Relenton,hallucination_far_off
+rxhandbd,seed4_winning,P1098.jpg,Dexter,Dexter,correct
+rxhandbd,seed4_winning,P1099.jpg,Denixil,Denixil,correct
+rxhandbd,seed4_winning,P1100.jpg,mig,mig,correct
+rxhandbd,seed4_winning,P1101.jpg,Folzin,Cal. Folzin,hallucination_far_off
+rxhandbd,seed4_winning,P1102.jpg,Calboral,Calboral,correct
+rxhandbd,seed4_winning,P1103.jpg,Nexe Mups,Nexum mups,confusable_wrong_drug
+rxhandbd,seed4_winning,P1104.jpg,Neuro B,Neuro-B,correct
+rxhandbd,seed4_winning,P1105.jpg,Napa,Napa,correct
+rxhandbd,seed4_winning,P1106.jpg,Zimax,Zincx,hallucination_far_off
+rxhandbd,seed4_winning,P1107.jpg,Montelon,Montenelong,minor_ocr_noise
+rxhandbd,seed4_winning,P1108.jpg,Revital,Revapsi,hallucination_far_off
+rxhandbd,seed4_winning,P1109.jpg,gestrenol,Gesvenoj,hallucination_far_off
+rxhandbd,seed4_winning,P1110.jpg,maxrin,Maxrin O.G,hallucination_far_off
+rxhandbd,seed4_winning,P1111.jpg,Bislol,Poslot,hallucination_far_off
+rxhandbd,seed4_winning,P1112.jpg,neurolin,Neurolin,correct
+rxhandbd,seed4_winning,P1113.jpg,neuroxen,Neuroxew,minor_ocr_noise
+rxhandbd,seed4_winning,P1114.jpg,Denixil,DevixI,confusable_wrong_drug
+rxhandbd,seed4_winning,P1115.jpg,Lubilax,Lubilox,confusable_wrong_drug

@@ -71,4 +71,73 @@ Dữ liệu thô: `results/kaggle_run_5_winning_kaggle_bd/`. So với CE-only ba
 
 **Kết luận trung thực: kết quả KHÔNG lặp lại được trên Kaggle-BD.** Đúng như dự đoán, cỡ mẫu confusable_wrong_drug (chỉ 3-4 ảnh) hoàn toàn không đủ để nói gì về chỉ số mục tiêu (p=1.00). Đáng chú ý hơn: trên dataset này, cấu hình thắng cuộc lại làm **giảm correct rate có ý nghĩa thống kê** (87.7%→86.0%, p=0.041) mà không có lợi ích bù lại nào đo được. Diễn giải hợp lý nhất: lợi ích của margin+severity nhẹ có thể phụ thuộc vào **quy mô/độ đa dạng từ vựng** — trên RxHandBD (~1430 từ, nhiều cặp nhầm lẫn thật) can thiệp có không gian để phát huy; trên Kaggle-BD (từ điển đóng chỉ 78 lớp, chỉ 3-4 ảnh thuộc đúng loại lỗi mục tiêu) can thiệp chủ yếu chỉ thêm nhiễu vào một bài toán đã gần bão hoà, không có đủ "chỗ" để mang lại lợi ích rõ ràng.
 
+---
+
+# Cập nhật QUAN TRỌNG NHẤT: xác nhận lại với 5 seed đầy đủ (kernel 06) — SỬA LẠI kết luận "không đánh đổi"
+
+Dữ liệu thô: `results/kaggle_run_6_confirmatory/`. Phân tích: `scripts/analyze_confirmatory.py`.
+Bối cảnh: vòng phản biện phát hiện "cấu hình thắng cuộc" (p=0.011) không qua được
+hiệu chỉnh Holm-Bonferroni (p_holm=0.057, xem `scripts/multiple_comparisons.py`)
+vì được chọn sau khi xem 7 cấu hình trên cùng 1 tập test, và mỗi cấu hình trước
+đó chỉ chạy **1 lần, không seed đầy đủ** (chỉ `random.seed(42)` cho Python, chưa
+seed torch/numpy). Kernel 06 chạy lại **5 seed độc lập** (torch+numpy+random đều
+được set), mỗi seed train CẶP (CE-only, thắng cuộc) với CÙNG seed để cô lập biến
+nhiễu do khởi tạo/thứ tự dữ liệu, so sánh ghép cặp riêng cho từng seed.
+
+## Kết quả từng seed (CE-only vs cấu hình thắng cuộc)
+
+| Seed | confusable_wrong_drug | p | correct | p | hallucination | p |
+|---|---|---|---|---|---|---|
+| 1 | 79→65 (giảm) | 0.049 ✅ | 522→495 (giảm) | 0.011 ⚠️ | 242→268 (tăng) | 0.018 ⚠️ |
+| 2 | 74→68 (giảm) | 0.362 | 524→508 (giảm) | 0.101 | 238→275 (tăng) | 0.0002 ⚠️ |
+| 3 | 90→79 (giảm) | 0.043 ✅ | 513→503 (giảm) | 0.368 | 238→254 (tăng) | 0.109 |
+| 4 | 78→66 (giảm) | 0.036 ✅ | 526→498 (giảm) | 0.010 ⚠️ | 235→255 (tăng) | 0.045 ⚠️ |
+| 5 | 78→71 (giảm) | 0.265 | 529→498 (giảm) | 0.005 ⚠️ | 243→264 (tăng) | 0.033 ⚠️ |
+
+**Điểm mấu chốt: cả 3 chỉ số đều đổi CÙNG MỘT HƯỚNG ở TẤT CẢ 5/5 SEED** —
+confusable_wrong_drug luôn giảm, correct luôn giảm, hallucination luôn tăng —
+không có ngoại lệ. Đây là bằng chứng nhất quán rất mạnh, không phải ngẫu nhiên.
+
+## Gộp 5 seed (pooled McNemar, tăng lực thống kê ~5 lần)
+
+| Chỉ số | Sửa được / Sinh mới (gộp) | p gộp | Số seed riêng lẻ đạt p<0.05 |
+|---|---|---|---|
+| confusable_wrong_drug | 103 / 53 | **p = 0.000077** | 3/5 |
+| correct | 312 mất / 200 được | **p = 0.000001** | 3/5 |
+| hallucination | 178 sửa / 298 sinh mới | **p < 0.000001** | 4/5 |
+
+Quy đổi tỉ lệ trung bình 5 seed: confusable_wrong_drug **7.16%→6.26%** (giảm
+~12.6% tương đối), correct **46.9%→44.9%** (giảm ~2.0 điểm %), hallucination
+**21.5%→23.6%** (tăng ~2.2 điểm %).
+
+## PHẢI SỬA LẠI kết luận trước đó
+
+Kết luận cũ ("giảm confusable_wrong_drug có ý nghĩa MÀ KHÔNG đánh đổi correct/
+hallucination có ý nghĩa", dựa trên 1 lần chạy p=0.76/p=0.41) **SAI, hoặc ít nhất
+không đại diện** — lần chạy đơn lẻ đó là một **outlier thuận lợi tình cờ**, đúng
+như lo ngại "chỉ 1 lần chạy không seed" của vòng phản biện. Với 5 seed độc lập,
+correct rate GIẢM và hallucination TĂNG **nhất quán và có ý nghĩa thống kê rất
+mạnh** (p gộp < 0.00001 cho cả 2) — đây là **một đánh đổi thật, không phải miễn
+phí**.
+
+**Tin tốt**: bản thân lợi ích cốt lõi (giảm confusable_wrong_drug — loại lỗi
+nguy hiểm nhất) được xác nhận **VỮNG CHẮC HƠN nhiều** so với trước (p gộp
+=0.000077, dựa trên 5 lần lặp độc lập, thay vì 1 lần chạy với p=0.011 dễ bị nghi
+ngờ là may mắn).
+
+## Tuyên bố đúng cho bài báo (thay thế hoàn toàn tuyên bố "không đánh đổi" cũ)
+
+> Margin loss (λ=2.0) kết hợp severity-weighting nhẹ (β=0.3) làm giảm có ý nghĩa
+> thống kê, nhất quán qua nhiều lần chạy độc lập, tỉ lệ lỗi "nhầm sang thuốc
+> thật khác" (confusable_wrong_drug, ~12.6% tương đối) — nhưng đây là MỘT ĐÁNH
+> ĐỔI THẬT: đi kèm giảm ~2 điểm % correct rate và tăng ~2 điểm % hallucination,
+> cả hai đều có ý nghĩa thống kê mạnh qua 5 seed độc lập. Đây là một điểm trên
+> đường cong đánh đổi an toàn-hiệu năng, không phải một cải tiến miễn phí.
+
+Điều này thực ra làm bài báo **trung thực và đáng tin hơn**, đúng tinh thần dự
+án: không phải "chúng tôi giải quyết được vấn đề mà không mất gì", mà là "chúng
+tôi định lượng chính xác đánh đổi giữa an toàn và hiệu năng, và cho công cụ để
+người dùng chọn điểm vận hành phù hợp với mức độ chấp nhận rủi ro của họ" (đúng
+như đề xuất "trình bày cả đường cong đánh đổi" từ vòng phản biện trước).
+
 **Hệ quả cho báo cáo cuối cùng**: phải nêu rõ đây là giới hạn thật của phương pháp — hiệu quả được chứng minh có ý nghĩa thống kê trên RxHandBD (từ vựng lớn, thực tế hơn), nhưng KHÔNG khẳng định được (và có dấu hiệu ngược lại về correct rate) trên dataset từ điển đóng nhỏ. Không nên trình bày cấu hình thắng cuộc như một giải pháp tổng quát cho mọi quy mô từ vựng.

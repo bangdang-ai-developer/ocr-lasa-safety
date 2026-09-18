@@ -50,9 +50,14 @@ source scripts/kaggle_env.sh
       `scripts/multiple_comparisons.py`. Kết quả: "cấu hình thắng cuộc" cũ
       KHÔNG còn ý nghĩa sau hiệu chỉnh (p_holm=0.057); chỉ margin λ=3.0 còn
       ý nghĩa nhưng đánh đổi accuracy nặng nhất.
-- [ ] Chạy lại xác nhận (confirmatory) với seed đầy đủ (torch+numpy+random),
-      5 seed độc lập cho cặp (CE-only, cấu hình thắng cuộc) — kernel 06 đang
-      chạy trên Kaggle.
+- [x] Chạy lại xác nhận (confirmatory) với seed đầy đủ (torch+numpy+random),
+      5 seed độc lập cho cặp (CE-only, cấu hình thắng cuộc) — kernel 06.
+      **Kết quả quan trọng nhất của dự án**: giảm confusable_wrong_drug được
+      xác nhận vững chắc hơn (p gộp=0.000077, 5/5 seed cùng hướng) — NHƯNG
+      claim "không đánh đổi" trước đó SAI: correct giảm và hallucination tăng
+      có ý nghĩa mạnh, nhất quán ở cả 5 seed (p gộp<0.00001 cho cả 2). Đây là
+      MỘT ĐÁNH ĐỔI THẬT, không phải cải tiến miễn phí — xem cập nhật cuối
+      trong [docs/01-ket-qua-ablation.md](docs/01-ket-qua-ablation.md).
 - [x] Truy nguồn gốc/license RxHandBD — xem [docs/03-provenance-rxhandbd.md](docs/03-provenance-rxhandbd.md).
       Đã tự tải + đối chiếu tay với bản gốc Zenodo (checksum khớp, nhãn khớp
       13/13 mẫu) — **xác nhận dữ liệu là thật**, không lẫn với dataset khác
