@@ -4,15 +4,18 @@ scripts/analyze_confirmatory_extended.py); no numeric or framing inconsistency w
 found across drafts. Table numbers in the Results section were renumbered to run
 continuously after Methods' Table 1-3. Outstanding [TODO: confirm] items before
 submission: (1) optimizer name for LoRA fine-tuning (facts sheet did not record it -
-check kernel scripts, likely AdamW per torch.optim.AdamW in the code); (2) Holm-
-Bonferroni-adjusted p-values for the 4 of 7 Phase-1 comparisons not already computed
-in scripts/multiple_comparisons.py output (severity-only, margin-only,
-severity+margin combined, margin lambda=2.0 5-epoch - rerun that script and fill in);
-(3) manual verification of Millan-Hernandez et al. (2019)'s exact benchmark figures
-before quoting any number from it; (4) a general LASA/medication-error epidemiology
+check kernel scripts, likely AdamW per torch.optim.AdamW in the code); (2) manual
+verification of Millan-Hernandez et al. (2019)'s exact benchmark figures before
+quoting any number from it; (3) a general LASA/medication-error epidemiology
 citation if reviewers expect one beyond the algorithmic-identification literature;
-(5) citation for the prior motivating project, once that manuscript is public; (6)
-final code repository URL. -->
+(4) citation for the prior motivating project, once that manuscript is public; (5)
+final code repository URL.
+UPDATE (2026-09-18): all 7 Holm-Bonferroni-adjusted p-values are now filled in
+(Table 6 in Methods, Table 7 in Results), re-run directly from
+scripts/multiple_comparisons.py: severity-only p_holm=0.946; margin-only (lam1)
+p_holm=0.573; severity+margin combined p_holm=1.000; margin lam2 p_holm=0.054;
+margin lam3 p_holm=0.0008 (only one that survives at alpha=0.05); margin lam2
+5-epoch p_holm=0.573; margin lam2+severity beta0.3 (selected) p_holm=0.057. -->
 
 # A Quantified Safety–Accuracy Trade-off: Margin-Ranking and Severity-Weighted LoRA Fine-Tuning for Look-Alike/Sound-Alike Drug Name Errors in Handwritten Prescription OCR
 
@@ -399,10 +402,13 @@ confirmatory evidence:
 
 | Configuration | p (uncorrected) | p (Holm–Bonferroni) | Survives at α = 0.05? |
 |---|---|---|---|
-| λ_margin = 3.0 | 0.0001 | 0.0008 | Yes |
+| λ_margin = 3.0 | 0.0001 | 0.0008 | **Yes** |
 | λ_margin = 2.0 (alone) | 0.009 | 0.054 | No |
 | λ_margin = 2.0 + severity β = 0.3 (**selected**) | 0.011 | 0.057 | No |
-| [remaining 4 comparisons in the family of 7] | — | [TODO: confirm] | [TODO: confirm] |
+| λ_margin = 2.0, 5 epochs | 0.143 | 0.573 | No |
+| λ_margin = 1.0 (margin-only, kernel 03) | 0.176 | 0.573 | No |
+| Severity-only, β not tuned (kernel 03) | 0.473 | 0.946 | No |
+| Severity + margin combined, kernel-03 defaults | 1.000 | 1.000 | No |
 
 Critically, the configuration ultimately selected for Phase 2 does **not** survive this correction. This
 result is the explicit motivation for Phase 2: it demonstrates that none of the Phase 1 single-run
@@ -526,12 +532,12 @@ Margin λ=3.0 gives the single largest raw reduction in confusable_wrong_drug fo
 
 | Configuration | Uncorrected p | p (Holm-Bonferroni) | Survives at α=0.05? |
 |---|---|---|---|
-| Kernel 03: severity-only | 0.47 | [TODO: confirm] | No |
-| Kernel 03: margin-only | 0.18 | [TODO: confirm] | No |
-| Kernel 03: severity+margin combined | 1.00 | [TODO: confirm] | No |
+| Kernel 03: severity-only | 0.473 | 0.946 | No |
+| Kernel 03: margin-only | 0.176 | 0.573 | No |
+| Kernel 03: severity+margin combined | 1.000 | 1.000 | No |
 | Kernel 04: margin λ=2.0 | 0.009 | 0.054 | No |
 | Kernel 04: margin λ=3.0 | 0.0001 | 0.0008 | **Yes** |
-| Kernel 04: margin λ=2.0, 5 epochs | 0.14 | [TODO: confirm] | No |
+| Kernel 04: margin λ=2.0, 5 epochs | 0.143 | 0.573 | No |
 | Kernel 04: margin λ=2.0 + severity β=0.3 (selected) | 0.011 | 0.057 | No |
 
 **Stated conclusion.** Only "margin λ=3.0" survives Holm-Bonferroni correction; critically, the configuration actually selected for Phase 2 ("margin λ=2.0 + severity β=0.3") does *not* survive (p_holm=0.057), nor does "margin λ=2.0" alone (p_holm=0.054). This result is the explicit motivation for Phase 2: it demonstrates that none of the Phase-1 single-run findings — including the one eventually selected — can be trusted as final evidence on their own, given the researcher-degrees-of-freedom inherent in comparing many configurations on one fixed test set with unseeded single runs.
