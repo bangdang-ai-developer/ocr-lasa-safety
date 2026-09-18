@@ -36,8 +36,23 @@ source scripts/kaggle_env.sh
       `abrahametry/rxhandbd-handwritten-word-image-dataset`).
 - [x] Suy luận cặp tên thuốc dễ nhầm lẫn bằng thuật toán (BI-SIM: edit distance
       + phonetic similarity), xuất CSV top-100/top-5000 để kiểm tra thủ công.
-- [ ] Kiểm tra thủ công (spot-check) danh sách cặp nhầm lẫn.
-- [ ] Chạy OCR benchmark thu gọn (Tesseract + TrOCR zero-shot) để tự đo hiện
-      tượng gốc một cách độc lập.
-- [ ] Cài margin loss + severity-weighted loss vào pipeline LoRA fine-tune.
-- [ ] Đánh giá ablation (CE-only / +severity / +margin / +cả hai).
+- [x] Kiểm tra thủ công (spot-check, AI-assisted) danh sách cặp nhầm lẫn —
+      xem [docs/02-spot-check-cap-nham-lan.md](docs/02-spot-check-cap-nham-lan.md).
+      **Chưa qua dược sĩ Bangladesh xác minh** — vẫn là việc nên làm nếu có thể.
+- [x] Chạy OCR benchmark thu gọn (Tesseract + TrOCR zero-shot) độc lập —
+      xác nhận hiện tượng gốc (kernel 01, 02).
+- [x] Cài margin loss + severity-weighted loss vào pipeline LoRA fine-tune,
+      chạy ablation đầy đủ (CE-only / +severity / +margin / +cả hai) + dò
+      siêu tham số (kernel 03, 04) — xem [docs/01-ket-qua-ablation.md](docs/01-ket-qua-ablation.md).
+- [x] Kiểm tra chéo cấu hình thắng cuộc trên Kaggle-BD (kernel 05) — KHÔNG
+      lặp lại được, giới hạn thật đã ghi nhận.
+- [x] Hiệu chỉnh đa so sánh (Holm-Bonferroni) trên toàn bộ 7 cấu hình đã thử —
+      `scripts/multiple_comparisons.py`. Kết quả: "cấu hình thắng cuộc" cũ
+      KHÔNG còn ý nghĩa sau hiệu chỉnh (p_holm=0.057); chỉ margin λ=3.0 còn
+      ý nghĩa nhưng đánh đổi accuracy nặng nhất.
+- [ ] Chạy lại xác nhận (confirmatory) với seed đầy đủ (torch+numpy+random),
+      5 seed độc lập cho cặp (CE-only, cấu hình thắng cuộc) — kernel 06 đang
+      chạy trên Kaggle.
+- [ ] Truy nguồn gốc/license thật của RxHandBD (bản Kaggle mirror không khớp
+      kích thước ảnh với cả 2 bản Zenodo/Mendeley đã biết trước đây).
+- [ ] Lập bibliography đã xác minh (docs/03-tai-lieu-tham-khao.md).
