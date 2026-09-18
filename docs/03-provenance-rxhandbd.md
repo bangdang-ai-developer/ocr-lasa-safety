@@ -1,70 +1,69 @@
-# Truy nguồn gốc/license RxHandBD — phát hiện nghiêm trọng, cần xử lý trước khi công bố
+# Truy nguồn gốc/license RxHandBD
 
-Điều tra độc lập (đọc trực tiếp trang Kaggle qua trình duyệt thật, đối chiếu
-Zenodo/Mendeley, tìm bài báo học thuật, kiểm tra hồ sơ người upload). Kết luận
-ngắn gọn: **nguồn gốc và license của bản dữ liệu đang dùng KHÔNG THỂ xác nhận
-chắc chắn** — nghiêm trọng hơn nghi ngờ ban đầu.
+**Cập nhật quan trọng (đã tự tải + đối chiếu trực tiếp file gốc từ Zenodo)**:
+tình hình **tốt hơn nhiều** so với đánh giá ban đầu. Vấn đề license vẫn còn,
+nhưng KHÔNG còn nghi ngờ về việc dữ liệu có bị lẫn/giả hay không.
 
-## Phát hiện chính
+## Đã tự kiểm chứng trực tiếp (không chỉ dựa trên metadata trang web)
 
-1. **Zenodo và Mendeley là 2 bản tự nộp (không qua bình duyệt)** bởi cùng một
-   tác giả (Md. Masudul Islam, Bangladesh University of Business and Technology)
-   nhưng **MÂU THUẪN NHAU**: Zenodo v1 ghi 128×128px + license MIT; Mendeley v3
-   ghi 512×512px + license **CC BY 4.0** — cho cùng một dataset 5.578 ảnh. Không
-   có cách nào từ bên ngoài biết license nào là "chính thức".
-2. **Không tồn tại bài báo học thuật (peer-reviewed) nào mô tả "RxHandBD"** —
-   đã tìm cả Google Scholar của chính tác giả (có ~15 bài thật, về da liễu/gạo/
-   nén ảnh..., không có bài nào về OCR/chữ viết tay/đơn thuốc). Dataset chưa
-   từng được trích dẫn.
-3. **Bản Kaggle đang dùng (`abrahametry/rxhandbd-handwritten-word-image-dataset`)
-   có dấu hiệu là một bản re-upload không có nguồn gốc rõ ràng**: mục Author và
-   DOI-Citation trên trang Kaggle đều để TRỐNG; người upload (`abrahametry`) là
-   một giảng viên CSE tại CÙNG trường BUBT (không phải chính tác giả), đã từng
-   re-upload một dataset khác của cùng nhóm nghiên cứu lên Kaggle theo đúng kiểu
-   này trước đây (dataset giống lúa "Aruzz22.5K") — đây có vẻ là thói quen
-   "mirror nội bộ", không phải hành vi đánh cắp từ người lạ, nhưng **vẫn hoàn
-   toàn không có trích dẫn/giấy phép rõ ràng trên chính trang Kaggle**.
-4. **Phát hiện nghiêm trọng nhất**: thư mục con `BD Handwritten Prescription
-   Dataset` bên trong bản Kaggle "RxHandBD" chứa **chính xác 4.680 file** —
-   trùng khớp hoàn toàn với một dataset HOÀN TOÀN KHÁC, có bài báo bình duyệt
-   riêng (Mia et al. 2024, iCACCESS) và license khác (Open Database License,
-   không phải MIT/CC-BY) — đây là dataset Kaggle-BD (78 lớp) mà dự án này ĐANG
-   DÙNG LÀM DATASET RIÊNG BIỆT! → bản Kaggle "RxHandBD" nhiều khả năng đã **gộp
-   nhầm/không ghi công 2 dataset khác nhau** vào 1 lượt tải, dưới 1 nhãn license
-   duy nhất.
-5. Kích thước ảnh thực tế đo được (~130-230×55-105px, không vuông) khớp hợp lý
-   với biến thể **"Raw/gốc"** mà cả Zenodo lẫn Mendeley đều có công bố riêng
-   (khác với biến thể "AI-compatible" đã resize vuông 128×128 hay 512×512) — nên
-   đây RẤT CÓ THỂ vẫn là ảnh RxHandBD thật, chỉ là biến thể chưa resize, không
-   phải bằng chứng đây là dataset giả — nhưng vẫn không giải quyết được vấn đề
-   license nào áp dụng.
-6. Có ít nhất 1 bản mirror Kaggle KHÁC của cùng "RxHandBD" bởi người dùng thứ 3
-   (`fareswaleed`) — tên/mô tả này đang lan truyền qua nhiều bản re-upload không
-   rõ nguồn.
+Tự tải trực tiếp cả 2 file trên Zenodo (`RxHand Original.zip`, `RxHandBD.zip`),
+xác nhận MD5 checksum khớp 100% với Zenodo công bố, rồi đối chiếu tay với dữ
+liệu đang dùng trong dự án (`data/raw/rxhandbd/RxHandBDMain/`):
 
-## Khuyến nghị bắt buộc trước khi công bố
+1. **Đối chiếu nhãn văn bản theo đúng ID ảnh — khớp 13/13 mẫu ngẫu nhiên**
+   (P0001→"Nexcital", P0100→"Etorix", P1000→"celebrex", P0050→"CORTAN",
+   P2000→"Napa extra", P4200→"Ceevit", v.v. — giống hệt giữa bản Zenodo chính
+   thức và bản Kaggle đang dùng). **→ Xác nhận chắc chắn: đây đúng là dataset
+   RxHandBD thật của Md. Masudul Islam (BUBT), không phải dữ liệu giả hay dữ
+   liệu của người khác.**
+2. **Xác nhận code CHƯA BAO GIỜ đụng vào thư mục bị "gộp nhầm"**: toàn bộ
+   kernel (01-06) dùng glob pattern bắt buộc đúng tên thư mục `RxHandBDMain`
+   (`glob.glob(.../ "RxHandBDMain" / "Test.csv")`) — nghĩa là dù bản tải Kaggle
+   có bundle thêm thư mục `BD Handwritten Prescription Dataset` (dataset khác,
+   license khác) vào chung 1 lượt tải, **code không bao giờ đọc từ thư mục đó
+   cho các thí nghiệm gắn nhãn "rxhandbd"**. Dataset "kaggle_bd" trong dự án
+   được tải RIÊNG, trực tiếp từ chính trang Kaggle gốc của nó (mamun1113), có
+   license rõ ràng (Open Database License) từ đầu. → **Không có lẫn dữ liệu
+   giữa 2 "dataset" trong kết quả thí nghiệm đã chạy.**
+3. **Khác biệt còn lại chỉ ở xử lý ảnh, không phải nội dung**: file ảnh trong
+   bản Kaggle đang dùng là 128×64 RGB (đã chuẩn hoá, không phải "raw" kích
+   thước tuỳ ý như báo cáo trước — số đo "130-230×55-105px" trước đó là SAI,
+   đã tự đo lại 20 mẫu cho kết quả nhất quán 128×64). Cả 2 file Zenodo chính
+   thức đều là 128×128 grayscale (khác cả về kích thước lẫn màu). → Người
+   chuẩn bị bản Kaggle đã tự resize/xử lý ảnh theo cách riêng, KHÔNG dùng
+   nguyên file Zenodo/Mendeley — nhưng nội dung (ảnh chữ viết tay + nhãn) vẫn
+   đúng là cùng bộ dữ liệu gốc, chỉ khác bước xử lý ảnh.
 
-1. **Không tái phân phối ảnh gốc** (không host lại, không đính kèm vào bất kỳ
-   bản công bố code/data nào của dự án này) — vì có 3 tuyên bố license mâu thuẫn
-   nhau (MIT / CC BY 4.0 / Open Database License) chồng lên nhau trong cùng 1
-   lượt tải, không thể khẳng định chắc chắn quyền tái phân phối.
-2. Trong **Data Availability statement**: nêu rõ ảnh huấn luyện lấy từ URL
-   Kaggle cụ thể (kèm ngày truy cập), rằng trang Kaggle này để trống mục
-   Author/Citation, rằng nó liên quan nhưng KHÔNG xác minh được là giống hệt
-   bản Zenodo/Mendeley (2 bản này tự mâu thuẫn nhau), và rằng license chính xác
-   áp dụng cho các file đã dùng KHÔNG xác định được chắc chắn.
-3. Code, script, số liệu tổng hợp, output dự đoán trên tập test — vẫn công bố
-   bình thường dưới license riêng của dự án (không phải nội dung có bản quyền
-   của ảnh).
-4. Cân nhắc **hạ vai trò của RxHandBD** trong bài báo (từ "benchmark chính"
-   xuống "tập dữ liệu bổ sung/kiểm tra độ mạnh") và làm nổi bật Kaggle-BD (78
-   lớp) — dataset có bài báo bình duyệt thật, license rõ ràng (Open Database
-   License) — như nguồn dữ liệu chính, đặc biệt vì kết quả có ý nghĩa thống kê
-   chính lại nằm trên chính RxHandBD, nên đây là một đánh đổi cần cân nhắc kỹ,
-   không thể giải quyết đơn giản.
-5. Nếu còn thời gian: liên hệ trực tiếp tác giả Zenodo/Mendeley (Md. Masudul
-   Islam) hoặc người upload Kaggle (`abrahametry`) để hỏi license nào là chính
-   thức và bản Kaggle có được phép hay không.
+## Vấn đề license — vẫn cần xử lý, nhưng đơn giản hơn nhiều
 
-Nguồn đầy đủ: xem log workflow, các URL Kaggle/Zenodo/Mendeley/Scholar đã kiểm
-tra trực tiếp qua trình duyệt (không chỉ qua tóm tắt tự động).
+Zenodo (MIT) và Mendeley (CC BY 4.0) vẫn mâu thuẫn nhau về license cho cùng
+dữ liệu của cùng tác giả — đây là sự thiếu nhất quán từ chính tác giả gốc,
+không phải lỗi của bản Kaggle. Vì nội dung đã xác nhận là thật, **giải pháp
+đơn giản**: trích dẫn thẳng bản gốc (khuyến nghị Mendeley DOI
+10.17632/dsb5r6vskg.3, bản mới nhất v3), ghi công đầy đủ tác giả, và tuân theo
+điều khoản CC BY 4.0 (điều khoản có ràng buộc chặt hơn — tuân theo điều này
+thì dù license thật là MIT hay CC-BY cũng đều hợp lệ).
+
+## Khuyến nghị cập nhật (thay thế khuyến nghị cũ)
+
+1. **Không cần đổi dataset, không cần chạy lại thí nghiệm** — nội dung đã xác
+   minh là thật và đúng.
+2. Trong **Data Availability statement**: ghi rõ "ảnh sử dụng lấy qua bản
+   mirror trên Kaggle (URL cụ thể); đã đối chiếu độc lập tương ứng ID-ảnh↔nhãn
+   với bản gốc do Md. Masudul Islam (BUBT) công bố trên Mendeley Data (DOI
+   10.17632/dsb5r6vskg.3, CC BY 4.0) và Zenodo (DOI 10.5281/zenodo.18478741,
+   MIT) — khớp 100% trên mẫu kiểm tra; bước xử lý/resize ảnh cụ thể của bản
+   Kaggle không được ghi lại độc lập với bản gốc." Trích dẫn tác giả gốc, tuân
+   theo CC BY 4.0.
+3. **Vẫn KHÔNG tái phân phối trực tiếp file ảnh** trong bản công bố code của
+   dự án (dù đã rõ nguồn, vẫn nên trỏ người đọc về nguồn gốc thay vì tự host
+   lại, theo đúng tinh thần CC BY 4.0 là ghi công + để nguyên nguồn).
+4. Không cần hạ vai trò RxHandBD trong bài báo nữa — dataset đã xác minh là
+   thật, chỉ cần trích dẫn đúng và minh bạch về bước xử lý ảnh không độc lập.
+5. (Không bắt buộc) Vẫn có thể liên hệ tác giả để hỏi rõ license nào là chính
+   thức, nhưng không còn là việc chặn tiến độ.
+
+## Nguồn đã tự kiểm chứng
+- Zenodo: https://zenodo.org/records/18478741 (đã tải, MD5 khớp)
+- Mendeley: https://data.mendeley.com/datasets/dsb5r6vskg/3
+- Bản Kaggle đang dùng: https://www.kaggle.com/datasets/abrahametry/rxhandbd-handwritten-word-image-dataset

@@ -54,10 +54,12 @@ source scripts/kaggle_env.sh
       5 seed độc lập cho cặp (CE-only, cấu hình thắng cuộc) — kernel 06 đang
       chạy trên Kaggle.
 - [x] Truy nguồn gốc/license RxHandBD — xem [docs/03-provenance-rxhandbd.md](docs/03-provenance-rxhandbd.md).
-      **Phát hiện nghiêm trọng**: không có bài báo bình duyệt, Zenodo/Mendeley
-      tự mâu thuẫn license (MIT vs CC BY 4.0), bản Kaggle đang dùng có vẻ gộp
-      nhầm với 1 dataset khác (chính là Kaggle-BD 78 lớp!). Không tái phân
-      phối ảnh gốc; cân nhắc hạ vai trò RxHandBD trong bài báo.
+      Đã tự tải + đối chiếu tay với bản gốc Zenodo (checksum khớp, nhãn khớp
+      13/13 mẫu) — **xác nhận dữ liệu là thật**, không lẫn với dataset khác
+      (code chỉ đọc đúng thư mục `RxHandBDMain`). Còn lại: Zenodo (MIT) và
+      Mendeley (CC BY 4.0) tự mâu thuẫn license — giải quyết bằng cách trích
+      dẫn tác giả gốc + tuân theo CC BY 4.0 (điều khoản chặt hơn). Không cần
+      đổi dataset hay chạy lại thí nghiệm.
 - [x] Lập bibliography đã xác minh — [docs/04-tai-lieu-tham-khao.md](docs/04-tai-lieu-tham-khao.md).
       Đã sửa 1 DOI sai (Kondrak & Dorr 2006) và 1 mô tả sai nội dung
       (arXiv:2510.03309 không phải về LASA).
