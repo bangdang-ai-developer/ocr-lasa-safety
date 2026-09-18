@@ -141,3 +141,60 @@ người dùng chọn điểm vận hành phù hợp với mức độ chấp nh
 như đề xuất "trình bày cả đường cong đánh đổi" từ vòng phản biện trước).
 
 **Hệ quả cho báo cáo cuối cùng**: phải nêu rõ đây là giới hạn thật của phương pháp — hiệu quả được chứng minh có ý nghĩa thống kê trên RxHandBD (từ vựng lớn, thực tế hơn), nhưng KHÔNG khẳng định được (và có dấu hiệu ngược lại về correct rate) trên dataset từ điển đóng nhỏ. Không nên trình bày cấu hình thắng cuộc như một giải pháp tổng quát cho mọi quy mô từ vựng.
+
+---
+
+# Phân tích mở rộng trên dữ liệu kernel 06 (effect size + CI, không cần chạy Kaggle thêm)
+
+Script: `scripts/analyze_confirmatory_extended.py`. Bổ sung cho phần trên (vốn
+chỉ có p-value) bằng effect size (risk difference) + khoảng tin cậy 95%, và
+đào sâu breakdown "confusable được sửa thì đi về đâu" gộp trên cả 5 seed
+(n lớn hơn nhiều so với kernel 03 đơn lẻ).
+
+## Effect size + 95% CI (gộp 5 seed, n=5575 cặp ảnh)
+
+| Chỉ số | Risk difference (thắng cuộc − CE-only) | 95% CI |
+|---|---|---|
+| confusable_wrong_drug | **−0.90 điểm %** | [−1.34, −0.46] |
+| correct | **−2.01 điểm %** | [−2.80, −1.22] |
+| hallucination_far_off | **+2.15 điểm %** | [+1.39, +2.92] |
+
+Cả 3 khoảng tin cậy đều **không chứa 0** — nhất quán với p-value đã báo cáo,
+nhưng giờ có độ lớn hiệu ứng + độ bất định cụ thể, đúng chuẩn báo cáo mà
+reviewer tạp chí Q2 thường yêu cầu (không chỉ p-value).
+
+## Lỗi confusable_wrong_drug "được sửa" thì đi về đâu? (gộp 5 seed, n=399 lỗi confusable ở baseline)
+
+| | Số lượng | % trong số "hết confusable" |
+|---|---|---|
+| Tổng số lỗi confusable ở CE-only (gộp 5 seed) | 399 | — |
+| Hết confusable dưới cấu hình thắng cuộc | 103 (25.8% của 399) | 100% |
+| — trong đó sửa ĐÚNG hẳn (correct) | 36 | 35.0% |
+| — trong đó thành RÕ RÀNG SAI (minor_ocr_noise 37 + hallucination 30) | 67 | **65.0%** |
+
+**Ý nghĩa lâm sàng**: khi can thiệp "sửa" được một lỗi nguy hiểm (nhầm sang
+tên thuốc thật khác), phần lớn (65%, n=103, đáng tin hơn nhiều so với quan sát
+định tính nhỏ lẻ ở kernel 03) không phải vì model đoán đúng, mà vì nó đẩy dự
+đoán sang một lỗi RÕ RÀNG SAI — dễ bị dược sĩ/bác sĩ phát hiện hơn nhiều so
+với "một đơn thuốc hợp lệ nhưng nhầm thuốc". Đây là lợi ích an toàn thực sự
+mà con số confusable_wrong_drug thô không phản ánh hết, và nay đã được lượng
+hoá vững chắc trên n đủ lớn.
+
+## Tỉ lệ "quá tay" (đúng ở CE-only → confusable MỚI ở cấu hình thắng cuộc), gộp 5 seed
+
+**16/2614 = 0.61%** (Wilson 95% CI: [0.38%, 0.99%]).
+
+So với mức giảm correct rate tổng thể (~2 điểm %, xem trên), phần bị "quá tay"
+thành đúng LOẠI LỖI NGUY HIỂM MÀ can thiệp đang cố tránh chỉ chiếm một phần rất
+nhỏ (0.61% trên tổng số ảnh vốn đúng) — phần lớn "mất correct" còn lại chuyển
+thành minor_ocr_noise/hallucination (ít nguy hiểm hơn), không phải confusable
+mới. Điểm này nên đưa vào phần Discussion để làm rõ bản chất đánh đổi: cái giá
+phải trả (mất ~2pp correct) chủ yếu KHÔNG phải ở dạng nguy hiểm nhất.
+
+**Kết luận**: 2 phân tích bổ sung này không thay đổi kết luận cốt lõi (đánh đổi
+thật, đã xác nhận multi-seed) nhưng làm bài báo giàu thông tin định lượng hơn
+nhiều — có effect size + CI cho phần Results, và một luận điểm Discussion mới
+("cái giá phải trả chủ yếu không phải loại nguy hiểm nhất, và khi sửa được lỗi
+nguy hiểm thì phần lớn là đẩy sang lỗi dễ phát hiện hơn chứ không phải đoán
+đúng") giúp câu chuyện đánh đổi cân bằng, thuyết phục hơn thay vì chỉ nêu số
+tăng/giảm trần trụi.
