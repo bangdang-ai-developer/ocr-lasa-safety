@@ -1,0 +1,6 @@
+dataset,config,error_category,count,rate,n_total
+kaggle_bd,winning,correct,671,0.8602564102564103,780
+kaggle_bd,winning,hallucination_far_off,51,0.06538461538461539,780
+kaggle_bd,winning,minor_ocr_noise,40,0.05128205128205128,780
+kaggle_bd,winning,other_wrong_real_word,14,0.017948717948717947,780
+kaggle_bd,winning,confusable_wrong_drug,4,0.005128205128205128,780

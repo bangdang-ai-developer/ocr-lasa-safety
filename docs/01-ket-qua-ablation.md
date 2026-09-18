@@ -56,3 +56,19 @@ correct=519/1115=46.5%, hallucination=241/1115=21.6%).
 - Chỉ số an toàn phụ (đúng→confusable mới) vẫn thấp ở mọi cấu hình sweep (0.39-0.77%).
 
 **→ Cấu hình đề xuất cho báo cáo cuối: margin loss λ=2.0 kết hợp severity-weighted CE với β=0.3 (giảm mạnh, không bỏ hẳn), 3 epoch.** Đây là bằng chứng thống kê vững cho luận điểm chính của dự án: có thể giảm có ý nghĩa loại lỗi LASA nguy hiểm nhất mà không phải đánh đổi độ chính xác tổng thể, nếu chọn đúng cách kết hợp và siêu tham số.
+
+---
+
+# Cập nhật: kiểm tra chéo cấu hình thắng cuộc trên Kaggle-BD (kernel 05)
+
+Dữ liệu thô: `results/kaggle_run_5_winning_kaggle_bd/`. So với CE-only baseline Kaggle-BD (confusable_wrong_drug=3/780=0.38%, correct=684/780=87.7%, hallucination=44/780=5.6%).
+
+| Chỉ số | CE-only | Cấu hình thắng cuộc | Ghép cặp | p (McNemar) |
+|---|---|---|---|---|
+| confusable_wrong_drug | 3 (0.38%) | 4 (0.51%) | 1 sửa / 2 sinh mới | 1.00 (hoàn toàn không có thông tin — n quá nhỏ) |
+| correct | 684 (87.7%) | 671 (86.0%) | 24 mất / 11 được | **0.041 (giảm có ý nghĩa)** ⚠️ |
+| hallucination | 44 (5.6%) | 51 (6.5%) | 11 sửa / 18 sinh mới | 0.26 (không có ý nghĩa) |
+
+**Kết luận trung thực: kết quả KHÔNG lặp lại được trên Kaggle-BD.** Đúng như dự đoán, cỡ mẫu confusable_wrong_drug (chỉ 3-4 ảnh) hoàn toàn không đủ để nói gì về chỉ số mục tiêu (p=1.00). Đáng chú ý hơn: trên dataset này, cấu hình thắng cuộc lại làm **giảm correct rate có ý nghĩa thống kê** (87.7%→86.0%, p=0.041) mà không có lợi ích bù lại nào đo được. Diễn giải hợp lý nhất: lợi ích của margin+severity nhẹ có thể phụ thuộc vào **quy mô/độ đa dạng từ vựng** — trên RxHandBD (~1430 từ, nhiều cặp nhầm lẫn thật) can thiệp có không gian để phát huy; trên Kaggle-BD (từ điển đóng chỉ 78 lớp, chỉ 3-4 ảnh thuộc đúng loại lỗi mục tiêu) can thiệp chủ yếu chỉ thêm nhiễu vào một bài toán đã gần bão hoà, không có đủ "chỗ" để mang lại lợi ích rõ ràng.
+
+**Hệ quả cho báo cáo cuối cùng**: phải nêu rõ đây là giới hạn thật của phương pháp — hiệu quả được chứng minh có ý nghĩa thống kê trên RxHandBD (từ vựng lớn, thực tế hơn), nhưng KHÔNG khẳng định được (và có dấu hiệu ngược lại về correct rate) trên dataset từ điển đóng nhỏ. Không nên trình bày cấu hình thắng cuộc như một giải pháp tổng quát cho mọi quy mô từ vựng.
