@@ -2,20 +2,49 @@
 verified facts sheet (numbers/citations only from project docs 00-04 and
 scripts/analyze_confirmatory_extended.py); no numeric or framing inconsistency was
 found across drafts. Table numbers in the Results section were renumbered to run
-continuously after Methods' Table 1-3. Outstanding [TODO: confirm] items before
-submission: (1) optimizer name for LoRA fine-tuning (facts sheet did not record it -
-check kernel scripts, likely AdamW per torch.optim.AdamW in the code); (2) manual
-verification of Millan-Hernandez et al. (2019)'s exact benchmark figures before
-quoting any number from it; (3) a general LASA/medication-error epidemiology
-citation if reviewers expect one beyond the algorithmic-identification literature;
-(4) citation for the prior motivating project, once that manuscript is public; (5)
-final code repository URL.
+continuously after Methods' Table 1-3.
+
 UPDATE (2026-09-18): all 7 Holm-Bonferroni-adjusted p-values are now filled in
 (Table 6 in Methods, Table 7 in Results), re-run directly from
 scripts/multiple_comparisons.py: severity-only p_holm=0.946; margin-only (lam1)
 p_holm=0.573; severity+margin combined p_holm=1.000; margin lam2 p_holm=0.054;
 margin lam3 p_holm=0.0008 (only one that survives at alpha=0.05); margin lam2
-5-epoch p_holm=0.573; margin lam2+severity beta0.3 (selected) p_holm=0.057. -->
+5-epoch p_holm=0.573; margin lam2+severity beta0.3 (selected) p_holm=0.057. Also
+filled in the previously-missing correct/hallucination p-values for the margin
+lam2, 5-epoch row (computed fresh via paired McNemar against the same kernel-03
+CE-only baseline: correct 47.3%, p=0.49, n.s.; hallucination 22.0%, p=0.75, n.s.).
+
+UPDATE (2026-09-20): resolved 3 of the 5 remaining TODOs directly.
+(1) Optimizer confirmed as AdamW (torch.optim.AdamW, verified across all 5
+training kernels). (2) Millan-Hernandez et al. (2019)'s benchmark figure
+("outperforms 17 other similarity measures across 396,900 drug-name pairs") is
+now stated in Related Work (2.1) and Methods (3.2.1), sourced from the paper's
+indexed abstract cross-checked across three independent secondary listings
+(SpringerLink, ResearchGate, Semantic Scholar) — NOT independently confirmed
+against the paywalled full text; re-verify against the primary source if this
+number is ever quoted more prominently than a passing mention. (3) Added a
+general LASA-epidemiology citation to the Introduction: Bryan, Aronson,
+Williams, & Jordan (2021), "The problem of look-alike, sound-alike name
+errors: Drivers and solutions," Br J Clin Pharmacol 87(2):386-394, DOI
+10.1111/bcp.14285 (confirmed via PubMed/PMC cross-reference) — used only for
+the general framing claim, not for its specific prevalence percentages (those
+were only available via search-engine synthesis, not primary-text extraction,
+so they are NOT quoted here; verify directly against the paywalled article
+before citing a specific number).
+
+STILL OPEN, NEEDS THE AUTHOR'S INPUT (not resolvable by research alone):
+(4) Citation for the prior motivating project: checked the ocr-research
+project directly — its manuscript.md still has an unresolved
+"[PLACEHOLDER — confirm before submission]" author/affiliation line and is
+not yet submitted to PeerJ CS (per its own README, remaining pre-submission
+items are ORCID and a Figure 7 copyright check), so it cannot yet be cited as
+a public work. Options: (a) leave as "in preparation, unpublished" with no
+public identifier, (b) cite the Zenodo code/data DOI (10.5281/zenodo.22822360
+per memory) as a dataset/software citation once you confirm that DOI is for
+this exact project, or (c) wait until PeerJ submission and cite as
+"manuscript submitted for publication." Needs your decision.
+(5) Final code repository URL for this project (ocr-lasa-safety) — needs you
+to create/confirm the GitHub repo before this can be filled in. -->
 
 # A Quantified Safety–Accuracy Trade-off: Margin-Ranking and Severity-Weighted LoRA Fine-Tuning for Look-Alike/Sound-Alike Drug Name Errors in Handwritten Prescription OCR
 
@@ -40,7 +69,7 @@ optical character recognition; handwritten prescription recognition; LoRA (Low-R
 
 ## 1. Introduction
 
-Handwritten medical prescriptions remain common in many health systems, and automatic transcription of them — optical character recognition (OCR) applied to clinical handwriting — is a natural target for record digitization and for downstream safety checks before a prescription reaches a pharmacy. Not every OCR error carries the same clinical weight, however. An output that is obviously garbled is easy for a pharmacist to flag and set aside. An error in which the model outputs a different, but equally real, drug name is a different kind of failure: it produces a fluent, valid-looking prescription for the wrong medication, and is correspondingly harder to catch on routine review. This class of error — "look-alike, sound-alike" (LASA), or confusable-drug-name, confusion — is treated in the pharmacy-informatics and computational-linguistics literature as a distinct problem worth its own detection methodology, independent of raw transcription accuracy (Kondrak & Dorr, 2004, 2006). [TODO: confirm — a dedicated clinical-epidemiology citation quantifying the general burden of LASA-related medication error was not part of this project's verified bibliography; add one before submission if reviewers expect a citation for the underlying clinical-safety claim beyond the algorithmic-identification literature cited here.]
+Handwritten medical prescriptions remain common in many health systems, and automatic transcription of them — optical character recognition (OCR) applied to clinical handwriting — is a natural target for record digitization and for downstream safety checks before a prescription reaches a pharmacy. Not every OCR error carries the same clinical weight, however. An output that is obviously garbled is easy for a pharmacist to flag and set aside. An error in which the model outputs a different, but equally real, drug name is a different kind of failure: it produces a fluent, valid-looking prescription for the wrong medication, and is correspondingly harder to catch on routine review. This class of error — "look-alike, sound-alike" (LASA), or confusable-drug-name, confusion — is a well-recognized, actively studied category of medication error in its own right, arising from orthographic and phonetic similarity between otherwise unrelated drug names and compounded by similar packaging, dosage form, or route of administration (Bryan, Aronson, Williams, & Jordan, 2021); it is treated in the pharmacy-informatics and computational-linguistics literature as a distinct problem worth its own detection methodology, independent of raw transcription accuracy (Kondrak & Dorr, 2004, 2006).
 
 A prior, separate project by the author examined this problem for OCR directly: fine-tuning TrOCR with Low-Rank Adaptation (LoRA) on handwritten medical text reduced wildly-wrong, non-word ("hallucination") errors overall, but specifically increased the rate at which the model misread one real drug name as a *different* real drug name — the confusable-drug-name category described above [TODO: confirm citation once that manuscript is public]. That finding rests on a different dataset, label set, and codebase than the present study, and we cite it here strictly as motivating context for the research question below, not as evidence this paper itself produced.
 
@@ -66,7 +95,7 @@ The remainder of the paper is organized as follows. Section 2 reviews related wo
 
 ### 2.1 Algorithmic identification of confusable ("look-alike, sound-alike") drug names
 
-Identifying confusable drug names is an established sub-problem in pharmacy informatics and computational linguistics, and has historically been pursued independently of any OCR or handwriting-recognition system. Kondrak and Dorr (2004) introduced an approach and evaluation methodology for identifying confusable drug names by combining several orthographic and phonetic similarity measures into a single score, and Kondrak and Dorr (2006) extended this work with a fuller treatment of the same identification task. Millán-Hernández, García-Hernández, Ledeneva, and Hernández-Castañeda (2019) propose a related soft-bigram-similarity scoring method for the same task [TODO: verify the exact benchmark figures reported in this source manually before quoting a specific number in the final manuscript; SpringerLink access constraints have so far prevented full confirmation of the abstract's reported comparison].
+Identifying confusable drug names is an established sub-problem in pharmacy informatics and computational linguistics, and has historically been pursued independently of any OCR or handwriting-recognition system. Kondrak and Dorr (2004) introduced an approach and evaluation methodology for identifying confusable drug names by combining several orthographic and phonetic similarity measures into a single score, and Kondrak and Dorr (2006) extended this work with a fuller treatment of the same identification task. Millán-Hernández, García-Hernández, Ledeneva, and Hernández-Castañeda (2019) propose a related soft-bigram-similarity (Soft-Bisim) scoring method for the same task, reporting that it outperforms 17 other similarity measures across 396,900 drug-name pairs (figure drawn from the paper's indexed abstract, cross-checked across three independent listings — SpringerLink, ResearchGate, Semantic Scholar — but not independently confirmed against the paywalled full text; re-verify against the primary source before final submission if this number is quoted more prominently than here).
 
 Our own confusable-pair-derivation method follows the same general strategy as this line of work — combine an edit-distance-based orthographic score with a phonetic-similarity score into a single bi-similarity measure — but differs in where the candidate vocabulary comes from: rather than drawing on an external, curated list such as RxNorm or an ISMP-published LASA list, we derive candidate neighbors directly from each evaluation dataset's own observed drug-name vocabulary. This choice keeps the method reproducible from public data alone, at the cost of the face-validity limitations we report directly (see the Limitations section). More importantly for the present section, none of the identification methods above trains or modifies a recognition model: each produces a static candidate list or ranking, intended for downstream use such as tall-man-lettering recommendations or pharmacy-system alerts, not as a training signal inside a sequence-generation model. That is the specific gap our margin-ranking loss occupies: we reuse the same style of similarity scoring as Kondrak and Dorr's and Millán-Hernández et al.'s work, but as a per-example hard-negative source inside the fine-tuning objective itself, rather than as a static, externally-consulted list.
 
@@ -166,8 +195,8 @@ bi_sim_score(a, b) = 0.5 × normalized_edit_similarity(a, b) + 0.5 × phonetic_s
   phonetic/Jaro–Winkler components, respectively.
 
 A related algorithmic approach, soft bigram similarity (Millan-Hernandez et al., 2019), targets the same
-problem of scoring confusable drug-name pairs; [TODO: verify exact benchmark figures manually before
-quoting any specific numbers from Millan-Hernandez et al., 2019].
+problem of scoring confusable drug-name pairs, reporting that it outperforms 17 other similarity measures
+across 396,900 drug-name pairs (see Related Work, §2.1, for a note on how this figure was verified).
 
 To ensure the candidate list targets genuinely *different* drug names rather than spelling variants of
 the same underlying word, near-duplicate/typo pairs — defined as pairs with edit distance ≤ 1 between the
@@ -253,7 +282,7 @@ unless a swept hyperparameter is stated otherwise:
 | Batch size | 8 |
 | Learning rate | 1e-4 |
 | PEFT library version | peft 0.13.2 |
-| Optimizer | [TODO: confirm] |
+| Optimizer | AdamW |
 
 The two reference model conditions compared throughout this paper are (i) the zero-shot pretrained
 TrOCR backbone with no fine-tuning, and (ii) a LoRA fine-tune of that backbone using only the standard
@@ -380,7 +409,7 @@ margin's more targeted signal when combined naively at that weighting level.
 |---|---|---|---|
 | λ_margin = 2.0 | 67/1,115, 6.01% (0.009) | 44.0% (0.014) | 24.3% (0.0035) |
 | λ_margin = 3.0 | 59/1,115, 5.29% (0.0001) | 44.4% (0.021) | 24.5% (0.0022) |
-| λ_margin = 2.0, 5 epochs (vs. 3) | 73/1,115, 6.55% (0.14, n.s.) | — | — |
+| λ_margin = 2.0, 5 epochs (vs. 3) | 73/1,115, 6.55% (0.14, n.s.) | 47.3% (0.49, n.s.) | 22.0% (0.75, n.s.) |
 | λ_margin = 2.0 + low severity β = 0.3 | 67/1,115, 6.01% (0.011) | 523/1,115, 46.9% (0.76, n.s.) | 250/1,115, 22.4% (0.41, n.s.) |
 
 `λ_margin = 3.0` gave the single largest raw reduction in `confusable_wrong_drug` found in Phase 1, but
@@ -521,7 +550,7 @@ Severity-only is directionally *worse* than baseline; margin-only is the single 
 | CE-only baseline | 83/1115 (7.44%) | 519/1115 (46.5%) | 241/1115 (21.6%) |
 | Margin λ=2.0 (3 epochs) | 67/1115 (6.01%), p=0.009 | 44.0%, p=0.014 | 24.3%, p=0.0035 |
 | Margin λ=3.0 (3 epochs) | 59/1115 (5.29%), p=0.0001 | 44.4%, p=0.021 | 24.5%, p=0.0022 |
-| Margin λ=2.0, 5 epochs | 73/1115 (6.55%), p=0.14 (NS) | [TODO: confirm] | [TODO: confirm] |
+| Margin λ=2.0, 5 epochs | 73/1115 (6.55%), p=0.14 (NS) | 527/1115, 47.3%, p=0.49 (NS) | 245/1115, 22.0%, p=0.75 (NS) |
 | **Margin λ=2.0 + severity β=0.3 (selected)** | 67/1115 (6.01%), p=0.011 | 523/1115 (46.9%), p=0.76 (NS) | 250/1115 (22.4%), p=0.41 (NS) |
 
 Margin λ=3.0 gives the single largest raw reduction in confusable_wrong_drug found in Phase 1, but at significant single-run costs to correct rate and hallucination rate. Extending margin λ=2.0 training from 3 to 5 epochs erodes the confusable-rate effect (p=0.14), suggesting the CE term eventually dominates the margin term with longer training. The configuration **margin λ=2.0 + severity β=0.3** (β reduced ~3× from the kernel-03 default, not dropped) was selected at the end of Phase 1 as the sole candidate carried forward to Phase 2, because in this single run it appeared to reduce the dangerous error category without a statistically significant single-run cost to correct rate or hallucination rate. As shown in Section 4.4, this apparent "free lunch" was a favorable statistical outlier rather than a real property of the configuration.
@@ -685,6 +714,8 @@ We set out to determine whether a loss function designed to discourage look-alik
 Aberdam, A., Litman, R., Tsiper, S., Anschel, O., Slossberg, R., Mazor, S., Manmatha, R., & Perona, P. (2021). Sequence-to-sequence contrastive learning for text recognition. In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2021)*. arXiv:2012.10873.
 
 Alansary, A., Mohamed, M., & Hamdi, A. (2026). Severity-aware weighted loss for Arabic medical text generation. arXiv:2604.06346 [cs.CL]. Accepted at ICTIS 2026.
+
+Bryan, R., Aronson, J. K., Williams, A. J., & Jordan, S. (2021). The problem of look-alike, sound-alike name errors: Drivers and solutions. *British Journal of Clinical Pharmacology, 87*(2), 386–394. https://doi.org/10.1111/bcp.14285
 
 Kondrak, G., & Dorr, B. (2004). Identification of confusable drug names: A new approach and evaluation methodology. In *Proceedings of COLING 2004* (pp. 952–958). https://doi.org/10.3115/1220355.1220492
 
