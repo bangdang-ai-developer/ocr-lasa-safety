@@ -32,17 +32,20 @@ were only available via search-engine synthesis, not primary-text extraction,
 so they are NOT quoted here; verify directly against the paywalled article
 before citing a specific number).
 
+RESOLVED (2026-09-20): (4) Author chose option (c) — cited in-text (twice: end
+of Introduction paragraph 2, and Contribution 1) as "(Dang, manuscript
+submitted for publication)". This assumes PeerJ CS submission happens before
+or alongside this paper's own submission; if that has not actually happened
+by the time this manuscript is finalized, change the wording to "(Dang, in
+preparation)" instead, since "submitted for publication" should only be used
+once the other manuscript has genuinely been submitted. No entry was added to
+the References list for it, per standard convention (APA and most CS-venue
+styles do not give a full reference-list entry to a "submitted"/unpublished
+work, since it has no retrievable venue/volume/page/DOI yet) — double-check
+this against the final target journal's specific author guidelines, since a
+few venues (e.g., some IEEE-style journals) do want an "unpublished" entry.
+
 STILL OPEN, NEEDS THE AUTHOR'S INPUT (not resolvable by research alone):
-(4) Citation for the prior motivating project: checked the ocr-research
-project directly — its manuscript.md still has an unresolved
-"[PLACEHOLDER — confirm before submission]" author/affiliation line and is
-not yet submitted to PeerJ CS (per its own README, remaining pre-submission
-items are ORCID and a Figure 7 copyright check), so it cannot yet be cited as
-a public work. Options: (a) leave as "in preparation, unpublished" with no
-public identifier, (b) cite the Zenodo code/data DOI (10.5281/zenodo.22822360
-per memory) as a dataset/software citation once you confirm that DOI is for
-this exact project, or (c) wait until PeerJ submission and cite as
-"manuscript submitted for publication." Needs your decision.
 (5) Final code repository URL for this project (ocr-lasa-safety) — needs you
 to create/confirm the GitHub repo before this can be filled in. -->
 
@@ -71,7 +74,7 @@ optical character recognition; handwritten prescription recognition; LoRA (Low-R
 
 Handwritten medical prescriptions remain common in many health systems, and automatic transcription of them — optical character recognition (OCR) applied to clinical handwriting — is a natural target for record digitization and for downstream safety checks before a prescription reaches a pharmacy. Not every OCR error carries the same clinical weight, however. An output that is obviously garbled is easy for a pharmacist to flag and set aside. An error in which the model outputs a different, but equally real, drug name is a different kind of failure: it produces a fluent, valid-looking prescription for the wrong medication, and is correspondingly harder to catch on routine review. This class of error — "look-alike, sound-alike" (LASA), or confusable-drug-name, confusion — is a well-recognized, actively studied category of medication error in its own right, arising from orthographic and phonetic similarity between otherwise unrelated drug names and compounded by similar packaging, dosage form, or route of administration (Bryan, Aronson, Williams, & Jordan, 2021); it is treated in the pharmacy-informatics and computational-linguistics literature as a distinct problem worth its own detection methodology, independent of raw transcription accuracy (Kondrak & Dorr, 2004, 2006).
 
-A prior, separate project by the author examined this problem for OCR directly: fine-tuning TrOCR with Low-Rank Adaptation (LoRA) on handwritten medical text reduced wildly-wrong, non-word ("hallucination") errors overall, but specifically increased the rate at which the model misread one real drug name as a *different* real drug name — the confusable-drug-name category described above [TODO: confirm citation once that manuscript is public]. That finding rests on a different dataset, label set, and codebase than the present study, and we cite it here strictly as motivating context for the research question below, not as evidence this paper itself produced.
+A prior, separate project by the author examined this problem for OCR directly: fine-tuning TrOCR with Low-Rank Adaptation (LoRA) on handwritten medical text reduced wildly-wrong, non-word ("hallucination") errors overall, but specifically increased the rate at which the model misread one real drug name as a *different* real drug name — the confusable-drug-name category described above (Dang, manuscript submitted for publication). That finding rests on a different dataset, label set, and codebase than the present study, and we cite it here strictly as motivating context for the research question below, not as evidence this paper itself produced.
 
 The present study asks two questions that finding raises but does not answer. First, does the same pattern — overall transcription accuracy improving while the single most dangerous error type gets worse — reproduce independently, on new public data, with a new, unrelated implementation? Second, if the loss function used during fine-tuning is partly responsible for this pattern, can the loss itself be modified to discourage the dangerous error category directly, rather than relying on a post-hoc filter to catch it afterward?
 
@@ -81,7 +84,7 @@ Having reproduced the phenomenon, we test whether it can be addressed inside the
 
 This paper makes five contributions:
 
-1. An independent reproduction of the fine-tuning-increases-LASA-error phenomenon previously observed in a separate, prior project [TODO: confirm citation], carried out on two new public datasets and a codebase unrelated to that project's, showing the effect is negligible on a small closed vocabulary (Kaggle-BD, 3 → 5 affected images) but rises roughly four-fold in relative terms on a larger, more LASA-rich vocabulary (RxHandBD, 1.79% → 7.26%).
+1. An independent reproduction of the fine-tuning-increases-LASA-error phenomenon previously observed in a separate, prior project (Dang, manuscript submitted for publication), carried out on two new public datasets and a codebase unrelated to that project's, showing the effect is negligible on a small closed vocabulary (Kaggle-BD, 3 → 5 affected images) but rises roughly four-fold in relative terms on a larger, more LASA-rich vocabulary (RxHandBD, 1.79% → 7.26%).
 2. A lexicon-free method for deriving candidate confusable drug-name pairs directly from a dataset's own vocabulary, combining edit-distance-based orthographic similarity with phonetic similarity (Double Metaphone plus Jaro–Winkler), usable without a curated, RxNorm/ISMP-scale drug-name list.
 3. A combined margin-ranking-plus-severity-weighted loss for sequence-to-sequence OCR fine-tuning: a severity-weighted cross-entropy term that adapts an idea from single-label medical-image classification (Mohammadi-Seif & Baeza-Yates, 2026) to sequence generation, combined with a margin-ranking term scored against the algorithmically-derived confusable candidates from Contribution 2.
 4. Confirmatory evidence from five independent, fully-seeded training replications, in a paired design (the same seed is reset immediately before each configuration's own training run), evaluated with exact McNemar tests and effect sizes reported with 95% confidence intervals, showing that this loss combination defines a statistically robust, quantified operating point on a safety–accuracy trade-off curve rather than a cost-free improvement: a pooled 12.6% relative reduction in the confusable-wrong-drug rate (7.16% → 6.26%, pooled exact McNemar p = 0.000077) is accompanied by a real, disclosed cost of approximately 2.0 percentage points of overall correct-rate (46.9% → 44.9%, p = 0.000001) and a rise of approximately 2.2 percentage points in far-off hallucination (21.5% → 23.6%, p < 0.000001), with all three 95% confidence intervals for the corresponding risk differences excluding zero.
