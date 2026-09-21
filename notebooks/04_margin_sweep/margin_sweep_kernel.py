@@ -1,23 +1,25 @@
-"""Do sieu tham so cho margin loss (kernel 03_ablation cho thay day la huong
-DUY NHAT co tin hieu tich cuc, nhung chua dat y nghia thong ke voi
-lambda=1.0; severity-weighted rieng khong giup - xem docs/01-ket-qua-ablation.md).
+"""Hyperparameter sweep for margin loss (kernel 03_ablation showed this is the
+ONLY direction with a positive signal, though it hasn't reached statistical
+significance at lambda=1.0; severity-weighting on its own doesn't help - see
+docs/01-ket-qua-ablation.md).
 
-Cac cau hinh thu (CHI tren RxHandBD - Kaggle-BD da xac nhan qua it mau
-(3-4 anh) de ket luan thong ke o kernel 03):
-  - margin_lam2      : margin loss, lambda=2.0, 3 epoch
-  - margin_lam3      : margin loss, lambda=3.0, 3 epoch
-  - margin_lam2_ep5  : margin loss, lambda=2.0, 5 epoch (kiem tra co can
-                        train lau hon de tin hieu du manh khong)
-  - margin_lam2_sevlow: margin loss lambda=2.0 KET HOP severity nhung beta
-                        giam manh (0.3 thay vi 1.0) - kiem tra gia thuyet
-                        "severity beta=1.0 qua manh, nhieu tin hieu margin"
+Configs tried (ONLY on RxHandBD - Kaggle-BD was confirmed to have too few
+samples (3-4 images) to draw statistical conclusions in kernel 03):
+  - margin_lam2      : margin loss, lambda=2.0, 3 epochs
+  - margin_lam3      : margin loss, lambda=3.0, 3 epochs
+  - margin_lam2_ep5  : margin loss, lambda=2.0, 5 epochs (checks whether
+                        longer training is needed for the signal to get strong enough)
+  - margin_lam2_sevlow: margin loss lambda=2.0 COMBINED with severity but with
+                        beta reduced sharply (0.3 instead of 1.0) - tests the
+                        hypothesis that "severity beta=1.0 is too strong and
+                        drowns out the margin signal"
 
-Fine-tune RIENG cho tung cau hinh, moi lan xuat phat lai tu checkpoint
-pretrained goc (khong noi tiep giua cac cau hinh).
+Fine-tune SEPARATELY for each config, each run starting over from the
+original pretrained checkpoint (no continuation between configs).
 
 Output (/kaggle/working/):
   - predictions_rxhandbd_<config>.csv
-  - summary_margin_sweep.csv (cap nhat dan sau moi config)
+  - summary_margin_sweep.csv (updated incrementally after each config)
 """
 
 import glob
@@ -29,7 +31,7 @@ import sys
 import time
 import traceback
 
-print("Installing dependencies (peft pinned == 0.13.2, xem ghi chu kernel 02)...")
+print("Installing dependencies (peft pinned == 0.13.2, see kernel 02 notes)...")
 subprocess.run(
     [sys.executable, "-m", "pip", "install", "-q", "peft==0.13.2", "jellyfish", "rapidfuzz"],
     check=False,
@@ -57,15 +59,15 @@ MAX_LABEL_LEN = 32
 LORA_R = 16
 LORA_ALPHA = 32
 LORA_DROPOUT = 0.05
-CONFUSABLE_THRESHOLD = 0.65  # nguong xep loai taxonomy (giong kernel 01/02/03)
-NEIGHBOR_MIN_SCORE = 0.5  # nguong toi thieu de coi la "hang xom du nham lan" khi xay N(w)
+CONFUSABLE_THRESHOLD = 0.65  # taxonomy classification threshold (same as kernel 01/02/03)
+NEIGHBOR_MIN_SCORE = 0.5  # minimum score to count as a "confusable neighbor" when building N(w)
 NEIGHBOR_TOP_K = 5
-MARGIN = 1.0  # margin (don vi NLL/nat) cho margin-ranking loss - giu co dinh, chi do lambda/epoch/beta
+MARGIN = 1.0  # margin (in NLL/nat units) for the margin-ranking loss - kept fixed, only lambda/epoch/beta vary
 
 random.seed(42)
 
 # ---------------------------------------------------------------------------
-# Tu vung + taxonomy (giong kernel 01/02)
+# Vocabulary + taxonomy (same as kernel 01/02)
 # ---------------------------------------------------------------------------
 _TRAILING_DOSAGE_RE = re.compile(r"\s*\d+(\.\d+)?\s*(mg|ml|gm|g|mcg|iu)?\s*$", re.IGNORECASE)
 _DOSAGE_FORM_PREFIX_RE = re.compile(r"^(tab\.?|cap\.?|inj\.?|syp\.?|susp\.?)\s*", re.IGNORECASE)
@@ -117,7 +119,7 @@ def classify_error(true_label: str, pred_label: str, vocab_canon_set: set) -> st
 
 
 def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBOR_MIN_SCORE):
-    """Tra ve dict: canon_word -> [(canon_neighbor, score), ...] da xep hang."""
+    """Returns a dict: canon_word -> [(canon_neighbor, score), ...], ranked."""
     vocab = sorted(set(vocab_canon_list))
     neighbor_map = {}
     t0 = time.time()
@@ -126,17 +128,17 @@ def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBO
         scored = [p for p in scored if p[1] >= min_score]
         scored.sort(key=lambda p: -p[1])
         neighbor_map[w] = scored[:top_k]
-    print(f"  build_neighbor_map: {len(vocab)} tu, {time.time()-t0:.1f}s")
+    print(f"  build_neighbor_map: {len(vocab)} words, {time.time()-t0:.1f}s")
     return neighbor_map
 
 
 # ---------------------------------------------------------------------------
-# Tim thu muc dataset
+# Locate dataset directories
 # ---------------------------------------------------------------------------
 def find_dir_containing(root: str, filename_pattern: str) -> str:
     matches = glob.glob(os.path.join(root, "**", filename_pattern), recursive=True)
     if not matches:
-        raise FileNotFoundError(f"Khong tim thay '{filename_pattern}' duoi {root}")
+        raise FileNotFoundError(f"Could not find '{filename_pattern}' under {root}")
     return os.path.dirname(matches[0])
 
 
@@ -347,8 +349,9 @@ SWEEP_CONFIGS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Main: chay sweep sieu tham so CHI tren RxHandBD (Kaggle-BD qua it mau,
-# xem docs/01-ket-qua-ablation.md), luu ket qua dan sau moi config
+# Main: run the hyperparameter sweep ONLY on RxHandBD (Kaggle-BD has too few
+# samples, see docs/01-ket-qua-ablation.md), saving results incrementally
+# after each config
 # ---------------------------------------------------------------------------
 summary_rows = []
 
@@ -361,11 +364,11 @@ data = load_rxhandbd()
 name = data["name"]
 print(f"\n=== Dataset: {name} | train={len(data['train_pairs'])} test={len(data['test_pairs'])} ===")
 
-print("Building confusable-neighbor map tu vocab train...")
+print("Building confusable-neighbor map from the train vocab...")
 train_vocab_canon = {canonicalize_for_dedup(lbl) for _, lbl in data["train_pairs"]}
 neighbor_map = build_neighbor_map(train_vocab_canon)
 n_with_neighbor = sum(1 for v in neighbor_map.values() if v)
-print(f"  {n_with_neighbor}/{len(neighbor_map)} tu co it nhat 1 hang xom dat nguong {NEIGHBOR_MIN_SCORE}")
+print(f"  {n_with_neighbor}/{len(neighbor_map)} words have at least 1 neighbor meeting the {NEIGHBOR_MIN_SCORE} threshold")
 
 for config_name, use_severity, use_margin, beta, margin, lambda_margin, epochs in SWEEP_CONFIGS:
     tag = f"{name}/{config_name}"
@@ -394,7 +397,7 @@ for config_name, use_severity, use_margin, beta, margin, lambda_margin, epochs i
         del processor, lora_model
         torch.cuda.empty_cache()
     except Exception:  # noqa: BLE001
-        print(f"!!! LOI o {tag}, bo qua va tiep tuc cau hinh ke tiep !!!")
+        print(f"!!! ERROR in {tag}, skipping and continuing to the next config !!!")
         traceback.print_exc()
         summary_rows.append({"dataset": name, "config": config_name, "error_category": "KERNEL_ERROR", "count": -1, "rate": -1, "n_total": -1})
         save_summary()

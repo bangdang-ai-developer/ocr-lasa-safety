@@ -1,26 +1,28 @@
-"""XAC NHAN LAI (confirmatory reruns) cau hinh "thang cuoc" voi seed day du.
+"""CONFIRMATORY RERUNS of the "winning" config with full seeding.
 
-Vong danh gia phan bien (4 agent doc lap) phat hien: cau hinh thang cuoc
-(margin lambda=2.0 + severity beta=0.3) duoc chon SAU KHI xem ket qua 7 cau
-hinh khac tren CUNG 1 tap test RxHandBD, khong co validation set rieng -
-sau hieu chinh Holm-Bonferroni (scripts/multiple_comparisons.py), p da
-hieu chinh la 0.057 - KHONG con y nghia. Them nua, moi kernel truoc chi
-seed Python's random (chi anh huong lay mau negative cho margin loss) -
-KHONG seed torch/numpy - nen LoRA init va thu tu DataLoader shuffle
-khong duoc kiem soat, va moi cau hinh chi chay 1 lan.
+The adversarial review round (4 independent agents) found that the winning
+config (margin lambda=2.0 + severity beta=0.3) was picked AFTER looking at
+the results of 7 other configs on the SAME RxHandBD test set, with no
+separate validation set - after Holm-Bonferroni correction
+(scripts/multiple_comparisons.py), the corrected p is 0.057, which is NO
+LONGER significant. On top of that, every earlier kernel only seeded
+Python's random (which only affects negative sampling for the margin loss)
+- it did NOT seed torch/numpy, so LoRA init and the DataLoader shuffle
+order were uncontrolled, and each config was only run once.
 
-Kernel nay chay 5 seed doc lap (1-5). VOI MOI SEED: set_all_seeds(seed)
-NGAY TRUOC KHI build tung model, de LoRA init + thu tu DataLoader la
-GIONG HET NHAU giua cap (ce_only, winning) trong cung 1 seed - co lap
-bien nhieu do khoi tao/shuffle, chi con khac o ham loss - roi so sanh
-ghep cap (McNemar) CHO TUNG SEED RIENG. Neu da so seed doc lap deu cho
-p<0.05 mot chieu (giam confusable_wrong_drug, khong giam correct), day
-moi la bang chung vung cho hieu ung that cua ham loss, khong phai may
-man chon 1 lan chay.
+This kernel runs 5 independent seeds (1-5). FOR EACH SEED: set_all_seeds(seed)
+is called RIGHT BEFORE building each model, so that LoRA init + DataLoader
+order are IDENTICAL between the (ce_only, winning) pair within the same
+seed - isolating the init/shuffle noise variable so the only remaining
+difference is the loss function - then a paired comparison (McNemar) is run
+SEPARATELY FOR EACH SEED. If the majority of independent seeds agree on
+p<0.05 one-sided (confusable_wrong_drug decreases, correct doesn't
+decrease), that's solid evidence of a real effect from the loss function,
+not a lucky single run.
 
 Output (/kaggle/working/):
   - predictions_rxhandbd_seed<k>_<config>.csv (config = ce_only|winning)
-  - summary_confirmatory_per_seed.csv (McNemar tung seed, cap nhat dan)
+  - summary_confirmatory_per_seed.csv (McNemar per seed, updated incrementally)
 """
 
 import glob
@@ -32,7 +34,7 @@ import sys
 import time
 import traceback
 
-print("Installing dependencies (peft pinned == 0.13.2, xem ghi chu kernel 02)...")
+print("Installing dependencies (peft pinned == 0.13.2, see kernel 02 notes)...")
 subprocess.run(
     [sys.executable, "-m", "pip", "install", "-q", "peft==0.13.2", "jellyfish", "rapidfuzz"],
     check=False,
@@ -62,10 +64,10 @@ MAX_LABEL_LEN = 32
 LORA_R = 16
 LORA_ALPHA = 32
 LORA_DROPOUT = 0.05
-CONFUSABLE_THRESHOLD = 0.65  # nguong xep loai taxonomy (giong kernel 01/02/03)
-NEIGHBOR_MIN_SCORE = 0.5  # nguong toi thieu de coi la "hang xom du nham lan" khi xay N(w)
+CONFUSABLE_THRESHOLD = 0.65  # taxonomy classification threshold (same as kernel 01/02/03)
+NEIGHBOR_MIN_SCORE = 0.5  # minimum score to count as a "confusable neighbor" when building N(w)
 NEIGHBOR_TOP_K = 5
-MARGIN = 1.0  # margin (don vi NLL/nat) cho margin-ranking loss
+MARGIN = 1.0  # margin (in NLL/nat units) for the margin-ranking loss
 SEEDS = [1, 2, 3, 4, 5]
 
 
@@ -78,7 +80,7 @@ def set_all_seeds(seed: int) -> None:
     torch.backends.cudnn.benchmark = False
 
 # ---------------------------------------------------------------------------
-# Tu vung + taxonomy (giong kernel 01/02)
+# Vocabulary + taxonomy (same as kernel 01/02)
 # ---------------------------------------------------------------------------
 _TRAILING_DOSAGE_RE = re.compile(r"\s*\d+(\.\d+)?\s*(mg|ml|gm|g|mcg|iu)?\s*$", re.IGNORECASE)
 _DOSAGE_FORM_PREFIX_RE = re.compile(r"^(tab\.?|cap\.?|inj\.?|syp\.?|susp\.?)\s*", re.IGNORECASE)
@@ -130,7 +132,7 @@ def classify_error(true_label: str, pred_label: str, vocab_canon_set: set) -> st
 
 
 def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBOR_MIN_SCORE):
-    """Tra ve dict: canon_word -> [(canon_neighbor, score), ...] da xep hang."""
+    """Returns a dict: canon_word -> [(canon_neighbor, score), ...], ranked."""
     vocab = sorted(set(vocab_canon_list))
     neighbor_map = {}
     t0 = time.time()
@@ -139,17 +141,17 @@ def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBO
         scored = [p for p in scored if p[1] >= min_score]
         scored.sort(key=lambda p: -p[1])
         neighbor_map[w] = scored[:top_k]
-    print(f"  build_neighbor_map: {len(vocab)} tu, {time.time()-t0:.1f}s")
+    print(f"  build_neighbor_map: {len(vocab)} words, {time.time()-t0:.1f}s")
     return neighbor_map
 
 
 # ---------------------------------------------------------------------------
-# Tim thu muc dataset
+# Find dataset directory
 # ---------------------------------------------------------------------------
 def find_dir_containing(root: str, filename_pattern: str) -> str:
     matches = glob.glob(os.path.join(root, "**", filename_pattern), recursive=True)
     if not matches:
-        raise FileNotFoundError(f"Khong tim thay '{filename_pattern}' duoi {root}")
+        raise FileNotFoundError(f"Could not find '{filename_pattern}' under {root}")
     return os.path.dirname(matches[0])
 
 
@@ -243,8 +245,8 @@ def train_lora(model, processor, train_pairs, image_dir, device, neighbor_map, t
                 use_severity=False, use_margin=False, beta=1.0, margin=MARGIN,
                 lambda_margin=1.0, epochs=3):
     ds = OCRDataset(train_pairs, image_dir, processor)
-    # num_workers=0: tranh nguon ngau nhien phu tu worker process, giu tinh
-    # tat dinh cua thu tu shuffle giua cac lan chay cung seed.
+    # num_workers=0: avoids extra randomness from worker processes, keeping
+    # the shuffle order deterministic across runs with the same seed.
     loader = DataLoader(ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=0, drop_last=True)
     optimizer = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=LR)
     model.train()
@@ -353,7 +355,7 @@ def load_fresh_model_and_lora():
     return processor, lora_model
 
 
-# cau hinh "thang cuoc" can xac nhan lai (tu kernel 04_margin_sweep)
+# "winning" config to be confirmed (from kernel 04_margin_sweep)
 WINNING_CONFIG = dict(use_severity=True, use_margin=True, beta=0.3, margin=MARGIN, lambda_margin=2.0, epochs=3)
 CE_ONLY_CONFIG = dict(use_severity=False, use_margin=False, beta=0.0, margin=MARGIN, lambda_margin=0.0, epochs=3)
 
@@ -372,9 +374,10 @@ def mcnemar_for_seed(base_df, other_df, category="confusable_wrong_drug"):
 
 
 # ---------------------------------------------------------------------------
-# Main: chay 5 seed doc lap, moi seed train CAP (ce_only, winning) voi CUNG
-# 1 seed (co lap nhieu do LoRA init / thu tu shuffle), so sanh ghep cap
-# rieng cho tung seed. Luu ket qua dan sau moi seed.
+# Main: run 5 independent seeds, each seed trains the (ce_only, winning)
+# PAIR with the SAME seed (isolating the LoRA init / shuffle order noise),
+# and runs a paired comparison separately for each seed. Results are saved
+# incrementally after every seed.
 # ---------------------------------------------------------------------------
 per_seed_rows = []
 
@@ -387,16 +390,16 @@ data = load_rxhandbd()
 name = data["name"]
 print(f"\n=== Dataset: {name} | train={len(data['train_pairs'])} test={len(data['test_pairs'])} ===")
 
-print("Building confusable-neighbor map tu vocab train...")
+print("Building confusable-neighbor map from train vocab...")
 train_vocab_canon = {canonicalize_for_dedup(lbl) for _, lbl in data["train_pairs"]}
 neighbor_map = build_neighbor_map(train_vocab_canon)
 n_with_neighbor = sum(1 for v in neighbor_map.values() if v)
-print(f"  {n_with_neighbor}/{len(neighbor_map)} tu co it nhat 1 hang xom dat nguong {NEIGHBOR_MIN_SCORE}")
+print(f"  {n_with_neighbor}/{len(neighbor_map)} words have at least 1 neighbor meeting the {NEIGHBOR_MIN_SCORE} threshold")
 
 for seed in SEEDS:
     print(f"\n=========== SEED {seed} ===========")
     try:
-        # --- ce_only, seed co dinh truoc khi tao model ---
+        # --- ce_only, seed fixed before creating the model ---
         set_all_seeds(seed)
         processor, model_ce = load_fresh_model_and_lora()
         tag_ce = f"{name}/seed{seed}/ce_only"
@@ -406,7 +409,7 @@ for seed in SEEDS:
         del model_ce
         torch.cuda.empty_cache()
 
-        # --- winning config, RESET ve CUNG seed truoc khi tao model ---
+        # --- winning config, RESET to the SAME seed before creating the model ---
         set_all_seeds(seed)
         processor, model_win = load_fresh_model_and_lora()
         tag_win = f"{name}/seed{seed}/winning"
@@ -416,7 +419,7 @@ for seed in SEEDS:
         del model_win
         torch.cuda.empty_cache()
 
-        # --- McNemar ghep cap CHO SEED NAY ---
+        # --- Paired McNemar comparison FOR THIS SEED ---
         result = mcnemar_for_seed(df_ce, df_win, "confusable_wrong_drug")
         result_correct = mcnemar_for_seed(df_ce, df_win, "correct")
         result_halluc = mcnemar_for_seed(df_ce, df_win, "hallucination_far_off")
@@ -435,7 +438,7 @@ for seed in SEEDS:
         print(f"--- Seed {seed}: confusable {result['base_count']}->{result['other_count']} (p={result['p']:.4f}), "
               f"correct p={result_correct['p']:.4f}, halluc p={result_halluc['p']:.4f} ---")
     except Exception:  # noqa: BLE001
-        print(f"!!! LOI o seed {seed}, bo qua va tiep tuc seed ke tiep !!!")
+        print(f"!!! ERROR at seed {seed}, skipping and continuing to next seed !!!")
         traceback.print_exc()
         per_seed_rows.append({"seed": seed, "confusable_p": None, "error": "KERNEL_ERROR"})
         save_summary()
@@ -445,5 +448,5 @@ for seed in SEEDS:
 print("\n=== SUMMARY: McNemar (ce_only vs winning) PER SEED ===")
 print(pd.DataFrame(per_seed_rows).to_string(index=False))
 n_sig_seeds = sum(1 for r in per_seed_rows if r.get("confusable_p") is not None and r["confusable_p"] < 0.05)
-print(f"\nSo seed (tren {len(SEEDS)}) co p<0.05 (chua hieu chinh) cho confusable_wrong_drug: {n_sig_seeds}")
+print(f"\nNumber of seeds (out of {len(SEEDS)}) with uncorrected p<0.05 for confusable_wrong_drug: {n_sig_seeds}")
 print("DONE.")

@@ -1,9 +1,9 @@
-"""Phan tich thong ke ghep cap (paired McNemar exact test) cho ket qua ablation.
+"""Paired statistical analysis (paired McNemar exact test) for ablation results.
 
-Chay:
+Usage:
     PYTHONIOENCODING=utf-8 python scripts/analyze_ablation.py [dataset] [run_dir] [config1,config2,...]
 
-Mac dinh: dataset=rxhandbd, run_dir=results/kaggle_run_3_ablation,
+Defaults: dataset=rxhandbd, run_dir=results/kaggle_run_3_ablation,
 configs=margin,severity,severity_margin
 """
 
@@ -41,12 +41,12 @@ def paired_test(base_df, other_df, category):
 
 
 def confusable_fix_destination_breakdown(base_df, other_df):
-    """Trong so anh confusable_wrong_drug o baseline duoc 'sua' (khong con
-    confusable) duoi cfg, di ve dau: correct (sua dung) hay chi la
-    minor_ocr_noise/hallucination_far_off/other_wrong_real_word (khong con
-    nham sang MOT TEN THUOC THAT KHAC, nhung cung khong dung - ve an toan
-    lam sang van la mot cai thien vi de bi phat hien hon la 'don thuoc hop
-    le nhung nham thuoc').
+    """Among images that were confusable_wrong_drug at baseline and got 'fixed'
+    (no longer confusable) under cfg, where do they end up: correct (fixed
+    correctly) or just minor_ocr_noise/hallucination_far_off/other_wrong_real_word
+    (no longer confused with ANOTHER REAL DRUG NAME, but still not correct - from
+    a clinical safety standpoint this is still an improvement, since it is easier
+    to catch than a 'valid-looking prescription with the wrong drug').
     """
     common = base_df.index.intersection(other_df.index)
     b = base_df.loc[common]
@@ -77,7 +77,7 @@ def main(dataset: str, run_dir: Path, configs: list[str]) -> None:
     for cfg in configs:
         path = run_dir / f"predictions_{dataset}_{cfg}.csv"
         if not path.exists():
-            print(f"-- config: {cfg}: KHONG TIM THAY {path}, bo qua --")
+            print(f"-- config: {cfg}: {path} NOT FOUND, skipping --")
             continue
         other = pd.read_csv(path).set_index("image")
         print(f"\n-- config: {cfg} --")
@@ -90,20 +90,20 @@ def main(dataset: str, run_dir: Path, configs: list[str]) -> None:
 
         overcorrect_n, n_correct = overcorrection_rate(base, other)
         print(
-            f"  [an toan] dung->confusable moi: {overcorrect_n}/{n_correct} "
+            f"  [safety] correct->newly confusable: {overcorrect_n}/{n_correct} "
             f"({100*overcorrect_n/max(n_correct,1):.2f}%)"
         )
 
         breakdown = confusable_fix_destination_breakdown(base, other)
         print(
-            f"  [pha vo confusable] {breakdown['n_fixed_total']}/{breakdown['n_was_confusable']} "
-            f"anh confusable(baseline) khong con confusable duoi {cfg}, di ve: {breakdown['destinations']}"
+            f"  [confusable breakdown] {breakdown['n_fixed_total']}/{breakdown['n_was_confusable']} "
+            f"confusable(baseline) images no longer confusable under {cfg}, ending up as: {breakdown['destinations']}"
         )
         n_to_correct = breakdown["destinations"].get("correct", 0)
         n_to_clearly_wrong = breakdown["n_fixed_total"] - n_to_correct
         print(
-            f"    trong do: sua DUNG={n_to_correct}, chuyen thanh RO RANG SAI "
-            f"(khong con la 1 ten thuoc that khac)={n_to_clearly_wrong}"
+            f"    of which: fixed CORRECTLY={n_to_correct}, turned CLEARLY WRONG "
+            f"(no longer another real drug name)={n_to_clearly_wrong}"
         )
 
 

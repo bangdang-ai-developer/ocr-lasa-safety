@@ -1,10 +1,10 @@
-"""OCR benchmark thu gon (zero-shot): Tesseract + TrOCR-base-handwritten,
-tren tap Test cua Kaggle-BD (78 lop) va RxHandBD.
+"""Condensed OCR benchmark (zero-shot): Tesseract + TrOCR-base-handwritten,
+on the Test split of Kaggle-BD (78 classes) and RxHandBD.
 
-Chay tren Kaggle kernel (T4 GPU). Day la buoc DO GOC lap doc lap, KHONG dung
-lai nhan/ket qua cua du an ocr-research truoc do.
+Runs on a Kaggle kernel (T4 GPU). This is an INDEPENDENT re-measurement step,
+NOT reusing labels/results from the earlier ocr-research project.
 
-Output (luu vao /kaggle/working/):
+Output (saved to /kaggle/working/):
   - predictions_kaggle_bd.csv, predictions_rxhandbd.csv
   - summary_error_taxonomy.csv
 """
@@ -17,7 +17,7 @@ import sys
 import time
 
 # ---------------------------------------------------------------------------
-# 0. Cai dat phu thuoc runtime (Kaggle image khong co san tesseract-ocr binary)
+# 0. Install runtime dependencies (the Kaggle image doesn't ship the tesseract-ocr binary)
 # ---------------------------------------------------------------------------
 print("Installing system + python dependencies...")
 subprocess.run(["apt-get", "-qq", "update"], check=False)
@@ -43,13 +43,13 @@ OUTPUT_ROOT = "/kaggle/working"
 
 
 # ---------------------------------------------------------------------------
-# 1. Tim thu muc dataset thuc te (ten thu muc goc co the chua ky tu dac biet)
+# 1. Locate the actual dataset directory (the root folder name may contain special characters)
 # ---------------------------------------------------------------------------
 def find_dir_containing(root: str, filename_pattern: str) -> str:
-    """Tim thu muc con (bat ky do sau) co chua file khop filename_pattern."""
+    """Find the subdirectory (at any depth) that contains a file matching filename_pattern."""
     matches = glob.glob(os.path.join(root, "**", filename_pattern), recursive=True)
     if not matches:
-        raise FileNotFoundError(f"Khong tim thay '{filename_pattern}' duoi {root}")
+        raise FileNotFoundError(f"Could not find '{filename_pattern}' under {root}")
     return os.path.dirname(matches[0])
 
 
@@ -58,15 +58,15 @@ _rxhandbd_matches = glob.glob(
     os.path.join(INPUT_ROOT, "**", "RxHandBDMain", "Test.csv"), recursive=True
 )
 if not _rxhandbd_matches:
-    raise FileNotFoundError("Khong tim thay RxHandBDMain/Test.csv duoi /kaggle/input")
+    raise FileNotFoundError("Could not find RxHandBDMain/Test.csv under /kaggle/input")
 RXHANDBD_MAIN_DIR = os.path.dirname(_rxhandbd_matches[0])
 print("Kaggle-BD test dir:", KAGGLE_BD_TEST_DIR)
 print("RxHandBD main dir:", RXHANDBD_MAIN_DIR)
 
 
 # ---------------------------------------------------------------------------
-# 2. Tu vung + suy luan diem tuong dong (giong src/vocab.py, src/confusable_pairs.py
-#    cua repo - viet lai doc lap trong kernel de khong phu thuoc upload them file)
+# 2. Vocabulary + similarity-score inference (mirrors src/vocab.py, src/confusable_pairs.py
+#    from the repo - reimplemented standalone in the kernel to avoid depending on extra file uploads)
 # ---------------------------------------------------------------------------
 _TRAILING_DOSAGE_RE = re.compile(r"\s*\d+(\.\d+)?\s*(mg|ml|gm|g|mcg|iu)?\s*$", re.IGNORECASE)
 _DOSAGE_FORM_PREFIX_RE = re.compile(r"^(tab\.?|cap\.?|inj\.?|syp\.?|susp\.?)\s*", re.IGNORECASE)
@@ -105,7 +105,7 @@ def bi_sim_score(a: str, b: str) -> float:
     return 0.5 * normalized_edit_similarity(a_l, b_l) + 0.5 * phonetic_similarity(a_l, b_l)
 
 
-CONFUSABLE_THRESHOLD = 0.65  # chon dua tren phan bo diem da quan sat o buoc suy luan cap truoc
+CONFUSABLE_THRESHOLD = 0.65  # chosen based on the score distribution observed in the prior pairwise-inference step
 
 
 def classify_error(true_label: str, pred_label: str, vocab_canon_set: set[str]) -> str:
@@ -151,7 +151,7 @@ def run_trocr_batch(image_paths: list[str]) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
-# 4. Chay benchmark tren 1 dataset
+# 4. Run the benchmark on a single dataset
 # ---------------------------------------------------------------------------
 def benchmark_dataset(name: str, image_dir: str, labels: list[tuple], full_vocab_norm: list[str]) -> pd.DataFrame:
     """labels: list of (image_filename, true_label_norm)"""
@@ -188,7 +188,7 @@ def benchmark_dataset(name: str, image_dir: str, labels: list[tuple], full_vocab
 
 
 # ---------------------------------------------------------------------------
-# 5. Nap nhan cho tung dataset
+# 5. Load labels for each dataset
 # ---------------------------------------------------------------------------
 print("Loading Kaggle-BD test labels...")
 kb_test_csv = os.path.join(KAGGLE_BD_TEST_DIR, "testing_labels.csv")
@@ -196,7 +196,7 @@ kb_df = pd.read_csv(kb_test_csv)
 kb_labels = list(zip(kb_df["IMAGE"], kb_df["MEDICINE_NAME"].astype(str).str.strip()))
 kb_image_dir = os.path.join(KAGGLE_BD_TEST_DIR, "testing_words")
 
-# tu vung day du Kaggle-BD (78 lop) tu ca 3 split de dam bao khong thieu lop nao
+# full Kaggle-BD vocabulary (78 classes) from all 3 splits, to make sure no class is missing
 kb_all_labels = set()
 for split_csv, col in [
     (os.path.join(os.path.dirname(KAGGLE_BD_TEST_DIR), "Training", "training_labels.csv"), "MEDICINE_NAME"),
@@ -214,7 +214,7 @@ rx_test_df["norm_label"] = rx_test_df["Labels"].astype(str).apply(normalize_labe
 rx_labels = list(zip(rx_test_df["Images"], rx_test_df["norm_label"]))
 rx_image_dir = os.path.join(RXHANDBD_MAIN_DIR, "Test")
 if not os.path.isdir(rx_image_dir):
-    raise FileNotFoundError(f"Khong tim thay thu muc anh: {rx_image_dir}")
+    raise FileNotFoundError(f"Could not find image directory: {rx_image_dir}")
 
 rx_all_labels = set()
 for split_csv in [rx_train_csv, rx_test_csv]:
@@ -222,7 +222,7 @@ for split_csv in [rx_train_csv, rx_test_csv]:
     rx_all_labels.update(df["Labels"].astype(str).apply(normalize_label).tolist())
 
 # ---------------------------------------------------------------------------
-# 6. Chay va luu ket qua
+# 6. Run and save results
 # ---------------------------------------------------------------------------
 print(f"Kaggle-BD: {len(kb_labels)} test images, vocab={len(kb_all_labels)}")
 kb_results = benchmark_dataset("kaggle_bd", kb_image_dir, kb_labels, list(kb_all_labels))
@@ -233,7 +233,7 @@ rx_results = benchmark_dataset("rxhandbd", rx_image_dir, rx_labels, list(rx_all_
 rx_results.to_csv(os.path.join(OUTPUT_ROOT, "predictions_rxhandbd.csv"), index=False)
 
 # ---------------------------------------------------------------------------
-# 7. Tom tat ty le loi theo taxonomy, theo model va dataset
+# 7. Summarize error rates by taxonomy, model, and dataset
 # ---------------------------------------------------------------------------
 summary_rows = []
 for df, dname in [(kb_results, "kaggle_bd"), (rx_results, "rxhandbd")]:

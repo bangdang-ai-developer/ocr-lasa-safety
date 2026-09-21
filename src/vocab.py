@@ -1,4 +1,4 @@
-"""Xây dựng từ vựng tên thuốc (đóng) từ các dataset thô, phục vụ suy luận cặp nhầm lẫn."""
+"""Build a closed drug-name vocabulary from the raw datasets, for confusable-pair inference."""
 
 import csv
 import re
@@ -15,13 +15,14 @@ _MULTI_SPACE_RE = re.compile(r"\s+")
 
 
 def normalize_label(raw: str) -> str:
-    """Bỏ số/đơn vị liều lượng ở cuối nhãn thô (vd. 'Dexter 60' -> 'Dexter').
+    """Strip trailing dosage numbers/units from a raw label (e.g. 'Dexter 60' -> 'Dexter').
 
-    Đây là bước làm sạch TỐI THIỂU, có chủ đích: không cố loại các hậu tố dạng
-    bào chế (vd. 'Plus Sw', 'Max', 'Dx') vì rủi ro cắt nhầm một phần tên thuốc
-    thật. Các mục còn lại (kể cả một số chuỗi có vẻ vô nghĩa) sẽ được lọc lại
-    ở bước kiểm tra thủ công (spot-check) trên danh sách cặp nhầm lẫn xếp hạng
-    cao nhất, theo đúng thiết kế trong docs/00-de-cuong-nghien-cuu.md mục 4.
+    This is a deliberately MINIMAL cleaning step: it does not try to strip
+    dosage-form suffixes (e.g. 'Plus Sw', 'Max', 'Dx') because of the risk of
+    cutting off part of a real drug name. Remaining entries (including some
+    that look meaningless) get filtered out later during the manual spot-check
+    of the top-ranked confusable-pair list, per the design in
+    docs/00-de-cuong-nghien-cuu.md section 4.
     """
     s = raw.strip()
     s = _TRAILING_DOSAGE_RE.sub("", s).strip()
@@ -29,13 +30,15 @@ def normalize_label(raw: str) -> str:
 
 
 def canonicalize_for_dedup(norm_label: str) -> str:
-    """Chuẩn hoá SÂU HƠN chỉ để gộp trùng lặp do khác biệt định dạng ghi nhãn
-    (vd. 'Tab. Nexum' vs 'Tab.  NEXUM' vs 'Nexum' đều cùng một sản phẩm).
+    """Deeper normalization used only to merge duplicates caused by
+    labeling-format differences (e.g. 'Tab. Nexum' vs 'Tab.  NEXUM' vs 'Nexum'
+    are all the same product).
 
-    Không dùng để hiển thị — chỉ dùng làm khoá gộp, vì loại dữ liệu RxHandBD
-    có nhiều biến thể ghi nhãn (khoảng trắng, tiền tố dạng bào chế, hoa/thường)
-    cho CÙNG một tên thuốc, dễ bị thuật toán suy luận cặp nhầm lẫn hiểu lầm là
-    hai tên khác nhau (false positive) nếu không gộp trước.
+    Not meant for display — only used as a merge key, since the RxHandBD
+    dataset has many labeling variants (whitespace, dosage-form prefixes,
+    case) for the SAME drug name, which the confusable-pair inference
+    algorithm could easily mistake for two different names (false positive)
+    if they aren't merged first.
     """
     s = norm_label.lower()
     s = _DOSAGE_FORM_PREFIX_RE.sub("", s)
@@ -45,7 +48,7 @@ def canonicalize_for_dedup(norm_label: str) -> str:
 
 
 def load_kaggle_bd_vocab(root: Path) -> dict[str, str]:
-    """Kaggle 'Doctor's Handwritten Prescription BD' — 78 lớp, cột MEDICINE_NAME đã sạch."""
+    """Kaggle 'Doctor's Handwritten Prescription BD' — 78 classes, MEDICINE_NAME column already clean."""
     vocab: dict[str, str] = {}
     for split, fname in [
         ("Training", "training_labels.csv"),
@@ -62,12 +65,12 @@ def load_kaggle_bd_vocab(root: Path) -> dict[str, str]:
 
 
 def load_rxhandbd_vocab(root: Path) -> dict[str, str]:
-    """RxHandBD (RxHandBDMain) — ~1.559 mục thô, cần chuẩn hoá bỏ liều lượng và
-    gộp các biến thể định dạng ghi nhãn của CÙNG một tên thuốc (xem
-    canonicalize_for_dedup) trước khi đưa vào suy luận cặp nhầm lẫn — nếu
-    không, top của danh sách xếp hạng sẽ bị chiếm bởi các cặp kiểu
-    'Tab. Nexum' vs 'Tab.  NEXUM' (cùng 1 thuốc, khác định dạng ghi) thay vì
-    các cặp nhầm lẫn LASA thật sự (hai thuốc THẬT khác nhau).
+    """RxHandBD (RxHandBDMain) — ~1,559 raw entries; needs dosage stripping
+    and merging of labeling-format variants for the SAME drug name (see
+    canonicalize_for_dedup) before feeding into confusable-pair inference —
+    otherwise the top of the ranked list would be dominated by pairs like
+    'Tab. Nexum' vs 'Tab.  NEXUM' (same drug, different label formatting)
+    instead of genuine LASA confusable pairs (two different REAL drugs).
     """
     vocab: dict[str, str] = {}
     for fname in ["Train.csv", "Test.csv"]:
@@ -98,6 +101,6 @@ if __name__ == "__main__":
     kb_vocab = load_kaggle_bd_vocab(kaggle_root)
     rx_vocab = load_rxhandbd_vocab(rxhandbd_root)
 
-    print(f"Kaggle-BD: {len(kb_vocab)} tên thuốc duy nhất (kỳ vọng 78)")
-    print(f"RxHandBD (đã chuẩn hoá bỏ liều lượng): {len(rx_vocab)} mục duy nhất")
-    print("Mẫu RxHandBD sau chuẩn hoá:", list(rx_vocab.values())[:15])
+    print(f"Kaggle-BD: {len(kb_vocab)} unique drug names (expected 78)")
+    print(f"RxHandBD (dosage-normalized): {len(rx_vocab)} unique entries")
+    print("RxHandBD sample after normalization:", list(rx_vocab.values())[:15])

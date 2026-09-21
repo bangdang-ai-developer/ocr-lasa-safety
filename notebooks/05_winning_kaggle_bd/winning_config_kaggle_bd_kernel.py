@@ -1,15 +1,15 @@
-"""Kiem tra cheo cau hinh THANG CUOC tren Kaggle-BD (78 lop, 780 anh test).
+"""Cross-check the WINNING config on Kaggle-BD (78 classes, 780 test images).
 
-Kernel 04 (margin_sweep) da tim ra tren RxHandBD: margin loss lambda=2.0
-KET HOP severity-weighted CE beta=0.3 (giam manh tu 1.0), 3 epoch - giam
-co y nghia thong ke confusable_wrong_drug (p=0.011) MA KHONG danh doi
-correct/hallucination co y nghia (p=0.76 / p=0.41). Xem docs/01-ket-qua-
-ablation.md.
+Kernel 04 (margin_sweep) found on RxHandBD: margin loss lambda=2.0
+COMBINED WITH severity-weighted CE beta=0.3 (sharply reduced from 1.0), 3 epochs -
+gives a statistically significant reduction in confusable_wrong_drug (p=0.011)
+WITHOUT trading off significance on correct/hallucination (p=0.76 / p=0.41). See
+docs/01-ket-qua-ablation.md.
 
-Kaggle-BD chi co 3-4 anh confusable_wrong_drug o baseline (kernel 03) -
-DA XAC NHAN qua it mau de ket luan thong ke - kernel nay chi de kiem tra
-CHEO/dinh tinh (huong co nhat quan voi RxHandBD khong), khong ky vong dat
-y nghia thong ke.
+Kaggle-BD has only 3-4 confusable_wrong_drug images at baseline (kernel 03) -
+CONFIRMED too few samples to draw statistical conclusions - this kernel is only a
+CROSS-CHECK/qualitative check (whether the direction is consistent with RxHandBD),
+not expected to reach statistical significance.
 
 Output (/kaggle/working/):
   - predictions_kaggle_bd_winning.csv
@@ -25,7 +25,7 @@ import sys
 import time
 import traceback
 
-print("Installing dependencies (peft pinned == 0.13.2, xem ghi chu kernel 02)...")
+print("Installing dependencies (peft pinned == 0.13.2, see kernel 02 notes)...")
 subprocess.run(
     [sys.executable, "-m", "pip", "install", "-q", "peft==0.13.2", "jellyfish", "rapidfuzz"],
     check=False,
@@ -53,15 +53,15 @@ MAX_LABEL_LEN = 32
 LORA_R = 16
 LORA_ALPHA = 32
 LORA_DROPOUT = 0.05
-CONFUSABLE_THRESHOLD = 0.65  # nguong xep loai taxonomy (giong kernel 01/02/03)
-NEIGHBOR_MIN_SCORE = 0.5  # nguong toi thieu de coi la "hang xom du nham lan" khi xay N(w)
+CONFUSABLE_THRESHOLD = 0.65  # taxonomy classification threshold (same as kernel 01/02/03)
+NEIGHBOR_MIN_SCORE = 0.5  # minimum threshold to count as a "confusable-enough neighbor" when building N(w)
 NEIGHBOR_TOP_K = 5
-MARGIN = 1.0  # margin (don vi NLL/nat) cho margin-ranking loss - giu co dinh, chi do lambda/epoch/beta
+MARGIN = 1.0  # margin (in NLL/nat units) for the margin-ranking loss - kept fixed, only lambda/epoch/beta vary
 
 random.seed(42)
 
 # ---------------------------------------------------------------------------
-# Tu vung + taxonomy (giong kernel 01/02)
+# Vocabulary + taxonomy (same as kernel 01/02)
 # ---------------------------------------------------------------------------
 _TRAILING_DOSAGE_RE = re.compile(r"\s*\d+(\.\d+)?\s*(mg|ml|gm|g|mcg|iu)?\s*$", re.IGNORECASE)
 _DOSAGE_FORM_PREFIX_RE = re.compile(r"^(tab\.?|cap\.?|inj\.?|syp\.?|susp\.?)\s*", re.IGNORECASE)
@@ -113,7 +113,7 @@ def classify_error(true_label: str, pred_label: str, vocab_canon_set: set) -> st
 
 
 def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBOR_MIN_SCORE):
-    """Tra ve dict: canon_word -> [(canon_neighbor, score), ...] da xep hang."""
+    """Return dict: canon_word -> [(canon_neighbor, score), ...], ranked."""
     vocab = sorted(set(vocab_canon_list))
     neighbor_map = {}
     t0 = time.time()
@@ -122,17 +122,17 @@ def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBO
         scored = [p for p in scored if p[1] >= min_score]
         scored.sort(key=lambda p: -p[1])
         neighbor_map[w] = scored[:top_k]
-    print(f"  build_neighbor_map: {len(vocab)} tu, {time.time()-t0:.1f}s")
+    print(f"  build_neighbor_map: {len(vocab)} words, {time.time()-t0:.1f}s")
     return neighbor_map
 
 
 # ---------------------------------------------------------------------------
-# Tim thu muc dataset
+# Find dataset directory
 # ---------------------------------------------------------------------------
 def find_dir_containing(root: str, filename_pattern: str) -> str:
     matches = glob.glob(os.path.join(root, "**", filename_pattern), recursive=True)
     if not matches:
-        raise FileNotFoundError(f"Khong tim thay '{filename_pattern}' duoi {root}")
+        raise FileNotFoundError(f"Could not find '{filename_pattern}' under {root}")
     return os.path.dirname(matches[0])
 
 
@@ -340,7 +340,7 @@ WINNING_CONFIG = [
 ]
 
 # ---------------------------------------------------------------------------
-# Main: chay cau hinh thang cuoc tren Kaggle-BD de kiem tra cheo
+# Main: run the winning config on Kaggle-BD for cross-checking
 # ---------------------------------------------------------------------------
 summary_rows = []
 
@@ -353,11 +353,11 @@ data = load_kaggle_bd()
 name = data["name"]
 print(f"\n=== Dataset: {name} | train={len(data['train_pairs'])} test={len(data['test_pairs'])} ===")
 
-print("Building confusable-neighbor map tu vocab train...")
+print("Building confusable-neighbor map from train vocab...")
 train_vocab_canon = {canonicalize_for_dedup(lbl) for _, lbl in data["train_pairs"]}
 neighbor_map = build_neighbor_map(train_vocab_canon)
 n_with_neighbor = sum(1 for v in neighbor_map.values() if v)
-print(f"  {n_with_neighbor}/{len(neighbor_map)} tu co it nhat 1 hang xom dat nguong {NEIGHBOR_MIN_SCORE}")
+print(f"  {n_with_neighbor}/{len(neighbor_map)} words have at least 1 neighbor meeting threshold {NEIGHBOR_MIN_SCORE}")
 
 for config_name, use_severity, use_margin, beta, margin, lambda_margin, epochs in WINNING_CONFIG:
     tag = f"{name}/{config_name}"
@@ -386,7 +386,7 @@ for config_name, use_severity, use_margin, beta, margin, lambda_margin, epochs i
         del processor, lora_model
         torch.cuda.empty_cache()
     except Exception:  # noqa: BLE001
-        print(f"!!! LOI o {tag}, bo qua va tiep tuc cau hinh ke tiep !!!")
+        print(f"!!! ERROR at {tag}, skipping and continuing to next config !!!")
         traceback.print_exc()
         summary_rows.append({"dataset": name, "config": config_name, "error_category": "KERNEL_ERROR", "count": -1, "rate": -1, "n_total": -1})
         save_summary()

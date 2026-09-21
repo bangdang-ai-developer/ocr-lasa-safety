@@ -1,6 +1,6 @@
-"""Chạy suy luận cặp nhầm lẫn cho cả 2 dataset, xuất CSV top-N để kiểm tra thủ công.
+"""Run confusable-pair inference for both datasets, export top-N CSV for manual review.
 
-Cach chay:
+How to run:
     PYTHONIOENCODING=utf-8 python scripts/derive_confusable_pairs.py
 """
 
@@ -18,7 +18,7 @@ KAGGLE_BD_ROOT = PROJECT_ROOT / "data" / "raw" / "kaggle-bd" / "prescription-bd"
 RXHANDBD_ROOT = PROJECT_ROOT / "data" / "raw" / "rxhandbd" / "RxHandBDMain"
 RESULTS_DIR = PROJECT_ROOT / "results"
 
-TOP_K_EXPORT = 100  # so cap can xuat de kiem tra thu cong
+TOP_K_EXPORT = 100  # number of pairs to export for manual review
 
 
 def export_pairs(pairs, out_path: Path) -> None:
@@ -35,11 +35,11 @@ def export_pairs(pairs, out_path: Path) -> None:
 
 
 def main() -> None:
-    print("=== Kaggle-BD (78 lop) ===")
+    print("=== Kaggle-BD (78 classes) ===")
     kb_vocab = load_kaggle_bd_vocab(KAGGLE_BD_ROOT)
     kb_pairs = rank_confusable_pairs(list(kb_vocab.values()))
-    print(f"So tu vung: {len(kb_vocab)} | So cap da tinh: {len(kb_pairs)}")
-    print("Top 15 cap diem cao nhat:")
+    print(f"Vocabulary size: {len(kb_vocab)} | Pairs computed: {len(kb_pairs)}")
+    print("Top 15 highest-scoring pairs:")
     for p in kb_pairs[:15]:
         print(f"  {p.name_a!r:20s} <-> {p.name_b!r:20s}  score={p.score:.3f} (ortho={p.ortho:.2f}, phon={p.phon:.2f})")
     export_pairs(kb_pairs[:TOP_K_EXPORT], RESULTS_DIR / "confusable_pairs_kaggle_bd_top100.csv")
@@ -49,18 +49,18 @@ def main() -> None:
     print("=== RxHandBD ===")
     rx_vocab = load_rxhandbd_vocab(RXHANDBD_ROOT)
     rx_pairs = rank_confusable_pairs(list(rx_vocab.values()))
-    print(f"So tu vung (da chuan hoa): {len(rx_vocab)} | So cap da tinh: {len(rx_pairs)}")
-    print("Top 15 cap diem cao nhat:")
+    print(f"Vocabulary size (normalized): {len(rx_vocab)} | Pairs computed: {len(rx_pairs)}")
+    print("Top 15 highest-scoring pairs:")
     for p in rx_pairs[:15]:
         print(f"  {p.name_a!r:20s} <-> {p.name_b!r:20s}  score={p.score:.3f} (ortho={p.ortho:.2f}, phon={p.phon:.2f})")
     export_pairs(rx_pairs[:TOP_K_EXPORT], RESULTS_DIR / "confusable_pairs_rxhandbd_top100.csv")
-    # Danh sach day du cua RxHandBD rat lon (~1M cap) -> chi luu top 5000 lam kho du lieu lam viec
+    # RxHandBD's full list is very large (~1M pairs) -> only keep the top 5000 as a working data cache
     export_pairs(rx_pairs[:5000], RESULTS_DIR / "confusable_pairs_rxhandbd_top5000.csv")
 
     print()
-    print(f"Da xuat CSV vao: {RESULTS_DIR}")
-    print("BUOC TIEP THEO BAT BUOC: kiem tra thu cong cot 'manual_review_ok' tren file top100")
-    print("truoc khi dung chinh thuc lam danh sach cap nham lan cho margin loss / severity weighting.")
+    print(f"Exported CSVs to: {RESULTS_DIR}")
+    print("REQUIRED NEXT STEP: manually review the 'manual_review_ok' column in the top100 file")
+    print("before using it as the official confusable-pair list for margin loss / severity weighting.")
 
 
 if __name__ == "__main__":

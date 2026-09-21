@@ -1,21 +1,25 @@
-"""Phan tich mo rong cho ket qua xac nhan 5-seed (kernel 06): effect size (risk
-difference) + 95% CI, va breakdown "confusable duoc sua thi di ve dau" gop tren
-ca 5 seed (giong da lam rieng le cho kernel 03/04 trong analyze_ablation.py).
+"""Extended analysis for the 5-seed confirmatory results (kernel 06): effect
+size (risk difference) + 95% CI, and a breakdown of "where fixed confusable
+cases end up", pooled across all 5 seeds (similar to what was done separately
+for kernel 03/04 in analyze_ablation.py).
 
-Ly do can them: scripts/analyze_confirmatory.py hien chi bao cao p-value
-(McNemar exact, gop 5 seed). Bai bao Q2 journal thuong doi hoi effect size +
-khoang tin cay di kem p-value, khong chi p-value don le.
+Why this is needed: scripts/analyze_confirmatory.py currently only reports a
+p-value (exact McNemar, pooled across 5 seeds). A Q2 journal paper usually
+requires an effect size and confidence interval alongside the p-value, not
+just a standalone p-value.
 
-Phuong phap risk difference + CI: dung cong thuc Wald chuan cho hieu 2 ti le
-GHEP CAP (paired proportions), vd Newcombe (1998) / Fagerland et al.:
+Risk difference + CI method: uses the standard Wald formula for the
+difference between two PAIRED proportions, e.g. Newcombe (1998) / Fagerland
+et al.:
     p10 = fixed/n, p01 = newly/n, d = p01 - p10
     Var(d) = [p10 + p01 - (p01-p10)^2] / n
-Gop 5 seed bang cach CONG don fixed/newly/n truoc khi tinh d va CI - nhat quan
-voi cach da dung de tinh p-value gop trong analyze_confirmatory.py (cong don
-roi chay 1 binomtest), tuong duong gia dinh fixed-effect qua cac seed (hop ly
-vi n moi seed gan bang nhau va seed la doc lap/hoan vi duoc).
+Seeds are pooled by SUMMING fixed/newly/n before computing d and the CI -
+consistent with how the pooled p-value is computed in
+analyze_confirmatory.py (sum the counts, then run a single binomtest), which
+is equivalent to a fixed-effect assumption across seeds (reasonable since
+each seed has roughly the same n and seeds are independent/exchangeable).
 
-Chay:
+Run:
     PYTHONIOENCODING=utf-8 python scripts/analyze_confirmatory_extended.py
 """
 
@@ -88,7 +92,7 @@ def main() -> None:
     pooled_overcorrect = 0
     pooled_was_correct = 0
 
-    print("=== Effect size (risk difference, winning - CE_only) + 95% CI moi seed ===")
+    print("=== Effect size (risk difference, winning - CE_only) + 95% CI per seed ===")
     for seed in SEEDS:
         base = pd.read_csv(RUN_DIR / f"predictions_rxhandbd_seed{seed}_ce_only.csv").set_index("image")
         other = pd.read_csv(RUN_DIR / f"predictions_rxhandbd_seed{seed}_winning.csv").set_index("image")
@@ -114,36 +118,36 @@ def main() -> None:
         pooled_overcorrect += overcorrect_n
         pooled_was_correct += was_correct_n
 
-    print("\n=== GOP 5 SEED: effect size + 95% CI (risk difference, winning - CE_only) ===")
+    print("\n=== POOLED 5 SEEDS: effect size + 95% CI (risk difference, winning - CE_only) ===")
     for cat in CATEGORIES:
         fixed = pooled[cat]["fixed"]
         newly = pooled[cat]["newly"]
         n = pooled[cat]["n"]
         d, lo, hi = risk_diff_ci(fixed, newly, n)
         print(
-            f"  {cat:24s} risk_diff={d:+.4f} ({d*100:+.2f} diem %) "
-            f"95%CI=[{lo*100:+.2f}, {hi*100:+.2f}] diem % (n={n})"
+            f"  {cat:24s} risk_diff={d:+.4f} ({d*100:+.2f} pp) "
+            f"95%CI=[{lo*100:+.2f}, {hi*100:+.2f}] pp (n={n})"
         )
 
-    print("\n=== GOP 5 SEED: confusable_wrong_drug 'duoc sua' (het confusable) thi di ve dau ===")
+    print("\n=== POOLED 5 SEEDS: where confusable_wrong_drug goes once 'fixed' (no longer confusable) ===")
     n_to_correct = pooled_destinations.get("correct", 0)
     n_to_clearly_wrong = pooled_fixed_total - n_to_correct
-    print(f"  Tong so anh confusable duoi CE-only (gop 5 seed): {pooled_was_confusable}")
+    print(f"  Total confusable images under CE-only (pooled across 5 seeds): {pooled_was_confusable}")
     print(
-        f"  Tong so 'het confusable' duoi cau hinh thang cuoc: {pooled_fixed_total} "
-        f"({100*pooled_fixed_total/pooled_was_confusable:.1f}% cua so confusable ban dau)"
+        f"  Total no-longer-confusable under the winning config: {pooled_fixed_total} "
+        f"({100*pooled_fixed_total/pooled_was_confusable:.1f}% of the original confusable count)"
     )
-    print(f"  Chi tiet diem den: {pooled_destinations}")
+    print(f"  Destination breakdown: {pooled_destinations}")
     print(
-        f"  -> Sua DUNG hoan toan: {n_to_correct} "
-        f"({100*n_to_correct/pooled_fixed_total:.1f}% cua so 'het confusable')"
+        f"  -> Fully CORRECTED: {n_to_correct} "
+        f"({100*n_to_correct/pooled_fixed_total:.1f}% of the 'no longer confusable' count)"
     )
     print(
-        f"  -> Chuyen thanh RO RANG SAI (khong con la mot ten thuoc that khac): {n_to_clearly_wrong} "
-        f"({100*n_to_clearly_wrong/pooled_fixed_total:.1f}% cua so 'het confusable')"
+        f"  -> Turned CLEARLY WRONG (no longer a different real drug name): {n_to_clearly_wrong} "
+        f"({100*n_to_clearly_wrong/pooled_fixed_total:.1f}% of the 'no longer confusable' count)"
     )
 
-    print("\n=== GOP 5 SEED: ty le 'qua tay' (dung o CE-only -> confusable MOI o thang cuoc) ===")
+    print("\n=== POOLED 5 SEEDS: 'overcorrection' rate (correct in CE-only -> NEW confusable in winning config) ===")
     p, lo, hi = wilson_ci(pooled_overcorrect, pooled_was_correct)
     print(
         f"  {pooled_overcorrect}/{pooled_was_correct} = {p*100:.2f}% "

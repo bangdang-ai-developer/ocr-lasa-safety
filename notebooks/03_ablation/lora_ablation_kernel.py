@@ -1,20 +1,23 @@
 """Ablation: CE-only / CE+severity / CE+margin / CE+severity+margin.
 
-Kiem tra dong gop chinh cua du an: margin loss (chong nham cap cu the,
-dua tren danh sach hang xom de nham lan suy luan bang thuat toan BI-SIM)
-+ severity-weighted CE (thich ung tu Risk-Calibrated Learning, arXiv:
-2604.12693) co giam duoc ty le confusable_wrong_drug ma khong lam giam
-lai correct / tang lai hallucination hay khong, so voi CE-only (da xac
-nhan hien tuong goc o kernel 02_lora_ceonly).
+Tests the project's main contribution: margin loss (penalizing specific
+confusable pairs, based on a neighbor list of easily-confused pairs inferred
+via the BI-SIM algorithm) + severity-weighted CE (adapted from
+Risk-Calibrated Learning, arXiv: 2604.12693) - whether it reduces the
+confusable_wrong_drug rate without reducing correct / increasing
+hallucination, compared to CE-only (the baseline phenomenon already
+confirmed in kernel 02_lora_ceonly).
 
-Chay tren Kaggle kernel (T4 GPU). Fine-tune RIENG cho tung (dataset, cau
-hinh loss) - 4 cau hinh x 2 dataset = 8 lan fine-tune, moi lan xuat phat
-lai tu checkpoint pretrained goc (khong noi tiep giua cac cau hinh).
+Runs on a Kaggle kernel (T4 GPU). Fine-tunes SEPARATELY for each (dataset,
+loss config) pair - 4 configs x 2 datasets = 8 fine-tuning runs, each one
+restarting from the original pretrained checkpoint (no continuation between
+configs).
 
 Output (/kaggle/working/):
   - predictions_<dataset>_<config>.csv
-  - summary_ablation.csv (cap nhat dan sau moi (dataset,config) - de neu
-    kernel loi giua chung van con ket qua da chay)
+  - summary_ablation.csv (updated incrementally after each (dataset,config) -
+    so that if the kernel errors out partway through, results already
+    computed are preserved)
 """
 
 import glob
@@ -26,7 +29,7 @@ import sys
 import time
 import traceback
 
-print("Installing dependencies (peft pinned == 0.13.2, xem ghi chu kernel 02)...")
+print("Installing dependencies (peft pinned == 0.13.2, see notes in kernel 02)...")
 subprocess.run(
     [sys.executable, "-m", "pip", "install", "-q", "peft==0.13.2", "jellyfish", "rapidfuzz"],
     check=False,
@@ -55,17 +58,17 @@ MAX_LABEL_LEN = 32
 LORA_R = 16
 LORA_ALPHA = 32
 LORA_DROPOUT = 0.05
-CONFUSABLE_THRESHOLD = 0.65  # nguong xep loai taxonomy (giong kernel 01/02)
-NEIGHBOR_MIN_SCORE = 0.5  # nguong toi thieu de coi la "hang xom du nham lan" khi xay N(w)
+CONFUSABLE_THRESHOLD = 0.65  # taxonomy classification threshold (same as kernel 01/02)
+NEIGHBOR_MIN_SCORE = 0.5  # minimum score to count as a "confusable neighbor" when building N(w)
 NEIGHBOR_TOP_K = 5
-BETA = 1.0           # he so severity-weighted CE: weight = 1 + BETA * max_similarity
-MARGIN = 1.0          # margin (don vi NLL/nat) cho margin-ranking loss
-LAMBDA_MARGIN = 1.0   # he so ket hop margin_loss vao total_loss
+BETA = 1.0           # severity-weighted CE coefficient: weight = 1 + BETA * max_similarity
+MARGIN = 1.0          # margin (in NLL/nat units) for the margin-ranking loss
+LAMBDA_MARGIN = 1.0   # coefficient combining margin_loss into total_loss
 
 random.seed(42)
 
 # ---------------------------------------------------------------------------
-# Tu vung + taxonomy (giong kernel 01/02)
+# Vocabulary + taxonomy (same as kernel 01/02)
 # ---------------------------------------------------------------------------
 _TRAILING_DOSAGE_RE = re.compile(r"\s*\d+(\.\d+)?\s*(mg|ml|gm|g|mcg|iu)?\s*$", re.IGNORECASE)
 _DOSAGE_FORM_PREFIX_RE = re.compile(r"^(tab\.?|cap\.?|inj\.?|syp\.?|susp\.?)\s*", re.IGNORECASE)
@@ -117,7 +120,7 @@ def classify_error(true_label: str, pred_label: str, vocab_canon_set: set) -> st
 
 
 def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBOR_MIN_SCORE):
-    """Tra ve dict: canon_word -> [(canon_neighbor, score), ...] da xep hang."""
+    """Returns a dict: canon_word -> [(canon_neighbor, score), ...], sorted."""
     vocab = sorted(set(vocab_canon_list))
     neighbor_map = {}
     t0 = time.time()
@@ -126,17 +129,17 @@ def build_neighbor_map(vocab_canon_list, top_k=NEIGHBOR_TOP_K, min_score=NEIGHBO
         scored = [p for p in scored if p[1] >= min_score]
         scored.sort(key=lambda p: -p[1])
         neighbor_map[w] = scored[:top_k]
-    print(f"  build_neighbor_map: {len(vocab)} tu, {time.time()-t0:.1f}s")
+    print(f"  build_neighbor_map: {len(vocab)} words, {time.time()-t0:.1f}s")
     return neighbor_map
 
 
 # ---------------------------------------------------------------------------
-# Tim thu muc dataset
+# Locate dataset directory
 # ---------------------------------------------------------------------------
 def find_dir_containing(root: str, filename_pattern: str) -> str:
     matches = glob.glob(os.path.join(root, "**", filename_pattern), recursive=True)
     if not matches:
-        raise FileNotFoundError(f"Khong tim thay '{filename_pattern}' duoi {root}")
+        raise FileNotFoundError(f"Could not find '{filename_pattern}' under {root}")
     return os.path.dirname(matches[0])
 
 
@@ -344,7 +347,8 @@ CONFIGS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Main: chay luoi ablation, luu ket qua dan sau moi (dataset, config)
+# Main: run the ablation grid, saving results incrementally after each
+# (dataset, config)
 # ---------------------------------------------------------------------------
 summary_rows = []
 
@@ -358,11 +362,11 @@ for loader_fn in [load_rxhandbd, load_kaggle_bd]:
     name = data["name"]
     print(f"\n=== Dataset: {name} | train={len(data['train_pairs'])} test={len(data['test_pairs'])} ===")
 
-    print("Building confusable-neighbor map tu vocab train...")
+    print("Building confusable-neighbor map from train vocab...")
     train_vocab_canon = {canonicalize_for_dedup(lbl) for _, lbl in data["train_pairs"]}
     neighbor_map = build_neighbor_map(train_vocab_canon)
     n_with_neighbor = sum(1 for v in neighbor_map.values() if v)
-    print(f"  {n_with_neighbor}/{len(neighbor_map)} tu co it nhat 1 hang xom dat nguong {NEIGHBOR_MIN_SCORE}")
+    print(f"  {n_with_neighbor}/{len(neighbor_map)} words have at least 1 neighbor meeting the {NEIGHBOR_MIN_SCORE} threshold")
 
     for config_name, use_severity, use_margin in CONFIGS:
         tag = f"{name}/{config_name}"
@@ -389,13 +393,13 @@ for loader_fn in [load_rxhandbd, load_kaggle_bd]:
             del processor, lora_model
             torch.cuda.empty_cache()
         except Exception:  # noqa: BLE001
-            print(f"!!! LOI o {tag}, bo qua va tiep tuc cau hinh ke tiep !!!")
+            print(f"!!! ERROR in {tag}, skipping and continuing to the next config !!!")
             traceback.print_exc()
             summary_rows.append({"dataset": name, "config": config_name, "error_category": "KERNEL_ERROR", "count": -1, "rate": -1, "n_total": -1})
             save_summary()
             torch.cuda.empty_cache()
             continue
 
-print("\n=== SUMMARY ABLATION (tat ca dataset x config) ===")
+print("\n=== SUMMARY ABLATION (all dataset x config combinations) ===")
 print(pd.DataFrame(summary_rows).to_string(index=False))
 print("DONE.")

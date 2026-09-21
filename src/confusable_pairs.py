@@ -1,15 +1,15 @@
-"""Suy luận cặp tên thuốc dễ nhầm lẫn (LASA) bằng thuật toán tổng quát
-(không dùng ISMP/RxNorm — không khớp thị trường Bangladesh).
+"""Infer look-alike/sound-alike (LASA) drug name pairs using a generic algorithm
+(no ISMP/RxNorm — doesn't match the Bangladesh market).
 
-Phương pháp: kết hợp độ tương đồng chính tả (normalized edit distance) và
-độ tương đồng ngữ âm (metaphone code + Jaro-Winkler), theo tinh thần BI-SIM
-của Kondrak & Dorr, "Automatic identification of confusable drug names"
-(Artificial Intelligence in Medicine, 2006).
+Method: combines orthographic similarity (normalized edit distance) with
+phonetic similarity (metaphone code + Jaro-Winkler), in the spirit of the
+BI-SIM approach from Kondrak & Dorr, "Automatic identification of confusable
+drug names" (Artificial Intelligence in Medicine, 2006).
 
-Đầu ra là danh sách ĐÃ XẾP HẠNG, không phải danh sách "đúng" — bước tiếp theo
-bắt buộc là kiểm tra thủ công (spot-check) một mẫu top-N trước khi dùng chính
-thức, vì không có ground-truth độc lập cho thị trường Bangladesh (rủi ro
-circularity, xem docs/00-de-cuong-nghien-cuu.md mục 4 và 7).
+The output is a RANKED list, not a list of "correct" pairs — a mandatory next
+step is manual spot-checking of a top-N sample before official use, since
+there is no independent ground truth for the Bangladesh market (circularity
+risk; see docs/00-de-cuong-nghien-cuu.md, sections 4 and 7).
 """
 
 import itertools
@@ -48,14 +48,16 @@ class ConfusablePair:
 
 
 def looks_like_typo_of_same_word(a: str, b: str) -> bool:
-    """True nếu a/b nhiều khả năng là MỘT tên thuốc bị ghi nhãn khác nhau
-    (lỗi đánh máy/định dạng), không phải hai tên thuốc THẬT khác nhau.
+    """True if a/b are most likely ONE drug name recorded under two different
+    labels (a typo/formatting inconsistency), rather than two genuinely
+    DIFFERENT drug names.
 
-    Heuristic: khoảng cách edit-distance <= 1 giữa hai chuỗi đủ dài. Đánh đổi
-    có chủ đích: có thể bỏ sót vài cặp LASA thật sự chỉ khác 1 ký tự, để đổi
-    lấy việc loại phần lớn nhiễu do lỗi ghi nhãn trong RxHandBD (xem
-    scripts/derive_confusable_pairs.py và kết quả chạy thử: top-ranked pairs
-    trước khi lọc gần như toàn là biến thể chính tả của cùng 1 thuốc).
+    Heuristic: edit distance <= 1 between two sufficiently long strings. This
+    is a deliberate trade-off: it may miss a few genuine LASA pairs that
+    differ by just one character, in exchange for filtering out most of the
+    labeling noise in RxHandBD (see scripts/derive_confusable_pairs.py; a
+    test run showed that, before this filter, the top-ranked pairs were
+    almost entirely spelling variants of the same drug).
     """
     a_l, b_l = a.lower(), b.lower()
     return Levenshtein.distance(a_l, b_l) <= 1

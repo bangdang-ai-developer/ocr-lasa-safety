@@ -1,11 +1,11 @@
-"""Phan tich gop (pooled) tren 5 seed doc lap (kernel 06_confirmatory_reruns):
-CE-only vs cau hinh "thang cuoc" (margin lambda=2.0 + severity beta=0.3),
-cung seed cho ca 2 (co lap nhieu do LoRA init/thu tu shuffle - xem docstring
-kernel 06). Day la buoc xac nhan (confirmatory) sau khi hieu chinh Holm-
-Bonferroni (scripts/multiple_comparisons.py) cho thay ket qua 1-lan-chay
-truoc do KHONG dat y nghia sau hieu chinh.
+"""Pooled analysis across 5 independent seeds (kernel 06_confirmatory_reruns):
+CE-only vs the "winning" configuration (margin lambda=2.0 + severity beta=0.3),
+same seeds for both (overlap comes from LoRA init/shuffle order - see the
+kernel 06 docstring). This is the confirmatory step after Holm-Bonferroni
+correction (scripts/multiple_comparisons.py) showed that the earlier
+single-run result did NOT reach significance after correction.
 
-Chay:
+Run:
     PYTHONIOENCODING=utf-8 python scripts/analyze_confirmatory.py
 """
 
@@ -30,7 +30,7 @@ def paired_fixed_newly(base_df, other_df, category):
 
 def main() -> None:
     per_seed = {cat: [] for cat in CATEGORIES}
-    print("=== Tung seed (CE-only vs thang cuoc, cung seed) ===")
+    print("=== Per seed (CE-only vs winning, same seed) ===")
     for seed in SEEDS:
         base = pd.read_csv(RUN_DIR / f"predictions_rxhandbd_seed{seed}_ce_only.csv").set_index("image")
         other = pd.read_csv(RUN_DIR / f"predictions_rxhandbd_seed{seed}_winning.csv").set_index("image")
@@ -40,10 +40,10 @@ def main() -> None:
             n = fixed + newly
             p = binomtest(fixed, n, 0.5).pvalue if n else float("nan")
             per_seed[cat].append((fixed, newly))
-            direction = "GIAM" if o_n < b_n else ("TANG" if o_n > b_n else "khong doi")
+            direction = "DOWN" if o_n < b_n else ("UP" if o_n > b_n else "no change")
             print(f"  {cat:24s} ce_only={b_n:4d} winning={o_n:4d} ({direction}) fixed={fixed:3d} newly={newly:3d} p={p:.4f}")
 
-    print("\n=== GOP 5 SEED (pooled McNemar exact) ===")
+    print("\n=== POOLED ACROSS 5 SEEDS (pooled McNemar exact) ===")
     n_sig_uncorrected = {cat: 0 for cat in CATEGORIES}
     for cat in CATEGORIES:
         total_fixed = sum(f for f, n in per_seed[cat])
@@ -51,18 +51,18 @@ def main() -> None:
         total_n = total_fixed + total_newly
         p = binomtest(total_fixed, total_n, 0.5).pvalue if total_n else float("nan")
         n_sig = sum(1 for f, n in per_seed[cat] if n and binomtest(f, f + n, 0.5).pvalue < 0.05)
-        direction = "GIAM (fixed>newly)" if total_fixed > total_newly else "TANG (newly>fixed)"
+        direction = "DOWN (fixed>newly)" if total_fixed > total_newly else "UP (newly>fixed)"
         print(
-            f"  {cat:24s} fixed={total_fixed:4d} newly={total_newly:4d} tong_khac_biet={total_n:4d} "
-            f"p_gop={p:.6f} ({direction}) | {n_sig}/5 seed rieng le dat p<0.05"
+            f"  {cat:24s} fixed={total_fixed:4d} newly={total_newly:4d} total_diff={total_n:4d} "
+            f"p_pooled={p:.6f} ({direction}) | {n_sig}/5 individual seeds reach p<0.05"
         )
 
-    print("\nKET LUAN:")
-    print("- confusable_wrong_drug: giam ROBUST qua ca 5 seed (5/5 cung huong), p gop rat nho.")
-    print("- correct & hallucination: CUNG thay doi nhat quan qua ca 5 seed theo huong BAT LOI")
-    print("  (giam correct, tang hallucination) - khac voi ket luan 'khong danh doi' cua 1 lan")
-    print("  chay truoc do (p=0.76/0.41) - lan chay do la mot outlier thuan loi, KHONG dai dien.")
-    print("  Can sua lai tuyen bo trong bai bao: day la MOT DANH DOI THAT, khong phai mien phi.")
+    print("\nCONCLUSION:")
+    print("- confusable_wrong_drug: ROBUST decrease across all 5 seeds (5/5 same direction), pooled p very small.")
+    print("- correct & hallucination: BOTH change consistently across all 5 seeds in an UNFAVORABLE direction")
+    print("  (correct decreases, hallucination increases) - contradicting the 'no trade-off' conclusion from the single")
+    print("  earlier run (p=0.76/0.41) - that run was a favorable outlier, NOT representative.")
+    print("  The paper's claim needs to be corrected: this is a REAL trade-off, not a free lunch.")
 
 
 if __name__ == "__main__":

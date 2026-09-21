@@ -1,15 +1,16 @@
-"""Kiem tra doc lap hien tuong goc: LoRA fine-tune TrOCR-base-handwritten
-(CE-only, chua co margin loss / severity-weighted loss) co lam TANG ty le
-loi confusable_wrong_drug trong khi GIAM hallucination_far_off hay khong.
+"""Independent verification of the original phenomenon: does LoRA fine-tuning of
+TrOCR-base-handwritten (CE-only, without margin loss / severity-weighted loss)
+INCREASE the confusable_wrong_drug error rate while DECREASING
+hallucination_far_off?
 
-Chay tren Kaggle kernel (T4 GPU). Fine-tune RIENG cho tung dataset (khac
-tu vung), danh gia lai CA zero-shot lan sau-fine-tune tren tap Test de so
-sanh truc tiep trong cung 1 file ket qua.
+Runs on a Kaggle kernel (T4 GPU). Fine-tunes SEPARATELY for each dataset
+(different vocabulary), evaluating both zero-shot and post-fine-tune on the
+Test set so they can be compared directly within the same results file.
 
 Output (/kaggle/working/):
-  - predictions_<dataset>_stage.csv (moi dataset, ca 2 stage: zeroshot / lora_ceonly)
+  - predictions_<dataset>_stage.csv (per dataset, both stages: zeroshot / lora_ceonly)
   - summary_before_after.csv
-  - <dataset>_lora_adapter/ (trong so LoRA da fine-tune, de dung lai sau)
+  - <dataset>_lora_adapter/ (fine-tuned LoRA weights, for reuse later)
 """
 
 import glob
@@ -19,10 +20,10 @@ import sys
 import time
 
 print("Installing peft...")
-# Pin peft==0.13.2: ban moi hon tren Kaggle bi loi import-time voi torchao
-# preinstalled (0.10.0 < 0.16.0 yeu cau) trong dispatch_torchao cua LoRA -
-# da xac nhan qua 1 lan chay that bai (KernelWorkerStatus.ERROR) + smoke
-# test cuc bo cho thay 0.13.2 hoat dong dung voi logic trong script nay.
+# Pin peft==0.13.2: newer versions on Kaggle fail at import time with the
+# preinstalled torchao (0.10.0 < the 0.16.0 required) in LoRA's
+# dispatch_torchao - confirmed by one failed run (KernelWorkerStatus.ERROR)
+# plus a local smoke test showing 0.13.2 works correctly with this script's logic.
 subprocess.run(
     [sys.executable, "-m", "pip", "install", "-q", "peft==0.13.2", "jellyfish", "rapidfuzz"],
     check=False,
@@ -53,7 +54,7 @@ LORA_DROPOUT = 0.05
 CONFUSABLE_THRESHOLD = 0.65
 
 # ---------------------------------------------------------------------------
-# Tu vung + taxonomy (giong ocr_benchmark_kernel.py, viet lai doc lap trong kernel nay)
+# Vocabulary + taxonomy (same as ocr_benchmark_kernel.py, rewritten independently in this kernel)
 # ---------------------------------------------------------------------------
 import re  # noqa: E402
 
@@ -107,12 +108,12 @@ def classify_error(true_label: str, pred_label: str, vocab_canon_set: set) -> st
 
 
 # ---------------------------------------------------------------------------
-# Tim thu muc dataset
+# Locate dataset directory
 # ---------------------------------------------------------------------------
 def find_dir_containing(root: str, filename_pattern: str) -> str:
     matches = glob.glob(os.path.join(root, "**", filename_pattern), recursive=True)
     if not matches:
-        raise FileNotFoundError(f"Khong tim thay '{filename_pattern}' duoi {root}")
+        raise FileNotFoundError(f"Could not find '{filename_pattern}' under {root}")
     return os.path.dirname(matches[0])
 
 
@@ -247,7 +248,7 @@ def evaluate(model, processor, test_pairs, image_dir, vocab_canon_set, dataset_n
 
 
 # ---------------------------------------------------------------------------
-# Main: chay cho tung dataset
+# Main: run for each dataset
 # ---------------------------------------------------------------------------
 all_predictions = []
 all_summary = []
@@ -260,10 +261,10 @@ for loader_fn in [load_kaggle_bd, load_rxhandbd]:
     print("Loading fresh TrOCR-base-handwritten...")
     processor = TrOCRProcessor.from_pretrained("microsoft/trocr-base-handwritten")
     base_model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-base-handwritten").to(DEVICE)
-    # BAT BUOC: neu khong set thu cong, tinh CE loss (labels=...) se bao loi
-    # "Make sure to set the decoder_start_token_id attribute" tren mot so
-    # phien ban transformers - da xac nhan qua smoke test local truoc khi
-    # chay Kaggle.
+    # REQUIRED: without setting this manually, computing CE loss (labels=...) raises
+    # "Make sure to set the decoder_start_token_id attribute" on some
+    # transformers versions - confirmed via a local smoke test before
+    # running on Kaggle.
     base_model.config.decoder_start_token_id = base_model.decoder.config.decoder_start_token_id
     base_model.config.pad_token_id = base_model.decoder.config.pad_token_id
     base_model.config.eos_token_id = base_model.decoder.config.eos_token_id

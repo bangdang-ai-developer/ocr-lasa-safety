@@ -1,8 +1,8 @@
-# Nạp biến môi trường cho tài khoản Kaggle RIÊNG của dự án này (bangdang007112).
-# Bắt buộc: source file này (không phải chạy trực tiếp) trước MỌI lệnh `kaggle`.
+# Load environment variables for this project's OWN Kaggle account (bangdang007112).
+# Required: source this file (do not run it directly) before EVERY `kaggle` command.
 #   source scripts/kaggle_env.sh
 #
-# KHÔNG dùng ~/.kaggle/access_token mặc định — đó là tài khoản (dangbang1) của dự án khác.
+# Do NOT use the default ~/.kaggle/access_token — that belongs to a different project's account (dangbang1).
 
 export PYTHONIOENCODING=utf-8
 export PYTHONUTF8=1
