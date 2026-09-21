@@ -131,7 +131,7 @@ Independent verification
 \bottomrule\noalign{}
 \endlastfoot
 Kaggle-BD & Kaggle, ``Doctor's Handwritten Prescription BD dataset'' (\texttt{mamun1113}) & 78-class closed vocabulary & 780 images & Open Database License (ODbL) & Accessed directly from its original Kaggle listing; single-source, no cross-referencing required \\
-RxHandBD & Kaggle mirror \texttt{abrahametry/rxhandbd-handwritten-word-image-dataset} of the RxHandBD dataset (Md. Masudul Islam, BUBT) & \textasciitilde1,430 normalized label instances (larger, more LASA-rich, open vocabulary) & 1,115 images & Disputed between the two original hosts (see below); stricter CC BY 4.0 terms followed & MD5-checksum-verified direct comparison against both original releases; 13/13 sampled label-to-image-ID correspondences matched \\
+RxHandBD & Kaggle mirror \texttt{abrahametry/\allowbreak rxhandbd-handwritten-word-image-dataset} of the RxHandBD dataset (Md. Masudul Islam, BUBT) & \textasciitilde1,430 normalized label instances (larger, more LASA-rich, open vocabulary) & 1,115 images & Disputed between the two original hosts (see below); stricter CC BY 4.0 terms followed & MD5-checksum-verified direct comparison against both original releases; 13/13 sampled label-to-image-ID correspondences matched \\
 \end{longtable}
 
 \subsubsection*{Kaggle-BD}\label{sec:kaggle-bd}
@@ -160,14 +160,14 @@ Neither dataset's raw images are redistributed directly in this project's code r
 
 \subsection*{Confusable-Pair Derivation}\label{sec:confusable-pair-derivation}
 
-No curated, RxNorm/ISMP-scale look-alike, sound-alike (LASA) drug-name list was used. This was a deliberate design choice, so that the whole pipeline remains lexicon-free and reproducible from public data and public vocabulary alone (\texttt{src/confusable\_pairs.py}). Instead, confusable-neighbor candidates were derived algorithmically from each dataset's own vocabulary, following the general algorithmic tradition of confusable drug-name identification established by \citet{kondrak2004identification,kondrak2006automatic}, using a composite string-similarity score referred to here as BI-SIM.
+No curated, RxNorm/ISMP-scale look-alike, sound-alike (LASA) drug-name list was used. This was a deliberate design choice, so that the whole pipeline remains lexicon-free and reproducible from public data and public vocabulary alone (\texttt{src/\allowbreak confusable\_pairs.py}). Instead, confusable-neighbor candidates were derived algorithmically from each dataset's own vocabulary, following the general algorithmic tradition of confusable drug-name identification established by \citet{kondrak2004identification,kondrak2006automatic}, using a composite string-similarity score referred to here as BI-SIM.
 
 \subsubsection*{BI-SIM score}\label{sec:bisim-score}
 
 For two vocabulary words \emph{a} and \emph{b}:
 
 \begin{quote}
-\texttt{bi\_sim\_score(a, b) = 0.5 $\times$ normalized\_edit\_similarity(a, b) + 0.5 $\times$ phonetic\_similarity(a, b)}
+\texttt{bi\_sim\_score(a, b) =\allowbreak\ 0.5 $\times$\allowbreak\ normalized\_edit\_similarity(a, b)\allowbreak\ + 0.5 $\times$\allowbreak\ phonetic\_similarity(a, b)}
 \end{quote}
 
 \begin{itemize}
@@ -228,7 +228,7 @@ For RxHandBD's top-100 candidate pairs (all of which already scored ≥ 0.65 by 
 
 \subsubsection*{Backbone selection: TrOCR over Tesseract}\label{sec:backbone-selection}
 
-The OCR backbone used throughout this study is the pretrained sequence-to-sequence transformer \texttt{microsoft/trocr-base-handwritten} \citep{li2023trocr}. A classical OCR engine, Tesseract, was also benchmarked zero-shot as a reference point at the outset of the project. Tesseract performed far worse than TrOCR on handwritten drug names --- for example, on RxHandBD, zero-shot correct rate was 4.30\% for Tesseract versus 19.55\% for TrOCR. On this basis, Tesseract was not carried forward, and TrOCR was selected as the sole backbone for all fine-tuning experiments reported in this paper.
+The OCR backbone used throughout this study is the pretrained sequence-to-sequence transformer \texttt{microsoft/\allowbreak trocr-base-handwritten} \citep{li2023trocr}. A classical OCR engine, Tesseract, was also benchmarked zero-shot as a reference point at the outset of the project. Tesseract performed far worse than TrOCR on handwritten drug names --- for example, on RxHandBD, zero-shot correct rate was 4.30\% for Tesseract versus 19.55\% for TrOCR. On this basis, Tesseract was not carried forward, and TrOCR was selected as the sole backbone for all fine-tuning experiments reported in this paper.
 
 \subsubsection*{LoRA fine-tuning configuration}\label{sec:lora-config}
 
@@ -375,7 +375,7 @@ hallucination\_far\_off (p)
 
 \texttt{λ\_margin\ =\ 3.0} gave the single largest raw reduction in \texttt{confusable\_wrong\_drug} found in Phase 1, but at a significant single-run cost to both \texttt{correct} and \texttt{hallucination\_far\_off}. The margin effect faded with longer training (5 vs.\ 3 epochs), consistent with CE eventually dominating the margin term. The configuration \textbf{λ\_margin = 2.0 + low severity β = 0.3} (β reduced roughly 3× from the kernel-03 default, not dropped entirely), trained for 3 epochs, was \textbf{selected} at the end of Phase 1 as the sole candidate carried forward to Phase 2, because in this single run it appeared to reduce the dangerous error category without a statistically significant single-run cost to \texttt{correct} or \texttt{hallucination\_far\_off}. As shown in \textit{Phase 2 (confirmatory replication)} below, this apparent cost-free benefit was a favorable statistical outlier rather than a robust property of the configuration.
 
-\textbf{Multiple-comparisons sensitivity check.} A Holm--Bonferroni correction (\texttt{scripts/multiple\_comparisons.py}) was applied post hoc across the family of these seven Phase-1 single-run comparisons against the same CE-only baseline on the same RxHandBD test split, as a sensitivity/motivation check --- \textbf{not} as confirmatory evidence:
+\textbf{Multiple-comparisons sensitivity check.} A Holm--Bonferroni correction (\texttt{scripts/\allowbreak multiple\_comparisons.py}) was applied post hoc across the family of these seven Phase-1 single-run comparisons against the same CE-only baseline on the same RxHandBD test split, as a sensitivity/motivation check --- \textbf{not} as confirmatory evidence:
 
 \textbf{Table 6. Holm--Bonferroni-adjusted results for selected Phase-1 comparisons.}
 
@@ -424,7 +424,7 @@ Phase 2 constitutes this paper's primary evidence. The single Phase-1-selected c
 
 Each of the five seeded runs of the winning configuration is \textbf{paired} against a CE-only baseline retrained with the \emph{same} seed, reset immediately before that baseline's own training begins. This pairing design is what isolates the loss-function effect from other sources of run-to-run variation: because the seed governing LoRA weight initialization and data-shuffle order is identical within each pair, any systematic difference between the two arms of a pair is attributable to the change in loss function, not to initialization or shuffling noise. All five seed-pairs are evaluated on the same fixed RxHandBD 1,115-image test split used throughout this study.
 
-\textbf{Statistical testing.} Per-seed and pooled significance are assessed with paired, \textbf{exact} McNemar tests, computed as \texttt{scipy.stats.binomtest} applied to the discordant pairs between the two arms of each comparison --- never the approximate/chi-square McNemar approximation, following the paired-significance-testing protocol argued for by \citet{dror2018hitchhikers}. Effect sizes for the pooled analysis are reported with 95\% confidence intervals using a Wald interval for the difference of two \textbf{paired} proportions (\texttt{scripts/analyze\_confirmatory\_extended.py}):
+\textbf{Statistical testing.} Per-seed and pooled significance are assessed with paired, \textbf{exact} McNemar tests, computed as \texttt{scipy.stats.binomtest} applied to the discordant pairs between the two arms of each comparison --- never the approximate/chi-square McNemar approximation, following the paired-significance-testing protocol argued for by \citet{dror2018hitchhikers}. Effect sizes for the pooled analysis are reported with 95\% confidence intervals using a Wald interval for the difference of two \textbf{paired} proportions (\texttt{scripts/\allowbreak analyze\_confirmatory\_extended.py}):
 
 \begin{quote}
 \texttt{d = $p_{01}$ $-$ $p_{10}$}\\
@@ -441,7 +441,7 @@ Beyond its role in this specific study, the exploratory/confirmatory structure d
 
 \subsection*{Phase 0: Reproduction of the Motivating Phenomenon}\label{sec:phase0-results}
 
-Before any loss-function intervention, both datasets were evaluated with zero-shot pretrained TrOCR (\texttt{microsoft/trocr-base-handwritten}) and with a single-run, CE-only LoRA fine-tune (r=16, α=32, dropout=0.05, target modules \texttt{[q\_proj,\ v\_proj]}, bias=\texttt{none}, peft 0.13.2, 3 epochs, batch size 8, lr=1e-4). A classical OCR engine (Tesseract) was also benchmarked zero-shot as a reference point on RxHandBD and performed far worse than TrOCR on handwritten drug names (correct rate: Tesseract 4.30\% vs.\ TrOCR 19.55\%); Tesseract was therefore not carried forward, and TrOCR was used as the sole fine-tuning backbone for the remainder of the study.
+Before any loss-function intervention, both datasets were evaluated with zero-shot pretrained TrOCR (\texttt{microsoft/\allowbreak trocr-base-handwritten}) and with a single-run, CE-only LoRA fine-tune (r=16, α=32, dropout=0.05, target modules \texttt{[q\_proj,\ v\_proj]}, bias=\texttt{none}, peft 0.13.2, 3 epochs, batch size 8, lr=1e-4). A classical OCR engine (Tesseract) was also benchmarked zero-shot as a reference point on RxHandBD and performed far worse than TrOCR on handwritten drug names (correct rate: Tesseract 4.30\% vs.\ TrOCR 19.55\%); Tesseract was therefore not carried forward, and TrOCR was used as the sole fine-tuning backbone for the remainder of the study.
 
 \textbf{Table 7.} Zero-shot vs.\ single-run CE-only LoRA fine-tuning, by dataset and error category.
 
@@ -550,7 +550,7 @@ Margin λ=2.0, 5 epochs & 73/1115 (6.55\%), p=0.14 (NS) & 527/1115, 47.3\%, p=0.
 
 Margin λ=3.0 gives the single largest raw reduction in confusable\_wrong\_drug found in Phase 1, but at significant single-run costs to correct rate and hallucination rate. Extending margin λ=2.0 training from 3 to 5 epochs erodes the confusable-rate effect (p=0.14), suggesting the CE term eventually dominates the margin term with longer training. The configuration \textbf{margin λ=2.0 + severity β=0.3} (β reduced \textasciitilde3× from the kernel-03 default, not dropped) was selected at the end of Phase 1 as the sole candidate carried forward to Phase 2, because in this single run it appeared to reduce the dangerous error category without a statistically significant single-run cost to correct rate or hallucination rate. As shown in \textit{Phase 2: Confirmatory Replication (Primary Evidence)}, this apparent ``free lunch'' was a favorable statistical outlier rather than a real property of the configuration.
 
-\textbf{Holm-Bonferroni sensitivity check.} A Holm-Bonferroni correction (\texttt{scripts/multiple\_comparisons.py}) was applied post hoc across the family of the 7 Phase-1 single-run comparisons above (all vs.\ the same CE-only baseline, same RxHandBD split), as a sensitivity/motivation check --- not as confirmatory evidence, in the spirit of the significance-testing protocol recommended by \citet{dror2018hitchhikers}.
+\textbf{Holm-Bonferroni sensitivity check.} A Holm-Bonferroni correction (\texttt{scripts/\allowbreak multiple\_comparisons.py}) was applied post hoc across the family of the 7 Phase-1 single-run comparisons above (all vs.\ the same CE-only baseline, same RxHandBD split), as a sensitivity/motivation check --- not as confirmatory evidence, in the spirit of the significance-testing protocol recommended by \citet{dror2018hitchhikers}.
 
 \textbf{Table 10.} Holm-Bonferroni outcome for the 7 Phase-1 configurations (confusable\_wrong\_drug metric).
 
@@ -670,7 +670,7 @@ Correct & 312 lost / 200 gained & 0.000001 & 46.9\% → 44.9\% (absolute drop \t
 Hallucination (far-off) & 178 lost / 298 gained & \textless0.000001 & 21.5\% → 23.6\% (absolute rise \textasciitilde2.2 points) & 4/5 \\
 \end{longtable}
 
-\textbf{Table 14.} Effect sizes with 95\% CI for paired proportions (Wald CI, pooled n=5,575; \texttt{scripts/analyze\_confirmatory\_extended.py}).
+\textbf{Table 14.} Effect sizes with 95\% CI for paired proportions (Wald CI, pooled n=5,575; \texttt{scripts/\allowbreak analyze\_confirmatory\_extended.py}).
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule\noalign{}
