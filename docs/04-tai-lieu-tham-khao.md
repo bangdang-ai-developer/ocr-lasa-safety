@@ -1,39 +1,40 @@
-# Tài liệu tham khảo đã xác minh
+# Verified References
 
-Tất cả trích dẫn dưới đây đã được xác minh thật (không phải AI bịa) qua tra
-cứu trực tiếp arXiv/ACL Anthology/CrossRef/PubMed/SpringerLink — không trích
-từ trí nhớ. Format: APA-giản lược.
+All citations below have been verified as genuine (not AI-fabricated) through direct lookup on arXiv/ACL Anthology/CrossRef/PubMed/SpringerLink — not quoted from memory. Format: simplified APA.
 
-## Cơ chế loss chính (severity-weighted CE)
+## Main loss mechanism (severity-weighted CE)
 
 - Mohammadi-Seif, A., & Baeza-Yates, R. (2026). *Risk-Calibrated Learning:
-  Minimizing Fatal Errors in Medical AI*. arXiv:2604.12693 [cs.CV]. Chấp nhận
-  tại IJCNN 2026. https://arxiv.org/abs/2604.12693
-  — Xác nhận đúng như mô tả: nhúng ma trận mức-độ-nguy-hiểm lâm sàng vào loss
-  cho phân loại ảnh y tế (Brain Tumor MRI, ISIC 2018, BreaKHis, SICAPv2), giảm
-  20.0-92.4% Critical Error Rate so với Focal Loss. **Đây là bài cho bài toán
-  phân loại 1 nhãn** — dự án này thích ứng sang bối cảnh sinh chuỗi (OCR), cần
-  nêu rõ đây là "thích ứng", không phải tái tạo trực tiếp.
+  Minimizing Fatal Errors in Medical AI*. arXiv:2604.12693 [cs.CV]. Accepted
+  at IJCNN 2026. https://arxiv.org/abs/2604.12693
+  — Confirmed as described: embeds a clinical severity-level matrix into the
+  loss for medical image classification (Brain Tumor MRI, ISIC 2018, BreaKHis,
+  SICAPv2), reducing the Critical Error Rate by 20.0-92.4% compared to Focal
+  Loss. **This paper addresses a single-label classification problem** — this
+  project adapts it to a sequence-generation (OCR) context, and this must be
+  explicitly stated as an "adaptation," not a direct reproduction.
 
-## Bài liên quan gần (cần trích dẫn để phân biệt, tránh bị reviewer coi là bỏ sót)
+## Closely related papers (must be cited to distinguish, so reviewers do not consider them overlooked)
 
 - Alansary, A., Mohamed, M., & Hamdi, A. (2026). *Severity-Aware Weighted Loss
-  for Arabic Medical Text Generation*. arXiv:2604.06346 [cs.CL]. Chấp nhận tại
+  for Arabic Medical Text Generation*. arXiv:2604.06346 [cs.CL]. Accepted at
   ICTIS 2026. https://arxiv.org/abs/2604.06346
-  — Severity-weighting cấp token cho sinh văn bản hội thoại y tế tiếng Ả Rập
-  (LLM), KHÔNG phải OCR/thị giác. ⚠️ Cẩn thận: có 1 bài khác rất gần ID
-  (arXiv:2604.06365, curriculum learning, khác phương pháp) — không nhầm.
+  — Token-level severity-weighting for Arabic medical dialogue text generation
+  (LLM), NOT OCR/vision. ⚠️ Caution: there is another paper with a very close
+  ID (arXiv:2604.06365, curriculum learning, different method) — do not
+  confuse the two.
 - Tupakula, M. (2025). *Thin Bridges for Drug Text Alignment: Lightweight
   Contrastive Learning for Target Specific Drug Retrieval*. arXiv:2510.03309.
   https://arxiv.org/abs/2510.03309
-  — ⚠️ **Mô tả trước đây SAI**: bài này KHÔNG phải về tên thuốc dễ nhầm lẫn
-  (LASA). Đây là contrastive learning căn chỉnh embedding phân tử (ECFP4) với
-  văn bản y sinh (ChEMBL) để truy hồi thuốc theo ĐÍCH TÁC ĐỘNG (target), có
-  dùng margin loss + hard-negative nhưng cho mục đích khác hẳn. Nếu trích dẫn,
-  phải sửa lại mô tả cho đúng — hoặc bỏ khỏi related work vì không thực sự liên
-  quan đến LASA.
+  — ⚠️ **Previous description was WRONG**: this paper is NOT about
+  Look-Alike Sound-Alike (LASA) drug names. It is contrastive learning that
+  aligns molecular embeddings (ECFP4) with biomedical text (ChEMBL) for
+  target-based drug retrieval, using margin loss + hard negatives, but for an
+  entirely different purpose. If cited, the description must be corrected —
+  or it should be removed from related work, as it is not actually relevant
+  to LASA.
 
-## Chuẩn hoá thực thể y sinh bằng contrastive/hard-negative (text-only, không OCR)
+## Biomedical entity normalization using contrastive/hard-negative learning (text-only, no OCR)
 
 - Sung, M., Jeon, H., Lee, J., & Kang, J. (2020). *Biomedical Entity
   Representations with Synonym Marginalization*. ACL 2020, pp. 3641–3650.
@@ -43,7 +44,7 @@ từ trí nhớ. Format: APA-giản lược.
   normalization*. Journal of Biomedical Informatics, 126, 103983.
   DOI: 10.1016/j.jbi.2021.103983. (arXiv:2011.02947)
 
-## Contrastive learning cho sinh chuỗi/nhận diện văn bản (general, không nhắm cặp nhầm lẫn cụ thể)
+## Contrastive learning for sequence generation/text recognition (general, not targeting specific confusable pairs)
 
 - Aberdam, A., Litman, R., Tsiper, S., Anschel, O., Slossberg, R., Mazor, S.,
   Manmatha, R., & Perona, P. (2021). *Sequence-to-Sequence Contrastive
@@ -53,26 +54,31 @@ từ trí nhớ. Format: APA-giản lược.
   arXiv:2308.00508.
 - Lee, S., Lee, D. B., & Hwang, S. J. (2021). *Contrastive Learning with
   Adversarial Perturbations for Conditional Text Generation*. ICLR 2021.
-  arXiv:2012.07280. (Lưu ý: bài về sinh văn bản MT/tóm tắt, không phải OCR.)
+  arXiv:2012.07280. (Note: this paper is about MT/summarization text
+  generation, not OCR.)
 
-## Thuật toán suy luận cặp nhầm lẫn tên thuốc (nền tảng cho src/confusable_pairs.py)
+## Algorithm for inferring confusable drug name pairs (foundation for src/confusable_pairs.py)
 
 - Kondrak, G., & Dorr, B. (2004). *Identification of Confusable Drug Names: A
   New Approach and Evaluation Methodology*. COLING 2004, pp. 952–958.
   DOI: 10.3115/1220355.1220492.
 - Kondrak, G., & Dorr, B. (2006). *Automatic identification of confusable drug
   names*. Artificial Intelligence in Medicine, 36(1), 29–42.
-  **DOI đúng: 10.1016/j.artmed.2005.07.005** (DOI đoán trước đó
-  10.1016/j.artmed.2005.06.001 là SAI — trỏ nhầm sang 1 bài khác).
+  **Correct DOI: 10.1016/j.artmed.2005.07.005** (the previously guessed DOI
+  10.1016/j.artmed.2005.06.001 was WRONG — it pointed to a different paper by
+  mistake).
 - Millán-Hernández, C. E., García-Hernández, R. A., Ledeneva, Y., &
   Hernández-Castañeda, Á. (2019). *Soft Bigram Similarity to Identify
   Confusable Drug Names*. MCPR 2019, LNCS vol. 11524, pp. 433–442. Springer.
   DOI: 10.1007/978-3-030-21077-9_40.
-  (Lưu ý: 1 đồng tác giả trước đây bị thiếu trong ghi chú nội bộ — đã bổ sung.)
+  (Note: one co-author was previously missing from the internal notes — has
+  been added.)
 
-## Việc cần làm thêm trước khi nộp bài
+## Additional work needed before submission
 
-- Kiểm tra tay abstract đầy đủ của Millán-Hernández et al. 2019 (SpringerLink
-  yêu cầu đăng nhập khi tra cứu tự động) trước khi trích số liệu cụ thể
-  ("vượt 17 thước đo khác trên 396.900 cặp") trong bài viết.
-- Sửa mọi chỗ đã lỡ mô tả arXiv:2510.03309 là về "tên thuốc dễ nhầm lẫn".
+- Manually check the full abstract of Millán-Hernández et al. 2019
+  (SpringerLink requires login for automated lookup) before citing the
+  specific figures ("outperforms 17 other metrics on 396.900 pairs") in the
+  manuscript.
+- Fix every place that has mistakenly described arXiv:2510.03309 as being
+  about "confusable drug names."

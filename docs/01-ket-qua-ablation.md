@@ -1,200 +1,203 @@
-# Kết quả ablation: margin loss + severity-weighted CE (kernel 03)
+# Ablation results: margin loss + severity-weighted CE (kernel 03)
 
-Dữ liệu thô: `results/kaggle_run_3_ablation/`. Phân tích thống kê ghép cặp
+Raw data: `results/kaggle_run_3_ablation/`. Paired statistical analysis
 (McNemar exact test, per-image): `scripts/analyze_ablation.py`.
 
-## Tóm tắt trên RxHandBD (1115 ảnh test — dataset có đủ mẫu để đánh giá)
+## Summary on RxHandBD (1115 test images — dataset with sufficient sample size for evaluation)
 
-So với CE-only (baseline đã xác nhận hiện tượng gốc, confusable_wrong_drug=83/1115=7.44%):
+Compared to CE-only (baseline that confirmed the original phenomenon, confusable_wrong_drug=83/1115=7.44%):
 
-| Cấu hình | confusable_wrong_drug | fixed / newly (ghép cặp) | p (McNemar) | correct | hallucination |
+| Configuration | confusable_wrong_drug | fixed / newly (paired) | p (McNemar) | correct | hallucination |
 |---|---|---|---|---|---|
-| **margin** | 74 (6.64%) | 22 fixed / 13 newly | 0.18 (chưa có ý nghĩa) | 510 (không đổi có ý nghĩa, p=0.39) | 257 (không đổi có ý nghĩa, p=0.11) |
+| **margin** | 74 (6.64%) | 22 fixed / 13 newly | 0.18 (not yet significant) | 510 (no significant change, p=0.39) | 257 (no significant change, p=0.11) |
 | severity | 88 (7.89%) | 13 fixed / 18 newly | 0.47 | 522 | 234 |
-| severity+margin | 83 (7.44%) | 15 fixed / 15 newly | 1.00 (không đổi) | 513 | 245 |
+| severity+margin | 83 (7.44%) | 15 fixed / 15 newly | 1.00 (unchanged) | 513 | 245 |
 
-**Chỉ số an toàn cốt lõi** (ảnh ĐÚNG dưới CE-only bị biến thành confusable_wrong_drug MỚI dưới cấu hình can thiệp — đúng loại lỗi dự án muốn tránh gây ra): **0.58% (3/519)** ở cả 3 cấu hình — thấp và không đổi, không có dấu hiệu can thiệp làm tăng rủi ro này so với nhau.
+**Core safety metric** (images that were CORRECT under CE-only turned into NEW confusable_wrong_drug under the intervention configuration — exactly the type of error the project aims to avoid causing): **0.58% (3/519)** across all 3 configurations — low and unchanged, with no sign that the interventions increase this risk relative to each other.
 
-## Kết luận trung thực (chưa đạt ý nghĩa thống kê, nhưng có hướng rõ)
+## Honest conclusions (not yet statistically significant, but with a clear direction)
 
-1. **Margin loss (một mình) là hướng duy nhất có tín hiệu tích cực**: giảm 9 ảnh confusable_wrong_drug ròng (22 sửa được / 13 sinh mới), không làm giảm có ý nghĩa correct hay tăng có ý nghĩa hallucination — nhưng **p=0.18, chưa đạt ngưỡng ý nghĩa thống kê** ở cỡ mẫu này với siêu tham số mặc định (β=1.0 không dùng ở đây, margin=1.0, λ=1.0).
-2. **Severity-weighted CE một mình KHÔNG giúp ích** — thậm chí có xu hướng nhẹ theo chiều ngược lại (83→88, p=0.47). Đây là phát hiện âm tính quan trọng: chỉ tăng trọng số loss cho lớp rủi ro cao ("cố hơn") không tự động dạy model tránh ĐÚNG câu trả lời sai cụ thể nào — khớp với lo ngại đã nêu trong đề cương.
-3. **Kết hợp cả hai KHÔNG cộng dồn lợi ích** — quay về gần bằng baseline (83→83, p=1.00), có vẻ severity làm nhiễu tín hiệu có mục tiêu của margin.
-4. **Một vài trường hợp overcorrection thật đã quan sát được** (đúng như lo ngại ban đầu của dự án): vd. `Dexter` (đúng, CE-only) → `Dextal` (confusable, margin); `Raditil` (đúng) → `radifil` (confusable); `Fylox` (đúng) → `eylox` (confusable). Tỉ lệ này thấp (0.58%) nhưng có thật.
-5. **Phát hiện định tính tích cực đáng chú ý**: nhiều trường hợp margin loss "sửa" một lỗi confusable_wrong_drug KHÔNG PHẢI bằng cách đoán đúng, mà bằng cách đẩy dự đoán sang dạng RÕ RÀNG SAI (hallucination/minor_noise) thay vì MỘT TÊN THUỐC THẬT KHÁC — vd. `Vonocab`→`Vonorab`(confusable, CE-only)→`vonoeab`(rõ sai, margin); `Bislol`→`Biscor`(confusable)→`Psistor`(rõ sai). Về an toàn lâm sàng, "rõ ràng sai" dễ bị dược sĩ phát hiện hơn nhiều so với "một đơn thuốc hợp lệ nhưng nhầm thuốc" — đây có thể là lợi ích thực sự của margin loss chưa được phản ánh đầy đủ trong con số confusable_wrong_drug thô.
+1. **Margin loss (alone) is the only direction showing a positive signal**: a net reduction of 9 confusable_wrong_drug images (22 fixed / 13 newly introduced), without a significant decrease in correct or a significant increase in hallucination — but **p=0.18, not reaching the statistical significance threshold** at this sample size with the default hyperparameters (β=1.0 not used here, margin=1.0, λ=1.0).
+2. **Severity-weighted CE alone does NOT help** — it even shows a slight trend in the opposite direction (83→88, p=0.47). This is an important negative finding: merely increasing the loss weight for the high-risk class ("trying harder") does not automatically teach the model to avoid any specific wrong answer — consistent with the concern raised in the proposal.
+3. **Combining both does NOT compound the benefit** — it returns to roughly the baseline (83→83, p=1.00); severity appears to add noise to margin's targeted signal.
+4. **A few genuine overcorrection cases were observed** (exactly as the project initially worried): e.g. `Dexter` (correct, CE-only) → `Dextal` (confusable, margin); `Raditil` (correct) → `radifil` (confusable); `Fylox` (correct) → `eylox` (confusable). This rate is low (0.58%) but real.
+5. **A notable positive qualitative finding**: in many cases margin loss "fixes" a confusable_wrong_drug error NOT by guessing correctly, but by pushing the prediction toward an OBVIOUSLY WRONG form (hallucination/minor_noise) instead of ANOTHER REAL DRUG NAME — e.g. `Vonocab`→`Vonorab` (confusable, CE-only)→`vonoeab` (obviously wrong, margin); `Bislol`→`Biscor` (confusable)→`Psistor` (obviously wrong). In terms of clinical safety, an "obviously wrong" output is much easier for a pharmacist to catch than "a valid-looking prescription for the wrong drug" — this could be a real benefit of margin loss that is not fully captured by the raw confusable_wrong_drug figure.
 
-## Kaggle-BD (780 ảnh, 78 lớp)
+## Kaggle-BD (780 images, 78 classes)
 
-Chỉ 3-4 ảnh confusable_wrong_drug ở mọi cấu hình — quá ít để phân tích thống kê có ý nghĩa, dùng làm tham chiếu định tính, không phải bằng chứng chính.
+Only 3-4 confusable_wrong_drug images across all configurations — too few for meaningful statistical analysis; used as a qualitative reference, not primary evidence.
 
-## Hạn chế (đã ghi nhận ở lần chạy đầu — xem kết quả dò siêu tham số bên dưới, đã giải quyết)
+## Limitations (noted in the first run — see hyperparameter sweep results below, since resolved)
 
-- Siêu tham số (β, margin, λ) ở trên là lần thử đầu tiên chưa dò.
-- Cần thử bỏ severity ra khỏi cấu hình kết hợp hoặc giảm mạnh β khi kết hợp với margin.
-- Nên đo thêm chỉ số "chuyển từ confusable_wrong_drug sang lỗi RÕ RÀNG SAI".
+- The hyperparameters (β, margin, λ) above are from the first attempt and have not been swept.
+- Should try removing severity from the combined configuration, or sharply reducing β when combined with margin.
+- Should additionally measure the metric of "transition from confusable_wrong_drug to an OBVIOUSLY WRONG error".
 
 ---
 
-# Cập nhật: dò siêu tham số margin loss (kernel 04) — ĐÃ ĐẠT Ý NGHĨA THỐNG KÊ
+# Update: margin loss hyperparameter sweep (kernel 04) — STATISTICAL SIGNIFICANCE REACHED
 
-Dữ liệu thô: `results/kaggle_run_4_margin_sweep/`. Chỉ chạy trên RxHandBD (Kaggle-BD
-đã xác nhận không đủ mẫu). So với cùng CE-only baseline (confusable_wrong_drug=83/1115=7.44%,
+Raw data: `results/kaggle_run_4_margin_sweep/`. Run only on RxHandBD (Kaggle-BD
+was already confirmed to have an insufficient sample size). Compared to the same CE-only baseline (confusable_wrong_drug=83/1115=7.44%,
 correct=519/1115=46.5%, hallucination=241/1115=21.6%).
 
-| Cấu hình | confusable_wrong_drug | p (McNemar) | correct | p | hallucination | p |
+| Configuration | confusable_wrong_drug | p (McNemar) | correct | p | hallucination | p |
 |---|---|---|---|---|---|---|
-| margin λ=2.0 | 67 (6.01%) | **0.009** ✅ | 491 (44.0%) | **0.014** ⚠️ giảm có ý nghĩa | 271 (24.3%) | **0.0035** ⚠️ tăng có ý nghĩa |
-| margin λ=3.0 | 59 (5.29%) | **0.0001** ✅✅ | 495 (44.4%) | **0.021** ⚠️ giảm có ý nghĩa | 273 (24.5%) | **0.0022** ⚠️ tăng có ý nghĩa |
-| margin λ=2.0, 5 epoch | 73 (6.55%) | 0.14 (không đạt) | 527 (47.3%) | 0.49 | 245 (22.0%) | 0.75 |
-| **margin λ=2.0 + severity β=0.3** | **67 (6.01%)** | **0.011** ✅ | **523 (46.9%)** | **0.76 (không đổi có ý nghĩa)** ✅ | **250 (22.4%)** | **0.41 (không đổi có ý nghĩa)** ✅ |
+| margin λ=2.0 | 67 (6.01%) | **0.009** ✅ | 491 (44.0%) | **0.014** ⚠️ significant decrease | 271 (24.3%) | **0.0035** ⚠️ significant increase |
+| margin λ=3.0 | 59 (5.29%) | **0.0001** ✅✅ | 495 (44.4%) | **0.021** ⚠️ significant decrease | 273 (24.5%) | **0.0022** ⚠️ significant increase |
+| margin λ=2.0, 5 epochs | 73 (6.55%) | 0.14 (not significant) | 527 (47.3%) | 0.49 | 245 (22.0%) | 0.75 |
+| **margin λ=2.0 + severity β=0.3** | **67 (6.01%)** | **0.011** ✅ | **523 (46.9%)** | **0.76 (no significant change)** ✅ | **250 (22.4%)** | **0.41 (no significant change)** ✅ |
 
-## Kết luận chính: cấu hình thắng cuộc là **margin (λ=2.0) + severity nhẹ (β=0.3)**
+## Main conclusion: the winning configuration is **margin (λ=2.0) + light severity (β=0.3)**
 
-- **λ=2.0 và λ=3.0 một mình**: giảm confusable_wrong_drug ĐẠT Ý NGHĨA THỐNG KÊ rõ rệt (p=0.009 và p=0.0001) — nhưng phải trả giá thật: correct giảm có ý nghĩa, hallucination tăng có ý nghĩa. Đánh đổi có thật, không miễn phí.
-- **Train lâu hơn (5 epoch) làm mất tín hiệu**: không cấu hình nào đạt ý nghĩa thống kê — có vẻ train quá lâu khiến CE lấn át margin.
-- **Kết hợp margin λ=2.0 với severity β=0.3 (giảm mạnh từ 1.0, không bỏ hẳn) là kết quả tốt nhất**: giảm confusable_wrong_drug có ý nghĩa thống kê (p=0.011, tương đương λ=2 một mình) **NHƯNG không làm giảm correct có ý nghĩa (p=0.76) và không làm tăng hallucination có ý nghĩa (p=0.41)** — tức là đạt được mục tiêu an toàn cốt lõi mà KHÔNG phải đánh đổi hiệu năng tổng thể. Ngoài ra trong số 26 ảnh hết confusable, có tới 13 ảnh (50%) sửa ĐÚNG hẳn — tỉ lệ tốt hơn hẳn so với margin một mình (chỉ 5-7/25-31 ≈ 20-23%).
-- Chỉ số an toàn phụ (đúng→confusable mới) vẫn thấp ở mọi cấu hình sweep (0.39-0.77%).
+- **λ=2.0 and λ=3.0 alone**: the reduction in confusable_wrong_drug REACHES clear STATISTICAL SIGNIFICANCE (p=0.009 and p=0.0001) — but at a real cost: correct decreases significantly, hallucination increases significantly. A genuine trade-off, not free.
+- **Training longer (5 epochs) loses the signal**: no configuration reaches statistical significance — it appears that training too long lets CE dominate over margin.
+- **Combining margin λ=2.0 with severity β=0.3 (sharply reduced from 1.0, not removed entirely) is the best result**: it reduces confusable_wrong_drug with statistical significance (p=0.011, comparable to λ=2 alone) **BUT does not significantly decrease correct (p=0.76) and does not significantly increase hallucination (p=0.41)** — meaning the core safety goal is achieved WITHOUT trading off overall performance. In addition, of the 26 images that stopped being confusable, as many as 13 (50%) were fully corrected — a much better rate than margin alone (only 5-7/25-31 ≈ 20-23%).
+- The secondary safety metric (correct→newly confusable) remains low across all sweep configurations (0.39-0.77%).
 
-**→ Cấu hình đề xuất cho báo cáo cuối: margin loss λ=2.0 kết hợp severity-weighted CE với β=0.3 (giảm mạnh, không bỏ hẳn), 3 epoch.** Đây là bằng chứng thống kê vững cho luận điểm chính của dự án: có thể giảm có ý nghĩa loại lỗi LASA nguy hiểm nhất mà không phải đánh đổi độ chính xác tổng thể, nếu chọn đúng cách kết hợp và siêu tham số.
+**→ Configuration proposed for the final report: margin loss λ=2.0 combined with severity-weighted CE at β=0.3 (sharply reduced, not removed entirely), 3 epochs.** This is solid statistical evidence for the project's main argument: the most dangerous type of LASA error can be significantly reduced without trading off overall accuracy, provided the right combination and hyperparameters are chosen.
 
 ---
 
-# Cập nhật: kiểm tra chéo cấu hình thắng cuộc trên Kaggle-BD (kernel 05)
+# Update: cross-checking the winning configuration on Kaggle-BD (kernel 05)
 
-Dữ liệu thô: `results/kaggle_run_5_winning_kaggle_bd/`. So với CE-only baseline Kaggle-BD (confusable_wrong_drug=3/780=0.38%, correct=684/780=87.7%, hallucination=44/780=5.6%).
+Raw data: `results/kaggle_run_5_winning_kaggle_bd/`. Compared to the CE-only baseline on Kaggle-BD (confusable_wrong_drug=3/780=0.38%, correct=684/780=87.7%, hallucination=44/780=5.6%).
 
-| Chỉ số | CE-only | Cấu hình thắng cuộc | Ghép cặp | p (McNemar) |
+| Metric | CE-only | Winning configuration | Paired | p (McNemar) |
 |---|---|---|---|---|
-| confusable_wrong_drug | 3 (0.38%) | 4 (0.51%) | 1 sửa / 2 sinh mới | 1.00 (hoàn toàn không có thông tin — n quá nhỏ) |
-| correct | 684 (87.7%) | 671 (86.0%) | 24 mất / 11 được | **0.041 (giảm có ý nghĩa)** ⚠️ |
-| hallucination | 44 (5.6%) | 51 (6.5%) | 11 sửa / 18 sinh mới | 0.26 (không có ý nghĩa) |
+| confusable_wrong_drug | 3 (0.38%) | 4 (0.51%) | 1 fixed / 2 newly | 1.00 (completely uninformative — n too small) |
+| correct | 684 (87.7%) | 671 (86.0%) | 24 lost / 11 gained | **0.041 (significant decrease)** ⚠️ |
+| hallucination | 44 (5.6%) | 51 (6.5%) | 11 fixed / 18 newly | 0.26 (not significant) |
 
-**Kết luận trung thực: kết quả KHÔNG lặp lại được trên Kaggle-BD.** Đúng như dự đoán, cỡ mẫu confusable_wrong_drug (chỉ 3-4 ảnh) hoàn toàn không đủ để nói gì về chỉ số mục tiêu (p=1.00). Đáng chú ý hơn: trên dataset này, cấu hình thắng cuộc lại làm **giảm correct rate có ý nghĩa thống kê** (87.7%→86.0%, p=0.041) mà không có lợi ích bù lại nào đo được. Diễn giải hợp lý nhất: lợi ích của margin+severity nhẹ có thể phụ thuộc vào **quy mô/độ đa dạng từ vựng** — trên RxHandBD (~1430 từ, nhiều cặp nhầm lẫn thật) can thiệp có không gian để phát huy; trên Kaggle-BD (từ điển đóng chỉ 78 lớp, chỉ 3-4 ảnh thuộc đúng loại lỗi mục tiêu) can thiệp chủ yếu chỉ thêm nhiễu vào một bài toán đã gần bão hoà, không có đủ "chỗ" để mang lại lợi ích rõ ràng.
+**Honest conclusion: the result does NOT replicate on Kaggle-BD.** As predicted, the confusable_wrong_drug sample size (only 3-4 images) is completely insufficient to say anything about the target metric (p=1.00). More notably: on this dataset, the winning configuration actually **decreases correct rate with statistical significance** (87.7%→86.0%, p=0.041) with no measurable offsetting benefit. The most plausible interpretation: the benefit of margin+light severity may depend on **vocabulary size/diversity** — on RxHandBD (~1430 words, many genuine confusion pairs) the intervention has room to take effect; on Kaggle-BD (a closed vocabulary of only 78 classes, with only 3-4 images of the exact target error type) the intervention mostly just adds noise to a problem that is already near saturation, without enough "room" to produce a clear benefit.
 
 ---
 
-# Cập nhật QUAN TRỌNG NHẤT: xác nhận lại với 5 seed đầy đủ (kernel 06) — SỬA LẠI kết luận "không đánh đổi"
+# MOST IMPORTANT update: reconfirmation with 5 full seeds (kernel 06) — REVISING the "no trade-off" conclusion
 
-Dữ liệu thô: `results/kaggle_run_6_confirmatory/`. Phân tích: `scripts/analyze_confirmatory.py`.
-Bối cảnh: vòng phản biện phát hiện "cấu hình thắng cuộc" (p=0.011) không qua được
-hiệu chỉnh Holm-Bonferroni (p_holm=0.057, xem `scripts/multiple_comparisons.py`)
-vì được chọn sau khi xem 7 cấu hình trên cùng 1 tập test, và mỗi cấu hình trước
-đó chỉ chạy **1 lần, không seed đầy đủ** (chỉ `random.seed(42)` cho Python, chưa
-seed torch/numpy). Kernel 06 chạy lại **5 seed độc lập** (torch+numpy+random đều
-được set), mỗi seed train CẶP (CE-only, thắng cuộc) với CÙNG seed để cô lập biến
-nhiễu do khởi tạo/thứ tự dữ liệu, so sánh ghép cặp riêng cho từng seed.
+Raw data: `results/kaggle_run_6_confirmatory/`. Analysis: `scripts/analyze_confirmatory.py`.
+Context: a review round found that the "winning configuration" (p=0.011) does not survive
+Holm-Bonferroni correction (p_holm=0.057, see `scripts/multiple_comparisons.py`)
+because it was selected after looking at 7 configurations on the same test set, and each
+prior configuration was run only **once, without full seeding** (only `random.seed(42)` for
+Python, with torch/numpy not seeded). Kernel 06 reruns with **5 independent seeds** (torch+numpy+random
+all set), training PAIRS (CE-only, winning configuration) with the SAME seed for each seed to
+isolate the confounding variable of initialization/data ordering, comparing paired results
+separately for each seed.
 
-## Kết quả từng seed (CE-only vs cấu hình thắng cuộc)
+## Per-seed results (CE-only vs winning configuration)
 
 | Seed | confusable_wrong_drug | p | correct | p | hallucination | p |
 |---|---|---|---|---|---|---|
-| 1 | 79→65 (giảm) | 0.049 ✅ | 522→495 (giảm) | 0.011 ⚠️ | 242→268 (tăng) | 0.018 ⚠️ |
-| 2 | 74→68 (giảm) | 0.362 | 524→508 (giảm) | 0.101 | 238→275 (tăng) | 0.0002 ⚠️ |
-| 3 | 90→79 (giảm) | 0.043 ✅ | 513→503 (giảm) | 0.368 | 238→254 (tăng) | 0.109 |
-| 4 | 78→66 (giảm) | 0.036 ✅ | 526→498 (giảm) | 0.010 ⚠️ | 235→255 (tăng) | 0.045 ⚠️ |
-| 5 | 78→71 (giảm) | 0.265 | 529→498 (giảm) | 0.005 ⚠️ | 243→264 (tăng) | 0.033 ⚠️ |
+| 1 | 79→65 (decrease) | 0.049 ✅ | 522→495 (decrease) | 0.011 ⚠️ | 242→268 (increase) | 0.018 ⚠️ |
+| 2 | 74→68 (decrease) | 0.362 | 524→508 (decrease) | 0.101 | 238→275 (increase) | 0.0002 ⚠️ |
+| 3 | 90→79 (decrease) | 0.043 ✅ | 513→503 (decrease) | 0.368 | 238→254 (increase) | 0.109 |
+| 4 | 78→66 (decrease) | 0.036 ✅ | 526→498 (decrease) | 0.010 ⚠️ | 235→255 (increase) | 0.045 ⚠️ |
+| 5 | 78→71 (decrease) | 0.265 | 529→498 (decrease) | 0.005 ⚠️ | 243→264 (increase) | 0.033 ⚠️ |
 
-**Điểm mấu chốt: cả 3 chỉ số đều đổi CÙNG MỘT HƯỚNG ở TẤT CẢ 5/5 SEED** —
-confusable_wrong_drug luôn giảm, correct luôn giảm, hallucination luôn tăng —
-không có ngoại lệ. Đây là bằng chứng nhất quán rất mạnh, không phải ngẫu nhiên.
+**Key point: all 3 metrics move in THE SAME DIRECTION across ALL 5/5 SEEDS** —
+confusable_wrong_drug always decreases, correct always decreases, hallucination always
+increases — with no exceptions. This is very strong consistent evidence, not chance.
 
-## Gộp 5 seed (pooled McNemar, tăng lực thống kê ~5 lần)
+## Pooling 5 seeds (pooled McNemar, ~5x increase in statistical power)
 
-| Chỉ số | Sửa được / Sinh mới (gộp) | p gộp | Số seed riêng lẻ đạt p<0.05 |
+| Metric | Fixed / Newly introduced (pooled) | Pooled p | Number of individual seeds reaching p<0.05 |
 |---|---|---|---|
 | confusable_wrong_drug | 103 / 53 | **p = 0.000077** | 3/5 |
-| correct | 312 mất / 200 được | **p = 0.000001** | 3/5 |
-| hallucination | 178 sửa / 298 sinh mới | **p < 0.000001** | 4/5 |
+| correct | 312 lost / 200 gained | **p = 0.000001** | 3/5 |
+| hallucination | 178 fixed / 298 newly introduced | **p < 0.000001** | 4/5 |
 
-Quy đổi tỉ lệ trung bình 5 seed: confusable_wrong_drug **7.16%→6.26%** (giảm
-~12.6% tương đối), correct **46.9%→44.9%** (giảm ~2.0 điểm %), hallucination
-**21.5%→23.6%** (tăng ~2.2 điểm %).
+Converting to average rates across 5 seeds: confusable_wrong_drug **7.16%→6.26%**
+(a relative decrease of ~12.6%), correct **46.9%→44.9%** (a decrease of ~2.0 percentage
+points), hallucination **21.5%→23.6%** (an increase of ~2.2 percentage points).
 
-## PHẢI SỬA LẠI kết luận trước đó
+## The previous conclusion MUST BE REVISED
 
-Kết luận cũ ("giảm confusable_wrong_drug có ý nghĩa MÀ KHÔNG đánh đổi correct/
-hallucination có ý nghĩa", dựa trên 1 lần chạy p=0.76/p=0.41) **SAI, hoặc ít nhất
-không đại diện** — lần chạy đơn lẻ đó là một **outlier thuận lợi tình cờ**, đúng
-như lo ngại "chỉ 1 lần chạy không seed" của vòng phản biện. Với 5 seed độc lập,
-correct rate GIẢM và hallucination TĂNG **nhất quán và có ý nghĩa thống kê rất
-mạnh** (p gộp < 0.00001 cho cả 2) — đây là **một đánh đổi thật, không phải miễn
-phí**.
+The old conclusion ("significant decrease in confusable_wrong_drug WITHOUT significant
+trade-off in correct/hallucination", based on a single run with p=0.76/p=0.41) is **WRONG,
+or at least not representative** — that single run was a **fortunate outlier by chance**,
+exactly matching the review round's concern about "only 1 run, without seeding". With
+5 independent seeds, correct rate DECREASES and hallucination INCREASES **consistently and
+with very strong statistical significance** (pooled p < 0.00001 for both) — this is
+**a genuine trade-off, not a free lunch**.
 
-**Tin tốt**: bản thân lợi ích cốt lõi (giảm confusable_wrong_drug — loại lỗi
-nguy hiểm nhất) được xác nhận **VỮNG CHẮC HƠN nhiều** so với trước (p gộp
-=0.000077, dựa trên 5 lần lặp độc lập, thay vì 1 lần chạy với p=0.011 dễ bị nghi
-ngờ là may mắn).
+**Good news**: the core benefit itself (reducing confusable_wrong_drug — the most
+dangerous error type) is confirmed **MUCH MORE ROBUSTLY** than before (pooled p=0.000077,
+based on 5 independent replicates, instead of a single run with p=0.011 that was easy to
+suspect as luck).
 
-## Tuyên bố đúng cho bài báo (thay thế hoàn toàn tuyên bố "không đánh đổi" cũ)
+## Correct statement for the paper (fully replacing the old "no trade-off" statement)
 
-> Margin loss (λ=2.0) kết hợp severity-weighting nhẹ (β=0.3) làm giảm có ý nghĩa
-> thống kê, nhất quán qua nhiều lần chạy độc lập, tỉ lệ lỗi "nhầm sang thuốc
-> thật khác" (confusable_wrong_drug, ~12.6% tương đối) — nhưng đây là MỘT ĐÁNH
-> ĐỔI THẬT: đi kèm giảm ~2 điểm % correct rate và tăng ~2 điểm % hallucination,
-> cả hai đều có ý nghĩa thống kê mạnh qua 5 seed độc lập. Đây là một điểm trên
-> đường cong đánh đổi an toàn-hiệu năng, không phải một cải tiến miễn phí.
+> Margin loss (λ=2.0) combined with light severity-weighting (β=0.3) produces a
+> statistically significant, consistent reduction across multiple independent runs in the
+> rate of "confused with a different real drug" errors (confusable_wrong_drug, ~12.6%
+> relative) — but this is A GENUINE TRADE-OFF: it comes with a ~2 percentage point
+> decrease in correct rate and a ~2 percentage point increase in hallucination, both with
+> strong statistical significance across 5 independent seeds. This is a point on the
+> safety-performance trade-off curve, not a free improvement.
 
-Điều này thực ra làm bài báo **trung thực và đáng tin hơn**, đúng tinh thần dự
-án: không phải "chúng tôi giải quyết được vấn đề mà không mất gì", mà là "chúng
-tôi định lượng chính xác đánh đổi giữa an toàn và hiệu năng, và cho công cụ để
-người dùng chọn điểm vận hành phù hợp với mức độ chấp nhận rủi ro của họ" (đúng
-như đề xuất "trình bày cả đường cong đánh đổi" từ vòng phản biện trước).
+This actually makes the paper **more honest and more credible**, true to the project's
+spirit: not "we solved the problem at no cost," but rather "we precisely quantify the
+trade-off between safety and performance, and provide a tool for users to choose the
+operating point that matches their acceptable level of risk" (exactly matching the earlier
+review round's suggestion to "present the full trade-off curve").
 
-**Hệ quả cho báo cáo cuối cùng**: phải nêu rõ đây là giới hạn thật của phương pháp — hiệu quả được chứng minh có ý nghĩa thống kê trên RxHandBD (từ vựng lớn, thực tế hơn), nhưng KHÔNG khẳng định được (và có dấu hiệu ngược lại về correct rate) trên dataset từ điển đóng nhỏ. Không nên trình bày cấu hình thắng cuộc như một giải pháp tổng quát cho mọi quy mô từ vựng.
+**Implication for the final report**: it must be stated clearly that this is a real limitation of the method — the effect is demonstrated with statistical significance on RxHandBD (larger, more realistic vocabulary), but is NOT established (and shows an opposite signal on correct rate) on the small closed-vocabulary dataset. The winning configuration should not be presented as a general solution across all vocabulary sizes.
 
 ---
 
-# Phân tích mở rộng trên dữ liệu kernel 06 (effect size + CI, không cần chạy Kaggle thêm)
+# Extended analysis on kernel 06 data (effect size + CI, no additional Kaggle runs needed)
 
-Script: `scripts/analyze_confirmatory_extended.py`. Bổ sung cho phần trên (vốn
-chỉ có p-value) bằng effect size (risk difference) + khoảng tin cậy 95%, và
-đào sâu breakdown "confusable được sửa thì đi về đâu" gộp trên cả 5 seed
-(n lớn hơn nhiều so với kernel 03 đơn lẻ).
+Script: `scripts/analyze_confirmatory_extended.py`. Supplements the section above (which
+only had p-values) with effect size (risk difference) + 95% confidence intervals, and digs
+deeper into the breakdown of "where do fixed confusable errors end up," pooled across all 5
+seeds (a much larger n than the single kernel 03 run).
 
-## Effect size + 95% CI (gộp 5 seed, n=5575 cặp ảnh)
+## Effect size + 95% CI (pooled across 5 seeds, n=5575 image pairs)
 
-| Chỉ số | Risk difference (thắng cuộc − CE-only) | 95% CI |
+| Metric | Risk difference (winning configuration − CE-only) | 95% CI |
 |---|---|---|
-| confusable_wrong_drug | **−0.90 điểm %** | [−1.34, −0.46] |
-| correct | **−2.01 điểm %** | [−2.80, −1.22] |
-| hallucination_far_off | **+2.15 điểm %** | [+1.39, +2.92] |
+| confusable_wrong_drug | **−0.90 percentage points** | [−1.34, −0.46] |
+| correct | **−2.01 percentage points** | [−2.80, −1.22] |
+| hallucination_far_off | **+2.15 percentage points** | [+1.39, +2.92] |
 
-Cả 3 khoảng tin cậy đều **không chứa 0** — nhất quán với p-value đã báo cáo,
-nhưng giờ có độ lớn hiệu ứng + độ bất định cụ thể, đúng chuẩn báo cáo mà
-reviewer tạp chí Q2 thường yêu cầu (không chỉ p-value).
+All 3 confidence intervals **exclude 0** — consistent with the previously reported
+p-values, but now with a concrete effect size + uncertainty, matching the reporting
+standard that Q2 journal reviewers typically require (not just p-values).
 
-## Lỗi confusable_wrong_drug "được sửa" thì đi về đâu? (gộp 5 seed, n=399 lỗi confusable ở baseline)
+## Where do "fixed" confusable_wrong_drug errors go? (pooled across 5 seeds, n=399 confusable errors at baseline)
 
-| | Số lượng | % trong số "hết confusable" |
+| | Count | % of "no longer confusable" |
 |---|---|---|
-| Tổng số lỗi confusable ở CE-only (gộp 5 seed) | 399 | — |
-| Hết confusable dưới cấu hình thắng cuộc | 103 (25.8% của 399) | 100% |
-| — trong đó sửa ĐÚNG hẳn (correct) | 36 | 35.0% |
-| — trong đó thành RÕ RÀNG SAI (minor_ocr_noise 37 + hallucination 30) | 67 | **65.0%** |
+| Total confusable errors under CE-only (pooled across 5 seeds) | 399 | — |
+| No longer confusable under the winning configuration | 103 (25.8% of 399) | 100% |
+| — of which fully corrected (correct) | 36 | 35.0% |
+| — of which became OBVIOUSLY WRONG (minor_ocr_noise 37 + hallucination 30) | 67 | **65.0%** |
 
-**Ý nghĩa lâm sàng**: khi can thiệp "sửa" được một lỗi nguy hiểm (nhầm sang
-tên thuốc thật khác), phần lớn (65%, n=103, đáng tin hơn nhiều so với quan sát
-định tính nhỏ lẻ ở kernel 03) không phải vì model đoán đúng, mà vì nó đẩy dự
-đoán sang một lỗi RÕ RÀNG SAI — dễ bị dược sĩ/bác sĩ phát hiện hơn nhiều so
-với "một đơn thuốc hợp lệ nhưng nhầm thuốc". Đây là lợi ích an toàn thực sự
-mà con số confusable_wrong_drug thô không phản ánh hết, và nay đã được lượng
-hoá vững chắc trên n đủ lớn.
+**Clinical significance**: when the intervention "fixes" a dangerous error (confusion
+with another real drug name), the majority (65%, n=103, much more reliable than the small
+qualitative observations in kernel 03) is not because the model guesses correctly, but
+because it pushes the prediction toward an OBVIOUSLY WRONG error — much easier for a
+pharmacist/doctor to catch than "a valid-looking prescription for the wrong drug." This is
+a real safety benefit that the raw confusable_wrong_drug number does not fully capture, and
+it has now been robustly quantified on a sufficiently large n.
 
-## Tỉ lệ "quá tay" (đúng ở CE-only → confusable MỚI ở cấu hình thắng cuộc), gộp 5 seed
+## "Overcorrection" rate (correct under CE-only → NEWLY confusable under the winning configuration), pooled across 5 seeds
 
 **16/2614 = 0.61%** (Wilson 95% CI: [0.38%, 0.99%]).
 
-So với mức giảm correct rate tổng thể (~2 điểm %, xem trên), phần bị "quá tay"
-thành đúng LOẠI LỖI NGUY HIỂM MÀ can thiệp đang cố tránh chỉ chiếm một phần rất
-nhỏ (0.61% trên tổng số ảnh vốn đúng) — phần lớn "mất correct" còn lại chuyển
-thành minor_ocr_noise/hallucination (ít nguy hiểm hơn), không phải confusable
-mới. Điểm này nên đưa vào phần Discussion để làm rõ bản chất đánh đổi: cái giá
-phải trả (mất ~2pp correct) chủ yếu KHÔNG phải ở dạng nguy hiểm nhất.
+Compared to the overall decrease in correct rate (~2 percentage points, see above), the
+share that "overcorrected" into precisely the DANGEROUS ERROR TYPE the intervention is
+trying to avoid is only a very small fraction (0.61% of all images that were originally
+correct) — most of the remaining "lost correct" instead converts to minor_ocr_noise/
+hallucination (less dangerous), not new confusable errors. This point should be included
+in the Discussion section to clarify the nature of the trade-off: the price paid (losing
+~2pp of correct) is mostly NOT in the most dangerous form.
 
-**Kết luận**: 2 phân tích bổ sung này không thay đổi kết luận cốt lõi (đánh đổi
-thật, đã xác nhận multi-seed) nhưng làm bài báo giàu thông tin định lượng hơn
-nhiều — có effect size + CI cho phần Results, và một luận điểm Discussion mới
-("cái giá phải trả chủ yếu không phải loại nguy hiểm nhất, và khi sửa được lỗi
-nguy hiểm thì phần lớn là đẩy sang lỗi dễ phát hiện hơn chứ không phải đoán
-đúng") giúp câu chuyện đánh đổi cân bằng, thuyết phục hơn thay vì chỉ nêu số
-tăng/giảm trần trụi.
+**Conclusion**: these 2 additional analyses do not change the core conclusion (a
+genuine trade-off, confirmed via multi-seed) but make the paper much richer in
+quantitative information — providing effect size + CI for the Results section, and a new
+Discussion argument ("the price paid is mostly not the most dangerous type, and when a
+dangerous error is fixed, it is mostly pushed toward a more easily detectable error rather
+than a correct guess") that makes the trade-off narrative more balanced and persuasive,
+rather than just stating raw increase/decrease numbers.
