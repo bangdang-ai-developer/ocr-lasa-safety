@@ -13,6 +13,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{parskip}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \title{A Quantified Safety–Accuracy Trade-off: Margin-Ranking and Severity-Weighted LoRA Fine-Tuning for Look-Alike/Sound-Alike Drug Name Errors in Handwritten Prescription OCR}
 \author{Bang Dang \\ \textit{Independent Researcher} \\ \texttt{bangdang007112@gmail.com}}
@@ -89,7 +90,6 @@ Two pre-existing, publicly released handwritten drug-name image datasets were us
 
 \textbf{Table 1. Datasets used.}
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
@@ -118,7 +118,6 @@ Independent verification
 Kaggle-BD & Kaggle, ``Doctor's Handwritten Prescription BD dataset'' (\texttt{mamun1113}) & 78-class closed vocabulary & 780 images & Open Database License (ODbL) & Accessed directly from its original Kaggle listing; single-source, no cross-referencing required \\
 RxHandBD & Kaggle mirror \texttt{abrahametry/rxhandbd-handwritten-word-image-dataset} of the RxHandBD dataset (Md. Masudul Islam, BUBT) & \textasciitilde1,430 normalized label instances (larger, more LASA-rich, open vocabulary) & 1,115 images & Disputed between the two original hosts (see below); stricter CC BY 4.0 terms followed & MD5-checksum-verified direct comparison against both original releases; 13/13 sampled label-to-image-ID correspondences matched \\
 \end{longtable}
-}
 
 \subsubsection{Kaggle-BD}\label{kaggle-bd}
 
@@ -180,7 +179,6 @@ A separate, higher threshold, \texttt{CONFUSABLE\_THRESHOLD\ =\ 0.65}, is used o
 
 \textbf{Table 2. Error taxonomy (\texttt{classify\_error()}).}
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
@@ -200,7 +198,6 @@ Definition
 \texttt{other\_wrong\_real\_word} & Predicted text is a real vocabulary word, but \texttt{bi\_sim\_score(true,\ predicted)\ \textless{}\ 0.65} \\
 \texttt{hallucination\_far\_off} & Empty prediction, or far from both the true label and any real vocabulary word \\
 \end{longtable}
-}
 
 Note that the neighbor-construction threshold (\texttt{NEIGHBOR\_MIN\_SCORE\ =\ 0.5}) and the evaluation-time confusability threshold (\texttt{CONFUSABLE\_THRESHOLD\ =\ 0.65}) are deliberately different and serve different purposes: the former is a permissive threshold for building training-time candidate lists, while the latter is a stricter threshold for labeling a specific wrong prediction as clinically dangerous.
 
@@ -224,7 +221,6 @@ Low-Rank Adaptation (LoRA) was applied to the TrOCR backbone using the \texttt{p
 
 \textbf{Table 3. LoRA and training configuration.}
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}ll@{}}
 \toprule\noalign{}
 Parameter & Value \\
@@ -243,7 +239,6 @@ Learning rate & 1e-4 \\
 PEFT library version & peft 0.13.2 \\
 Optimizer & AdamW \\
 \end{longtable}
-}
 
 The two reference model conditions compared throughout this paper are (i) the zero-shot pretrained TrOCR backbone with no fine-tuning, and (ii) a LoRA fine-tune of that backbone using only the standard cross-entropy (CE) objective (``CE-only''), which serves as the baseline against which the loss-design interventions of §3.4 are evaluated.
 
@@ -303,7 +298,6 @@ Notably, even before any loss-design intervention, the fixed CE-only baseline us
 
 \textbf{Table 4. Phase 1, batch (a) --- kernel 03 (single run per row, uncorrected p-values).}
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -325,7 +319,6 @@ Severity-only (β not tuned) & 88/1,115 (7.89\%) & 0.47 \\
 Margin-only & 74/1,115 (6.64\%) & 0.18 \\
 Severity + margin combined (kernel-03 defaults) & 83/1,115 (7.44\%) & 1.00 \\
 \end{longtable}
-}
 
 Severity-only weighting alone did not help, and directionally slightly hurt --- an informative \emph{negative} finding, since up-weighting the loss for ``risky'' classes does not by itself teach the model to avoid one specific wrong answer. Margin-only was the only directionally positive signal in this batch. Severity and margin combined at their kernel-03 defaults returned to baseline, suggesting severity weighting can dilute margin's more targeted signal when combined naively at that weighting level.
 
@@ -333,7 +326,6 @@ Severity-only weighting alone did not help, and directionally slightly hurt --- 
 
 \textbf{Table 5. Phase 1, batch (b) --- kernel 04 sweep (single run per row, uncorrected p-values).}
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -358,7 +350,6 @@ hallucination\_far\_off (p)
 λ\_margin = 2.0, 5 epochs (vs.~3) & 73/1,115, 6.55\% (0.14, n.s.) & 47.3\% (0.49, n.s.) & 22.0\% (0.75, n.s.) \\
 λ\_margin = 2.0 + low severity β = 0.3 & 67/1,115, 6.01\% (0.011) & 523/1,115, 46.9\% (0.76, n.s.) & 250/1,115, 22.4\% (0.41, n.s.) \\
 \end{longtable}
-}
 
 \texttt{λ\_margin\ =\ 3.0} gave the single largest raw reduction in \texttt{confusable\_wrong\_drug} found in Phase 1, but at a significant single-run cost to both \texttt{correct} and \texttt{hallucination\_far\_off}. The margin effect faded with longer training (5 vs.~3 epochs), consistent with CE eventually dominating the margin term. The configuration \textbf{λ\_margin = 2.0 + low severity β = 0.3} (β reduced roughly 3× from the kernel-03 default, not dropped entirely), trained for 3 epochs, was \textbf{selected} at the end of Phase 1 as the sole candidate carried forward to Phase 2, because in this single run it appeared to reduce the dangerous error category without a statistically significant single-run cost to \texttt{correct} or \texttt{hallucination\_far\_off}. As shown in §3.5.2 below, this apparent cost-free benefit was a favorable statistical outlier rather than a robust property of the configuration.
 
@@ -366,7 +357,6 @@ hallucination\_far\_off (p)
 
 \textbf{Table 6. Holm--Bonferroni-adjusted results for selected Phase-1 comparisons.}
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -394,7 +384,6 @@ Survives at α = 0.05?
 Severity-only, β not tuned (kernel 03) & 0.473 & 0.946 & No \\
 Severity + margin combined, kernel-03 defaults & 1.000 & 1.000 & No \\
 \end{longtable}
-}
 
 Critically, the configuration ultimately selected for Phase 2 does \textbf{not} survive this correction. This result is the explicit motivation for Phase 2: it demonstrates that none of the Phase 1 single-run findings --- including the one eventually selected --- can be trusted as final evidence on their own, given the researcher-degrees-of-freedom inherent in comparing many configurations on one fixed test set with unseeded single runs.
 
@@ -427,7 +416,6 @@ Before any loss-function intervention, both datasets were evaluated with zero-sh
 
 \textbf{Table 4.} Zero-shot vs.~single-run CE-only LoRA fine-tuning, by dataset and error category.
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
@@ -455,7 +443,6 @@ Kaggle-BD (n=780, 78-class) & LoRA CE-only fine-tune & 87.95\% (686/780) & 5.77\
 RxHandBD (n=1115, \textasciitilde1430 label instances) & Zero-shot TrOCR & 19.55\% (218/1115) & 60.90\% (679/1115) & 1.79\% (20/1115) \\
 RxHandBD (n=1115, \textasciitilde1430 label instances) & LoRA CE-only fine-tune (Run 1) & 46.64\% (520/1115) & 22.15\% (247/1115) & 7.26\% (81/1115) \\
 \end{longtable}
-}
 
 A second, independently-trained CE-only run on RxHandBD gave confusable\_wrong\_drug = 83/1115 (7.44\%), correct = 519/1115 (46.5\%), hallucination\_far\_off = 241/1115 (21.6\%) --- consistent with Run 1 within expected run-to-run noise. This second run is reused as the fixed reference baseline for the exploratory ablation/sweep phase (Section 4.2), and the run-to-run variability observed here is precisely what later motivated the fully-seeded, multi-run confirmatory design of Phase 2 (Section 4.4).
 
@@ -473,7 +460,6 @@ All comparisons in this subsection are against the same CE-only baseline (Run 2 
 
 \textbf{Table 5.} Kernel 03 ablation batch.
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -495,7 +481,6 @@ Severity-only (β not tuned) & 88/1115 (7.89\%) & 0.47 \\
 Margin-only & 74/1115 (6.64\%) & 0.18 \\
 Severity + margin combined (kernel-03 defaults) & 83/1115 (7.44\%) & 1.00 \\
 \end{longtable}
-}
 
 Severity-only is directionally \emph{worse} than baseline; margin-only is the single directionally-positive signal in this batch; severity+margin combined returns to baseline, suggesting severity weighting dilutes margin's targeted signal when combined naively at these settings.
 
@@ -503,7 +488,6 @@ Severity-only is directionally \emph{worse} than baseline; margin-only is the si
 
 \textbf{Table 6.} Kernel 04 sweep, all vs.~the CE-only baseline above (uncorrected, single run).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -529,7 +513,6 @@ Margin λ=3.0 (3 epochs) & 59/1115 (5.29\%), p=0.0001 & 44.4\%, p=0.021 & 24.5\%
 Margin λ=2.0, 5 epochs & 73/1115 (6.55\%), p=0.14 (NS) & 527/1115, 47.3\%, p=0.49 (NS) & 245/1115, 22.0\%, p=0.75 (NS) \\
 \textbf{Margin λ=2.0 + severity β=0.3 (selected)} & 67/1115 (6.01\%), p=0.011 & 523/1115 (46.9\%), p=0.76 (NS) & 250/1115 (22.4\%), p=0.41 (NS) \\
 \end{longtable}
-}
 
 Margin λ=3.0 gives the single largest raw reduction in confusable\_wrong\_drug found in Phase 1, but at significant single-run costs to correct rate and hallucination rate. Extending margin λ=2.0 training from 3 to 5 epochs erodes the confusable-rate effect (p=0.14), suggesting the CE term eventually dominates the margin term with longer training. The configuration \textbf{margin λ=2.0 + severity β=0.3} (β reduced \textasciitilde3× from the kernel-03 default, not dropped) was selected at the end of Phase 1 as the sole candidate carried forward to Phase 2, because in this single run it appeared to reduce the dangerous error category without a statistically significant single-run cost to correct rate or hallucination rate. As shown in Section 4.4, this apparent ``free lunch'' was a favorable statistical outlier rather than a real property of the configuration.
 
@@ -537,7 +520,6 @@ Margin λ=3.0 gives the single largest raw reduction in confusable\_wrong\_drug 
 
 \textbf{Table 7.} Holm-Bonferroni outcome for the 7 Phase-1 configurations (confusable\_wrong\_drug metric).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -565,7 +547,6 @@ Kernel 04: margin λ=3.0 & 0.0001 & 0.0008 & \textbf{Yes} \\
 Kernel 04: margin λ=2.0, 5 epochs & 0.143 & 0.573 & No \\
 Kernel 04: margin λ=2.0 + severity β=0.3 (selected) & 0.011 & 0.057 & No \\
 \end{longtable}
-}
 
 \textbf{Stated conclusion.} Only ``margin λ=3.0'' survives Holm-Bonferroni correction; critically, the configuration actually selected for Phase 2 (``margin λ=2.0 + severity β=0.3'') does \emph{not} survive (p\_holm=0.057), nor does ``margin λ=2.0'' alone (p\_holm=0.054). This result is the explicit motivation for Phase 2: it demonstrates that none of the Phase-1 single-run findings --- including the one eventually selected --- can be trusted as final evidence on their own, given the researcher-degrees-of-freedom inherent in comparing many configurations on one fixed test set with unseeded single runs.
 
@@ -575,7 +556,6 @@ The Phase-1-selected configuration (margin λ=2.0 + severity β=0.3) was applied
 
 \textbf{Table 8.} Cross-dataset check on Kaggle-BD (CE-only baseline vs.~selected configuration).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
@@ -602,7 +582,6 @@ Confusable (wrong drug) & 3/780 (0.38\%) & 4/780 (0.51\%) & 1.00 & Uninformative
 Correct & 87.7\% & 86.0\% & 0.041 & Significant decrease \\
 Hallucination (far-off) & --- & --- & 0.26 & Unchanged \\
 \end{longtable}
-}
 
 \textbf{Interpretation.} The Phase-1-selected configuration did not replicate on Kaggle-BD: the confusable\_wrong\_drug change is statistically uninformative given the tiny number of affected images, while correct rate significantly \emph{decreased} with no measurable compensating benefit, and hallucination rate was unchanged. This is consistent with the intervention needing a large, LASA-rich vocabulary to have ``room'' to help; on a small, closed 78-class vocabulary already close to saturated performance, it mostly adds training noise. Accordingly, the paper's confirmed claims (Section 4.4) are scoped to RxHandBD-like settings --- larger, more LASA-dense, open vocabularies --- and are not claimed to generalize to arbitrary handwritten drug-name OCR settings.
 
@@ -612,7 +591,6 @@ The single Phase-1-selected configuration (margin λ=2.0 + severity β=0.3, 3 ep
 
 \textbf{Table 9.} Per-seed results, CE-only → winning configuration (exact McNemar p-values).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}llll@{}}
 \toprule\noalign{}
 Seed & Confusable (wrong drug) & Correct & Hallucination (far-off) \\
@@ -626,13 +604,11 @@ Seed & Confusable (wrong drug) & Correct & Hallucination (far-off) \\
 4 & 78 → 66 (p=0.036) & 526 → 498 (p=0.010) & 235 → 255 (p=0.045) \\
 5 & 78 → 71 (p=0.265) & 529 → 498 (p=0.005) & 243 → 264 (p=0.033) \\
 \end{longtable}
-}
 
 All three metrics move in the \textbf{same direction in all 5/5 seeds, with no exceptions}: confusable\_wrong\_drug always decreases, correct always decreases, hallucination\_far\_off always increases.
 
 \textbf{Table 10.} Pooled results across 5 seeds (n=5,575 paired comparisons; one pooled exact McNemar test per metric).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
@@ -659,11 +635,9 @@ Confusable (wrong drug) & 103 fixed / 53 newly & 0.000077 & 7.16\% → 6.26\% (r
 Correct & 312 lost / 200 gained & 0.000001 & 46.9\% → 44.9\% (absolute drop \textasciitilde2.0 points) & 3/5 \\
 Hallucination (far-off) & 178 lost / 298 gained & \textless0.000001 & 21.5\% → 23.6\% (absolute rise \textasciitilde2.2 points) & 4/5 \\
 \end{longtable}
-}
 
 \textbf{Table 11.} Effect sizes with 95\% CI for paired proportions (Wald CI, pooled n=5,575; \texttt{scripts/analyze\_confirmatory\_extended.py}).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lll@{}}
 \toprule\noalign{}
 Metric & Risk difference (percentage points) & 95\% CI \\
@@ -675,7 +649,6 @@ Confusable (wrong drug) & −0.90 & {[}−1.34, −0.46{]} \\
 Correct & −2.01 & {[}−2.80, −1.22{]} \\
 Hallucination (far-off) & +2.15 & {[}+1.39, +2.92{]} \\
 \end{longtable}
-}
 
 All three 95\% CIs exclude zero, consistent with the pooled p-values above.
 
@@ -689,7 +662,6 @@ All three 95\% CIs exclude zero, consistent with the pooled p-values above.
 
 \textbf{Table 12.} Destination of the 103 resolved confusable\_wrong\_drug errors (pooled, 5 seeds).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lll@{}}
 \toprule\noalign{}
 Destination category & n (of 103) & Share \\
@@ -702,7 +674,6 @@ Minor OCR noise & 37 & --- \\
 Hallucination (far-off) & 30 & --- \\
 \textbf{Clearly wrong (minor noise + hallucination)} & \textbf{67} & \textbf{65.0\%} \\
 \end{longtable}
-}
 
 Only 35.0\% of resolved dangerous errors became fully correct; the majority (65.0\%) were converted into an obviously-wrong error type instead (minor\_ocr\_noise or hallucination\_far\_off) rather than into a correct reading. Clinically, an obviously-wrong output (e.g., a nonsense string) is far easier for a pharmacist or clinician to catch and query than a fluent, plausible but wrong real drug name --- so this destination shift represents a genuine safety benefit that the raw confusable\_wrong\_drug rate alone does not capture.
 
@@ -716,7 +687,6 @@ Only 35.0\% of resolved dangerous errors became fully correct; the majority (65.
 
 The five-seed confirmatory replication (Phase 2) shows that the combined margin-ranking-plus-severity-weighted loss (λ\_margin = 2.0, β = 0.3) does not remove the confusable\_wrong\_drug problem at no cost. It instead defines one statistically robust point on a trade-off curve between the rate of dangerous look-alike, sound-alike (LASA) errors and overall recognition accuracy. Pooled across 5,575 paired predictions (five seeds × 1,115 RxHandBD test images), the confusable\_wrong\_drug rate fell from a mean of 7.16\% under CE-only training to 6.26\% under the winning configuration --- a 12.6\% relative reduction (pooled exact McNemar p = 0.000077; risk difference −0.90 points, 95\% CI {[}−1.34, −0.46{]}) --- while the overall correct rate fell from 46.9\% to 44.9\% (pooled p = 0.000001; risk difference −2.01 points, 95\% CI {[}−2.80, −1.22{]}) and the hallucination\_far\_off rate rose from 21.5\% to 23.6\% (pooled p \textless{} 0.000001; risk difference +2.15 points, 95\% CI {[}+1.39, +2.92{]}).
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
@@ -746,7 +716,6 @@ confusable\_wrong\_drug & 7.16\% & 6.26\% & 0.000077 & −0.90 & {[}−1.34, −
 correct & 46.9\% & 44.9\% & 0.000001 & −2.01 & {[}−2.80, −1.22{]} \\
 hallucination\_far\_off & 21.5\% & 23.6\% & \textless0.000001 & +2.15 & {[}+1.39, +2.92{]} \\
 \end{longtable}
-}
 
 All three metrics moved in the same direction in every one of the five seeds, with no exceptions --- direction-consistent evidence for a real property of this loss combination rather than a single favorable run. That uniformity matters because the corresponding Phase-1 single run for this exact configuration reported changes in correct rate and hallucination rate that were not statistically significant (p = 0.76, p = 0.41), a result an earlier internal draft of this manuscript read as reducing the dangerous error ``without a significant cost.'' The confirmatory replication corrects that reading: the apparent absence of cost was a favorable statistical outlier in one unseeded run, not a property of the method. We therefore frame the contribution as a disclosed, measured operating point --- a roughly one-eighth relative reduction in the single most dangerous error category, purchased at a roughly two-point cost to raw accuracy and a roughly two-point increase in nonsense output --- rather than a strictly dominant improvement.
 
