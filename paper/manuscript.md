@@ -45,9 +45,11 @@ work, since it has no retrievable venue/volume/page/DOI yet) — double-check
 this against the final target journal's specific author guidelines, since a
 few venues (e.g., some IEEE-style journals) do want an "unpublished" entry.
 
-STILL OPEN, NEEDS THE AUTHOR'S INPUT (not resolvable by research alone):
-(5) Final code repository URL for this project (ocr-lasa-safety) — needs you
-to create/confirm the GitHub repo before this can be filled in. -->
+RESOLVED (2026-09-21): (5) Repository created and pushed:
+https://github.com/bangdang-ai-developer/ocr-lasa-safety (public, branch
+main). Availability section updated with the live URL.
+
+ALL 5 ORIGINAL TODOs NOW RESOLVED. -->
 
 # A Quantified Safety–Accuracy Trade-off: Margin-Ranking and Severity-Weighted LoRA Fine-Tuning for Look-Alike/Sound-Alike Drug Name Errors in Handwritten Prescription OCR
 
@@ -708,7 +710,7 @@ We set out to determine whether a loss function designed to discourage look-alik
 
 ## Availability of Data and Code
 
-**Code.** All training, evaluation, and analysis code will be released on GitHub in a repository independent of the prior project that motivated this study. [TODO: confirm final repository URL before submission.]
+**Code.** All training, evaluation, and analysis code is released on GitHub, in a repository independent of the prior project that motivated this study: https://github.com/bangdang-ai-developer/ocr-lasa-safety
 
 **Data.** Kaggle-BD ("Doctor's Handwritten Prescription BD dataset," mamun1113) is publicly available from its original Kaggle page under the Open Database License and is cited directly rather than redistributed. RxHandBD was accessed via the Kaggle community mirror used for all experiments (abrahametry/rxhandbd-handwritten-word-image-dataset); readers are pointed to the two independently verified original sources — Mendeley Data (DOI 10.17632/dsb5r6vskg.3, CC BY 4.0) and Zenodo (record 18478741) — and are advised that the mirror's image preprocessing (128×64 RGB) differs from, and is not independently documented relative to, both official releases (128×128 grayscale; see §6, Limitation 4). Neither dataset's raw images will be redistributed directly within the code repository; users should obtain images from the original sources cited above.
 
