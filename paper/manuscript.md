@@ -1,3 +1,9 @@
+<!-- SUPERSEDED (2026-09-23): this Markdown draft predates the PeerJ LaTeX rewrite
+and is kept only for drafting history. It lacks the 5 figures, the expanded
+30-entry bibliography, and the post-audit fixes now in the current manuscript.
+The authoritative, submission-track manuscript is paper_latex/main.tex
+(see the repo README). Do not cite or quote numbers from this file. -->
+
 <!-- EDITORIAL NOTE (assembly pass): sections drafted in parallel from one shared,
 verified facts sheet (numbers/citations only from project docs 00-04 and
 scripts/analyze_confirmatory_extended.py); no numeric or framing inconsistency was

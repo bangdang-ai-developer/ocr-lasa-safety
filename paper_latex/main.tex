@@ -158,7 +158,7 @@ RxHandBD is accessed for this project through a third-party Kaggle community mir
   The Kaggle download used for RxHandBD experiments bundles more than one dataset. A grep across every experiment kernel used in this study confirmed that all code paths read exclusively from the \texttt{RxHandBDMain} folder of that download; the unrelated, co-bundled second dataset was never loaded or used by any experiment reported here.
 \end{itemize}
 
-Neither dataset's raw images are redistributed directly in this project's code repository; data availability for both datasets is addressed separately (Availability of Data and Code).
+Neither dataset's raw images are redistributed directly in this project's code repository; data availability for both datasets is addressed separately (see Additional Information).
 
 \subsection*{Confusable-Pair Derivation}\label{sec:confusable-pair-derivation}
 
@@ -777,11 +777,20 @@ The gap between Phase 1 and Phase 2 is itself worth reporting on its own terms. 
 
 We set out to determine whether a loss function designed to discourage look-alike, sound-alike drug-name confusions can reduce that specific, clinically dangerous error type in LoRA-fine-tuned handwritten prescription OCR, and at what cost. Using an independent reproduction of the motivating fine-tuning-increases-LASA-errors phenomenon on two new public datasets, a lexicon-free, algorithmically derived confusable-pair method, and a two-phase exploratory-then-confirmatory design with five fully seeded replications, we find that a combined margin-ranking-plus-severity-weighted loss (λ\_margin = 2.0, β = 0.3) reduces the confusable\_wrong\_drug rate on RxHandBD by 12.6\% in relative terms, at a real, statistically robust cost of roughly two accuracy points and roughly two additional points of nonsense output. Most of that cost converts already-dangerous errors into overtly wrong, easily flagged output rather than manufacturing new dangerous confusions. We offer this as a measured operating point and a reproducible method, not a final verdict on whether the trade-off is worthwhile in any specific clinical workflow --- that judgment depends on downstream review practices this study did not model. Future work should trace a fuller Pareto curve across additional λ\_margin values under the same five-seed confirmatory protocol, replace the algorithmically derived confusable-pair lists with pharmacist-verified LASA pairs, and test the vocabulary-size dependence hypothesized above across further prescription datasets spanning a wider range of vocabulary sizes.
 
-\section*{Availability of Data and Code}\label{sec:availability}
+\section*{Additional Information}\label{sec:additional-information}
 
-\textbf{Code.} All training, evaluation, and analysis code is released on GitHub, in a repository independent of the prior project that motivated this study: \url{https://github.com/bangdang-ai-developer/ocr-lasa-safety}
+\paragraph{Data availability.} All training, evaluation, and analysis code is released on GitHub, in a repository independent of the prior project that motivated this study: \url{https://github.com/bangdang-ai-developer/ocr-lasa-safety}. % TODO(author): add Zenodo archival DOI here once the repo is archived (PeerJ requires an archival DOI, not a bare GitHub link, for code hosted on social-coding platforms).
 
-\textbf{Data.} Kaggle-BD (``Doctor's Handwritten Prescription BD dataset,'' mamun1113) is publicly available from its original Kaggle page under the Open Database License and is cited directly rather than redistributed. RxHandBD was accessed via the Kaggle community mirror used for all experiments (abrahametry/rxhandbd-handwritten-word-image-dataset); readers are pointed to the two independently verified original sources --- Mendeley Data (DOI 10.17632/dsb5r6vskg.3, CC BY 4.0) and Zenodo (record 18478741) --- and are advised that the mirror's image preprocessing (128×64 RGB) differs from, and is not independently documented relative to, both official releases (128×128 grayscale; see Limitations, Limitation 4). Neither dataset's raw images will be redistributed directly within the code repository; users should obtain images from the original sources cited above.
+Kaggle-BD (``Doctor's Handwritten Prescription BD dataset,'' mamun1113) is publicly available from its original Kaggle page under the Open Database License and is cited directly rather than redistributed. RxHandBD was accessed via the Kaggle community mirror used for all experiments (abrahametry/rxhandbd-handwritten-word-image-dataset); readers are pointed to the two independently verified original sources --- Mendeley Data (DOI 10.17632/dsb5r6vskg.3, CC BY 4.0) and Zenodo (record 18478741) --- and are advised that the mirror's image preprocessing (128×64 RGB) differs from, and is not independently documented relative to, both official releases (128×128 grayscale; see Limitations, Limitation 4). Neither dataset's raw images will be redistributed directly within the code repository; users should obtain images from the original sources cited above.
+
+\paragraph{Funding.} % TODO(author): confirm this statement is accurate before submission.
+This work received no external funding; compute was provided by Kaggle's free-tier GPU quota.
+
+\paragraph{Competing interests.} % TODO(author): confirm this statement is accurate before submission -- in particular, confirm there is no competing interest arising from the author's employment, consistent with this project's independence from that employer.
+The author declares no competing interests.
+
+\paragraph{Author contributions.} % TODO(author): confirm this statement is accurate before submission.
+Bang Dang conceived the study, designed and ran all experiments, performed the analysis, and wrote the manuscript.
 
 \bibliography{references}
 

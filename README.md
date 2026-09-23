@@ -8,6 +8,17 @@ data.
 
 See the full research proposal: [`docs/00-de-cuong-nghien-cuu.md`](docs/00-de-cuong-nghien-cuu.md).
 
+**The manuscript** (submission target: PeerJ Computer Science) is
+[`paper_latex/main.tex`](paper_latex/main.tex), written against the official
+PeerJ `wlpeerj` LaTeX class, with its bibliography in
+[`paper_latex/references.bib`](paper_latex/references.bib) and figures in
+[`paper_latex/figures/`](paper_latex/figures/). A live, auto-synced Overleaf
+copy (imports directly from this repo's `main` branch) is at
+<https://www.overleaf.com/project/6ab0d9f12d2eaea03e68f8fc>. The earlier
+Markdown draft at [`paper/manuscript.md`](paper/manuscript.md) predates this
+LaTeX rewrite (no figures, informal citations) and is kept only for drafting
+history — `paper_latex/main.tex` is the authoritative, current manuscript.
+
 This project is **fully independent** of the `ocr-research` project (handwritten
 prescriptions + LoRA TrOCR 7-model benchmark) — it does not reuse that
 project's code/data/labels, and uses it only as research-motivation context.
@@ -73,3 +84,18 @@ source scripts/kaggle_env.sh
 - [x] Compiled a verified bibliography — [docs/04-tai-lieu-tham-khao.md](docs/04-tai-lieu-tham-khao.md).
       Fixed 1 incorrect DOI (Kondrak & Dorr 2006) and 1 incorrect content
       description (arXiv:2510.03309 is not about LASA).
+- [x] Rewrote the manuscript against the official PeerJ `wlpeerj` LaTeX class,
+      added 5 figures generated from the paper's own verified numbers, and
+      expanded the bibliography from 12 to 30 entries (each independently
+      re-verified against a live primary source: DOI resolution, arXiv,
+      PubMed, ACL Anthology, or CrossRef) — see `paper_latex/`.
+- [x] Ran a full pre-submission audit (citation accuracy, numeric
+      consistency against the underlying scripts/CSVs, PeerJ CS format
+      compliance, and internal/editorial consistency) and fixed every
+      blocker-level finding: a mis-rendered citation, a leftover drafting
+      note, 3 broken internal cross-references, and a duplicated/uncaptioned
+      table.
+- [ ] Remaining before submission: archive the code repo on Zenodo for a
+      DOI, add Competing Interests / Funding / Author Contributions
+      statements, and fix a handful of minor bibliographic details (2 author
+      given-name typos, 1 publication-year field).
